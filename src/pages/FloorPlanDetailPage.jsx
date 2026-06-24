@@ -55,23 +55,41 @@ export default function FloorPlanDetailPage() {
         <div className="rounded-xl border border-stone-200 bg-stone-50 p-4">
           <div className="mb-3 flex items-center justify-between gap-3">
             <h2 className="text-sm font-semibold text-stone-900">Floor plan image</h2>
-            <p className="text-xs text-stone-500">
-              Place your image at <code className="rounded bg-stone-200 px-1">public/floorplans/{plan.id}.jpg</code>
-            </p>
+            {!plan.imagePath && (
+              <p className="text-xs text-stone-500">
+                Fallback: <code className="rounded bg-stone-200 px-1">public/floorplans/{plan.id}.jpg</code>
+              </p>
+            )}
           </div>
-          <div className="flex items-center justify-center rounded-lg border border-dashed border-stone-300 bg-white px-4 py-10">
-            {!imgError && (
+          <div className="flex flex-col items-center justify-center rounded-lg border border-dashed border-stone-300 bg-white p-6 min-h-[300px]">
+            {!imgError ? (
               <img
                 src={imageSrc}
                 alt={`${plan.plan} floor plan`}
-                className="max-h-96 w-full max-w-full object-contain"
+                className="max-h-[400px] w-full max-w-full object-contain rounded-md transition-opacity duration-300 ease-in-out"
                 onError={() => setImgError(true)}
               />
-            )}
-            {imgError && (
-              <p className="text-sm text-stone-500">
-                Floor plan preview will appear here once you add the image file.
-              </p>
+            ) : (
+              <div className="text-center py-8">
+                <svg
+                  className="mx-auto h-16 w-16 text-stone-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1}
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  />
+                </svg>
+                <p className="mt-4 text-sm font-medium text-stone-700">Preview not available</p>
+                <p className="mt-1 text-xs text-stone-500 max-w-xs mx-auto">
+                  A floor plan image preview is not provided by the property for this plan. You can view details on the website.
+                </p>
+              </div>
             )}
           </div>
         </div>

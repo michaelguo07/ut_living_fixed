@@ -224,6 +224,9 @@ def scrape_acc_property(name, property_id):
             
             av_text = safe_get(fp, "Availability", "AvText", default="Check Site")
             
+            image_url = fp.get("ImageURL", "")
+            image_path = f"https://www.americancampus.com{image_url}" if image_url else ""
+            
             results.append({
                 "property": name,
                 "plan": plan_title,
@@ -234,7 +237,8 @@ def scrape_acc_property(name, property_id):
                 "minPrice": int(min_price) if min_price else None,
                 "maxPrice": int(max_price) if max_price else None,
                 "availability": av_text,
-                "url": f"https://www.americancampus.com/api/lightning/floorplans/{property_id}"
+                "url": f"https://www.americancampus.com/api/lightning/floorplans/{property_id}",
+                "imagePath": image_path
             })
         print(f"    [OK] Found {len(results)} floor plans.")
         return results
@@ -310,6 +314,15 @@ def scrape_entrata_wp_json(name, domain):
         removed = fp.get("removed_from_entrata", False)
         availability = "Sold Out" if (is_disabled or removed) else "Available"
         
+        image_path = ""
+        files = fp.get("files")
+        if isinstance(files, list) and len(files) > 0:
+            image_path = files[0].get("url") or ""
+        if not image_path:
+            files_override = fp.get("files_override")
+            if isinstance(files_override, list) and len(files_override) > 0:
+                image_path = files_override[0].get("url") or ""
+                
         results.append({
             "property": name,
             "plan": plan_name,
@@ -320,7 +333,8 @@ def scrape_entrata_wp_json(name, domain):
             "minPrice": int(float(rent_min)) if rent_min else None,
             "maxPrice": int(float(rent_max)) if rent_max else None,
             "availability": availability,
-            "url": f"https://{domain}/floorplans/"
+            "url": f"https://{domain}/floorplans/",
+            "imagePath": image_path
         })
     print(f"    [OK] Found {len(results)} floor plans.")
     return results
@@ -375,7 +389,8 @@ def scrape_yugo_property(name, url):
                 "minPrice": price,
                 "maxPrice": None,
                 "availability": availability,
-                "url": rt.get("link", url)
+                "url": rt.get("link", url),
+                "imagePath": rt.get("imageLink", "")
             })
         print(f"    [OK] Found {len(results)} floor plans.")
         return results
@@ -423,6 +438,9 @@ def scrape_villas_on_rio():
             status_match = re.search(r'class="unit-status">\s*(.*?)\s*</div>', seg, re.DOTALL)
             status_text = status_match.group(1).strip() if status_match else "Available"
             
+            img_match = re.search(r'<img[^>]+src="([^"]+)"', seg)
+            image_path = img_match.group(1).strip() if img_match else ""
+            
             results.append({
                 "property": "Villas on Rio",
                 "plan": name,
@@ -433,7 +451,8 @@ def scrape_villas_on_rio():
                 "minPrice": price,
                 "maxPrice": None,
                 "availability": status_text,
-                "url": url
+                "url": url,
+                "imagePath": image_path
             })
         print(f"    [OK] Found {len(results)} floor plans.")
         return results
@@ -502,6 +521,9 @@ def scrape_inspire_on_22nd():
             is_sold_out = "sold-out" in seg or "student-sold-out" in seg
             availability = "Sold Out" if is_sold_out else "Available"
             
+            img_match = re.search(r'<img[^>]+src="([^"]+)"', seg)
+            image_path = img_match.group(1).strip() if img_match else ""
+            
             results.append({
                 "property": "Inspire on 22nd",
                 "plan": name,
@@ -512,7 +534,8 @@ def scrape_inspire_on_22nd():
                 "minPrice": price,
                 "maxPrice": None,
                 "availability": availability,
-                "url": url
+                "url": url,
+                "imagePath": image_path
             })
         print(f"    [OK] Found {len(results)} floor plans.")
         return results
@@ -573,6 +596,9 @@ def scrape_with_playwright(name, url):
             is_sold_out = "sold-out" in seg or "student-sold-out" in seg or "sold out" in seg.lower()
             availability = "Sold Out" if is_sold_out else "Available"
             
+            img_match = re.search(r'<img[^>]+src="([^"]+)"', seg)
+            image_path = img_match.group(1).strip() if img_match else ""
+            
             results.append({
                 "property": name,
                 "plan": name_val,
@@ -583,7 +609,8 @@ def scrape_with_playwright(name, url):
                 "minPrice": price,
                 "maxPrice": None,
                 "availability": availability,
-                "url": url
+                "url": url,
+                "imagePath": image_path
             })
         print(f"    [OK] Found {len(results)} floor plans.")
         return results
@@ -598,11 +625,16 @@ def scrape_with_playwright(name, url):
 
 def save_output(all_plans):
     """Saves uniform floorplans output to CSV and React floorPlans.js file."""
+    # Sanitize and ensure every plan has the imagePath key
+    for p in all_plans:
+        if "imagePath" not in p:
+            p["imagePath"] = ""
+
     # Write flat CSV for analysis
     csv_path = os.path.join(PROJECT_ROOT, "master_floorplans.csv")
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["property", "plan", "roomType", "beds", "baths", "sqFt", "minPrice", "maxPrice", "availability", "url"])
+        writer.writerow(["property", "plan", "roomType", "beds", "baths", "sqFt", "minPrice", "maxPrice", "availability", "url", "imagePath"])
         for p in all_plans:
             writer.writerow([
                 p.get("property", ""),
@@ -614,7 +646,8 @@ def save_output(all_plans):
                 p.get("minPrice"),
                 p.get("maxPrice"),
                 p.get("availability", ""),
-                p.get("url", "")
+                p.get("url", ""),
+                p.get("imagePath", "")
             ])
     print(f"[OK] Master flat CSV written to: {csv_path}")
 
@@ -627,7 +660,7 @@ const RAW_FLOOR_PLANS = {json.dumps(all_plans, indent=2)};
 export const FLOOR_PLANS = RAW_FLOOR_PLANS.map((p, index) => ({{
   ...p,
   id: `${{slugify(p.property)}}-${{slugify(p.plan)}}-${{index}}`,
-  imagePath: '',
+  imagePath: p.imagePath || '',
 }}));
 
 export function getFloorPlansForProperty(name) {{
