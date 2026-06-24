@@ -49,10 +49,6 @@ export default function ApartmentDetailPage() {
         </Link>
       </div>
 
-      <p className="mt-4 text-stone-600">
-        This is a placeholder detail page. You can fill in the fields below later (or hydrate them from your AI agent).
-      </p>
-
       <section className="mt-8 grid gap-4 sm:grid-cols-2">
         <Field label="Availability" value={apartment.availability} placeholder="(you’ll add this later)" />
         <Field label="Cost" value={apartment.cost} placeholder="(from your spreadsheet/agent)" />
@@ -79,6 +75,34 @@ export default function ApartmentDetailPage() {
             </a>
           ) : (
             <p className="mt-1 text-sm text-stone-600">(you’ll add this later)</p>
+          )}
+        </div>
+      </section>
+
+      <section className="mt-6 grid gap-4 sm:grid-cols-2">
+        <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">Pros</p>
+          {apartment.pros?.length ? (
+            <ul className="mt-2 list-inside list-disc text-sm text-stone-700">
+              {apartment.pros.map((p, i) => (
+                <li key={i}>{p}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-2 text-sm text-stone-600">(you’ll add this later)</p>
+          )}
+        </div>
+
+        <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wide text-red-600">Cons</p>
+          {apartment.cons?.length ? (
+            <ul className="mt-2 list-inside list-disc text-sm text-stone-700">
+              {apartment.cons.map((c, i) => (
+                <li key={i}>{c}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-2 text-sm text-stone-600">(you’ll add this later)</p>
           )}
         </div>
       </section>
@@ -152,34 +176,6 @@ export default function ApartmentDetailPage() {
             </table>
           </div>
         )}
-      </section>
-
-      <section className="mt-10 grid gap-4 sm:grid-cols-2">
-        <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
-          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">Pros</p>
-          {apartment.pros?.length ? (
-            <ul className="mt-2 list-inside list-disc text-sm text-stone-700">
-              {apartment.pros.map((p, i) => (
-                <li key={i}>{p}</li>
-              ))}
-            </ul>
-          ) : (
-            <p className="mt-2 text-sm text-stone-600">(you’ll add this later)</p>
-          )}
-        </div>
-
-        <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
-          <p className="text-xs font-semibold uppercase tracking-wide text-red-600">Cons</p>
-          {apartment.cons?.length ? (
-            <ul className="mt-2 list-inside list-disc text-sm text-stone-700">
-              {apartment.cons.map((c, i) => (
-                <li key={i}>{c}</li>
-              ))}
-            </ul>
-          ) : (
-            <p className="mt-2 text-sm text-stone-600">(you’ll add this later)</p>
-          )}
-        </div>
       </section>
     </div>
   )
