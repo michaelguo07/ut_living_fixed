@@ -63,6 +63,64 @@ def safe_get(d, *keys, default=""):
     return current
 
 
+def get_floor_plan_pros_cons(p):
+    pros = []
+    cons = []
+    
+    beds = p.get("beds")
+    baths = p.get("baths")
+    
+    # 1. Privacy & Bathrooms
+    if beds is not None and baths is not None:
+        if beds == 0 or beds == 1:
+            pros.append("Maximum privacy (no roommates)")
+        elif beds == baths:
+            pros.append("Private bathroom for every resident")
+        elif baths < beds:
+            cons.append(f"Shared bathroom ({int(beds)} residents sharing {int(baths) if baths.is_integer() else baths} baths)")
+            
+    # 2. Shared Rooms or interior layout
+    room_type_str = str(p.get("roomType", "")).lower()
+    plan_name_lower = str(p.get("plan", "")).lower()
+    
+    if "shared" in room_type_str or "shared" in plan_name_lower:
+        cons.append("Shared bedroom (limited privacy)")
+        
+    if "interior" in plan_name_lower or "windowless" in plan_name_lower or "cove" in plan_name_lower:
+        cons.append("Interior room (no exterior window)")
+        
+    # 3. Furnishings & Meals
+    prop_name = str(p.get("property", "")).lower()
+    if "callaway" in prop_name or "castilian" in prop_name:
+        pros.append("All-inclusive meals (meal plan included)")
+        pros.append("All utilities included (electricity, water, internet)")
+    else:
+        pros.append("Fully furnished")
+        
+    # 4. Pricing
+    min_price = p.get("minPrice")
+    if min_price:
+        if min_price < 1000:
+            pros.append("Budget-friendly rent (under $1,000/mo)")
+        elif min_price > 1700:
+            cons.append("Premium pricing tier")
+            
+    # 5. Affordable Program
+    if "smart" in plan_name_lower:
+        pros.append("Affordable SMART housing program rate")
+        
+    # 6. Availability
+    av = str(p.get("availability", "")).lower()
+    if "sold out" in av or "full" in av:
+        cons.append("Currently sold out / waitlist only")
+    elif "waitlist" in av:
+        cons.append("Waitlist status (limited immediate spots)")
+    elif "available" in av or "limited" in av:
+        pros.append("Direct lease available")
+        
+    return pros, cons
+
+
 def load_existing_floor_plans():
     """Reads existing floorPlans.js file and loads raw records as a cache fallback."""
     js_file = os.path.join(PROJECT_ROOT, "src", "data", "floorPlans.js")
@@ -625,16 +683,19 @@ def scrape_with_playwright(name, url):
 
 def save_output(all_plans):
     """Saves uniform floorplans output to CSV and React floorPlans.js file."""
-    # Sanitize and ensure every plan has the imagePath key
+    # Sanitize and ensure every plan has the imagePath key and pros/cons populated
     for p in all_plans:
         if "imagePath" not in p:
             p["imagePath"] = ""
+        pros, cons = get_floor_plan_pros_cons(p)
+        p["pros"] = pros
+        p["cons"] = cons
 
     # Write flat CSV for analysis
     csv_path = os.path.join(PROJECT_ROOT, "master_floorplans.csv")
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["property", "plan", "roomType", "beds", "baths", "sqFt", "minPrice", "maxPrice", "availability", "url", "imagePath"])
+        writer.writerow(["property", "plan", "roomType", "beds", "baths", "sqFt", "minPrice", "maxPrice", "availability", "url", "imagePath", "pros", "cons"])
         for p in all_plans:
             writer.writerow([
                 p.get("property", ""),
@@ -647,7 +708,9 @@ def save_output(all_plans):
                 p.get("maxPrice"),
                 p.get("availability", ""),
                 p.get("url", ""),
-                p.get("imagePath", "")
+                p.get("imagePath", ""),
+                ", ".join(p.get("pros", [])),
+                ", ".join(p.get("cons", []))
             ])
     print(f"[OK] Master flat CSV written to: {csv_path}")
 

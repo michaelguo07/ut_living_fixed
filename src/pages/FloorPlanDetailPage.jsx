@@ -152,6 +152,34 @@ export default function FloorPlanDetailPage() {
           </div>
         </div>
       </section>
+
+      <section className="mt-8 grid gap-4 sm:grid-cols-2">
+        <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">Pros</p>
+          {plan.pros?.length ? (
+            <ul className="mt-2 list-inside list-disc text-sm text-stone-700">
+              {plan.pros.map((p, i) => (
+                <li key={i}>{p}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-2 text-sm text-stone-500">No specific pros listed</p>
+          )}
+        </div>
+
+        <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wide text-red-600">Cons</p>
+          {plan.cons?.length ? (
+            <ul className="mt-2 list-inside list-disc text-sm text-stone-700">
+              {plan.cons.map((c, i) => (
+                <li key={i}>{c}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-2 text-sm text-stone-500">No specific cons listed</p>
+          )}
+        </div>
+      </section>
     </div>
   )
 }

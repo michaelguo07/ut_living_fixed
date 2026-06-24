@@ -75,6 +75,202 @@ const APARTMENT_DISTANCES = {
   'Inspire on 22nd': '0.2 miles (5 min walk)',
 }
 
+const APARTMENT_PROS = {
+  'The Nine at West Campus': [
+    'Rooftop swimming pool & sun deck',
+    'Modern fitness center & yoga studio',
+    'Fully furnished units with in-unit laundry',
+    'Quiet study lounges with free printing',
+  ],
+  'The Standard at Austin': [
+    'Extremely close to campus (0.2 miles)',
+    'Resort-style rooftop pool and hot tub',
+    'State-of-the-art 24/7 fitness center',
+    'Clubroom and resident lounge area',
+  ],
+  'Legacy on Rio': [
+    'Central West Campus location',
+    'Courtyard pool and fitness center',
+    'Fully furnished units',
+    'Good study space and computer lab',
+  ],
+  'The Mark Austin': [
+    'Premium modern building built in 2023',
+    'Rooftop pool deck and fire pits',
+    'Indoor golf simulator',
+    'High-end fitness center & sauna',
+  ],
+  'The Block (various locations)': [
+    'Affordable student housing rates',
+    'Affordable SMART housing program options',
+    'Multiple locations very close to campus',
+    'Furnished options and study spaces',
+  ],
+  'Callaway House': [
+    'Freshman dorm-style with food included',
+    'All-inclusive meal plan (unlimited dining)',
+    'Very close to campus (0.3 miles)',
+    'Great social environment for incoming students',
+    'Housekeeping services available',
+  ],
+  'The Castilian': [
+    'Freshman dorm-style with meal plans',
+    'Excellent location (0.2 miles from campus)',
+    'Meal plan with dining hall access included',
+    '24/7 computer lab and study areas',
+    'Active student community events',
+  ],
+  '26 West': [
+    'Large courtyard pool with grill stations',
+    'Spacious resident clubhouse and study area',
+    '24/7 fitness center and basketball court',
+    'Furnished apartments with in-unit washer/dryer',
+  ],
+  'Crest at Pearl': [
+    'Quieter West Campus location',
+    'Peaceful courtyard and outdoor grill areas',
+    'Fully equipped fitness center',
+    'Assigned garage parking available',
+  ],
+  'Texan & Vintage': [
+    'Unique character and layout designs',
+    'Located in a quieter pocket of West Campus',
+    'Fully furnished floor plans',
+    'Convenient access to nearby dining options',
+  ],
+  'Villas on Rio': [
+    'Ultra-luxury amenities (spa, sauna, steam room)',
+    'Meditation room and state-of-the-art fitness center',
+    'Rooftop pool with cabanas and Austin views',
+    'Smart home automation and designer finishes',
+  ],
+  'ION Austin': [
+    'Close to Guadalupe Street dining',
+    'Courtyard swimming pool and sun loungers',
+    'Fully furnished units',
+    'Fitness center and study lounges',
+  ],
+  'Skyloft': [
+    'Stunning high-rise views of West Campus & UT Tower',
+    'Rooftop pool and fitness center',
+    'Fully furnished with modern appliances',
+    'Excellent walkability to campus (0.4 miles)',
+  ],
+  'Moontower': [
+    'Extremely close to campus (0.2 miles)',
+    'Rooftop pool, spin studio, and fitness center',
+    'Free resident coffee bar',
+    'Luxury modern finishes and study rooms',
+  ],
+  'Yugo Austin Waterloo': [
+    'Brand new high-rise building with luxury finishes',
+    'Rooftop pool, lounge, and premium gym',
+    'Excellent study spaces and conference rooms',
+    'Fully furnished with in-unit laundry',
+  ],
+  'Yugo Austin Rio': [
+    'Located in the heart of West Campus',
+    'Rooftop pool deck and sun deck',
+    'Fitness center and game room',
+    'Fully furnished with standard student amenities',
+  ],
+  'Inspire on 22nd': [
+    'Very close to campus (0.2 miles)',
+    'Rooftop pool and fitness center',
+    'Quiet study rooms and computer stations',
+    'Fully furnished apartments',
+  ],
+}
+
+const APARTMENT_CONS = {
+  'The Nine at West Campus': [
+    'High monthly rental rates',
+    'Garage parking is expensive (~$150/mo)',
+    'Utilities are not included in the rent price',
+  ],
+  'The Standard at Austin': [
+    'Premium rent pricing tier',
+    'Expensive garage parking fees',
+    'High density/social environment can be noisy',
+    'Utilities are billed separately',
+  ],
+  'Legacy on Rio': [
+    'Paid garage parking is limited',
+    'Water and electricity utilities are billed extra',
+    'Some bedrooms in multi-bed units are small',
+  ],
+  'The Mark Austin': [
+    'High premium rental rates',
+    'Expensive parking fees (~$160/mo)',
+    'Monthly utilities are not included',
+  ],
+  'The Block (various locations)': [
+    'Older buildings compared to new high-rises',
+    'Amenities are more basic than luxury towers',
+    'Paid parking and limited availability',
+  ],
+  'Callaway House': [
+    'Mandatory meal plan makes it very expensive',
+    'Shared bedrooms offer limited privacy',
+    'Strict community guidelines (dorm rules)',
+  ],
+  'The Castilian': [
+    'Dorm-style layout with shared bedrooms',
+    'High overall cost due to required meal plans',
+    'Restricted kitchen access (no private kitchen)',
+  ],
+  '26 West': [
+    'Paid parking fee is extra',
+    'Utilities are billed separately',
+    'Older building showing some wear and tear',
+  ],
+  'Crest at Pearl': [
+    'Further walk from central campus (0.7 miles)',
+    'Fewer nearby restaurant options',
+    'Paid parking and separate utility billing',
+  ],
+  'Texan & Vintage': [
+    '15-16 minute walk to the central campus',
+    'More basic amenities than modern high-rises',
+    'Utilities and parking are not included',
+  ],
+  'Villas on Rio': [
+    'Premium luxury pricing tier',
+    'High parking fee (~$200/mo)',
+    'Separate utility bills',
+  ],
+  'ION Austin': [
+    'Further walk to campus (0.7 miles / 14 mins)',
+    'Older building and standard amenities',
+    'Parking and utilities are extra',
+  ],
+  'Skyloft': [
+    'Premium pricing on upper floors',
+    'High parking fees',
+    'Elevator wait times can be long during peak hours',
+  ],
+  'Moontower': [
+    'Premium pricing tier',
+    'Paid parking is expensive',
+    'High demand means units sell out very early',
+  ],
+  'Yugo Austin Waterloo': [
+    'High premium pricing',
+    'Expensive garage parking',
+    'Resident pays for water and electricity',
+  ],
+  'Yugo Austin Rio': [
+    'Can be noisy on weekends',
+    'High parking fees',
+    'Utilities are billed separately',
+  ],
+  'Inspire on 22nd': [
+    'Paid garage parking only',
+    'Monthly utilities are extra',
+    'Layouts can feel slightly compact in multi-bed configurations',
+  ],
+}
+
 /**
  * Spreadsheet-backed summary data (from `austin_student_housing.xlsx` → "Summary by Property").
  * Note: the XLSX currently only contains 11 properties; the others remain placeholders.
@@ -191,8 +387,8 @@ export const UT_AUSTIN_APARTMENTS = APARTMENT_NAMES.map((name) => {
     totalPlans: summary?.totalPlans ?? null,
     availablePlans: summary?.availablePlans ?? null,
     lowestPrice: summary?.lowestPrice ?? null,
-    pros: [],
-    cons: [],
+    pros: APARTMENT_PROS[name] || [],
+    cons: APARTMENT_CONS[name] || [],
   }
 })
 
