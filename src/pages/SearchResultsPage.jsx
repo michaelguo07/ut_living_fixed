@@ -1,27 +1,37 @@
 import { useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import ApartmentList from '../components/apartments/ApartmentList'
 import LoadingPlaceholder from '../components/ui/LoadingPlaceholder'
+import CampusSearch from '../components/search/CampusSearch'
 import { useAIAgent } from '../hooks/useAIAgent'
-
-const CAMPUS_NAME = 'UT Austin'
 
 export default function SearchResultsPage() {
   const { apartments, loading, error, search } = useAIAgent()
+  const [searchParams] = useSearchParams()
+  
+  const campusQuery = searchParams.get('campus') || 'UT Austin'
 
   useEffect(() => {
-    search(CAMPUS_NAME)
-  }, [search])
+    search(campusQuery)
+  }, [search, campusQuery])
 
   const showEmpty = !loading && !error && apartments.length === 0
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
-      <h1 className="text-2xl font-bold text-stone-900 sm:text-3xl">
-        Apartments near UT Austin
-      </h1>
-      <p className="mt-1 text-stone-600">
-        Off-campus housing near the Forty Acres.
-      </p>
+      <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between border-b border-stone-200 pb-6">
+        <div>
+          <h1 className="text-2xl font-bold text-stone-900 sm:text-3xl">
+            Apartments near {campusQuery}
+          </h1>
+          <p className="mt-1 text-sm text-stone-600">
+            Off-campus student housing options.
+          </p>
+        </div>
+        <div className="w-full sm:max-w-xs">
+          <CampusSearch defaultValue={campusQuery} compact={true} />
+        </div>
+      </div>
 
       <div className="mt-10">
         {error && (
@@ -32,16 +42,16 @@ export default function SearchResultsPage() {
         {loading && <LoadingPlaceholder />}
         {showEmpty && (
           <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 py-12 text-center">
-            <p className="font-medium text-stone-700">No apartments found yet.</p>
+            <p className="font-medium text-stone-700">No apartments found for &quot;{campusQuery}&quot;.</p>
             <p className="mt-1 text-sm text-stone-500">
-              Connect your AI agent in <code className="rounded bg-stone-200 px-1">src/hooks/useAIAgent.js</code> to see real results here.
+              Only UT Austin apartments are supported in our current local database. Try searching for &quot;UT Austin&quot;.
             </p>
           </div>
         )}
         {!loading && !error && apartments.length > 0 && (
           <>
             <p className="mb-4 text-sm text-stone-600">
-              {apartments.length} result{apartments.length !== 1 ? 's' : ''} near UT Austin
+              {apartments.length} result{apartments.length !== 1 ? 's' : ''} near {campusQuery}
             </p>
             <ApartmentList apartments={apartments} />
           </>

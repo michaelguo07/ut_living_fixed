@@ -118,20 +118,20 @@ export default function ApartmentDetailPage() {
                           {plan.plan}
                         </Link>
                       </td>
-                    <td className="px-4 py-3 text-stone-700">{plan.roomType}</td>
-                    <td className="px-4 py-3 text-stone-700">{plan.beds}</td>
-                    <td className="px-4 py-3 text-stone-700">{plan.baths}</td>
-                    <td className="px-4 py-3 text-stone-700">{plan.sqFt}</td>
-                    <td className="px-4 py-3 text-stone-700">
-                      {typeof plan.minPrice === 'number' && Number.isFinite(plan.minPrice)
-                        ? `$${plan.minPrice.toLocaleString()}/mo`
-                        : '—'}
-                    </td>
-                    <td className="px-4 py-3 text-stone-700">
-                      {typeof plan.maxPrice === 'number' && Number.isFinite(plan.maxPrice)
-                        ? `$${plan.maxPrice.toLocaleString()}/mo`
-                        : '—'}
-                    </td>
+                      <td className="px-4 py-3 text-stone-700">{plan.roomType}</td>
+                      <td className="px-4 py-3 text-stone-700">{plan.beds}</td>
+                      <td className="px-4 py-3 text-stone-700">{plan.baths}</td>
+                      <td className="px-4 py-3 text-stone-700">{plan.sqFt}</td>
+                      <td className="px-4 py-3 text-stone-700">
+                        {typeof plan.minPrice === 'number' && Number.isFinite(plan.minPrice)
+                          ? `$${plan.minPrice.toLocaleString()}/mo`
+                          : '—'}
+                      </td>
+                      <td className="px-4 py-3 text-stone-700">
+                        {typeof plan.maxPrice === 'number' && Number.isFinite(plan.maxPrice)
+                          ? `$${plan.maxPrice.toLocaleString()}/mo`
+                          : '—'}
+                      </td>
                       <td className="px-4 py-3 text-stone-700">{plan.availability || '—'}</td>
                       <td className="px-4 py-3 text-right">
                         <button

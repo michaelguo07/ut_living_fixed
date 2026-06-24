@@ -1,0 +1,495 @@
+property,plan,roomType,beds,baths,sqFt,minPrice,maxPrice,availability,url
+The Block (various locations),23rd: Efficiency SMART,0 Bed / 1 Bath,0,1.0,375,1359,1359,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: Efficiency Premium SMART,0 Bed / 1 Bath,0,1.0,323,1359,1359,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: Efficiency A SMART,0 Bed / 1 Bath,0,1.0,380,1359,1359,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: Efficiency B SMART,0 Bed / 1 Bath,0,1.0,571,1359,1359,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: Efficiency A SMART,0 Bed / 1 Bath,0,1.0,381,1359,1359,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: Efficiency B SMART,0 Bed / 1 Bath,0,1.0,571,1359,1359,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: Efficiency C,0 Bed / 1 Bath,0,1.0,458,1401,1401,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 1 Bed - 1 Bath A SMART,1 Bed / 1 Bath,1,1.0,632,1447,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 1 Bed - 1 Bath B Premium,1 Bed / 1 Bath,1,1.0,546,1674,1674,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 1 Bed - 1 Bath B Premium SMART,1 Bed / 1 Bath,1,1.0,546,1447,1447,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 1 Bed - 1 Bath C Premium,1 Bed / 1 Bath,1,1.0,720,1744,1744,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 1 Bed - 1 Bath C Premium SMART,1 Bed / 1 Bath,1,1.0,720,1447,1447,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 2 Bed - 1 Bath,2 Bed / 1 Bath,2,1.0,806,1184,1224,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 2 Bed - 2 Bath A Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,812,1139,1179,Available,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 2 Bed - 2 Bath A Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,,564,564,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 2 Bed - 2 Bath B Premium,2 Bed / 2 Bath,2,2.0,926,1179,1199,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 2 Bed - 2 Bath C Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,994,1074,1134,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 2 Bed - 2 Bath D Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,,1164,1164,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 2 Bed - 2 Bath D Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,,564,564,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 2 Bed - 2 Bath E Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,1112,1204,1214,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 3 Bed - 2 Bath Premium,3 Bed / 2 Bath,3,2.0,1176,964,1044,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 3 Bed - 3 Bath A,3 Bed / 3 Bath,3,3.0,1167,1129,1139,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 3 Bed - 3 Bath B Premium,3 Bed / 3 Bath,3,3.0,,1059,1139,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 3 Bed - 3 Bath C Private Bedroom,3 Bed / 3 Bath,3,3.0,1209,1029,1039,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 3 Bed - 3 Bath D,3 Bed / 3 Bath,3,3.0,1284,869,879,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 4 Bed - 2 Bath Premium,4 Bed / 2 Bath,4,2.0,1576,1009,1009,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 4 Bed - 4 Bath,4 Bed / 4 Bath,4,4.0,1400,1169,1179,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),23rd: 4 Bed - 4 Bath Premium Private Bedroom,4 Bed / 4 Bath,4,4.0,1400,1204,1284,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 1 Bath A Premium w/Loft,2 Bed / 1 Bath,2,1.0,1064,1469,1479,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 1 Bath B Premium w/Loft,2 Bed / 1 Bath,2,1.0,1118,1449,1459,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 2 Bath A,2 Bed / 2 Bath,2,2.0,,1074,1074,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 2 Bath B Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,1056,1029,1089,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 2 Bath C Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,,1154,1174,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 2 Bath C Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,1100,469,479,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 2 Bath D Premium,2 Bed / 2 Bath,2,2.0,,1199,1219,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 2 Bath D Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,1130,509,519,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 2 Bath E Premium w/Loft Private Bedroom,2 Bed / 2 Bath,2,2.0,1270,1394,1414,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 2 Bed - 2 Bath E Premium w/Loft Shared Bedroom,2 Bed / 2 Bath,2,2.0,1270,649,669,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 3 Bed - 2 Bath Premium w/Loft Shared Bedroom,3 Bed / 2 Bath,3,2.0,1521,549,569,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 3 Bed - 3 Bath A Premium Private Bedroom,3 Bed / 3 Bath,3,3.0,,1399,1419,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 3 Bed - 3 Bath A Premium Shared Bedroom,3 Bed / 3 Bath,3,3.0,1485,464,504,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 3 Bed - 3 Bath A Premium w/Loft Private Bedroom,3 Bed / 3 Bath,3,3.0,,1419,1469,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 3 Bed - 3 Bath B Premium Private Bedroom,3 Bed / 3 Bath,3,3.0,,1259,1279,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 4 Bed - 2 Bath A Premium Private Bedroom,4 Bed / 2 Bath,4,2.0,1692,804,814,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 4 Bed - 2 Bath B Premium w/Loft Private Bedroom,4 Bed / 2 Bath,4,2.0,1724,969,979,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 4 Bed - 2 Bath C Premium w/Loft Shared Bedroom,4 Bed / 2 Bath,4,2.0,2100,629,639,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 4 Bed - 3 Bath A Premium Private Bedroom,4 Bed / 3 Bath,4,3.0,1692,949,989,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 4 Bed - 3 Bath B Premium Private Bedroom,4 Bed / 3 Bath,4,3.0,1752,959,999,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 4 Bed - 3 Bath C Premium Private Bedroom,4 Bed / 3 Bath,4,3.0,1924,1019,1049,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 4 Bed - 3 Bath D Premium w/Loft Private Bedroom,4 Bed / 3 Bath,4,3.0,1928,1024,1064,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 4 Bed - 3 Bath E Premium,4 Bed / 3 Bath,4,3.0,2292,1114,1154,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 5 Bed - 3 Bath Premium w/Loft Shared Bedroom,5 Bed / 3 Bath,5,3.0,3140,594,604,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 5 Bed - 4 Bath Premium Private Bedroom,5 Bed / 4 Bath,5,4.0,2495,984,1024,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 5 Bed - 4 Bath Premium w/Loft Private Bedroom,5 Bed / 4 Bath,5,4.0,2730,1064,1094,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th E: 5 Bed - 4 Bath Premium w/Loft Shared Bedroom,5 Bed / 4 Bath,5,4.0,,524,534,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 1 Bed - 1 Bath A Premium - Furnished,1 Bed / 1 Bath,1,1.0,,1674,1674,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 1 Bed - 1 Bath A Premium SMART,1 Bed / 1 Bath,1,1.0,414,1447,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 1 Bed - 1 Bath B,1 Bed / 1 Bath,1,1.0,502,1609,1609,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 1 Bed - 1 Bath B Premium Private Bedroom,1 Bed / 1 Bath,1,1.0,502,1619,1619,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 1 Bed - 1 Bath B Premium SMART,1 Bed / 1 Bath,1,1.0,502,1447,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 1 Bed - 1 Bath B SMART,1 Bed / 1 Bath,1,1.0,,1447,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 1 Bed - 1 Bath C Premium w/Loft,1 Bed / 1 Bath,1,1.0,,1639,1639,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 2 Bed - 1 Bath Premium w/Loft,2 Bed / 1 Bath,2,1.0,1046,1724,1724,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 2 Bed - 2 Bath A Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,888,1139,1139,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 2 Bed - 2 Bath B,2 Bed / 2 Bath,2,2.0,896,1174,1174,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 2 Bed - 2 Bath B Premium,2 Bed / 2 Bath,2,2.0,910,1184,1184,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 2 Bed - 2 Bath C Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,934,1074,1114,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 2 Bed - 2 Bath C Premium w/Loft Private Bedroom,2 Bed / 2 Bath,2,2.0,1056,1214,1264,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 2 Bed - 2 Bath D Premium w/Loft Private Bedroom,2 Bed / 2 Bath,2,2.0,996,1169,1169,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 2 Bed - 2 Bath E Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,,1139,1139,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 2 Bed - 2 Bath E Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,1042,504,504,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 3 Bed - 2 Bath A,3 Bed / 2 Bath,3,2.0,1185,1129,1204,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 3 Bed - 2 Bath B Premium,3 Bed / 2 Bath,3,2.0,1206,1229,1229,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 3 Bed - 3 Bath A Premium Private Bedroom,3 Bed / 3 Bath,3,3.0,1185,1124,1204,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 3 Bed - 3 Bath B,3 Bed / 3 Bath,3,3.0,1185,969,979,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 3 Bed - 3 Bath C Premium,3 Bed / 3 Bath,3,3.0,1149,1084,1164,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 3 Bed - 3 Bath D Premium,3 Bed / 3 Bath,3,3.0,1221,1079,1119,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 3 Bed - 3 Bath E Premium w/Loft Private Bedroom,3 Bed / 3 Bath,3,3.0,1320,1129,1209,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 4 Bed - 2 Bath A Premium,4 Bed / 2 Bath,4,2.0,1536,989,989,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 4 Bed - 2 Bath B Premium,4 Bed / 2 Bath,4,2.0,1580,1014,1014,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 4 Bed - 2 Bath C Premium,4 Bed / 2 Bath,4,2.0,1668,984,1024,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 4 Bed - 4 Bath A,4 Bed / 4 Bath,4,4.0,1356,1249,1259,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),25th W: 4 Bed - 4 Bath A w/Loft,4 Bed / 4 Bath,4,4.0,,1399,1409,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 1 Bed - 1 Bath A,1 Bed / 1 Bath,1,1.0,521,1539,1539,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 1 Bed - 1 Bath A Premium,1 Bed / 1 Bath,1,1.0,521,1469,1519,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 1 Bed - 1 Bath A Premium SMART,1 Bed / 1 Bath,1,1.0,521,1447,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 1 Bed - 1 Bath B,1 Bed / 1 Bath,1,1.0,595,1454,1454,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 1 Bed - 1 Bath B SMART,1 Bed / 1 Bath,1,1.0,595,1447,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 1 Bed - 1 Bath C,1 Bed / 1 Bath,1,1.0,618,1454,1454,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 2 Bed - 2 Bath A Premium,2 Bed / 2 Bath,2,2.0,886,979,1019,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 2 Bed - 2 Bath B Premium  Private Bedroom,2 Bed / 2 Bath,2,2.0,884,1019,1059,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 2 Bed - 2 Bath B Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,,469,469,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 2 Bed - 2 Bath B Private Bedroom,2 Bed / 2 Bath,2,2.0,914,999,1039,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 2 Bed - 2 Bath B Shared Bedroom,2 Bed / 2 Bath,2,2.0,1000,439,439,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 2 Bed - 2 Bath C Premium,2 Bed / 2 Bath,2,2.0,930,1039,1039,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 2 Bed - 2 Bath D Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,1066,1049,1089,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 2 Bed - 2 Bath D Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,1066,469,469,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 3 Bed - 3 Bath Premium,3 Bed / 3 Bath,3,3.0,1236,1204,1214,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 4 Bed - 2 Bath Premium,4 Bed / 2 Bath,4,2.0,1504,834,874,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),28th: 4 Bed - 4 Bath Premium,4 Bed / 4 Bath,4,4.0,1472,1079,1119,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 1 Bed - 1 Bath A Premium,1 Bed / 1 Bath,1,1.0,521,1454,1454,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 1 Bed - 1 Bath A Premium SMART,1 Bed / 1 Bath,1,1.0,521,838,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 1 Bed - 1 Bath B SMART,1 Bed / 1 Bath,1,1.0,541,838,838,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 1 Bed - 1 Bath C Premium,1 Bed / 1 Bath,1,1.0,613,1454,1504,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 1 Bed - 1 Bath C Premium SMART,1 Bed / 1 Bath,1,1.0,613,838,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 1 Bed - 1 Bath D,1 Bed / 1 Bath,1,1.0,655,1454,1454,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 1 Bed - 1 Bath E Premium w/Loft,1 Bed / 1 Bath,1,1.0,712,1619,1619,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath A Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,880,379,379,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath A Shared Bedroom,2 Bed / 2 Bath,2,2.0,878,369,369,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath B Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,886,899,939,Available,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath C Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,902,904,944,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath C Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,902,399,399,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath D Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,956,929,969,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath D Shared Bedroom,2 Bed / 2 Bath,2,2.0,916,369,369,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath E Premium w/Loft Shared Bedroom,2 Bed / 2 Bath,2,2.0,,474,474,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath F Premium w/Loft Private Bedroom,2 Bed / 2 Bath,2,2.0,1004,1064,1064,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath F Premium w/Loft Shared Bedroom,2 Bed / 2 Bath,2,2.0,,439,439,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath G Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,1056,924,964,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath G Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,1056,439,439,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath H Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,1069,439,439,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath I Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,1070,439,439,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath J Premium w/Loft,2 Bed / 2 Bath,2,2.0,1084,1104,1104,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath K Premium w/Loft Private Bedroom,2 Bed / 2 Bath,2,2.0,1180,1039,1039,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath L Premium w/Loft Private Bedroom,2 Bed / 2 Bath,2,2.0,1204,1059,1099,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath M Premium w/Loft,2 Bed / 2 Bath,2,2.0,1003,1019,1019,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 2 Bed - 2 Bath N Premium,2 Bed / 2 Bath,2,2.0,1290,939,939,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 4 Bed - 2 Bath A Premium,4 Bed / 2 Bath,4,2.0,,874,874,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 4 Bed - 2 Bath A Premium w/ Loft Private Bedroom,4 Bed / 2 Bath,4,2.0,,1054,1054,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 4 Bed - 2 Bath B Premium,4 Bed / 2 Bath,4,2.0,1548,874,874,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Leon: 4 Bed - 4 Bath Premium,4 Bed / 4 Bath,4,4.0,1456,959,1039,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 1 Bed - 1 Bath A Premium Private Bedroom,1 Bed / 1 Bath,1,1.0,521,1454,1454,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 1 Bed - 1 Bath A Premium SMART,1 Bed / 1 Bath,1,1.0,521,1447,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 1 Bed - 1 Bath B Premium w/Loft,1 Bed / 1 Bath,1,1.0,,1774,1774,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 2 Bed - 2 Bath A Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,886,1039,1079,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 2 Bed - 2 Bath B Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,902,539,539,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 2 Bed - 2 Bath B Shared Bedroom,2 Bed / 2 Bath,2,2.0,914,529,529,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 2 Bed - 2 Bath C Premium w/Loft,2 Bed / 2 Bath,2,2.0,1012,1199,1199,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 2 Bed - 2 Bath D Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,1062,1169,1239,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 2 Bed - 2 Bath E Premium w/Loft,2 Bed / 2 Bath,2,2.0,1240,1264,1264,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 3 Bed - 3 Bath A Premium Private Bedroom,3 Bed / 3 Bath,3,3.0,1236,1204,1284,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 3 Bed - 3 Bath B Premium,3 Bed / 3 Bath,3,3.0,1317,1254,1264,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 4 Bed - 2 Bath Premium,4 Bed / 2 Bath,4,2.0,1488,1049,1089,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl N: 4 Bed - 4 Bath Premium w/Loft,4 Bed / 4 Bath,4,4.0,1584,1429,1439,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 1 Bed - 1 Bath A,1 Bed / 1 Bath,1,1.0,,1454,1454,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 1 Bed - 1 Bath A Premium Private Bedroom,1 Bed / 1 Bath,1,1.0,521,1454,1454,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 1 Bed - 1 Bath A Premium Shared Bedroom,1 Bed / 1 Bath,1,1.0,,729,729,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 1 Bed - 1 Bath B Premium,1 Bed / 1 Bath,1,1.0,,1554,1554,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 2 Bed - 2 Bath A Premium,2 Bed / 2 Bath,2,2.0,854,1119,1159,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 2 Bed - 2 Bath B Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,902,1149,1149,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 2 Bed - 2 Bath B Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,,539,539,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 2 Bed - 2 Bath B Shared Bedroom,2 Bed / 2 Bath,2,2.0,,539,539,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 2 Bed - 2 Bath C Premium w/Loft Shared Bedroom,2 Bed / 2 Bath,2,2.0,1010,619,619,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 2 Bed - 2 Bath D Premium Private Bedroom,2 Bed / 2 Bath,2,2.0,1064,1189,1259,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 2 Bed - 2 Bath D Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,1064,554,584,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 2 Bed - 2 Bath E Premium w/Loft,2 Bed / 2 Bath,2,2.0,1240,604,604,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 3 Bed - 3 Bath A Premium Private Bedroom,3 Bed / 3 Bath,3,3.0,1236,1204,1284,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 3 Bed - 3 Bath B Premium,3 Bed / 3 Bath,3,3.0,1314,1244,1284,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 4 Bed - 2 Bath Premium,4 Bed / 2 Bath,4,2.0,1488,1049,1089,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Pearl S: 4 Bed - 4 Bath Premium,4 Bed / 4 Bath,4,4.0,1448,1324,1334,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 1 Bed - 1 Bath A Premium,1 Bed / 1 Bath,1,1.0,505,1474,1474,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 1 Bed - 1 Bath A Premium SMART,1 Bed / 1 Bath,1,1.0,505,838,1447,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 1 Bed - 1 Bath B,1 Bed / 1 Bath,1,1.0,621,1454,1454,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 1 Bed - 1 Bath B SMART,1 Bed / 1 Bath,1,1.0,621,1447,1447,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 2 Bed - 2 Bath A Premium,2 Bed / 2 Bath,2,2.0,842,919,939,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 2 Bed - 2 Bath B Premium,2 Bed / 2 Bath,2,2.0,1000,889,949,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 2 Bed - 2 Bath B Premium Shared Bedroom,2 Bed / 2 Bath,2,2.0,1000,439,439,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 2 Bed - 2 Bath Premium w/Study,2 Bed / 2 Bath,2,2.0,1086,879,879,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 3 Bed - 2 Bath A Premium,3 Bed / 2 Bath,3,2.0,1212,839,909,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 3 Bed - 2 Bath B Premium,3 Bed / 2 Bath,3,2.0,1488,844,919,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 3 Bed - 3 Bath A Premium,3 Bed / 3 Bath,3,3.0,1353,1154,1184,Waitlist,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 3 Bed - 3 Bath B Premium Private Bedroom,3 Bed / 3 Bath,3,3.0,1461,899,939,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 4 Bed - 2 Bath Premium,4 Bed / 2 Bath,4,2.0,1840,899,949,Available,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 4 Bed - 4 Bath Premium,4 Bed / 4 Bath,4,4.0,1400,954,1034,Available,https://www.americancampus.com/api/lightning/floorplans/671
+The Block (various locations),Rio: 5 Bed - 3 Bath Premium,5 Bed / 3 Bath,5,3.0,1905,759,809,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/671
+Callaway House,Deluxe Studio Apartment Alt - SMART,0 Bed / 1 Bath,0,1.0,,1959,1959,Waitlist,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,Deluxe Studio Suite - SMART,0 Bed / 1 Bath,0,1.0,,1879,1879,Waitlist,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,Deluxe Studio Suite Alt - SMART,0 Bed / 1 Bath,0,1.0,,1879,1879,Waitlist,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,Standard Studio Apartment - SMART,0 Bed / 1 Bath,0,1.0,,1959,1959,Waitlist,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,Standard Studio Suite - SMART,0 Bed / 1 Bath,0,1.0,,1879,1879,Waitlist,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,2 Bed - 2 Bath Apartment - Corner Unit + Floors 16-17,2 Bed / 2 Bath,2,2.0,,3624,3624,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,2 Bed - 2 Bath Apartment - Floors 16-17,2 Bed / 2 Bath,2,2.0,,3574,3574,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,2 Bed - 2 Bath Apartment Alt - Floors 16-17,2 Bed / 2 Bath,2,2.0,,3574,3574,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,2 Bed - 2 Bath Suite Alt Double,2 Bed / 2 Bath,2,2.0,,2184,2184,Waitlist,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,2 Bed - 2 Bath Suite Double,2 Bed / 2 Bath,2,2.0,,2184,2234,Waitlist,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,2 Bed - 2 Bath Suite Double - Corner Unit,2 Bed / 2 Bath,2,2.0,,2359,2409,Waitlist,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,3 Bed - 3 Bath Apartment - Corner Unit + Floors 16-17,3 Bed / 3 Bath,3,3.0,,3424,3424,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,3 Bed - 3 Bath Apartment - Floors 16-17,3 Bed / 3 Bath,3,3.0,,3249,3249,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,3 Bed - 3 Bath Apartment Alt - Corner Unit + Floors 16-17,3 Bed / 3 Bath,3,3.0,,3424,3424,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,3 Bed - 3 Bath Apartment Alt - Floors 16-17,3 Bed / 3 Bath,3,3.0,,3249,3249,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,3 Bed - 3 Bath Suite Single,3 Bed / 3 Bath,3,3.0,,3199,3199,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,4 Bed - 4 Bath Suite Alt Single - Corner Unit,4 Bed / 4 Bath,4,4.0,,3274,3274,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,4 Bed - 4 Bath Suite Single,4 Bed / 4 Bath,4,4.0,,3099,3149,Available,https://www.americancampus.com/api/lightning/floorplans/685
+Callaway House,4 Bed - 4 Bath Suite Single - Corner Unit,4 Bed / 4 Bath,4,4.0,,3274,3324,Available,https://www.americancampus.com/api/lightning/floorplans/685
+The Castilian,1 Bed - 1 Bath,1 Bed / 1 Bath,1,1.0,,2829,2879,Waitlist,https://www.americancampus.com/api/lightning/floorplans/674
+The Castilian,2 Bed - 1 Bath,1 Bed / 1 Bath,1,1.0,227,1649,2769,Available,https://www.americancampus.com/api/lightning/floorplans/674
+26 West,1 Bed - 1 Bath A,1 Bed / 1 Bath,1,1.0,600,2309,2319,Waitlist,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,1 Bed - 1 Bath B,1 Bed / 1 Bath,1,1.0,600,2309,2319,Waitlist,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,1 Bed - 1 Bath SMART,1 Bed / 1 Bath,1,1.0,490,1702,1702,Waitlist,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,2 Bed - 1 Bath A,2 Bed / 1 Bath,2,1.0,886,1484,1484,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,2 Bed - 1 Bath B,2 Bed / 1 Bath,2,1.0,886,1469,1469,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,2 Bed - 2 Bath C,2 Bed / 2 Bath,2,2.0,1037,1479,1479,Waitlist,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,2 Bed - 2 Bath Corner A,2 Bed / 2 Bath,2,2.0,990,1504,1504,Waitlist,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,2 Bed - 2 Bath Corner B,2 Bed / 2 Bath,2,2.0,1040,1599,1609,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,2 Bed - 2 Bath D,2 Bed / 2 Bath,2,2.0,1014,1524,1524,Waitlist,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,2 Bed - 2 Bath w/Study,2 Bed / 2 Bath,2,2.0,1016,1529,1529,Waitlist,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,4 Bed - 2 Bath,4 Bed / 2 Bath,4,2.0,1300,1324,1334,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,4 Bed - 4 Bath A,4 Bed / 4 Bath,4,4.0,1470,1429,1459,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/687
+26 West,4 Bed - 4 Bath B,4 Bed / 4 Bath,4,4.0,1470,1344,1384,Waitlist,https://www.americancampus.com/api/lightning/floorplans/687
+Crest at Pearl,Studio A - SMART,0 Bed / 1 Bath,0,1.0,,1029,1029,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,Studio B - SMART,0 Bed / 1 Bath,0,1.0,,1598,1598,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,Studio C - SMART,0 Bed / 1 Bath,0,1.0,,1029,1029,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,Studio D - SMART,0 Bed / 1 Bath,0,1.0,,1029,1029,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,Studio E - SMART,0 Bed / 1 Bath,0,1.0,,1598,1598,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,1 Bed - 1 Bath A,1 Bed / 1 Bath,1,1.0,,1879,1879,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,1 Bed - 1 Bath A - SMART,1 Bed / 1 Bath,1,1.0,,1598,1598,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,1 Bed - 1 Bath B,1 Bed / 1 Bath,1,1.0,,2099,2099,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,1 Bed - 1 Bath C,1 Bed / 1 Bath,1,1.0,,2589,2589,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,1 Bed - 1 Bath D,1 Bed / 1 Bath,1,1.0,,2199,2199,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 1 Bath A,2 Bed / 1 Bath,2,1.0,,1319,1319,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 1 Bath B,2 Bed / 1 Bath,2,1.0,,1344,1344,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 2 Bath A,2 Bed / 2 Bath,2,2.0,,1239,1239,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 2 Bath B,2 Bed / 2 Bath,2,2.0,,1159,1159,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 2 Bath C,2 Bed / 2 Bath,2,2.0,,1149,1169,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 2 Bath D,2 Bed / 2 Bath,2,2.0,,1234,1234,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 2 Bath E,2 Bed / 2 Bath,2,2.0,,1069,1079,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 2 Bath F,2 Bed / 2 Bath,2,2.0,,1034,1034,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 2 Bath G,2 Bed / 2 Bath,2,2.0,,1159,1159,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,2 Bed - 2 Bath H,2 Bed / 2 Bath,2,2.0,,1099,1099,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,3 Bed - 3 Bath A,3 Bed / 3 Bath,3,3.0,,929,939,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,3 Bed - 3 Bath B,3 Bed / 3 Bath,3,3.0,,1019,1039,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,3 Bed - 3 Bath C,3 Bed / 3 Bath,3,3.0,,944,964,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,4 Bed - 4 Bath A,4 Bed / 4 Bath,4,4.0,,929,949,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,4 Bed - 4 Bath B,4 Bed / 4 Bath,4,4.0,,834,854,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Crest at Pearl,4 Bed - 4 Bath C,4 Bed / 4 Bath,4,4.0,,954,974,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/675
+Texan & Vintage,Vintage: Studio SMART,0 Bed / 1 Bath,0,1.0,369,1359,1359,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Texan: 1 Bed - 1 Bath SMART,1 Bed / 1 Bath,1,1.0,535,1702,1702,Waitlist,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Texan: 2 Bed - 1 Bath,2 Bed / 1 Bath,2,1.0,808,1249,1249,Waitlist,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Texan: 2 Bed - 1 Bath w/Loft,2 Bed / 1 Bath,2,1.0,599,899,1109,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Texan: 2 Bed - 1 Bath w/Loft SMART,2 Bed / 1 Bath,2,1.0,599,824,1028,Waitlist,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Texan: 3 Bed - 2 Bath A,3 Bed / 2 Bath,3,2.0,1240,864,989,Available,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Texan: 3 Bed - 2 Bath B,3 Bed / 2 Bath,3,2.0,1213,904,1029,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Texan: 4 Bed - 2 Bath w/Loft,4 Bed / 2 Bath,4,2.0,1368,664,949,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Texan: 4 Bed - 4 Bath,4 Bed / 4 Bath,4,4.0,1692,1139,1139,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Texan: 4 Bed - 4 Bath w/ Loft,4 Bed / 4 Bath,4,4.0,1893,1219,1219,Waitlist,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 1 Bed - 1 Bath A,1 Bed / 1 Bath,1,1.0,524,1759,1759,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 1 Bed - 1 Bath A SMART,1 Bed / 1 Bath,1,1.0,524,1702,1702,Waitlist,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 1 Bed - 1 Bath B,1 Bed / 1 Bath,1,1.0,529,1729,1729,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 1 Bed - 1 Bath C,1 Bed / 1 Bath,1,1.0,722,1949,1949,Waitlist,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 1 Bed - 1 Bath D,1 Bed / 1 Bath,1,1.0,654,1779,1779,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 1 Bed - 1 Bath E SMART,1 Bed / 1 Bath,1,1.0,466,1427,1427,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 2 Bed - 2 Bath A,2 Bed / 2 Bath,2,2.0,866,1204,1204,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 2 Bed - 2 Bath B,2 Bed / 2 Bath,2,2.0,907,1214,1214,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 2 Bed - 2 Bath C,2 Bed / 2 Bath,2,2.0,964,1169,1169,Waitlist,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 4 Bed - 4 Bath A,4 Bed / 4 Bath,4,4.0,1620,1119,1139,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+Texan & Vintage,Vintage: 4 Bed - 4 Bath B,4 Bed / 4 Bath,4,4.0,1467,1129,1149,Limited Availability,https://www.americancampus.com/api/lightning/floorplans/672
+The Nine at West Campus,Studio (S1) SMART*,0 Bed / 1 Bath,0,1.0,406,50,50,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,Studio (S2) SMART*,0 Bed / 1 Bath,0,1.0,319,1255,1255,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,1/1 A1 SMART,1 Bed / 1 Bath,1,1.0,567,50,50,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,2/2 B1,2 Bed / 2 Bath,2,2.0,756,1495,1495,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,2/2 B2,2 Bed / 2 Bath,2,2.0,925,1365,1365,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,3/3 C1,3 Bed / 3 Bath,3,3.0,1123,1415,1440,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,3/3 C2,3 Bed / 3 Bath,3,3.0,1122,1395,1395,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,4/2 D4,4 Bed / 2 Bath,4,2.0,1461,1215,1225,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,4/3 D5,4 Bed / 3 Bath,4,3.0,1222,1310,1325,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,4/4 D1,4 Bed / 4 Bath,4,4.0,1327,1315,1315,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,4/4 D2,4 Bed / 4 Bath,4,4.0,1382,1300,1315,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,4/4 D3,4 Bed / 4 Bath,4,4.0,1350,1315,1350,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,5/5 E1,5 Bed / 5 Bath,5,5.0,1577,1275,1275,Available,https://theninewestcampus.com/floorplans/
+The Nine at West Campus,5/5 E2,5 Bed / 5 Bath,5,5.0,1793,1275,1285,Available,https://theninewestcampus.com/floorplans/
+The Standard at Austin,Soho-Studio,0 Bed / 1 Bath,0,1.0,359-387,1700,1975,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Allister-1x1,1 Bed / 1 Bath,1,1.0,,2295,2295,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Ansley-1x1,1 Bed / 1 Bath,1,1.0,,2395,2395,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Arden Double -1x1 Double,1 Bed / 1 Bath,1,1.0,,1375,1375,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Ardmore - 1x1,1 Bed / 1 Bath,1,1.0,,2395,2395,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Astoria Double -1x1 Double,1 Bed / 1 Bath,1,1.0,,1295,1295,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Avondale-1x1,1 Bed / 1 Bath,1,1.0,,2295,2295,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Berkeley - 2x2,2 Bed / 2 Bath,2,2.0,,1095,1730,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Bexley-2x2,2 Bed / 2 Bath,2,2.0,,2060,2415,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Birch-2x2,2 Bed / 2 Bath,2,2.0,,1850,1850,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Bradford-2x2,2 Bed / 2 Bath,2,2.0,,1715,1715,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Bristol Premium-2x2,2 Bed / 2 Bath,2,2.0,,1875,1875,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Brookhaven-2x2,2 Bed / 2 Bath,2,2.0,,1725,1725,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Camden Premium -3x3,3 Bed / 3 Bath,3,3.0,,1715,1715,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Chelsea-3x3,3 Bed / 3 Bath,3,3.0,,1299,1540,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Denmark Premium-4x4,4 Bed / 4 Bath,4,4.0,,1655,1690,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Derby Premium -4x4,4 Bed / 4 Bath,4,4.0,,1485,1485,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Derby-4x4,4 Bed / 4 Bath,4,4.0,,1455,1455,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Downing Premium-4x4,4 Bed / 4 Bath,4,4.0,,1525,1655,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Forestdale-5x3,5 Bed / 3 Bath,5,3.0,,1475,1475,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Finchley -5x4,5 Bed / 4 Bath,5,4.0,,1255,1280,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Fillmore Premium-5x5,5 Bed / 5 Bath,5,5.0,,1600,1600,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Fulham - 5x5,5 Bed / 5 Bath,5,5.0,,1450,1450,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Fulham Premium-5x5,5 Bed / 5 Bath,5,5.0,,1575,1575,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Fulton - 5x5,5 Bed / 5 Bath,5,5.0,,1345,1440,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Gramercy 6x4,6 Bed / 4 Bath,6,4.0,,1255,1255,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+The Standard at Austin,Greenwich -6x4,6 Bed / 4 Bath,6,4.0,,1390,1545,Available,https://thestandardaustin.landmark-properties.com/floorplans/
+Legacy on Rio,A1,1 Bed / 1 Bath,1,1.0,463,2120,2120,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,B1,2 Bed / 1 Bath,2,1.0,720,1485,1585,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,B1.1,2 Bed / 1 Bath,2,1.0,618,1545,1545,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,B1.2,2 Bed / 2 Bath,2,2.0,728,1300,1300,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,B2,2 Bed / 2 Bath,2,2.0,770,1495,1530,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,B3,2 Bed / 2 Bath,2,2.0,783,1505,1505,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C1,3 Bed / 2 Bath,3,2.0,857,1295,1325,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C2,3 Bed / 2 Bath,3,2.0,918,1175,1330,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C2.1,3 Bed / 2 Bath,3,2.0,964,825,1195,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C2.2,3 Bed / 2 Bath,3,2.0,1013,875,1280,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C5,3 Bed / 2 Bath,3,2.0,973,1285,1310,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C3,3 Bed / 3 Bath,3,3.0,972,1425,1485,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C4,3 Bed / 3 Bath,3,3.0,976,1325,1390,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C6,3 Bed / 3 Bath,3,3.0,1001,1375,1375,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C6-A,3 Bed / 3 Bath,3,3.0,981,1105,1105,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C7,3 Bed / 3 Bath,3,3.0,1013,1440,1510,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,C8,3 Bed / 3 Bath,3,3.0,1045,1410,1410,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D1.1,4 Bed / 2 Bath,4,2.0,1013,1140,1330,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D3,4 Bed / 2 Bath,4,2.0,1020,799,1140,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D11,4 Bed / 4 Bath,4,4.0,1298,1085,1085,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D12,4 Bed / 4 Bath,4,4.0,1301,1255,1390,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D13,4 Bed / 4 Bath,4,4.0,1357,1415,1415,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D4,4 Bed / 4 Bath,4,4.0,1161,1335,1370,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D5,4 Bed / 4 Bath,4,4.0,1206,1365,1365,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D6.1,4 Bed / 4 Bath,4,4.0,1196,1370,1370,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D8,4 Bed / 4 Bath,4,4.0,1257,1199,1234,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,D9,4 Bed / 4 Bath,4,4.0,1286,1295,1295,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,E1,5 Bed / 4 Bath,5,4.0,1388,937,937,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,E2,5 Bed / 4 Bath,5,4.0,1417,937,937,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,E6,5 Bed / 4 Bath,5,4.0,1291,1025,1025,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,E3,5 Bed / 5 Bath,5,5.0,1413,1160,1160,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,E4,5 Bed / 5 Bath,5,5.0,1433,1205,1205,Available,https://legacyonrio.com/floorplans/
+Legacy on Rio,E5,5 Bed / 5 Bath,5,5.0,1499,1075,1075,Available,https://legacyonrio.com/floorplans/
+The Mark Austin,S1 - Studio,0 Bed / 1 Bath,0,1.0,422,2455,2465,Available,https://themarkatx.com/floorplans/
+The Mark Austin,A0 - 1x1,1 Bed / 1 Bath,1,1.0,516,2800,2800,Available,https://themarkatx.com/floorplans/
+The Mark Austin,A1 - 1x1,1 Bed / 1 Bath,1,1.0,572,1355,1560,Available,https://themarkatx.com/floorplans/
+The Mark Austin,A2 - 1x1,1 Bed / 1 Bath,1,1.0,553,2500,2500,Available,https://themarkatx.com/floorplans/
+The Mark Austin,A3 - 1x1,1 Bed / 1 Bath,1,1.0,591,2600,2600,Available,https://themarkatx.com/floorplans/
+The Mark Austin,A4 - 1x1,1 Bed / 1 Bath,1,1.0,663,2510,2510,Available,https://themarkatx.com/floorplans/
+The Mark Austin,B1 - 2x2,2 Bed / 2 Bath,2,2.0,857,1915,1915,Available,https://themarkatx.com/floorplans/
+The Mark Austin,B2 - 2x2,2 Bed / 2 Bath,2,2.0,775,2010,2060,Available,https://themarkatx.com/floorplans/
+The Mark Austin,B2S - 2x2,2 Bed / 2 Bath,2,2.0,778,1255,1255,Available,https://themarkatx.com/floorplans/
+The Mark Austin,B3 VIP - 2x2,2 Bed / 2 Bath,2,2.0,944,1850,1900,Available,https://themarkatx.com/floorplans/
+The Mark Austin,B4 Premium - 2x2,2 Bed / 2 Bath,2,2.0,929,2020,2070,Available,https://themarkatx.com/floorplans/
+The Mark Austin,B5 - 2x2,2 Bed / 2 Bath,2,2.0,726,1555,1630,Available,https://themarkatx.com/floorplans/
+The Mark Austin,C1 - 3x3,3 Bed / 3 Bath,3,3.0,945,1615,1655,Available,https://themarkatx.com/floorplans/
+The Mark Austin,C2 - 3x3,3 Bed / 3 Bath,3,3.0,1052,1820,1820,Available,https://themarkatx.com/floorplans/
+The Mark Austin,C3 - 3x3,3 Bed / 3 Bath,3,3.0,1404,1675,1675,Available,https://themarkatx.com/floorplans/
+The Mark Austin,C3S - 3x3,3 Bed / 3 Bath,3,3.0,1104,1255,1255,Available,https://themarkatx.com/floorplans/
+The Mark Austin,C4 Premium - 3x3,3 Bed / 3 Bath,3,3.0,1047,1510,1510,Available,https://themarkatx.com/floorplans/
+The Mark Austin,C5 - 3x3,3 Bed / 3 Bath,3,3.0,1009,1865,1875,Available,https://themarkatx.com/floorplans/
+The Mark Austin,D1 - 4x4,4 Bed / 4 Bath,4,4.0,1295,1460,1500,Available,https://themarkatx.com/floorplans/
+The Mark Austin,D2 - 4x4,4 Bed / 4 Bath,4,4.0,1257,1360,1375,Available,https://themarkatx.com/floorplans/
+The Mark Austin,D3 - 4x4,4 Bed / 4 Bath,4,4.0,1345,1450,1475,Available,https://themarkatx.com/floorplans/
+The Mark Austin,D4 - 4x4,4 Bed / 4 Bath,4,4.0,1345,1500,1515,Available,https://themarkatx.com/floorplans/
+The Mark Austin,D4S - 4x4,4 Bed / 4 Bath,4,4.0,1366,1255,1255,Available,https://themarkatx.com/floorplans/
+The Mark Austin,D5 VIP - 4x4,4 Bed / 4 Bath,4,4.0,1519,1825,1825,Available,https://themarkatx.com/floorplans/
+The Mark Austin,D6 Premium - 4x4,4 Bed / 4 Bath,4,4.0,1546,1610,1610,Available,https://themarkatx.com/floorplans/
+The Mark Austin,E1 - 5x5,5 Bed / 5 Bath,5,5.0,1562,1280,1290,Available,https://themarkatx.com/floorplans/
+The Mark Austin,E2 - 5x5,5 Bed / 5 Bath,5,5.0,1519,1450,1630,Available,https://themarkatx.com/floorplans/
+The Mark Austin,E3 Premium - 5x5,5 Bed / 5 Bath,5,5.0,1784,1570,1595,Available,https://themarkatx.com/floorplans/
+The Mark Austin,E4 - 5x5,5 Bed / 5 Bath,5,5.0,1588,1560,1570,Available,https://themarkatx.com/floorplans/
+The Mark Austin,E5 - 5x5,5 Bed / 5 Bath,5,5.0,1493,1565,1575,Available,https://themarkatx.com/floorplans/
+The Mark Austin,E6 - 5x5,5 Bed / 5 Bath,5,5.0,1657,1555,1565,Available,https://themarkatx.com/floorplans/
+The Mark Austin,E6A - 5x5,5 Bed / 5 Bath,5,5.0,1657,1495,1495,Available,https://themarkatx.com/floorplans/
+The Mark Austin,E7 Premium - 5x5,5 Bed / 5 Bath,5,5.0,1721,1745,1745,Available,https://themarkatx.com/floorplans/
+The Mark Austin,F1 Premium - 6x6,6 Bed / 6 Bath,6,6.0,2026,1455,1570,Available,https://themarkatx.com/floorplans/
+The Mark Austin,F2S - 6x6,6 Bed / 6 Bath,6,6.0,1908,1255,1265,Available,https://themarkatx.com/floorplans/
+Moontower,A1 - Sx1 The McConaughey,0 Bed / 1 Bath,0,1.0,520,1975,2010,Available,https://moontoweratx.com/floorplans/
+Moontower,A2 - Sx1 The Bullock,0 Bed / 1 Bath,0,1.0,396,2050,2050,Available,https://moontoweratx.com/floorplans/
+Moontower,A3 - Sx1 The Vaughan,0 Bed / 1 Bath,0,1.0,511,2050,2050,Available,https://moontoweratx.com/floorplans/
+Moontower,B1 - 2x2 The Kendra,2 Bed / 2 Bath,2,2.0,820,1720,1795,Available,https://moontoweratx.com/floorplans/
+Moontower,B2 - 2x2 The Brees,2 Bed / 2 Bath,2,2.0,957,1895,1895,Available,https://moontoweratx.com/floorplans/
+Moontower,B4 - 2x2 The Nelson,2 Bed / 2 Bath,2,2.0,981,1705,1705,Available,https://moontoweratx.com/floorplans/
+Moontower,C1 - 3x3 The Van Zandt,3 Bed / 3 Bath,3,3.0,1173,1395,1434,Available,https://moontoweratx.com/floorplans/
+Moontower,C2 - 3x3 The Armstrong,3 Bed / 3 Bath,3,3.0,1203,1550,1550,Available,https://moontoweratx.com/floorplans/
+Moontower,C3 - 3x3 The Wilson,3 Bed / 3 Bath,3,3.0,1228,1425,1425,Available,https://moontoweratx.com/floorplans/
+Moontower,C4 - 3x3 The Joplin,3 Bed / 3 Bath,3,3.0,1195,1505,1505,Available,https://moontoweratx.com/floorplans/
+Moontower,D5 - 4x3 The Durant,4 Bed / 3 Bath,4,3.0,1334,1275,1625,Available,https://moontoweratx.com/floorplans/
+Moontower,D1 - 4x4 The Ehlinger,4 Bed / 4 Bath,4,4.0,1323,1255,1255,Available,https://moontoweratx.com/floorplans/
+Moontower,D2 - 4x4 The Mack,4 Bed / 4 Bath,4,4.0,1407,1345,1345,Available,https://moontoweratx.com/floorplans/
+Moontower,D3 - 4x4 The Johnson,4 Bed / 4 Bath,4,4.0,1490,1460,1460,Available,https://moontoweratx.com/floorplans/
+Moontower,D4 - 4x4 The Travis,4 Bed / 4 Bath,4,4.0,1458,1295,1435,Available,https://moontoweratx.com/floorplans/
+Moontower,D6 - 4x4 The Aldridge,4 Bed / 4 Bath,4,4.0,1537,1525,1555,Available,https://moontoweratx.com/floorplans/
+Moontower,E1 - 5x5 The Anderson,5 Bed / 5 Bath,5,5.0,1704,1295,1355,Available,https://moontoweratx.com/floorplans/
+Yugo Austin Waterloo,"4 Bed, 4 Bath Classic",4 Bed / 4.0 Bath,4,4.0,,1209,,Available,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-henry-4-bedroom-644826
+Yugo Austin Waterloo,"4 Bed, 4 Bath Deluxe",4 Bed / 4.0 Bath,4,4.0,,1279,,Available,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-proper-4-bedroom-644880
+Yugo Austin Waterloo,"4 Bed, 4 Bath Plus",4 Bed / 4.0 Bath,4,4.0,,1229,,Available,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-crawford-4-bedroom-644816
+Yugo Austin Waterloo,"4 Bed, 4 Bath Premier",4 Bed / 4.0 Bath,4,4.0,,1429,,Available,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-joule-4-bedroom-644856
+Yugo Austin Waterloo,"6 Bed, 6 Bath Classic",6 Bed / 6.0 Bath,6,6.0,,1199,,Available,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-hoxton-6-bed-6-bath-644844
+Yugo Austin Waterloo,"6 Bed, 6 Bath Plus",6 Bed / 6.0 Bath,6,6.0,,1249,,Available,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-zaza-6-bed-6-bath-644892
+Yugo Austin Waterloo,"2 Bed, 2 Bath Classic",2 Bed / 2.0 Bath,2,2.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-waldorf-2-bedroom--644886
+Yugo Austin Waterloo,"3 Bed, 3 Bath",3 Bed / 3.0 Bath,3,3.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-ramble-3-bedroom-644882
+Yugo Austin Waterloo,"5 Bed, 5 Bath Penthouse",5 Bed / 5.0 Bath,5,5.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/penthouse-on-30-5-bed-5-bath-644812
+Yugo Austin Waterloo,Studio Classic,,,,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-moxy-studio-644866
+Yugo Austin Waterloo,Studio Plus,,,,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-ivy-studio-644846
+Yugo Austin Rio,"4 Bed, 4 Bath Classic",4 Bed / 4.0 Bath,4,4.0,,1279,,Available,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-classic-644164
+Yugo Austin Rio,"4 Bed, 4 Bath Plus",4 Bed / 4.0 Bath,4,4.0,,1249,,Available,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-plus-644172
+Yugo Austin Rio,"5 Bed, 5 Bath Plus",5 Bed / 5.0 Bath,5,5.0,,1269,,Available,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-5-bath-plus-644190
+Yugo Austin Rio," 1 Bed, 1 Bath",1 Bed / 1.0 Bath,1,1.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/-1-bed-1-bath-644156
+Yugo Austin Rio," 2 Bed, 1 Bath Loft",2 Bed / 1.0 Bath,2,1.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/-2-bed-1-bath-loft-644158
+Yugo Austin Rio," 4 Bed, 2 Bath Loft",4 Bed / 2.0 Bath,4,2.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/-4-bed-2-bath-loft-644160
+Yugo Austin Rio,"4 Bed, 3 Bath Loft",4 Bed / 3.0 Bath,4,3.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-3-bath-loft-644162
+Yugo Austin Rio,"4 Bed, 4 Bath Deluxe",4 Bed / 4.0 Bath,4,4.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-deluxe-644166
+Yugo Austin Rio,"5 Bed, 4 Bath Classic Loft",5 Bed / 4.0 Bath,5,4.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-4-bath-classic-loft-644182
+Yugo Austin Rio,"5 Bed, 4 Bath Plus Loft",5 Bed / 4.0 Bath,5,4.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-4-bath-plus-loft-644184
+Yugo Austin Rio,"5 Bed, 5 Bath Classic",5 Bed / 5.0 Bath,5,5.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-5-bath-classic-644186
+Yugo Austin Rio,"5 Bed, 5 Bath Deluxe",5 Bed / 5.0 Bath,5,5.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-5-bath-deluxe-644188
+Yugo Austin Rio,"6 Bed, 4 Bath Loft",6 Bed / 4.0 Bath,6,4.0,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/6-bed-4-bath-loft-644198
+Yugo Austin Rio,Studio Classic,,,,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-classic-644202
+Yugo Austin Rio,Studio Deluxe,,,,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-deluxe-644204
+Yugo Austin Rio,Studio Plus,,,,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-plus-644206
+Yugo Austin Rio,Studio Premier,,,,,,,Sold Out,https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-premier-644208
+Villas on Rio,B1,2 BED / 2 BATH,2,2.0,,1539,,1 MALE SPOT LEFT,https://villasonrio.com/floor-plans/
+Villas on Rio,B1-SHARED,2 BED / 2 BATH,2,2.0,,,,3 FEMALE SPOTS LEFT,https://villasonrio.com/floor-plans/
+Villas on Rio,B2-SHARED,2 BED / 2 BATH,2,2.0,,,,FLASH SALE - LIMITED TIME,https://villasonrio.com/floor-plans/
+Villas on Rio,B2A-SHARED,2 BED / 2 BATH,2,2.0,,899,,1 SPOT LEFT,https://villasonrio.com/floor-plans/
+Villas on Rio,B3,2 BED / 2 BATH,2,2.0,,1499,,SOLD OUT,https://villasonrio.com/floor-plans/
+Villas on Rio,B4,2 BED / 2 BATH,2,2.0,,1509,,SOLD OUT,https://villasonrio.com/floor-plans/
+Villas on Rio,B4-SHARED,2 BED / 2 BATH,2,2.0,,,,FLASH SALE - LIMITED TIME,https://villasonrio.com/floor-plans/
+Villas on Rio,B5,2 BED / 2 BATH,2,2.0,,1619,,SOLD OUT,https://villasonrio.com/floor-plans/
+Villas on Rio,B5-SHARED,2 BED / 2 BATH,2,2.0,,899,,FLASH SALE - LIMITED TIME,https://villasonrio.com/floor-plans/
+Villas on Rio,C1,3 BED / 3 BATH,3,3.0,,1579,,1 FEMALE SPOT LEFT,https://villasonrio.com/floor-plans/
+Villas on Rio,C2,3 BED / 3 BATH,3,3.0,,1569,,SOLD OUT,https://villasonrio.com/floor-plans/
+Villas on Rio,C1-SHARED,3 BED / 3 BATH,3,3.0,,,,FLASH SALE - LIMITED TIME,https://villasonrio.com/floor-plans/
+Villas on Rio,C2-SHARED,3 BED / 3 BATH,3,3.0,,,,FLASH SALE - LIMITED TIME,https://villasonrio.com/floor-plans/
+Villas on Rio,C3-SHARED,3 BED / 3 BATH,3,3.0,,989,,ONLY FEMALE SPACES LEFT,https://villasonrio.com/floor-plans/
+Villas on Rio,D1,4 BED / 4 BATH,4,4.0,,1350,,1 FEMALE SPOT LEFT,https://villasonrio.com/floor-plans/
+Villas on Rio,D5,4 BED / 4 BATH,4,4.0,,1519,,1 FEMALE SPOT LEFT,https://villasonrio.com/floor-plans/
+Villas on Rio,D5TH-SHARED,4 BED / 4 BATH,4,4.0,,,,SOLD OUT,https://villasonrio.com/floor-plans/
+Villas on Rio,D5-SHARED,4 BED / 4 BATH,4,4.0,,899,,1 FEMALE PRIVATE SPOT LEFT,https://villasonrio.com/floor-plans/
+Villas on Rio,5x5,5 BED / 5 BATH,5,5.0,,1519,,SOLD OUT,https://villasonrio.com/floor-plans/
+Inspire on 22nd,A1,1 Bed / None Bath,1,,550,2129,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,A1 ANSI,1 Bed / None Bath,1,,550,2129,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,B1,2 Bed / None Bath,2,,806,1650,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,B1 ANSI,2 Bed / None Bath,2,,806,1475,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,B2,2 Bed / None Bath,2,,719,1615,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,C1,3 Bed / None Bath,3,,055,1285,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,C2,3 Bed / None Bath,3,,,1490,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,C3,3 Bed / None Bath,3,,186,1265,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,C4,3 Bed / None Bath,3,,080,1375,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,C5,3 Bed / None Bath,3,,993,1315,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,C6,3 Bed / None Bath,3,,110,1245,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,C7,3 Bed / None Bath,3,,001,1265,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,C8,3 Bed / None Bath,3,,977,1395,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,D1,4 Bed / None Bath,4,,180,1245,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,D2,4 Bed / None Bath,4,,202,1225,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,D3,4 Bed / None Bath,4,,396,1265,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,D4,4 Bed / None Bath,4,,303,1255,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,D5,4 Bed / None Bath,4,,307,1285,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,D6,4 Bed / None Bath,4,,300,1275,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,D7,4 Bed / None Bath,4,,1301,1285,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,F1,5 Bed / None Bath,5,,447,1199,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+Inspire on 22nd,F2,5 Bed / None Bath,5,,531,1235,,Sold Out,https://www.inspire22nd.com/austin/inspire-on-22nd/student/
+ION Austin,Studio - S1,Studio / 1 Bath,1,1.0,420,1879,,Limited,https://ion-austin.com/rates-floorplans/
+ION Austin,1 Bed - 1 Bath A,1 Bed / 1 Bath,1,1.0,540,1899,,Available,https://ion-austin.com/rates-floorplans/
+ION Austin,2 Bed - 2 Bath A,2 Bed / 2 Bath,2,2.0,780,1299,,Limited,https://ion-austin.com/rates-floorplans/
+ION Austin,3 Bed - 3 Bath Standard,3 Bed / 3 Bath,3,3.0,1050,1199,,Available,https://ion-austin.com/rates-floorplans/
+ION Austin,3 Bed - 3 Bath XL,3 Bed / 3 Bath,3,3.0,1180,1229,,Available,https://ion-austin.com/rates-floorplans/
+ION Austin,4 Bed - 4 Bath SMART,4 Bed / 4 Bath,4,4.0,1250,1139,,Waitlist,https://ion-austin.com/rates-floorplans/
+ION Austin,4 Bed - 4 Bath Apartment,4 Bed / 4 Bath,4,4.0,1310,1119,,Available,https://ion-austin.com/rates-floorplans/
+ION Austin,4 Bed - 4 Bath Townhouse,4 Bed / 4 Bath,4,4.0,1450,1399,,Limited,https://ion-austin.com/rates-floorplans/
+Skyloft,ACL A,,,1.0,307,1999,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,ACL B,,,1.0,367,1969,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Antone's A,1 Bed / 1.0 Bath,1,1.0,580,2219,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Antone's B,1 Bed / 1.0 Bath,1,1.0,620,2219,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Antone's C,1 Bed / 1.0 Bath,1,1.0,510,2219,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Cedar Street,2 Bed / 1.0 Bath,2,1.0,679,1379,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Emo's B,2 Bed / 2.0 Bath,2,2.0,744,1539,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Emo's C,2 Bed / 2.0 Bath,2,2.0,744,1539,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Emo's D,2 Bed / 2.0 Bath,2,2.0,837,1599,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Nutty Brown A,3 Bed / 2.0 Bath,3,2.0,839,1289,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Nutty Brown B,3 Bed / 2.0 Bath,3,2.0,866,1309,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Nutty Brown C,3 Bed / 2.0 Bath,3,2.0,1011,1339,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Nutty Brown D,3 Bed / 2.0 Bath,3,2.0,970,1334,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Nutty Brown E,3 Bed / 2.0 Bath,3,2.0,1011,1269,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Speakeasy A,3 Bed / 3.0 Bath,3,3.0,978,1359,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Speakeasy B,3 Bed / 3.0 Bath,3,3.0,978,1359,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Speakeasy C,3 Bed / 3.0 Bath,3,3.0,978,1359,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Speakeasy D,3 Bed / 3.0 Bath,3,3.0,978,1359,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Speakeasy E,3 Bed / 3.0 Bath,3,3.0,1131,1359,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Speakeasy F,3 Bed / 3.0 Bath,3,3.0,1191,1359,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Stubb's A,4 Bed / 2.0 Bath,4,2.0,1108,1229,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Stubb's B,4 Bed / 2.0 Bath,4,2.0,1075,1209,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Stubb's C,4 Bed / 2.0 Bath,4,2.0,1158,1209,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Stubb's D,4 Bed / 2.0 Bath,4,2.0,1129,1229,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Stubb's E,4 Bed / 2.0 Bath,4,2.0,1200,1209,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,Stubb's F,4 Bed / 2.0 Bath,4,2.0,1354,1209,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Broken Spoke A,4 Bed / 3.0 Bath,4,3.0,1114,1349,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Broken Spoke B,4 Bed / 3.0 Bath,4,3.0,1216,1349,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Broken Spoke C,4 Bed / 3.0 Bath,4,3.0,1216,1364,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Broken Spoke D,4 Bed / 3.0 Bath,4,3.0,1216,1349,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Broken Spoke E,4 Bed / 3.0 Bath,4,3.0,1275,1379,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Broken Spoke F,4 Bed / 3.0 Bath,4,3.0,1216,1364,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Broken Spoke G,4 Bed / 3.0 Bath,4,3.0,1216,1349,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Broken Spoke H,4 Bed / 3.0 Bath,4,3.0,1216,1349,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Broken Spoke I,4 Bed / 3.0 Bath,4,3.0,1378,1379,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/
+Skyloft,The Continental Club,5 Bed / 3.0 Bath,5,3.0,1492,1299,,Sold Out,https://www.skyloftatx.com/austin/95211-skyloft/student/

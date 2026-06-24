@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getFloorPlanById } from '../data/floorPlans'
 import { useFavorites } from '../context/FavoritesContext'
@@ -6,6 +7,7 @@ export default function FloorPlanDetailPage() {
   const { floorPlanId } = useParams()
   const plan = getFloorPlanById(floorPlanId)
   const { isFavorite, toggleFavorite } = useFavorites()
+  const [imgError, setImgError] = useState(false)
 
   if (!plan) {
     return (
@@ -58,17 +60,19 @@ export default function FloorPlanDetailPage() {
             </p>
           </div>
           <div className="flex items-center justify-center rounded-lg border border-dashed border-stone-300 bg-white px-4 py-10">
-            <img
-              src={imageSrc}
-              alt={`${plan.plan} floor plan`}
-              className="max-h-96 w-full max-w-full object-contain"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-              }}
-            />
-            <p className="text-sm text-stone-500">
-              Floor plan preview will appear here once you add the image file.
-            </p>
+            {!imgError && (
+              <img
+                src={imageSrc}
+                alt={`${plan.plan} floor plan`}
+                className="max-h-96 w-full max-w-full object-contain"
+                onError={() => setImgError(true)}
+              />
+            )}
+            {imgError && (
+              <p className="text-sm text-stone-500">
+                Floor plan preview will appear here once you add the image file.
+              </p>
+            )}
           </div>
         </div>
 

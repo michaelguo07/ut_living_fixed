@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage'
 import ApartmentDetailPage from './pages/ApartmentDetailPage'
 import FloorPlanDetailPage from './pages/FloorPlanDetailPage'
 import FloorPlanComparePage from './pages/FloorPlanComparePage'
+import NotFoundPage from './pages/NotFoundPage'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/floorplans/:floorPlanId" element={<FloorPlanDetailPage />} />
         <Route path="/compare" element={<FloorPlanComparePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Layout>
   )
