@@ -49,6 +49,16 @@ export default function ApartmentDetailPage() {
         </Link>
       </div>
 
+      {apartment.imageUrl && (
+        <div className="mt-6 h-64 sm:h-96 w-full overflow-hidden rounded-xl border border-stone-200 bg-stone-100 shadow-sm">
+          <img
+            src={apartment.imageUrl}
+            alt={`${apartment.name} building exterior`}
+            className="h-full w-full object-cover transition-transform duration-500 hover:scale-102"
+          />
+        </div>
+      )}
+
       <section className="mt-8 grid gap-4 sm:grid-cols-2">
         <Field label="Availability" value={apartment.availability} placeholder="(you’ll add this later)" />
         <Field label="Cost" value={apartment.cost} placeholder="(from your spreadsheet/agent)" />

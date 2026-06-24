@@ -4,11 +4,21 @@ import { Link } from 'react-router-dom'
  * @param {import('../../hooks/useAIAgent').Apartment} apartment
  */
 export default function ApartmentCard({ apartment }) {
-  const { name, address, cost, distanceFromTower, availability, pros = [], cons = [] } = apartment
+  const { name, address, cost, distanceFromTower, availability, pros = [], cons = [], imageUrl } = apartment
 
   return (
-    <article className="rounded-xl border border-stone-200 bg-white p-5 shadow-sm transition hover:shadow-md">
-      <div className="flex flex-col gap-3">
+    <article className="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-sm transition hover:shadow-md">
+      {imageUrl && (
+        <div className="h-48 w-full overflow-hidden bg-stone-100">
+          <img
+            src={imageUrl}
+            alt={`${name} building exterior`}
+            className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+      )}
+      <div className="p-5 flex flex-col gap-3">
         <div>
           <h3 className="text-lg font-semibold text-stone-900">
             <Link

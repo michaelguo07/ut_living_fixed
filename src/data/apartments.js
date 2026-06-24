@@ -271,6 +271,26 @@ const APARTMENT_CONS = {
   ],
 }
 
+const APARTMENT_IMAGES = {
+  'The Nine at West Campus': 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&h=500&q=80',
+  'The Standard at Austin': 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=800&h=500&q=80',
+  'Legacy on Rio': 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&h=500&q=80',
+  'The Mark Austin': 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&h=500&q=80',
+  'The Block (various locations)': 'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&h=500&q=80',
+  'Callaway House': 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&h=500&q=80',
+  'The Castilian': 'https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=800&h=500&q=80',
+  '26 West': 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&h=500&q=80',
+  'Crest at Pearl': 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&h=500&q=80',
+  'Texan & Vintage': 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&h=500&q=80',
+  'Villas on Rio': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&h=500&q=80',
+  'ION Austin': 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&h=500&q=80',
+  'Skyloft': 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&h=500&q=80',
+  'Moontower': 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&h=500&q=80',
+  'Yugo Austin Waterloo': 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&h=500&q=80',
+  'Yugo Austin Rio': 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&h=500&q=80',
+  'Inspire on 22nd': 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&h=500&q=80',
+}
+
 /**
  * Spreadsheet-backed summary data (from `austin_student_housing.xlsx` → "Summary by Property").
  * Note: the XLSX currently only contains 11 properties; the others remain placeholders.
@@ -389,6 +409,7 @@ export const UT_AUSTIN_APARTMENTS = APARTMENT_NAMES.map((name) => {
     lowestPrice: summary?.lowestPrice ?? null,
     pros: APARTMENT_PROS[name] || [],
     cons: APARTMENT_CONS[name] || [],
+    imageUrl: APARTMENT_IMAGES[name] || '',
   }
 })
 
