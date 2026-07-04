@@ -683,10 +683,12 @@ def scrape_with_playwright(name, url):
 
 def save_output(all_plans):
     """Saves uniform floorplans output to CSV and React floorPlans.js file."""
-    # Sanitize and ensure every plan has the imagePath key and pros/cons populated
+    # Sanitize and ensure every plan has the imagePath, dataWarning, and pros/cons populated
     for p in all_plans:
         if "imagePath" not in p:
             p["imagePath"] = ""
+        if "dataWarning" not in p:
+            p["dataWarning"] = None
         pros, cons = get_floor_plan_pros_cons(p)
         p["pros"] = pros
         p["cons"] = cons
@@ -695,7 +697,7 @@ def save_output(all_plans):
     csv_path = os.path.join(PROJECT_ROOT, "master_floorplans.csv")
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["property", "plan", "roomType", "beds", "baths", "sqFt", "minPrice", "maxPrice", "availability", "url", "imagePath", "pros", "cons"])
+        writer.writerow(["property", "plan", "roomType", "beds", "baths", "sqFt", "minPrice", "maxPrice", "availability", "url", "imagePath", "pros", "cons", "dataWarning"])
         for p in all_plans:
             writer.writerow([
                 p.get("property", ""),
@@ -710,7 +712,8 @@ def save_output(all_plans):
                 p.get("url", ""),
                 p.get("imagePath", ""),
                 ", ".join(p.get("pros", [])),
-                ", ".join(p.get("cons", []))
+                ", ".join(p.get("cons", [])),
+                p.get("dataWarning") or ""
             ])
     print(f"[OK] Master flat CSV written to: {csv_path}")
 
@@ -740,6 +743,26 @@ export function getFloorPlanById(id) {{
     print(f"[OK] React data module written to: {js_path}")
 
 
+def save_scrape_status(log):
+    """Writes per-property scrape results to scrape_status.json for pipeline visibility."""
+    failed = [e for e in log if e["status"] != "ok"]
+    status_path = os.path.join(PROJECT_ROOT, "scrape_status.json")
+    output = {
+        "run_at": datetime.now().isoformat(),
+        "total_properties": len(log),
+        "ok": len([e for e in log if e["status"] == "ok"]),
+        "warnings": len(failed),
+        "properties": log
+    }
+    with open(status_path, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2)
+    print(f"[OK] Scrape status written to: {status_path}")
+    if failed:
+        print(f"\n  [WARNING] {len(failed)} propert{'ies' if len(failed) != 1 else 'y'} did not return live data:")
+        for e in failed:
+            print(f"    - {e['property']}: {e['status']} — {e.get('note', '')}")
+
+
 def main():
     print("=" * 60)
     print("  UT Living — Master Apartment Floor Plan Scraper")
@@ -752,9 +775,30 @@ def main():
     existing_by_prop = {}
     for p in existing_plans:
         existing_by_prop.setdefault(p["property"], []).append(p)
-        
+
     master_results = []
-    
+    scrape_log = []
+
+    def _extend_live(plans, name):
+        master_results.extend(plans)
+        scrape_log.append({"property": name, "status": "ok", "count": len(plans)})
+
+    def _extend_cached(name, note="live scrape returned 0 results"):
+        cached = [{**p, "dataWarning": "cached"} for p in existing_by_prop[name]]
+        master_results.extend(cached)
+        scrape_log.append({"property": name, "status": "cached", "count": len(cached), "note": note})
+        print(f"    [!] Scrape failed. Retaining {len(cached)} cached records for {name}.")
+
+    def _extend_static(plans, name, note):
+        tagged = [{**p, "dataWarning": "static"} for p in plans]
+        master_results.extend(tagged)
+        scrape_log.append({"property": name, "status": "static", "count": len(tagged), "note": note})
+        print(f"    [!] {note}")
+
+    def _log_failed(name, note="no live data and no cache available"):
+        scrape_log.append({"property": name, "status": "failed", "count": 0, "note": note})
+        print(f"    [!] {note}")
+
     # 1. ACC Properties (Property IDs)
     acc_properties = [
         ("The Block (various locations)", "671"),
@@ -767,11 +811,12 @@ def main():
     for name, pid in acc_properties:
         plans = scrape_acc_property(name, pid)
         if plans:
-            master_results.extend(plans)
+            _extend_live(plans, name)
         elif name in existing_by_prop:
-            print(f"    [!] Scrape failed. Retaining {len(existing_by_prop[name])} cached records for {name}.")
-            master_results.extend(existing_by_prop[name])
-            
+            _extend_cached(name)
+        else:
+            _log_failed(name)
+
     # 2. Entrata WP-JSON API
     wp_properties = [
         ("The Nine at West Campus", "theninewestcampus.com"),
@@ -783,10 +828,11 @@ def main():
     for name, domain in wp_properties:
         plans = scrape_entrata_wp_json(name, domain)
         if plans:
-            master_results.extend(plans)
+            _extend_live(plans, name)
         elif name in existing_by_prop:
-            print(f"    [!] Scrape failed. Retaining {len(existing_by_prop[name])} cached records for {name}.")
-            master_results.extend(existing_by_prop[name])
+            _extend_cached(name)
+        else:
+            _log_failed(name)
 
     # 3. Yugo Properties
     yugo_properties = [
@@ -796,27 +842,30 @@ def main():
     for name, url in yugo_properties:
         plans = scrape_yugo_property(name, url)
         if plans:
-            master_results.extend(plans)
+            _extend_live(plans, name)
         elif name in existing_by_prop:
-            print(f"    [!] Scrape failed. Retaining {len(existing_by_prop[name])} cached records for {name}.")
-            master_results.extend(existing_by_prop[name])
+            _extend_cached(name)
+        else:
+            _log_failed(name)
 
     # 4. Custom WordPress HTML Scrapers
     # Villas on Rio
     villas = scrape_villas_on_rio()
     if villas:
-        master_results.extend(villas)
+        _extend_live(villas, "Villas on Rio")
     elif "Villas on Rio" in existing_by_prop:
-        print(f"    [!] Scrape failed. Retaining {len(existing_by_prop['Villas on Rio'])} cached records for Villas on Rio.")
-        master_results.extend(existing_by_prop["Villas on Rio"])
+        _extend_cached("Villas on Rio")
+    else:
+        _log_failed("Villas on Rio")
 
     # Inspire on 22nd
     inspire = scrape_inspire_on_22nd()
     if inspire:
-        master_results.extend(inspire)
+        _extend_live(inspire, "Inspire on 22nd")
     elif "Inspire on 22nd" in existing_by_prop:
-        print(f"    [!] Scrape failed. Retaining {len(existing_by_prop['Inspire on 22nd'])} cached records for Inspire on 22nd.")
-        master_results.extend(existing_by_prop["Inspire on 22nd"])
+        _extend_cached("Inspire on 22nd")
+    else:
+        _log_failed("Inspire on 22nd")
 
     # 5. Playwright Cloudflare Challenge Fallback Properties
     pw_properties = [
@@ -826,22 +875,23 @@ def main():
     for name, url in pw_properties:
         plans = scrape_with_playwright(name, url)
         if plans:
-            master_results.extend(plans)
+            _extend_live(plans, name)
+        elif name == "ION Austin":
+            _extend_static(
+                get_ion_austin_static_data(),
+                name,
+                "Cloudflare block — serving hardcoded August 2026 rates for ION Austin"
+            )
+        elif name in existing_by_prop:
+            _extend_cached(name, note="Playwright scrape failed or skipped")
         else:
-            # Special fallback for ION Austin (Cloudflare block)
-            if name == "ION Austin":
-                print("    [!] Scrape failed/blocked. Loading online verified rates database fallback for ION Austin.")
-                master_results.extend(get_ion_austin_static_data())
-            elif name in existing_by_prop:
-                print(f"    [!] Active scrape failed or skipped. Retaining {len(existing_by_prop[name])} cached records for {name}.")
-                master_results.extend(existing_by_prop[name])
-            else:
-                print(f"    [!] Active scrape failed and no cached data exists for {name}.")
+            _log_failed(name, note="Playwright scrape failed and no cache available")
 
     # Save outputs
     print("\nSaving scraped data...")
     save_output(master_results)
-    
+    save_scrape_status(scrape_log)
+
     print("\n" + "=" * 60)
     print(f"  [DONE] Scraped and compiled {len(master_results)} total floor plans!")
     print("=" * 60)

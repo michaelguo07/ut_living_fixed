@@ -1,0 +1,95 @@
+{
+  "run_at": "2026-07-04T11:30:00.662181",
+  "total_properties": 17,
+  "ok": 15,
+  "warnings": 2,
+  "properties": [
+    {
+      "property": "The Block (various locations)",
+      "status": "ok",
+      "count": 174
+    },
+    {
+      "property": "Callaway House",
+      "status": "ok",
+      "count": 19
+    },
+    {
+      "property": "The Castilian",
+      "status": "ok",
+      "count": 2
+    },
+    {
+      "property": "26 West",
+      "status": "ok",
+      "count": 13
+    },
+    {
+      "property": "Crest at Pearl",
+      "status": "ok",
+      "count": 26
+    },
+    {
+      "property": "Texan & Vintage",
+      "status": "ok",
+      "count": 21
+    },
+    {
+      "property": "The Nine at West Campus",
+      "status": "ok",
+      "count": 14
+    },
+    {
+      "property": "The Standard at Austin",
+      "status": "ok",
+      "count": 27
+    },
+    {
+      "property": "Legacy on Rio",
+      "status": "ok",
+      "count": 33
+    },
+    {
+      "property": "The Mark Austin",
+      "status": "ok",
+      "count": 35
+    },
+    {
+      "property": "Moontower",
+      "status": "ok",
+      "count": 17
+    },
+    {
+      "property": "Yugo Austin Waterloo",
+      "status": "ok",
+      "count": 11
+    },
+    {
+      "property": "Yugo Austin Rio",
+      "status": "ok",
+      "count": 17
+    },
+    {
+      "property": "Villas on Rio",
+      "status": "ok",
+      "count": 19
+    },
+    {
+      "property": "Inspire on 22nd",
+      "status": "ok",
+      "count": 22
+    },
+    {
+      "property": "ION Austin",
+      "status": "static",
+      "count": 8,
+      "note": "Cloudflare block \u2014 serving hardcoded August 2026 rates for ION Austin"
+    },
+    {
+      "property": "Skyloft",
+      "status": "cached",
+      "count": 36,
+      "note": "Playwright scrape failed or skipped"
+    }
+  ]
+}
