@@ -1,10 +1,11 @@
+import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getApartmentById } from '../data/apartments'
 import { getFloorPlansForProperty } from '../data/floorPlans'
 import { useFavorites } from '../context/FavoritesContext'
 
-function Field({ label, value, placeholder = '—' }) {
-  const display = value && String(value).trim() ? value : placeholder
+function Field({ label, value, placeholder = 'N/A' }) {
+  const display = value && String(value).trim() && String(value).trim() !== 'N/A' ? value : placeholder
   return (
     <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
       <p className="text-xs font-semibold uppercase tracking-wide text-stone-500">
@@ -20,6 +21,47 @@ export default function ApartmentDetailPage() {
   const apartment = getApartmentById(apartmentId)
   const floorPlans = apartment ? getFloorPlansForProperty(apartment.name) : []
   const { isFavorite, toggleFavorite } = useFavorites()
+
+  // Sorting state for floor plans list
+  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' })
+
+  const requestSort = (key) => {
+    let direction = 'asc'
+    if (sortConfig.key === key && sortConfig.direction === 'asc') {
+      direction = 'desc'
+    }
+    setSortConfig({ key, direction })
+  }
+
+  const sortedFloorPlans = [...floorPlans].sort((a, b) => {
+    if (!sortConfig.key) return 0
+
+    let valA = a[sortConfig.key]
+    let valB = b[sortConfig.key]
+
+    // Handle undefined/null/empty values by putting them at the end
+    if (valA === undefined || valA === null || valA === '') return 1
+    if (valB === undefined || valB === null || valB === '') return -1
+
+    // If it's availability, normalize text
+    if (sortConfig.key === 'availability') {
+      valA = String(valA).toLowerCase()
+      valB = String(valB).toLowerCase()
+    }
+
+    if (valA < valB) {
+      return sortConfig.direction === 'asc' ? -1 : 1
+    }
+    if (valA > valB) {
+      return sortConfig.direction === 'asc' ? 1 : -1
+    }
+    return 0
+  })
+
+  const getSortIcon = (key) => {
+    if (sortConfig.key !== key) return ' ⇅'
+    return sortConfig.direction === 'asc' ? ' ▲' : ' ▼'
+  }
 
   if (!apartment) {
     return (
@@ -60,15 +102,15 @@ export default function ApartmentDetailPage() {
       )}
 
       <section className="mt-8 grid gap-4 sm:grid-cols-2">
-        <Field label="Availability" value={apartment.availability} placeholder="(you’ll add this later)" />
-        <Field label="Cost" value={apartment.cost} placeholder="(from your spreadsheet/agent)" />
-        <Field label="Distance from the Tower" value={apartment.distanceFromTower} placeholder="(you’ll add this later)" />
-        <Field label="Address" value={apartment.address} placeholder="(you’ll add this later)" />
+        <Field label="Availability" value={apartment.availability} />
+        <Field label="Cost" value={apartment.cost} />
+        <Field label="Distance from the Tower" value={apartment.distanceFromTower} />
+        <Field label="Address" value={apartment.address} />
       </section>
 
       <section className="mt-4 grid gap-4 sm:grid-cols-2">
-        <Field label="Total floor plans" value={apartment.totalPlans ?? ''} placeholder="(from your spreadsheet/agent)" />
-        <Field label="Available plans" value={apartment.availablePlans ?? ''} placeholder="(from your spreadsheet/agent)" />
+        <Field label="Total floor plans" value={apartment.totalPlans ?? ''} />
+        <Field label="Available plans" value={apartment.availablePlans ?? ''} />
       </section>
 
       <section className="mt-4">
@@ -126,25 +168,65 @@ export default function ApartmentDetailPage() {
         ) : (
           <div className="mt-4 overflow-x-auto rounded-xl border border-stone-200 bg-white shadow-sm">
             <table className="min-w-full text-left text-sm">
-              <thead className="bg-stone-50 text-xs font-semibold uppercase tracking-wide text-stone-500">
+              <thead className="bg-stone-50 text-xs font-bold uppercase tracking-wider text-stone-500 select-none">
                 <tr>
-                  <th className="px-4 py-3">Plan</th>
-                  <th className="px-4 py-3">Room type</th>
-                  <th className="px-4 py-3">Beds</th>
-                  <th className="px-4 py-3">Baths</th>
-                  <th className="px-4 py-3">Sq Ft</th>
-                  <th className="px-4 py-3">Min price</th>
-                  <th className="px-4 py-3">Max price</th>
-                  <th className="px-4 py-3">Availability</th>
+                  <th 
+                    onClick={() => requestSort('plan')}
+                    className="px-4 py-3 cursor-pointer hover:bg-stone-100 hover:text-stone-900 transition-colors"
+                  >
+                    Plan{getSortIcon('plan')}
+                  </th>
+                  <th 
+                    onClick={() => requestSort('roomType')}
+                    className="px-4 py-3 cursor-pointer hover:bg-stone-100 hover:text-stone-900 transition-colors"
+                  >
+                    Room type{getSortIcon('roomType')}
+                  </th>
+                  <th 
+                    onClick={() => requestSort('beds')}
+                    className="px-4 py-3 cursor-pointer hover:bg-stone-100 hover:text-stone-900 transition-colors"
+                  >
+                    Beds{getSortIcon('beds')}
+                  </th>
+                  <th 
+                    onClick={() => requestSort('baths')}
+                    className="px-4 py-3 cursor-pointer hover:bg-stone-100 hover:text-stone-900 transition-colors"
+                  >
+                    Baths{getSortIcon('baths')}
+                  </th>
+                  <th 
+                    onClick={() => requestSort('sqFt')}
+                    className="px-4 py-3 cursor-pointer hover:bg-stone-100 hover:text-stone-900 transition-colors"
+                  >
+                    Sq Ft{getSortIcon('sqFt')}
+                  </th>
+                  <th 
+                    onClick={() => requestSort('minPrice')}
+                    className="px-4 py-3 cursor-pointer hover:bg-stone-100 hover:text-stone-900 transition-colors"
+                  >
+                    Min price{getSortIcon('minPrice')}
+                  </th>
+                  <th 
+                    onClick={() => requestSort('maxPrice')}
+                    className="px-4 py-3 cursor-pointer hover:bg-stone-100 hover:text-stone-900 transition-colors"
+                  >
+                    Max price{getSortIcon('maxPrice')}
+                  </th>
+                  <th 
+                    onClick={() => requestSort('availability')}
+                    className="px-4 py-3 cursor-pointer hover:bg-stone-100 hover:text-stone-900 transition-colors"
+                  >
+                    Availability{getSortIcon('availability')}
+                  </th>
                   <th className="px-4 py-3 text-right">Favorite</th>
                 </tr>
               </thead>
               <tbody>
-                {floorPlans.map((plan) => {
+                {sortedFloorPlans.map((plan) => {
                   const favorite = isFavorite(plan.id)
                   return (
-                    <tr key={plan.id} className="border-t border-stone-100">
-                      <td className="px-4 py-3 text-stone-800">
+                    <tr key={plan.id} className="border-t border-stone-100 hover:bg-stone-50/40 transition-colors">
+                      <td className="px-4 py-3 text-stone-850 font-semibold">
                         <Link
                           to={`/floorplans/${encodeURIComponent(plan.id)}`}
                           className="text-[#BF5700] hover:underline"
@@ -155,7 +237,7 @@ export default function ApartmentDetailPage() {
                       <td className="px-4 py-3 text-stone-700">{plan.roomType}</td>
                       <td className="px-4 py-3 text-stone-700">{plan.beds}</td>
                       <td className="px-4 py-3 text-stone-700">{plan.baths}</td>
-                      <td className="px-4 py-3 text-stone-700">{plan.sqFt}</td>
+                      <td className="px-4 py-3 text-stone-700">{plan.sqFt ? plan.sqFt.toLocaleString() : '—'}</td>
                       <td className="px-4 py-3 text-stone-700">
                         {typeof plan.minPrice === 'number' && Number.isFinite(plan.minPrice)
                           ? `$${plan.minPrice.toLocaleString()}/mo`
@@ -166,12 +248,22 @@ export default function ApartmentDetailPage() {
                           ? `$${plan.maxPrice.toLocaleString()}/mo`
                           : '—'}
                       </td>
-                      <td className="px-4 py-3 text-stone-700">{plan.availability || '—'}</td>
+                      <td className="px-4 py-3 text-stone-700">
+                        <span className={`px-2 py-0.5 rounded-full text-2xs font-bold ${
+                          (plan.availability || '').toLowerCase().includes('sold out')
+                            ? 'bg-stone-100 text-stone-500'
+                            : (plan.availability || '').toLowerCase().includes('waitlist')
+                            ? 'bg-amber-50 text-amber-700'
+                            : 'bg-emerald-50 text-emerald-700'
+                        }`}>
+                          {plan.availability || '—'}
+                        </span>
+                      </td>
                       <td className="px-4 py-3 text-right">
                         <button
                           type="button"
                           onClick={() => toggleFavorite(plan.id)}
-                          className="inline-flex items-center gap-1 rounded-full border border-stone-200 bg-white px-3 py-1 text-xs font-medium text-stone-700 shadow-sm hover:border-[#BF5700] hover:text-[#BF5700]"
+                          className="inline-flex items-center gap-1 rounded-full border border-stone-200 bg-white px-3 py-1.5 text-xs font-bold text-stone-700 shadow-sm hover:border-[#BF5700] hover:text-[#BF5700] cursor-pointer hover:bg-stone-50 transition"
                         >
                           <span>{favorite ? '★' : '☆'}</span>
                           <span className="hidden sm:inline">

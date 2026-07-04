@@ -3,17 +3,24 @@ import ApartmentCard from './ApartmentCard'
 /**
  * @param {Object} props
  * @param {import('../../hooks/useAIAgent').Apartment[]} props.apartments
+ * @param {string|null} props.hoveredId
+ * @param {function} props.onHover
  */
-export default function ApartmentList({ apartments }) {
+export default function ApartmentList({ apartments, hoveredId, onHover }) {
   if (!apartments?.length) return null
 
   return (
-    <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+    <div className="flex flex-col gap-3">
       {apartments.map((apt) => (
-        <li key={apt.id}>
-          <ApartmentCard apartment={apt} />
-        </li>
+        <div key={apt.id} id={`card-${apt.id}`}>
+          <ApartmentCard
+            apartment={apt}
+            onHover={onHover}
+            highlighted={hoveredId === apt.id}
+          />
+        </div>
       ))}
-    </ul>
+    </div>
   )
 }
+

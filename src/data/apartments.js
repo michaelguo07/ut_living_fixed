@@ -382,12 +382,12 @@ const SUMMARY_MAP = new Map(
 const formatCost = (lowestPrice) =>
   typeof lowestPrice === 'number' && Number.isFinite(lowestPrice)
     ? `From $${lowestPrice}/mo`
-    : ''
+    : 'N/A'
 
 const formatAvailability = (availablePlans) =>
   typeof availablePlans === 'number' && Number.isFinite(availablePlans)
     ? `${availablePlans} plan${availablePlans === 1 ? '' : 's'} available`
-    : ''
+    : 'N/A'
 
 /**
  * UT Austin apartment list (placeholder fields for now).
