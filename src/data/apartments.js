@@ -389,24 +389,64 @@ const formatAvailability = (availablePlans) =>
     ? `${availablePlans} plan${availablePlans === 1 ? '' : 's'} available`
     : 'N/A'
 
+// Import FLOOR_PLANS at the bottom to prevent top-level circular dependency issues
+import { FLOOR_PLANS } from './floorPlans'
+
+// Compute real-time summaries dynamically from the scraped floor plans
+const dynamicSummaries = new Map()
+FLOOR_PLANS.forEach((plan) => {
+  const key = normalizePropertyName(plan.property)
+  if (!dynamicSummaries.has(key)) {
+    dynamicSummaries.set(key, {
+      property: plan.property,
+      totalPlans: 0,
+      availablePlans: 0,
+      lowestPrice: Infinity,
+      url: plan.url || '',
+    })
+  }
+  const meta = dynamicSummaries.get(key)
+  meta.totalPlans += 1
+
+  // Count availability: anything that is not sold out
+  const isSoldOut = plan.availability && plan.availability.toLowerCase().includes('sold out')
+  if (!isSoldOut) {
+    meta.availablePlans += 1
+  }
+
+  const price = plan.minPrice ?? plan.maxPrice
+  if (typeof price === 'number' && Number.isFinite(price) && price < meta.lowestPrice) {
+    meta.lowestPrice = price
+  }
+})
+
 /**
- * UT Austin apartment list (placeholder fields for now).
- * You can fill these in later or hydrate them from your AI agent.
+ * UT Austin apartment list (dynamically hydrated from scraped floor plans).
  */
 export const UT_AUSTIN_APARTMENTS = APARTMENT_NAMES.map((name) => {
-  const summary = SUMMARY_MAP.get(normalizePropertyName(name))
+  const normName = normalizePropertyName(name)
+  let summary = dynamicSummaries.get(normName)
+
+  // Fallback to static Excel summary if no scraper records exist for this property
+  if (!summary || summary.totalPlans === 0) {
+    summary = SUMMARY_MAP.get(normName)
+  }
+
+  const lowestPrice = summary && summary.lowestPrice !== Infinity ? summary.lowestPrice : null
+  const totalPlans = summary ? summary.totalPlans : null
+  const availablePlans = summary ? summary.availablePlans : null
 
   return {
     id: slugify(name),
     name,
     address: APARTMENT_ADDRESSES[name] || '',
-    cost: formatCost(summary?.lowestPrice),
+    cost: formatCost(lowestPrice),
     distanceFromTower: APARTMENT_DISTANCES[name] || '',
-    availability: formatAvailability(summary?.availablePlans),
+    availability: formatAvailability(availablePlans),
     url: summary?.url || '',
-    totalPlans: summary?.totalPlans ?? null,
-    availablePlans: summary?.availablePlans ?? null,
-    lowestPrice: summary?.lowestPrice ?? null,
+    totalPlans,
+    availablePlans,
+    lowestPrice,
     pros: APARTMENT_PROS[name] || [],
     cons: APARTMENT_CONS[name] || [],
     imageUrl: APARTMENT_IMAGES[name] || '',
