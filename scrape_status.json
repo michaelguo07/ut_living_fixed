@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-07-07T21:27:32.753114",
+  "run_at": "2026-07-07T23:06:08.032659",
   "total_properties": 17,
-  "ok": 16,
-  "warnings": 1,
+  "ok": 14,
+  "warnings": 3,
   "properties": [
     {
       "property": "The Block (various locations)",
@@ -76,8 +76,9 @@
     },
     {
       "property": "Inspire on 22nd",
-      "status": "ok",
-      "count": 22
+      "status": "cached",
+      "count": 22,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "ION Austin",
@@ -87,8 +88,9 @@
     },
     {
       "property": "Skyloft",
-      "status": "ok",
-      "count": 36
+      "status": "cached",
+      "count": 36,
+      "note": "Playwright scrape failed or skipped"
     }
   ]
 }
