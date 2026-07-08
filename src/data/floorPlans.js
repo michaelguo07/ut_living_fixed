@@ -5747,7 +5747,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 1.0,
     "sqFt": "359-387",
     "minPrice": 1700,
-    "maxPrice": 1975,
+    "maxPrice": 1875,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Soho-5.jpg",
