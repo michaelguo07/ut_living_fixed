@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-08T21:11:32.105052",
+  "run_at": "2026-07-08T23:12:06.067438",
   "total_properties": 17,
   "ok": 15,
   "warnings": 2,
@@ -76,9 +76,8 @@
     },
     {
       "property": "Inspire on 22nd",
-      "status": "cached",
-      "count": 22,
-      "note": "live scrape returned 0 results"
+      "status": "ok",
+      "count": 22
     },
     {
       "property": "ION Austin",
@@ -88,8 +87,9 @@
     },
     {
       "property": "Skyloft",
-      "status": "ok",
-      "count": 36
+      "status": "cached",
+      "count": 36,
+      "note": "Playwright scrape failed or skipped"
     }
   ]
 }
