@@ -4467,17 +4467,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1470",
     "minPrice": 1344,
     "maxPrice": 1384,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/687",
     "imagePath": "https://www.americancampus.com/getmedia/4dc75253-2b5e-4286-b709-5459030ade5e/687_Furnished-4-bed-4-bath-B-HC-01_1.png?width=661&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
+    "cons": []
   },
   {
     "property": "Crest at Pearl",
@@ -7733,8 +7732,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 0,
     "baths": 1.0,
     "sqFt": "520",
-    "minPrice": 1899,
-    "maxPrice": 1934,
+    "minPrice": 1875,
+    "maxPrice": 1910,
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa420eb99e146.04543478938.jpg",
@@ -7865,8 +7864,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 3.0,
     "sqFt": "1173",
-    "minPrice": 1299,
-    "maxPrice": 1430,
+    "minPrice": 1185,
+    "maxPrice": 1434,
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa42549231b03.67635048337.jpg",
@@ -7945,7 +7944,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 3.0,
     "sqFt": "1334",
-    "minPrice": 1224,
+    "minPrice": 1140,
     "maxPrice": 1625,
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
@@ -8026,7 +8025,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "1458",
-    "minPrice": 1250,
+    "minPrice": 1115,
     "maxPrice": 1435,
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
