@@ -7799,7 +7799,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 2.0,
     "sqFt": "820",
     "minPrice": 1740,
-    "maxPrice": 1815,
+    "maxPrice": 1740,
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa423e3ad6dc8.40710721841.jpg",
