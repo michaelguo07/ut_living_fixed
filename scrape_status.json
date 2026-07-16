@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-07-15T23:00:30.665435",
+  "run_at": "2026-07-16T02:52:33.262821",
   "total_properties": 17,
-  "ok": 14,
-  "warnings": 3,
+  "ok": 10,
+  "warnings": 7,
   "properties": [
     {
       "property": "The Block (various locations)",
@@ -36,28 +36,33 @@
     },
     {
       "property": "The Nine at West Campus",
-      "status": "ok",
-      "count": 14
+      "status": "cached",
+      "count": 14,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "The Standard at Austin",
-      "status": "ok",
-      "count": 27
+      "status": "cached",
+      "count": 27,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "Legacy on Rio",
-      "status": "ok",
-      "count": 33
+      "status": "cached",
+      "count": 33,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "The Mark Austin",
-      "status": "ok",
-      "count": 35
+      "status": "cached",
+      "count": 35,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "Moontower",
-      "status": "ok",
-      "count": 17
+      "status": "cached",
+      "count": 17,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "Yugo Austin Waterloo",
@@ -88,9 +93,8 @@
     },
     {
       "property": "Skyloft",
-      "status": "cached",
-      "count": 36,
-      "note": "Playwright scrape failed or skipped"
+      "status": "ok",
+      "count": 36
     }
   ]
 }
