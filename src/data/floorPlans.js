@@ -8090,7 +8090,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-henry-4-bedroom-644826",
     "imagePath": "https://yugo.com/resource/blob/644818/0ec8cf6494fde56d6c4a0ea0d2f8a835/yugo-austinwaterloo-2208dsc-8408-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8110,7 +8110,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-proper-4-bedroom-644880",
     "imagePath": "https://yugo.com/resource/blob/644868/7bd606de1b28510699a117d0502bbe56/yugo-austinwaterloo-2005dsc-8492-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8130,7 +8130,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-crawford-4-bedroom-644816",
     "imagePath": "https://yugo.com/resource/blob/644814/ec80ecc3a220f4b66dc11dd16729826b/crawford-rendering-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8150,7 +8150,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-joule-4-bedroom-644856",
     "imagePath": "https://yugo.com/resource/blob/644848/f313ca64d6d2b322bcaa4706caa3cbea/yugo-austinwaterloo-1309dsc-8213-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8170,7 +8170,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-hoxton-6-bed-6-bath-644844",
     "imagePath": "https://yugo.com/resource/blob/644828/ed546a0be77a6ae92b8ef0125a11d2a1/yugo-austinwaterloo-1902dsc-8330-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8190,7 +8190,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-zaza-6-bed-6-bath-644892",
     "imagePath": "https://yugo.com/resource/blob/644888/3571ab23ea6d00ba449928908529fbbd/4b-kitchen-henry-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8210,7 +8210,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-waldorf-2-bedroom--644886",
     "imagePath": "https://yugo.com/resource/blob/644646/8f64573fe986f0ffd3ab5b8514a65cb0/waldorfjpg-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -8231,7 +8231,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-ramble-3-bedroom-644882",
     "imagePath": "https://yugo.com/resource/blob/644644/701817dd04c673a14e373714899749c3/ramblejpg-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -8252,7 +8252,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/penthouse-on-30-5-bed-5-bath-644812",
     "imagePath": "https://yugo.com/resource/blob/678704/622893bc48a30c7982ce0d48204faf7e/yugo-website-photo-edits-1--data.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -8273,7 +8273,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-moxy-studio-644866",
     "imagePath": "https://yugo.com/resource/blob/644858/61a5f2b53e8ce8b47d866d4e95c99aea/yugo-austinwaterloo-2206dsc-8141-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8293,7 +8293,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-ivy-studio-644846",
     "imagePath": "https://yugo.com/resource/blob/644634/d1e530a3406394574713fab111c7851f/ivyjpg-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8313,7 +8313,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-plus-644172",
     "imagePath": "https://yugo.com/resource/blob/643756/7a679b7267574912f9d96fc44f45a062/yugo-austinrio-404dsc-7643-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8333,7 +8333,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-5-bath-plus-644190",
     "imagePath": "https://yugo.com/resource/blob/643784/0d5969e80a405d9b6df3991bb8c995f4/yugo-austinrio-610dsc-7931-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8353,7 +8353,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/-1-bed-1-bath-644156",
     "imagePath": "https://yugo.com/resource/blob/643742/72fe93f38ee98348b453826dffdab90b/yugo-austinrio-403dsc-7676-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished"
@@ -8374,7 +8374,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/-2-bed-1-bath-loft-644158",
     "imagePath": "https://yugo.com/resource/blob/643812/b0694846c33229ae69ff2e1d492f32f6/yugo-austinrio-702dsc-7819-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8395,7 +8395,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/-4-bed-2-bath-loft-644160",
     "imagePath": "https://yugo.com/resource/blob/643932/44b5e015cde7e3b1972deb8454c60aaf/4x4-kitchen-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8416,7 +8416,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-3-bath-loft-644162",
     "imagePath": "https://yugo.com/resource/blob/643858/ea958e84332aed5232f3284528a1608f/yugo-austinrio-708dsc-7342-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8437,7 +8437,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-classic-644164",
     "imagePath": "https://yugo.com/resource/blob/644040/7a11dc999891c411309d0d816ab4fe4c/5549-1169249-5d80ff17edeea6-892765059652-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -8458,7 +8458,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-deluxe-644166",
     "imagePath": "https://yugo.com/resource/blob/643690/2555c51a60d78cfe4b0f1bfe40486418/4x4-hall-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -8479,7 +8479,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-4-bath-classic-loft-644182",
     "imagePath": "https://yugo.com/resource/blob/643814/6f6ff7c724be70d5da6555b47957dbee/yugo-austinrio-703dsc-7393-edit-2-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8500,7 +8500,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-4-bath-plus-loft-644184",
     "imagePath": "https://yugo.com/resource/blob/643804/bc829de9865f57463284c61e42185d22/yugo-austinrio-701dsc-7784-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8521,7 +8521,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-5-bath-classic-644186",
     "imagePath": "https://yugo.com/resource/blob/643934/9bab4d925c38bcd33d43dbfb2441ac03/5521-1169249-5d80fcd8dc0432-04501086468-jpgw450h450-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -8542,7 +8542,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-5-bath-deluxe-644188",
     "imagePath": "https://yugo.com/resource/blob/643694/0ec834274630d198629c04fee41263d8/5x5-deluxe-kitchen-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -8563,7 +8563,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/6-bed-4-bath-loft-644198",
     "imagePath": "https://yugo.com/resource/blob/643850/78d38e628b81a8ee2c053f6e5429fdfa/yugo-austinrio-707dsc-7539-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8584,7 +8584,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-classic-644202",
     "imagePath": "https://yugo.com/resource/blob/643714/7a192ab9f7a59c60ad1de70e3ba8e2c3/yugo-austinrio-103dsc-7135-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8604,7 +8604,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-deluxe-644204",
     "imagePath": "https://yugo.com/resource/blob/643932/44b5e015cde7e3b1972deb8454c60aaf/4x4-kitchen-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8624,7 +8624,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-plus-644206",
     "imagePath": "https://yugo.com/resource/blob/643706/8c7e4e40b969ca78268f6dea79fd5097/austinrio-studioplus1-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -8644,7 +8644,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-premier-644208",
     "imagePath": "https://yugo.com/resource/blob/643726/794ec787579d6589977cb7a2ae748d24/yugo-austinrio-201dsc-6736-edit-data.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9067,7 +9067,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022252/69d6b91c0e9018.70895052503.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9088,7 +9088,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022335/69d6b946cf1752.36874217347.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9109,7 +9109,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022422/69d6b976d725c3.56313573264.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9129,7 +9129,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022517/69d6b9ad818837.33533161601.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9149,7 +9149,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/022924/6a1754244ec8b2.66176557707.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9169,7 +9169,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030344/6a4c18303eef97.83740551809.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9189,7 +9189,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/023225/6a1754d9d063d2.73811136737.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9209,7 +9209,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030949/6a4c199cddce51.90785753971.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9229,7 +9229,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031031/6a4c19c76f1413.20804420401.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9249,7 +9249,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031108/6a4c19ebeacb38.58535135456.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9269,7 +9269,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040817/69b48ad1d0ec33.27866602719.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9289,7 +9289,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040855/69b48af7733545.62508409154.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9309,7 +9309,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022708/69d6ba1c0e5258.76370505925.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9329,7 +9329,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021336/69b86470bd29b9.40869472826.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9349,7 +9349,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021419/69b8649b494ea4.18095443375.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9369,7 +9369,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021509/69b864cdb3ee29.06749675869.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9389,7 +9389,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021609/69b86508f37523.56797283303.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9409,7 +9409,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021648/69b86530af66f4.32232108186.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9429,7 +9429,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021728/69b86558925cd8.82615991966.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9449,7 +9449,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021809/69b8658117d974.61266279584.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9469,7 +9469,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022834/69d6ba72063385.29255989746.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9489,7 +9489,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/06/25/112448/6a3d64603d1812.75111911795.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],

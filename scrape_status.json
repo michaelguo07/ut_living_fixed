@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-07-16T06:22:48.300884",
+  "run_at": "2026-07-16T10:13:32.696567",
   "total_properties": 17,
-  "ok": 15,
-  "warnings": 2,
+  "ok": 12,
+  "warnings": 5,
   "properties": [
     {
       "property": "The Block (various locations)",
@@ -61,13 +61,15 @@
     },
     {
       "property": "Yugo Austin Waterloo",
-      "status": "ok",
-      "count": 11
+      "status": "cached",
+      "count": 11,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "Yugo Austin Rio",
-      "status": "ok",
-      "count": 17
+      "status": "cached",
+      "count": 17,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "Villas on Rio",
@@ -76,8 +78,9 @@
     },
     {
       "property": "Inspire on 22nd",
-      "status": "ok",
-      "count": 22
+      "status": "cached",
+      "count": 22,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "ION Austin",
