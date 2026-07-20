@@ -7713,7 +7713,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 6.0,
     "sqFt": "1908",
     "minPrice": 1255,
-    "maxPrice": 1265,
+    "maxPrice": 1255,
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_F2_2056.jpg",
