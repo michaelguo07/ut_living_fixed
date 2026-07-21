@@ -6063,7 +6063,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 3.0,
     "sqFt": "",
-    "minPrice": 1299,
+    "minPrice": 1525,
     "maxPrice": 1540,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
