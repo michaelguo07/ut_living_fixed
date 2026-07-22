@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-07-22T06:32:11.049747",
+  "run_at": "2026-07-22T10:29:03.377244",
   "total_properties": 17,
-  "ok": 16,
-  "warnings": 1,
+  "ok": 15,
+  "warnings": 2,
   "properties": [
     {
       "property": "The Block (various locations)",
@@ -87,8 +87,9 @@
     },
     {
       "property": "Skyloft",
-      "status": "ok",
-      "count": 36
+      "status": "cached",
+      "count": 36,
+      "note": "Playwright scrape failed or skipped"
     }
   ]
 }
