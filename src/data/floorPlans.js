@@ -9068,7 +9068,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022252/69d6b91c0e9018.70895052503.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9089,7 +9089,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022335/69d6b946cf1752.36874217347.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9110,7 +9110,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022422/69d6b976d725c3.56313573264.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9130,7 +9130,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022517/69d6b9ad818837.33533161601.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9150,7 +9150,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/022924/6a1754244ec8b2.66176557707.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9170,7 +9170,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030344/6a4c18303eef97.83740551809.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9190,7 +9190,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/023225/6a1754d9d063d2.73811136737.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9210,7 +9210,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030949/6a4c199cddce51.90785753971.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9230,7 +9230,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031031/6a4c19c76f1413.20804420401.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9250,7 +9250,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031108/6a4c19ebeacb38.58535135456.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9270,7 +9270,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040817/69b48ad1d0ec33.27866602719.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9290,7 +9290,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040855/69b48af7733545.62508409154.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9310,7 +9310,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022708/69d6ba1c0e5258.76370505925.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9330,7 +9330,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021336/69b86470bd29b9.40869472826.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9350,7 +9350,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021419/69b8649b494ea4.18095443375.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9370,7 +9370,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021509/69b864cdb3ee29.06749675869.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9390,7 +9390,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021609/69b86508f37523.56797283303.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9410,7 +9410,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021648/69b86530af66f4.32232108186.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9430,7 +9430,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021728/69b86558925cd8.82615991966.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9450,7 +9450,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021809/69b8658117d974.61266279584.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9470,7 +9470,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022834/69d6ba72063385.29255989746.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9490,7 +9490,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/06/25/112448/6a3d64603d1812.75111911795.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9676,7 +9676,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/021933/699e15e5a20657.42652043764.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9697,7 +9697,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110058/68f90dca840768.45403480273.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9718,7 +9718,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022137/699e1661024914.02206401211.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished"
@@ -9740,7 +9740,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093227/68f2618bd29158.28480327187.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished"
@@ -9762,7 +9762,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093256/68f261a8609830.56139820550.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished"
@@ -9784,7 +9784,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022207/699e167fb79e50.43332203490.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9805,7 +9805,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/121654/678aaca69693e2.75525262279.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -9826,7 +9826,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/121718/678aacbedff209.70340974442.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -9847,7 +9847,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/121744/678aacd89ade89.20137842530.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -9868,7 +9868,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022333/699e16d55dcd83.05728699163.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9889,7 +9889,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022407/699e16f7570916.13423350752.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9910,7 +9910,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022551/699e175f3d0293.17272641357.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9931,7 +9931,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110138/68f90df239e543.46740171544.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9952,7 +9952,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/03/16/011433/69b856993ce1f6.55438196852.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9973,7 +9973,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/122105/678aada1e60360.48303376809.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -9994,7 +9994,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110208/68f90e10b64926.10263842170.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10015,7 +10015,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/122219/678aadeb701f24.75421133747.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10036,7 +10036,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/122247/678aae07250402.32092294629.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10057,7 +10057,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/122316/678aae246ba5a5.26142517265.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10078,7 +10078,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093400/68f261e8d99a61.12276692657.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10099,7 +10099,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022629/699e1785460a39.38541329993.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10120,7 +10120,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022656/699e17a032bfa6.79594014204.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10141,7 +10141,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022733/699e17c549f2c4.32275832883.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10162,7 +10162,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/03/16/011248/69b85630ab2957.23638686630.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10183,7 +10183,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110237/68f90e2d979ab3.57066325767.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10204,7 +10204,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093440/68f262109c05d1.76660653288.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10225,7 +10225,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022808/699e17e873c5f3.71896701286.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10246,7 +10246,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110305/68f90e49cdc154.66917735407.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10267,7 +10267,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110825/68f90f89c64036.53996417419.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10288,7 +10288,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093515/68f262335ccc72.81174545582.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10309,7 +10309,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093551/68f26257753e84.27997906780.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10330,7 +10330,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/03/16/011338/69b856623878e3.79087317447.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10351,7 +10351,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093622/68f2627632f558.95284779967.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10372,7 +10372,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093652/68f262944cdac7.53633194794.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10393,7 +10393,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/094357/68f2643d06fbf4.73887916918.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10414,7 +10414,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/094437/68f264659ef325.94842669414.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
