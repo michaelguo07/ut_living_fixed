@@ -10,17 +10,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "375",
     "minPrice": 1359,
     "maxPrice": 1359,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/e02bc780-6824-458c-84f4-7969bc81736c/671-23rd-Efficiency-SMART-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
-      "Affordable SMART housing program rate",
-      "Direct lease available"
+      "Affordable SMART housing program rate"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -159,17 +160,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "632",
     "minPrice": 1447,
     "maxPrice": 1447,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/4f2f8fff-7fdf-4f8d-9ee9-5c7e60008a3f/671-23rd-1-Bed-1-Bath-A-SMART-01.png?width=661&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
-      "Affordable SMART housing program rate",
-      "Direct lease available"
+      "Affordable SMART housing program rate"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -331,16 +333,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "926",
     "minPrice": 1179,
     "maxPrice": 1199,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/4d17b24d-2ebb-466f-b237-e67290c163a6/671-23rd-2-Bed-2-Bath-B-Premium-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -392,18 +395,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "",
     "minPrice": 564,
     "maxPrice": 564,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/63ee7804-7c75-42c2-9164-3fcdffcc05e1/671-23rd-2-Bed-2-Bath-D-Premium-Shared-Furnished.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)"
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)",
-      "Waitlist status (limited immediate spots)"
+      "Shared bedroom (limited privacy)"
     ]
   },
   {
@@ -604,16 +607,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1064",
     "minPrice": 1469,
     "maxPrice": 1479,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/5a7922d1-816b-4ef9-a0bf-770ef0ebce3c/671-25th-East-2-Bed-1-Bath-A-Premium-with-Loft-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (2 residents sharing 1 baths)",
-      "Waitlist status (limited immediate spots)"
+      "Shared bathroom (2 residents sharing 1 baths)"
     ]
   },
   {
@@ -708,18 +711,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1100",
     "minPrice": 469,
     "maxPrice": 479,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/33e527a0-4245-4451-822e-1b8ce3f5332f/671-25th-East-2-Bed-2-Bath-C-Premium-Private-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -1775,16 +1778,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "521",
     "minPrice": 1539,
     "maxPrice": 1539,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/11e4da16-1486-42b5-bacd-d62384b81ffa/28th-1-Bed-1-Bath-A-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -1795,16 +1799,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "521",
     "minPrice": 1469,
     "maxPrice": 1519,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/1296d10c-ba5d-4f6a-af0e-837f5f90f98a/671-28th-1-bed-1-bath-A-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -1984,18 +1989,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1000",
     "minPrice": 439,
     "maxPrice": 439,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/2236f533-62f9-4867-8ddb-6b4b923a51d2/671-28th-2-bed-2-bath-B-Shared-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -2007,17 +2012,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "930",
     "minPrice": 1039,
     "maxPrice": 1039,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/bdc50695-0194-44df-bcba-b47bab1f2d31/671-28th-2-bed-2-bath-C-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
+    "cons": []
   },
   {
     "property": "The Block (various locations)",
@@ -2048,18 +2052,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1066",
     "minPrice": 469,
     "maxPrice": 469,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/9ad9b07f-1356-43e9-9e72-8289499e1412/671-28th-2-bed-2-bath-D-Premium-Shared-01_1.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -2091,17 +2095,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1504",
     "minPrice": 834,
     "maxPrice": 874,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/18cde729-bf7c-4396-8258-b908e2426873/671-28th-4-bed-2-bath-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 2 baths)"
+      "Shared bathroom (4 residents sharing 2 baths)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -2263,16 +2267,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "712",
     "minPrice": 1619,
     "maxPrice": 1619,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/b1c5de31-715f-42f0-afd1-f8df0e509b60/671-Leon-1-bed-1-bath-E-Premium-w-Loft-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -2329,17 +2334,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "886",
     "minPrice": 899,
     "maxPrice": 939,
-    "availability": "Available",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/7e27bc39-14ab-4ceb-8ea5-89268a8cb1e4/671-Leon-2-bed-2-bath-B-Premium-Private-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -2372,18 +2378,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "902",
     "minPrice": 399,
     "maxPrice": 399,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/4efcf56c-0790-41f8-ad20-b9531c48bf39/671-Leon-2-bed-2-bath-C-Premium-Private-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -2395,17 +2401,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "956",
     "minPrice": 929,
     "maxPrice": 969,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/0263e88a-3f24-4756-aa1d-8cb60577ee43/671-Leon-2-bed-2-bath-D-Premium-Private-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -2416,18 +2423,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "916",
     "minPrice": 369,
     "maxPrice": 369,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/52aa7991-6641-4d83-8e97-09c07d7b20af/671-Leon-2-Bed-2-Bath-D-Shared-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -2527,18 +2534,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1056",
     "minPrice": 439,
     "maxPrice": 439,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/91a41e19-8257-4778-a394-d80d03e1da3a/671-Leon-2-bed-2-bath-G-Premium-Shared-01_1.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -2638,16 +2645,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1204",
     "minPrice": 1059,
     "maxPrice": 1099,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/550ab7fc-5f48-48dc-a1d4-067fd707d697/671-Leon-2-bed-2-bath-L-Premium-w-Loft-Private-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -2808,17 +2816,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "521",
     "minPrice": 1447,
     "maxPrice": 1447,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/08c56976-cb2a-446a-8987-30a09c2f2db4/671-Pearl-N-1-bed-1-bath-A-Premium-Private-01_1?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
-      "Affordable SMART housing program rate",
-      "Direct lease available"
+      "Affordable SMART housing program rate"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -2959,16 +2968,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1240",
     "minPrice": 1264,
     "maxPrice": 1264,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/456d4f0a-2597-4608-b87d-81e53b2fd5b4/671-Pearl-N-2-bed-2-bath-E-Premium-w-Loft-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -3279,18 +3289,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1064",
     "minPrice": 554,
     "maxPrice": 584,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/33a3ccd9-9194-4ea1-b45e-2efdbe73e856/671-Pearl-S-2-Bed-2-Bath-D-Premium-Shared-ORIGINAL-01_1.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -3406,16 +3416,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "505",
     "minPrice": 1474,
     "maxPrice": 1474,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/ea830dbc-0506-4b4d-9dbc-195c94c472b5/671-Rio-1-Bed-1-Bath-A-Premium-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -3448,16 +3459,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "621",
     "minPrice": 1454,
     "maxPrice": 1454,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/a7a38d71-ea86-455d-9d60-9fa94f567755/671-Rio-1-Bed-1-Bath-B-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -3621,17 +3633,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1353",
     "minPrice": 1154,
     "maxPrice": 1184,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/9d9f9e34-5833-4314-b464-8cb366adabad/671-rio-3-bed-3-bath-a-premium-private-balcony-bedroom-furnished-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
+    "cons": []
   },
   {
     "property": "The Block (various locations)",
