@@ -6569,8 +6569,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 3.0,
     "sqFt": "972",
-    "minPrice": 1425,
-    "maxPrice": 1485,
+    "minPrice": 1160,
+    "maxPrice": 1425,
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/12_legacy-on-rio-floorplans_C3.jpg",
@@ -6649,8 +6649,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 3.0,
     "sqFt": "1013",
-    "minPrice": 1440,
-    "maxPrice": 1510,
+    "minPrice": 1185,
+    "maxPrice": 1440,
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/16_legacy-on-rio-floorplans_C7.jpg",
@@ -6689,7 +6689,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 2.0,
     "sqFt": "1013",
-    "minPrice": 1140,
+    "minPrice": 1010,
     "maxPrice": 1330,
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
@@ -6752,7 +6752,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "1301",
-    "minPrice": 1255,
+    "minPrice": 1099,
     "maxPrice": 1390,
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
@@ -8667,40 +8667,38 @@ const RAW_FLOOR_PLANS = [
   {
     "property": "Villas on Rio",
     "plan": "B1",
-    "roomType": "2 BED / 2 BATH",
-    "beds": 2,
-    "baths": 2.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 1539,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "SOLD OUT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/074230/66a8edc5e1ab92.50391872865.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Villas on Rio",
     "plan": "B1-SHARED",
-    "roomType": "2 BED / 2 BATH",
-    "beds": 2,
-    "baths": 2.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
-    "availability": "1 FEMALE PRIVATE ROOM LEFT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/074507/66a8ee63ae0225.84930273797.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
     "cons": [
       "Shared bedroom (limited privacy)"
@@ -8709,18 +8707,17 @@ const RAW_FLOOR_PLANS = [
   {
     "property": "Villas on Rio",
     "plan": "B2-SHARED",
-    "roomType": "2 BED / 2 BATH",
-    "beds": 2,
-    "baths": 2.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
-    "availability": "LIMITED AVAILABILITY",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/075103/66a8efc718a691.34861874550.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
       "Fully furnished",
       "Direct lease available"
     ],
@@ -8731,20 +8728,19 @@ const RAW_FLOOR_PLANS = [
   {
     "property": "Villas on Rio",
     "plan": "B2A-SHARED",
-    "roomType": "2 BED / 2 BATH",
-    "beds": 2,
-    "baths": 2.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 939,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "1 SPOT LEFT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/080049/66a8f211dbd195.07464493752.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)"
+      "Direct lease available"
     ],
     "cons": [
       "Shared bedroom (limited privacy)"
@@ -8753,61 +8749,57 @@ const RAW_FLOOR_PLANS = [
   {
     "property": "Villas on Rio",
     "plan": "B3",
-    "roomType": "2 BED / 2 BATH",
-    "beds": 2,
-    "baths": 2.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 1499,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "SOLD OUT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081417/66a8f5391759c7.26358638119.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Villas on Rio",
     "plan": "B4",
-    "roomType": "2 BED / 2 BATH",
-    "beds": 2,
-    "baths": 2.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 1509,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "SOLD OUT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081714/66a8f5e9f3af27.75111402120.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Villas on Rio",
     "plan": "B4-SHARED",
-    "roomType": "2 BED / 2 BATH",
-    "beds": 2,
-    "baths": 2.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
-    "availability": "POD LOCK OFF SPECIAL",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081901/66a8f655a6a746.91993431818.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
     "cons": [
       "Shared bedroom (limited privacy)"
@@ -8816,102 +8808,95 @@ const RAW_FLOOR_PLANS = [
   {
     "property": "Villas on Rio",
     "plan": "B5",
-    "roomType": "2 BED / 2 BATH",
-    "beds": 2,
-    "baths": 2.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 1619,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "SOLD OUT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/082027/66a8f6aadfb1a1.06243773303.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Villas on Rio",
     "plan": "B5-SHARED",
-    "roomType": "2 BED / 2 BATH",
-    "beds": 2,
-    "baths": 2.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 989,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "SOLD OUT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083227/66a8f97bcc20e6.53471616903.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)"
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)",
-      "Currently sold out / waitlist only"
+      "Shared bedroom (limited privacy)"
     ]
   },
   {
     "property": "Villas on Rio",
     "plan": "C1",
-    "roomType": "3 BED / 3 BATH",
-    "beds": 3,
-    "baths": 3.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 3 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  3",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 1579,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "1 FEMALE SPOT LEFT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083352/66a8f9d09f8a69.38713837294.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
     "cons": []
   },
   {
     "property": "Villas on Rio",
     "plan": "C2",
-    "roomType": "3 BED / 3 BATH",
-    "beds": 3,
-    "baths": 3.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 3 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  3",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 1569,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "SOLD OUT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083913/66a8fb11572cd7.03817832163.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Villas on Rio",
     "plan": "C1-SHARED",
-    "roomType": "3 BED / 3 BATH",
-    "beds": 3,
-    "baths": 3.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 3 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  3",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
-    "availability": "LIMITED AVAILABILITY",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/093814/66a908e5f1c505.83648925912.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
       "Fully furnished",
       "Direct lease available"
     ],
@@ -8922,18 +8907,17 @@ const RAW_FLOOR_PLANS = [
   {
     "property": "Villas on Rio",
     "plan": "C2-SHARED",
-    "roomType": "3 BED / 3 BATH",
-    "beds": 3,
-    "baths": 3.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 3 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  3",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
-    "availability": "LIMITED AVAILABILITY",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/104237/66a917fd624200.20996211501.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
       "Fully furnished",
       "Direct lease available"
     ],
@@ -8944,20 +8928,19 @@ const RAW_FLOOR_PLANS = [
   {
     "property": "Villas on Rio",
     "plan": "C3-SHARED",
-    "roomType": "3 BED / 3 BATH",
-    "beds": 3,
-    "baths": 3.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 3 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  3",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 939,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "ONLY FEMALE SPACES LEFT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/105122/66a91a0a939034.25287345968.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)"
+      "Direct lease available"
     ],
     "cons": [
       "Shared bedroom (limited privacy)"
@@ -8966,82 +8949,78 @@ const RAW_FLOOR_PLANS = [
   {
     "property": "Villas on Rio",
     "plan": "D1",
-    "roomType": "4 BED / 4 BATH",
-    "beds": 4,
-    "baths": 4.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 4 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  4",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 1350,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "1 FEMALE SPOT LEFT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/105341/66a91a9596cac8.93442523464.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
     "cons": []
   },
   {
     "property": "Villas on Rio",
     "plan": "D5",
-    "roomType": "4 BED / 4 BATH",
-    "beds": 4,
-    "baths": 4.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 4 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  4",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 1519,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "SOLD OUT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/110356/66a91cfc4eeee0.34665177884.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Villas on Rio",
     "plan": "D5TH-SHARED",
-    "roomType": "4 BED / 4 BATH",
-    "beds": 4,
-    "baths": 4.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 4 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  4",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
-    "availability": "SOLD OUT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/110718/66a91dc5de6fb2.63267255476.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)",
-      "Currently sold out / waitlist only"
+      "Shared bedroom (limited privacy)"
     ]
   },
   {
     "property": "Villas on Rio",
     "plan": "D5-SHARED",
-    "roomType": "4 BED / 4 BATH",
-    "beds": 4,
-    "baths": 4.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 4 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  4",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 939,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "1 FEMALE PRIVATE SPOT LEFT",
+    "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/111315/66a91f2b244ea5.56945494937.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)"
+      "Direct lease available"
     ],
     "cons": [
       "Shared bedroom (limited privacy)"
@@ -9050,18 +9029,17 @@ const RAW_FLOOR_PLANS = [
   {
     "property": "Villas on Rio",
     "plan": "5x5",
-    "roomType": "5 BED / 5 BATH",
-    "beds": 5,
-    "baths": 5.0,
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 5 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  5",
+    "beds": null,
+    "baths": null,
     "sqFt": "",
-    "minPrice": 1519,
+    "minPrice": null,
     "maxPrice": null,
-    "availability": "SOLD OUT",
+    "availability": "<span>Sold Out </span>",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/111613/66a91fdd02d443.80324064376.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
       "Fully furnished"
     ],
     "cons": [
@@ -9688,7 +9666,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/021933/699e15e5a20657.42652043764.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9709,7 +9687,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110058/68f90dca840768.45403480273.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9730,7 +9708,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022137/699e1661024914.02206401211.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished"
@@ -9752,7 +9730,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093227/68f2618bd29158.28480327187.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished"
@@ -9774,7 +9752,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093256/68f261a8609830.56139820550.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished"
@@ -9796,7 +9774,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022207/699e167fb79e50.43332203490.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9817,7 +9795,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/121654/678aaca69693e2.75525262279.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -9838,7 +9816,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/121718/678aacbedff209.70340974442.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -9859,7 +9837,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/121744/678aacd89ade89.20137842530.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -9880,7 +9858,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022333/699e16d55dcd83.05728699163.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9901,7 +9879,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022407/699e16f7570916.13423350752.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9922,7 +9900,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022551/699e175f3d0293.17272641357.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9943,7 +9921,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110138/68f90df239e543.46740171544.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9964,7 +9942,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/03/16/011433/69b856993ce1f6.55438196852.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9985,7 +9963,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/122105/678aada1e60360.48303376809.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10006,7 +9984,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110208/68f90e10b64926.10263842170.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10027,7 +10005,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/122219/678aadeb701f24.75421133747.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10048,7 +10026,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/122247/678aae07250402.32092294629.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10069,7 +10047,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/01/17/122316/678aae246ba5a5.26142517265.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10090,7 +10068,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093400/68f261e8d99a61.12276692657.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished"
@@ -10111,7 +10089,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022629/699e1785460a39.38541329993.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10132,7 +10110,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022656/699e17a032bfa6.79594014204.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10153,7 +10131,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022733/699e17c549f2c4.32275832883.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10174,7 +10152,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/03/16/011248/69b85630ab2957.23638686630.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10195,7 +10173,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110237/68f90e2d979ab3.57066325767.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10216,7 +10194,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093440/68f262109c05d1.76660653288.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10237,7 +10215,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022808/699e17e873c5f3.71896701286.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10258,7 +10236,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110305/68f90e49cdc154.66917735407.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10279,7 +10257,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110825/68f90f89c64036.53996417419.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10300,7 +10278,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093515/68f262335ccc72.81174545582.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10321,7 +10299,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093551/68f26257753e84.27997906780.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10342,7 +10320,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/03/16/011338/69b856623878e3.79087317447.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10363,7 +10341,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093622/68f2627632f558.95284779967.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10384,7 +10362,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093652/68f262944cdac7.53633194794.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10405,7 +10383,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/094357/68f2643d06fbf4.73887916918.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -10426,7 +10404,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.skyloftatx.com/austin/95211-skyloft/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/094437/68f264659ef325.94842669414.jpg",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
