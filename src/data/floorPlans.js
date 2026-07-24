@@ -8314,26 +8314,6 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "Yugo Austin Rio",
-    "plan": "4 Bed, 4 Bath Plus",
-    "roomType": "4 Bed / 4.0 Bath",
-    "beds": 4,
-    "baths": 4.0,
-    "sqFt": "",
-    "minPrice": 1249,
-    "maxPrice": null,
-    "availability": "Available",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-plus-644172",
-    "imagePath": "https://yugo.com/resource/blob/643756/7a679b7267574912f9d96fc44f45a062/yugo-austinrio-404dsc-7643-edit-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "Yugo Austin Rio",
     "plan": "5 Bed, 5 Bath Plus",
     "roomType": "5 Bed / 5.0 Bath",
     "beds": 5,
@@ -8469,6 +8449,27 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-deluxe-644166",
     "imagePath": "https://yugo.com/resource/blob/643690/2555c51a60d78cfe4b0f1bfe40486418/4x4-hall-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Rio",
+    "plan": "4 Bed, 4 Bath Plus",
+    "roomType": "4 Bed / 4.0 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-plus-644172",
+    "imagePath": "https://yugo.com/resource/blob/643756/7a679b7267574912f9d96fc44f45a062/yugo-austinrio-404dsc-7643-edit-data.jpg",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
@@ -9079,7 +9080,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022252/69d6b91c0e9018.70895052503.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9100,7 +9101,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022335/69d6b946cf1752.36874217347.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9121,7 +9122,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022422/69d6b976d725c3.56313573264.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9141,7 +9142,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022517/69d6b9ad818837.33533161601.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9161,7 +9162,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/022924/6a1754244ec8b2.66176557707.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9181,7 +9182,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030344/6a4c18303eef97.83740551809.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9201,7 +9202,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/023225/6a1754d9d063d2.73811136737.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9221,7 +9222,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030949/6a4c199cddce51.90785753971.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9241,7 +9242,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031031/6a4c19c76f1413.20804420401.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9261,7 +9262,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031108/6a4c19ebeacb38.58535135456.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9281,7 +9282,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040817/69b48ad1d0ec33.27866602719.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9301,7 +9302,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040855/69b48af7733545.62508409154.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9321,7 +9322,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022708/69d6ba1c0e5258.76370505925.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9341,7 +9342,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021336/69b86470bd29b9.40869472826.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9361,7 +9362,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021419/69b8649b494ea4.18095443375.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9381,7 +9382,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021509/69b864cdb3ee29.06749675869.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9401,7 +9402,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021609/69b86508f37523.56797283303.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9421,7 +9422,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021648/69b86530af66f4.32232108186.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9441,7 +9442,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021728/69b86558925cd8.82615991966.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9461,7 +9462,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021809/69b8658117d974.61266279584.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9481,7 +9482,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022834/69d6ba72063385.29255989746.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9501,7 +9502,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/06/25/112448/6a3d64603d1812.75111911795.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
