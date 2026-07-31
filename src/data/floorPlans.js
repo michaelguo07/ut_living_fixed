@@ -5760,7 +5760,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 0,
     "baths": 1.0,
     "sqFt": "359-387",
-    "minPrice": 1700,
+    "minPrice": 1850,
     "maxPrice": 1875,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
@@ -5771,7 +5771,9 @@ const RAW_FLOOR_PLANS = [
       "Fully furnished",
       "Direct lease available"
     ],
-    "cons": []
+    "cons": [
+      "Premium pricing tier"
+    ]
   },
   {
     "property": "The Standard at Austin",
@@ -5928,7 +5930,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 2,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": 2060,
+    "minPrice": 2415,
     "maxPrice": 2415,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
@@ -6061,7 +6063,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 3.0,
     "sqFt": "",
     "minPrice": 1525,
-    "maxPrice": 1540,
+    "maxPrice": 1525,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Chelsea.jpg",
@@ -6080,7 +6082,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1655,
+    "minPrice": 1675,
     "maxPrice": 1690,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
@@ -6263,7 +6265,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 5.0,
     "sqFt": "",
     "minPrice": 1345,
-    "maxPrice": 1440,
+    "maxPrice": 1345,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Fulton.png",
