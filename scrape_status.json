@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-07-30T23:11:10.071837",
+  "run_at": "2026-07-31T03:19:03.605410",
   "total_properties": 17,
   "ok": 14,
   "warnings": 3,
@@ -27,7 +27,7 @@
     {
       "property": "Crest at Pearl",
       "status": "ok",
-      "count": 26
+      "count": 25
     },
     {
       "property": "Texan & Vintage",
