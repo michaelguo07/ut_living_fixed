@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-08-03T19:41:52.407170",
+  "run_at": "2026-08-03T21:06:43.178241",
   "total_properties": 17,
-  "ok": 15,
-  "warnings": 2,
+  "ok": 14,
+  "warnings": 3,
   "properties": [
     {
       "property": "The Block (various locations)",
@@ -76,8 +76,9 @@
     },
     {
       "property": "Inspire on 22nd",
-      "status": "ok",
-      "count": 22
+      "status": "cached",
+      "count": 22,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "ION Austin",
