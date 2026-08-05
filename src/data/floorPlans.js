@@ -5264,18 +5264,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "524",
     "minPrice": 1702,
     "maxPrice": 1702,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/672",
     "imagePath": "https://www.americancampus.com/getmedia/c7ec6b9e-5f3e-4ba4-86f4-cd50839febe4/673_Furnished-1-bed-1-bath-Florence-Furnished-01-copy.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
-      "Affordable SMART housing program rate"
+      "Affordable SMART housing program rate",
+      "Direct lease available"
     ],
     "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
+      "Premium pricing tier"
     ]
   },
   {
