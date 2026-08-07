@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-06T14:19:38.472064",
+  "run_at": "2026-08-07T00:04:56.031790",
   "total_properties": 17,
   "ok": 15,
   "warnings": 2,
@@ -72,7 +72,7 @@
     {
       "property": "Villas on Rio",
       "status": "ok",
-      "count": 19
+      "count": 20
     },
     {
       "property": "Inspire on 22nd",

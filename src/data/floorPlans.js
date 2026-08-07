@@ -6123,7 +6123,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 4.0,
     "sqFt": "",
     "minPrice": 1455,
-    "maxPrice": 1515,
+    "maxPrice": 1455,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Derby.jpg",
@@ -8710,6 +8710,25 @@ const RAW_FLOOR_PLANS = [
     "cons": [
       "Shared bedroom (limited privacy)"
     ]
+  },
+  {
+    "property": "Villas on Rio",
+    "plan": "B2-X",
+    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
+    "beds": null,
+    "baths": null,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://villasonrio.com/floor-plans/",
+    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081220/66a8f4c46b4217.15041962254.png",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished",
+      "Direct lease available"
+    ],
+    "cons": []
   },
   {
     "property": "Villas on Rio",
