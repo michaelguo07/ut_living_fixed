@@ -4110,8 +4110,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 3274,
-    "maxPrice": 3274,
+    "minPrice": 3199,
+    "maxPrice": 3199,
     "availability": "Available",
     "url": "https://www.americancampus.com/api/lightning/floorplans/685",
     "imagePath": "https://www.americancampus.com/getmedia/31d272a2-65f1-49bf-833f-3cb82f526771/Callaway-Austin-4-bed-4-bath-Corner-Suite-Single-No1.png?width=660&height=446&ext=.png",
@@ -5199,8 +5199,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "1692",
-    "minPrice": 1139,
-    "maxPrice": 1139,
+    "minPrice": 1099,
+    "maxPrice": 1099,
     "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/672",
     "imagePath": "https://www.americancampus.com/getmedia/1a858313-96e1-4dca-a3b2-0c61b2ccf068/672_Furnished-4-Bed-4-Bath-Guadalupe-01-copy.png?width=660&height=446&ext=.png",
@@ -5240,8 +5240,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 1,
     "baths": 1.0,
     "sqFt": "524",
-    "minPrice": 1759,
-    "maxPrice": 1759,
+    "minPrice": 1709,
+    "maxPrice": 1709,
     "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/672",
     "imagePath": "https://www.americancampus.com/getmedia/c7ec6b9e-5f3e-4ba4-86f4-cd50839febe4/673_Furnished-1-bed-1-bath-Florence-Furnished-01-copy.png?width=660&height=446&ext=.png",
@@ -5285,8 +5285,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 1,
     "baths": 1.0,
     "sqFt": "529",
-    "minPrice": 1729,
-    "maxPrice": 1729,
+    "minPrice": 1679,
+    "maxPrice": 1679,
     "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/672",
     "imagePath": "https://www.americancampus.com/getmedia/98173143-4053-41dc-8da9-2b229ba417d4/673_1-bed-1-bath-Padova-Furnished-01.png?width=660&height=446&ext=.png",
@@ -5296,9 +5296,7 @@ const RAW_FLOOR_PLANS = [
       "Fully furnished",
       "Direct lease available"
     ],
-    "cons": [
-      "Premium pricing tier"
-    ]
+    "cons": []
   },
   {
     "property": "Texan & Vintage",
