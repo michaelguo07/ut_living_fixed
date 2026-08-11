@@ -4197,13 +4197,36 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "The Castilian",
-    "plan": "2 Bed - 1 Bath",
+    "plan": "2 Bed - 1 Bath Private",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "227",
+    "minPrice": 2659,
+    "maxPrice": 2664,
+    "availability": "Available",
+    "url": "https://www.americancampus.com/api/lightning/floorplans/674",
+    "imagePath": "https://www.americancampus.com/getmedia/8598adab-42b3-4be5-8d2e-f477ccffe321/Castilian-Suite-Single-Room-01.png?width=756&height=511&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "All-inclusive meals (meal plan included)",
+      "All utilities included (electricity, water, internet)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Premium pricing tier"
+    ]
+  },
+  {
+    "property": "The Castilian",
+    "plan": "2 Bed - 1 Bath Shared",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
     "baths": 1.0,
     "sqFt": "227",
     "minPrice": 1649,
-    "maxPrice": 2664,
+    "maxPrice": 1779,
     "availability": "Available",
     "url": "https://www.americancampus.com/api/lightning/floorplans/674",
     "imagePath": "https://www.americancampus.com/getmedia/d4957b13-0b65-49af-aea2-0cf2e91f7b25/674_Suite-Double-Room-ORIGINAL-01-01.png?width=660&height=446&ext=.png",
@@ -4214,7 +4237,9 @@ const RAW_FLOOR_PLANS = [
       "All utilities included (electricity, water, internet)",
       "Direct lease available"
     ],
-    "cons": []
+    "cons": [
+      "Shared bedroom (limited privacy)"
+    ]
   },
   {
     "property": "26 West",
