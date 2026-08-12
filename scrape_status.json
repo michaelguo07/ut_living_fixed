@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-12T05:39:51.561806",
+  "run_at": "2026-08-12T07:37:25.854654",
   "total_properties": 17,
   "ok": 14,
   "warnings": 3,
@@ -71,14 +71,14 @@
     },
     {
       "property": "Villas on Rio",
-      "status": "ok",
-      "count": 20
+      "status": "cached",
+      "count": 20,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "Inspire on 22nd",
-      "status": "cached",
-      "count": 22,
-      "note": "live scrape returned 0 results"
+      "status": "ok",
+      "count": 22
     },
     {
       "property": "ION Austin",
