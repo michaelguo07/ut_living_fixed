@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-08-12T07:37:25.854654",
+  "run_at": "2026-08-12T09:14:55.999929",
   "total_properties": 17,
-  "ok": 14,
-  "warnings": 3,
+  "ok": 15,
+  "warnings": 2,
   "properties": [
     {
       "property": "The Block (various locations)",
@@ -71,9 +71,8 @@
     },
     {
       "property": "Villas on Rio",
-      "status": "cached",
-      "count": 20,
-      "note": "live scrape returned 0 results"
+      "status": "ok",
+      "count": 20
     },
     {
       "property": "Inspire on 22nd",

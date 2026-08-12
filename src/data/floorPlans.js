@@ -8687,7 +8687,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/074230/66a8edc5e1ab92.50391872865.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8706,7 +8706,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/074507/66a8ee63ae0225.84930273797.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8727,7 +8727,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/075103/66a8efc718a691.34861874550.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8748,7 +8748,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081220/66a8f4c46b4217.15041962254.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8767,7 +8767,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/080049/66a8f211dbd195.07464493752.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8788,7 +8788,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081417/66a8f5391759c7.26358638119.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8807,7 +8807,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081714/66a8f5e9f3af27.75111402120.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8826,7 +8826,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081901/66a8f655a6a746.91993431818.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8847,7 +8847,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/082027/66a8f6aadfb1a1.06243773303.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8866,7 +8866,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083227/66a8f97bcc20e6.53471616903.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8887,7 +8887,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083352/66a8f9d09f8a69.38713837294.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8906,7 +8906,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083913/66a8fb11572cd7.03817832163.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8925,7 +8925,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/093814/66a908e5f1c505.83648925912.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8946,7 +8946,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/104237/66a917fd624200.20996211501.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8967,7 +8967,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/105122/66a91a0a939034.25287345968.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -8988,7 +8988,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/105341/66a91a9596cac8.93442523464.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -9007,7 +9007,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/110356/66a91cfc4eeee0.34665177884.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -9026,7 +9026,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/110718/66a91dc5de6fb2.63267255476.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -9047,7 +9047,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/111315/66a91f2b244ea5.56945494937.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -9068,7 +9068,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "<span>Sold Out </span>",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/111613/66a91fdd02d443.80324064376.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
