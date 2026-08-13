@@ -5503,7 +5503,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5c95b6fd047.71488695510.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5525,7 +5525,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5c868c11413.66216379373.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5546,7 +5546,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5c9d7b2f0f2.24149230178.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5568,7 +5568,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cc58667dc5.82786497369.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5588,7 +5588,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cc43364f50.11810579610.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5608,7 +5608,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cc801b64f1.03966927791.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5628,7 +5628,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cce87a4976.89245477815.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5648,7 +5648,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd1606bfc6.07469590761.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -5669,7 +5669,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd78171f52.47368702558.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -5690,7 +5690,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd4096c509.29171762328.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5710,7 +5710,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd91dd88b1.65034471936.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5730,7 +5730,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd578bf550.01114641257.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5750,7 +5750,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cdae8abc53.18293786247.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5770,7 +5770,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cdd7439ed6.47192408562.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5790,7 +5790,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Soho-5.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5812,7 +5812,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Allister.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5834,7 +5834,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Ansley.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5856,7 +5856,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Arden-Double-Occupancy.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5876,7 +5876,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Ardmore.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5898,7 +5898,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Astoria-Double-Occupancy.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5918,7 +5918,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Avondale-4.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -5940,7 +5940,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Berkeley.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5960,7 +5960,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Bexley.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -5982,7 +5982,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Birch.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6004,7 +6004,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Bradford.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6026,7 +6026,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Bristol-premium.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6048,7 +6048,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Brookhaven-1.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6070,7 +6070,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Camden-Premium.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6092,7 +6092,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Chelsea.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6112,7 +6112,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Denmark-premium.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6132,7 +6132,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Derby-Premium.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6152,7 +6152,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Derby.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6172,7 +6172,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Downing-Premium.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6192,7 +6192,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Forestdale.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6213,7 +6213,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Finchley.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6234,7 +6234,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Filmore-Premium.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6254,7 +6254,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Fulham.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6274,7 +6274,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Fulham-Premium.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6294,7 +6294,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Fulton.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6314,7 +6314,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Gramercy.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6335,7 +6335,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Greenwich.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6356,7 +6356,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/23_legacy-on-rio-floorplans_A1.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -6378,7 +6378,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/6_legacy-on-rio-floorplans_B1-Ansi-Type-A.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6399,7 +6399,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/legacy-on-rio-cut-floorplans_B1.1.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6420,7 +6420,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/25_legacy-on-rio-floorplan_b1.2.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6440,7 +6440,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/7_legacy-on-rio-floorplans_B2.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6460,7 +6460,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/26_legacy-on-rio-floorplans_B3.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6480,7 +6480,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/8_legacy-on-rio-floorplans_C1.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6501,7 +6501,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/9_legacy-on-rio-floorplans_C2.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6522,7 +6522,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/10_legacy-on-rio-floorplan-C2.1.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Budget-friendly rent (under $1,000/mo)",
@@ -6544,7 +6544,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/11_legacy-on-rio-floorplan-c2.2.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6565,7 +6565,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/14_legacy-on-rio-floorplans_C5-Ansi-Type-A.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6586,7 +6586,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/12_legacy-on-rio-floorplans_C3.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6606,7 +6606,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/13_legacy-on-rio-floorplans_C4.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6626,7 +6626,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/15_legacy-on-rio-floorplans_C6.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6646,7 +6646,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/27_legacy-on-rio-floorplans_C6A.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6666,7 +6666,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/16_legacy-on-rio-floorplans_C7.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6686,7 +6686,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/28_legacy-on-rio-floorplans_C8.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6706,7 +6706,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/17_legacy-on-rio-floorplans_D1.1.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6727,7 +6727,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/18_legacy-on-rio-floorplans_D3.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Budget-friendly rent (under $1,000/mo)",
@@ -6749,7 +6749,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/31_legacy-on-rio-floorplans_D11.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6769,7 +6769,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/22_legacy-on-rio-floorplans_D12_.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6789,7 +6789,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/32_legacy-on-rio-floorplans_D13-Ansi-Type-A.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6809,7 +6809,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/19_legacy-on-rio-floorplans_D4.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6829,7 +6829,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/29_legacy-on-rio-floorplans_D5.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6849,7 +6849,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/20_legacy-on-rio-floorplans_D6.1.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6869,7 +6869,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/21_legacy-on-rio-floorplans_D8.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6889,7 +6889,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/30_legacy-on-rio-floorplans_D9.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6909,7 +6909,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/33_legacy-on-rio-floorplans_E1.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Budget-friendly rent (under $1,000/mo)",
@@ -6931,7 +6931,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/34_legacy-on-rio-floorplan-E2.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Budget-friendly rent (under $1,000/mo)",
@@ -6953,7 +6953,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/38_legacy-on-rio-floorplans_E6.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -6974,7 +6974,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/35_legacy-on-rio-floorplan-e3.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -6994,7 +6994,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/36_legacy-on-rio-floorplan-E4.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7014,7 +7014,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/37_legacy-on-rio-floorplan-E5.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7034,7 +7034,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_S1.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -7056,7 +7056,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_A0_516.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -7078,7 +7078,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_A1_572.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -7098,7 +7098,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_A2_553.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -7120,7 +7120,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_A3_591.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -7142,7 +7142,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_A4_712.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -7164,7 +7164,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/633dbcd5f03b56.04377062334.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7186,7 +7186,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_B2_775.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7208,7 +7208,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_B2_775.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7228,7 +7228,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_B3_944.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7250,7 +7250,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_B4_978.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7272,7 +7272,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_B5_726.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7292,7 +7292,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_C1_945.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7312,7 +7312,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_C2_1052.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7334,7 +7334,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_C3_1104.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7354,7 +7354,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_C3_1104.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7374,7 +7374,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_C4_TH-Combined.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7394,7 +7394,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_C5_1009.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7416,7 +7416,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_D1_1338.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7436,7 +7436,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_D2_1318.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7456,7 +7456,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_D3_1345.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7476,7 +7476,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_D4_1538.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7496,7 +7496,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_D4_1538.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7516,7 +7516,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_D5_1561.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7538,7 +7538,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_D6_1804.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7558,7 +7558,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E1_1609.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7578,7 +7578,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E2_1562.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7598,7 +7598,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E3_1857.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7618,7 +7618,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E4_1663.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7638,7 +7638,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E5_ALT_1487.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7658,7 +7658,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E6_1615.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7678,7 +7678,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E6_1615.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7698,7 +7698,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E7_1771.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7720,7 +7720,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_F1_2026.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7740,7 +7740,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_F2_2056.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7760,7 +7760,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa420eb99e146.04543478938.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -7782,7 +7782,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa41938bb1848.62674292104.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -7804,7 +7804,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa423b4997665.23333497709.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
@@ -7826,7 +7826,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa423e3ad6dc8.40710721841.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7848,7 +7848,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa4241f47e523.57529853469.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7870,7 +7870,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa42514e5fe47.68060847454.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7892,7 +7892,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa42549231b03.67635048337.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7912,7 +7912,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa425766a7b90.03047101320.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7932,7 +7932,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa4258f7c0cf4.42480250916.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7952,7 +7952,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa425cf244501.76087010677.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -7972,7 +7972,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa426cfcea8f3.35847124953.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished",
       "Direct lease available"
@@ -7993,7 +7993,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa426136aecf9.74555193583.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8013,7 +8013,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa42680363d75.46951992767.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8033,7 +8033,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa4269ab60dc5.83922540320.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8053,7 +8053,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa426b241c4c3.63526208265.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8073,7 +8073,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa4270fd7e466.61958099273.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -8093,7 +8093,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa4272c66a417.69542183924.jpg",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
@@ -9088,7 +9088,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022252/69d6b91c0e9018.70895052503.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9109,7 +9109,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022335/69d6b946cf1752.36874217347.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9130,7 +9130,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022422/69d6b976d725c3.56313573264.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9150,7 +9150,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022517/69d6b9ad818837.33533161601.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9170,7 +9170,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/022924/6a1754244ec8b2.66176557707.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9190,7 +9190,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030344/6a4c18303eef97.83740551809.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9210,7 +9210,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/023225/6a1754d9d063d2.73811136737.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9230,7 +9230,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030949/6a4c199cddce51.90785753971.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9250,7 +9250,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031031/6a4c19c76f1413.20804420401.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9270,7 +9270,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031108/6a4c19ebeacb38.58535135456.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9290,7 +9290,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040817/69b48ad1d0ec33.27866602719.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9310,7 +9310,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040855/69b48af7733545.62508409154.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9330,7 +9330,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022708/69d6ba1c0e5258.76370505925.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9350,7 +9350,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021336/69b86470bd29b9.40869472826.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9370,7 +9370,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021419/69b8649b494ea4.18095443375.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9390,7 +9390,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021509/69b864cdb3ee29.06749675869.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9410,7 +9410,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021609/69b86508f37523.56797283303.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9430,7 +9430,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021648/69b86530af66f4.32232108186.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9450,7 +9450,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021728/69b86558925cd8.82615991966.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9470,7 +9470,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021809/69b8658117d974.61266279584.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9490,7 +9490,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/30/123448/6a6b9948cff9e6.29722422389.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
@@ -9510,7 +9510,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/30/123533/6a6b99757de674.05874549522.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
       "Fully furnished"
     ],
