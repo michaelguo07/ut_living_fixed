@@ -53,17 +53,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "380",
     "minPrice": 1359,
     "maxPrice": 1359,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/d5cc8faa-98d9-4801-8df2-c58d4bd49f4c/671-Pearl-N-Efficiency-A-SMART-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
-      "Affordable SMART housing program rate",
-      "Direct lease available"
+      "Affordable SMART housing program rate"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -290,16 +291,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "812",
     "minPrice": 1139,
     "maxPrice": 1179,
-    "availability": "Available",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/c41bdaa5-8a60-4240-ba93-70d9188460ba/671-23rd-2-Bed-2-Bath-A-Premium-Private-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -310,18 +312,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "",
     "minPrice": 564,
     "maxPrice": 564,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/7e9be082-58a7-43b6-b3fd-af4f4ee26d82/671-23rd-2-Bed-2-Bath-A-Premium-Shared-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -395,18 +397,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "",
     "minPrice": 564,
     "maxPrice": 564,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/63ee7804-7c75-42c2-9164-3fcdffcc05e1/671-23rd-2-Bed-2-Bath-D-Premium-Shared-Furnished.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -607,16 +609,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1064",
     "minPrice": 1469,
     "maxPrice": 1479,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/5a7922d1-816b-4ef9-a0bf-770ef0ebce3c/671-25th-East-2-Bed-1-Bath-A-Premium-with-Loft-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
     "cons": [
-      "Shared bathroom (2 residents sharing 1 baths)"
+      "Shared bathroom (2 residents sharing 1 baths)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -1039,16 +1041,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1924",
     "minPrice": 1019,
     "maxPrice": 1049,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/0a803644-4a50-42b2-aad2-6830ad88650f/671-25th-East-4-Bed-3-Bath-C-Premium-Private-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 3 baths)"
+      "Shared bathroom (4 residents sharing 3 baths)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -1102,18 +1104,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "3140",
     "minPrice": 594,
     "maxPrice": 604,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/415826a8-8279-4c63-89e9-8e50b17c7f3b/671-25th-East-5-Bed-3-Bath-Premium-with-Loft-Shared-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
       "Shared bathroom (5 residents sharing 3 baths)",
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -1904,17 +1906,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "886",
     "minPrice": 979,
     "maxPrice": 1019,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/f3ec91e1-c331-4611-8b48-0b5788ca12fc/671-28th-2-bed-2-bath-A-Premium-NF.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -1925,16 +1928,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "884",
     "minPrice": 1019,
     "maxPrice": 1059,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/61a29e85-25a1-4883-9cae-7ecae540901a/671-28th-2-bed-2-bath-B-Premium-Private-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -2012,16 +2016,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "930",
     "minPrice": 1039,
     "maxPrice": 1039,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/bdc50695-0194-44df-bcba-b47bab1f2d31/671-28th-2-bed-2-bath-C-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "The Block (various locations)",
@@ -2378,18 +2383,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "902",
     "minPrice": 399,
     "maxPrice": 399,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/4efcf56c-0790-41f8-ad20-b9531c48bf39/671-Leon-2-bed-2-bath-C-Premium-Private-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)"
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)",
-      "Waitlist status (limited immediate spots)"
+      "Shared bedroom (limited privacy)"
     ]
   },
   {
@@ -2534,18 +2539,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1056",
     "minPrice": 439,
     "maxPrice": 439,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/91a41e19-8257-4778-a394-d80d03e1da3a/671-Leon-2-bed-2-bath-G-Premium-Shared-01_1.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)"
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)",
-      "Waitlist status (limited immediate spots)"
+      "Shared bedroom (limited privacy)"
     ]
   },
   {
@@ -2557,18 +2562,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1069",
     "minPrice": 439,
     "maxPrice": 439,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/cfc9ed82-54a4-4ae5-8d4b-bf7a662618e2/671-Leon-2-Bed-2-Bath-H-Premium-Shared-01_1.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Shared bedroom (limited privacy)"
+      "Shared bedroom (limited privacy)",
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
@@ -3268,17 +3273,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1064",
     "minPrice": 1189,
     "maxPrice": 1259,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/42b9c11c-8ffb-4c0d-9979-59d22f71f84e/671-Pearl-S-2-Bed-2-Bath-D-Premium-Private-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished",
+      "Direct lease available"
     ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
+    "cons": []
   },
   {
     "property": "The Block (various locations)",
@@ -3480,18 +3484,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "621",
     "minPrice": 1447,
     "maxPrice": 1447,
-    "availability": "Waitlist",
+    "availability": "Limited Availability",
     "url": "https://www.americancampus.com/api/lightning/floorplans/671",
     "imagePath": "https://www.americancampus.com/getmedia/c8d89e00-57a7-423d-9fb2-7952cba3249f/671-Rio-1-Bed-1-Bath-B-01_1.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
       "Fully furnished",
-      "Affordable SMART housing program rate"
+      "Affordable SMART housing program rate",
+      "Direct lease available"
     ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
+    "cons": []
   },
   {
     "property": "The Block (various locations)",
@@ -9088,7 +9091,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022252/69d6b91c0e9018.70895052503.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9109,7 +9112,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022335/69d6b946cf1752.36874217347.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9130,7 +9133,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022422/69d6b976d725c3.56313573264.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9150,7 +9153,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022517/69d6b9ad818837.33533161601.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9170,7 +9173,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/022924/6a1754244ec8b2.66176557707.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9190,7 +9193,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030344/6a4c18303eef97.83740551809.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9210,7 +9213,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/023225/6a1754d9d063d2.73811136737.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9230,7 +9233,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030949/6a4c199cddce51.90785753971.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9250,7 +9253,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031031/6a4c19c76f1413.20804420401.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9270,7 +9273,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031108/6a4c19ebeacb38.58535135456.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9290,7 +9293,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040817/69b48ad1d0ec33.27866602719.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9310,7 +9313,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040855/69b48af7733545.62508409154.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9330,7 +9333,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022708/69d6ba1c0e5258.76370505925.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9350,7 +9353,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021336/69b86470bd29b9.40869472826.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9370,7 +9373,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021419/69b8649b494ea4.18095443375.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9390,7 +9393,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021509/69b864cdb3ee29.06749675869.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9410,7 +9413,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021609/69b86508f37523.56797283303.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9430,7 +9433,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021648/69b86530af66f4.32232108186.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9450,7 +9453,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021728/69b86558925cd8.82615991966.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9470,7 +9473,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021809/69b8658117d974.61266279584.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9490,7 +9493,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/30/123448/6a6b9948cff9e6.29722422389.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
@@ -9510,7 +9513,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/30/123533/6a6b99757de674.05874549522.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished"
     ],
