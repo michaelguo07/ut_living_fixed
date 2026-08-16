@@ -7027,6 +7027,28 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "The Mark Austin",
+    "plan": "C5 Alt - 3x3",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1009",
+    "minPrice": 1865,
+    "maxPrice": 1875,
+    "availability": "Available",
+    "url": "https://themarkatx.com/floorplans/",
+    "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/08/6a81fff3897ae1.36098824144.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Premium pricing tier"
+    ]
+  },
+  {
+    "property": "The Mark Austin",
     "plan": "S1 - Studio",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,

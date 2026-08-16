@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-16T18:33:06.456675",
+  "run_at": "2026-08-16T20:26:07.001799",
   "total_properties": 17,
   "ok": 14,
   "warnings": 3,
@@ -52,7 +52,7 @@
     {
       "property": "The Mark Austin",
       "status": "ok",
-      "count": 35
+      "count": 36
     },
     {
       "property": "Moontower",
