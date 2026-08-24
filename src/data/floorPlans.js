@@ -1,4 +1,4 @@
-import { normalizePropertyName, slugify } from './apartments';
+import { normalizePropertyName, slugify } from './utils';
 
 const RAW_FLOOR_PLANS = [
   {

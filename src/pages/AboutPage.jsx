@@ -1,7 +1,6 @@
 const TEAM = [
-  { name: 'Timothy Shim', instagram: 'shim.timothy' },
   { name: 'Michael Guo', instagram: 'guobropro', linkedin: 'michaelguo07' },
-  { name: 'Akshar Perugu', instagram: 'akshar_perugu', linkedin: 'akshar-perugu-031897383' },
+  { name: 'Timothy Shim', instagram: 'shim.timothy' },
   { name: 'Sambit Kanjilal', instagram: 'sambitkanjilal', linkedin: 'sambit-kanjilal' },
 ]
 
@@ -12,7 +11,7 @@ export default function AboutPage() {
         About Us
       </h1>
       <p className="mt-6 text-lg text-stone-600">
-        We’re four students at the University of Texas at Austin. We built UT Living to help
+        We’re three founders and students at the University of Texas at Austin. We built UT Living to help
         students find off-campus apartments near their campus—with availability, cost, distance,
         and pros and cons in one place.
       </p>

@@ -34,7 +34,7 @@ except ImportError:
 
 # Fix Windows console encoding issues
 if sys.platform == 'win32':
-    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace', line_buffering=True)
 
 
 # ---------------------------------------------------------------------------
@@ -266,6 +266,16 @@ def scrape_acc_property(name, property_id):
         term = max(terms, key=lambda t: len(t.get("Attributes", [])))
         print(f"    Selected Term: {term.get('Text')}")
         
+        ACC_PROPERTY_PUBLIC_URLS = {
+            "The Block (various locations)": "https://www.americancampus.com/student-apartments/tx/austin/the-block/floor-plans",
+            "Callaway House": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
+            "The Castilian": "https://www.americancampus.com/student-apartments/tx/austin/the-castilian/floor-plans",
+            "26 West": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
+            "Crest at Pearl": "https://www.americancampus.com/student-apartments/tx/austin/crest-at-pearl/floor-plans",
+            "Texan & Vintage": "https://www.americancampus.com/student-apartments/tx/austin/texan-vintage/floor-plans"
+        }
+        public_url = ACC_PROPERTY_PUBLIC_URLS.get(name, f"https://www.americancampus.com/api/lightning/floorplans/{property_id}")
+        
         results = []
         for fp in term.get("Attributes", []):
             plan_title = fp.get("Title", "")
@@ -295,7 +305,7 @@ def scrape_acc_property(name, property_id):
                 "minPrice": int(min_price) if min_price else None,
                 "maxPrice": int(max_price) if max_price else None,
                 "availability": av_text,
-                "url": f"https://www.americancampus.com/api/lightning/floorplans/{property_id}",
+                "url": public_url,
                 "imagePath": image_path
             })
         print(f"    [OK] Found {len(results)} floor plans.")
@@ -368,9 +378,13 @@ def scrape_entrata_wp_json(name, domain):
         rent_min = safe_get(fp, "marketrent", "min") or fp.get("rent_total_min")
         rent_max = safe_get(fp, "marketrent", "max") or fp.get("rent_total_max")
         
+        parsed_min = int(float(rent_min)) if rent_min and float(rent_min) >= 300 else None
+        parsed_max = int(float(rent_max)) if rent_max and float(rent_max) >= 300 else None
+        
         is_disabled = fp.get("isdisabled", False)
         removed = fp.get("removed_from_entrata", False)
-        availability = "Sold Out" if (is_disabled or removed) else "Available"
+        is_sold_out = fp.get("sold_out", False) or fp.get("unitsavailable") == 0 or fp.get("unitsavailable") == "0"
+        availability = "Sold Out" if (is_disabled or removed or is_sold_out) else "Available"
         
         image_path = ""
         files = fp.get("files")
@@ -388,8 +402,8 @@ def scrape_entrata_wp_json(name, domain):
             "beds": int(beds) if str(beds).isdigit() else None,
             "baths": float(baths) if is_float(baths) else None,
             "sqFt": sqft,
-            "minPrice": int(float(rent_min)) if rent_min else None,
-            "maxPrice": int(float(rent_max)) if rent_max else None,
+            "minPrice": parsed_min,
+            "maxPrice": parsed_max,
             "availability": availability,
             "url": f"https://{domain}/floorplans/",
             "imagePath": image_path
@@ -719,7 +733,7 @@ def save_output(all_plans):
 
     # Write Javascript file for React App
     js_path = os.path.join(PROJECT_ROOT, "src", "data", "floorPlans.js")
-    js_content = f"""import {{ normalizePropertyName, slugify }} from './apartments';
+    js_content = f"""import {{ normalizePropertyName, slugify }} from './utils';
 
 const RAW_FLOOR_PLANS = {json.dumps(all_plans, indent=2)};
 

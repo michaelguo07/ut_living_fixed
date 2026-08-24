@@ -137,14 +137,14 @@ export default function HomePage() {
   // Calculate market-wide index metrics (for properties that have valid scraped prices)
   const validTrendProperties = trendedProperties.filter(p => p.trends !== null)
   
-  const avgRentToday = Math.round(
-    validTrendProperties.reduce((sum, p) => sum + p.lowestPrice, 0) / validTrendProperties.length
-  )
-  const avgRent7dAgo = Math.round(
-    validTrendProperties.reduce((sum, p) => sum + p.trends.price7dAgo, 0) / validTrendProperties.length
-  )
+  const avgRentToday = validTrendProperties.length > 0
+    ? Math.round(validTrendProperties.reduce((sum, p) => sum + p.lowestPrice, 0) / validTrendProperties.length)
+    : 0
+  const avgRent7dAgo = validTrendProperties.length > 0
+    ? Math.round(validTrendProperties.reduce((sum, p) => sum + p.trends.price7dAgo, 0) / validTrendProperties.length)
+    : 0
   const rentDeltaVal = avgRentToday - avgRent7dAgo
-  const rentDeltaPercent = ((rentDeltaVal) / avgRent7dAgo) * 100
+  const rentDeltaPercent = avgRent7dAgo > 0 ? ((rentDeltaVal) / avgRent7dAgo) * 100 : 0
 
   const totalAvailToday = validTrendProperties.reduce((sum, p) => sum + (p.availablePlans ?? 0), 0)
   const totalAvail7dAgo = validTrendProperties.reduce((sum, p) => sum + p.trends.avail7dAgo, 0)

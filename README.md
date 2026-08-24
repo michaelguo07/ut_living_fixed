@@ -94,10 +94,9 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ## 👥 The Team
 
-We are four students at the University of Texas at Austin:
-- **Timothy Shim** — [Instagram](https://instagram.com/shim.timothy)
+We are three founders and students at the University of Texas at Austin:
 - **Michael Guo** — [Instagram](https://instagram.com/guobropro) • [LinkedIn](https://linkedin.com/in/michaelguo07)
-- **Akshar Perugu** — [Instagram](https://instagram.com/akshar_perugu) • [LinkedIn](https://linkedin.com/in/akshar-perugu-031897383)
+- **Timothy Shim** — [Instagram](https://instagram.com/shim.timothy)
 - **Sambit Kanjilal** — [Instagram](https://instagram.com/sambitkanjilal) • [LinkedIn](https://linkedin.com/in/sambit-kanjilal)
 
 ---
