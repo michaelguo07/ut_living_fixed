@@ -1,18 +1,20 @@
 {
-  "run_at": "2026-08-24T04:49:20.250849",
+  "run_at": "2026-08-24T07:04:29.297521",
   "total_properties": 17,
-  "ok": 14,
-  "warnings": 3,
+  "ok": 12,
+  "warnings": 5,
   "properties": [
     {
       "property": "The Block (various locations)",
-      "status": "ok",
-      "count": 174
+      "status": "cached",
+      "count": 174,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "Callaway House",
-      "status": "ok",
-      "count": 19
+      "status": "cached",
+      "count": 19,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "The Castilian",
