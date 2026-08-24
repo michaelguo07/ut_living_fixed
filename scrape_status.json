@@ -1,20 +1,18 @@
 {
-  "run_at": "2026-08-24T07:04:29.297521",
+  "run_at": "2026-08-24T08:51:48.301746",
   "total_properties": 17,
-  "ok": 12,
-  "warnings": 5,
+  "ok": 15,
+  "warnings": 2,
   "properties": [
     {
       "property": "The Block (various locations)",
-      "status": "cached",
-      "count": 174,
-      "note": "live scrape returned 0 results"
+      "status": "ok",
+      "count": 174
     },
     {
       "property": "Callaway House",
-      "status": "cached",
-      "count": 19,
-      "note": "live scrape returned 0 results"
+      "status": "ok",
+      "count": 19
     },
     {
       "property": "The Castilian",
@@ -78,9 +76,8 @@
     },
     {
       "property": "Inspire on 22nd",
-      "status": "cached",
-      "count": 22,
-      "note": "live scrape returned 0 results"
+      "status": "ok",
+      "count": 22
     },
     {
       "property": "ION Austin",
