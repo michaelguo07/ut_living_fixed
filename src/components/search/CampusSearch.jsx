@@ -11,7 +11,7 @@ export default function CampusSearch({ defaultValue = '', onSearch, compact = fa
     if (onSearch) {
       onSearch(trimmed)
     } else {
-      navigate(`/search?campus=${encodeURIComponent(trimmed)}`)
+      navigate('/search' + (trimmed ? `?q=${encodeURIComponent(trimmed)}` : ''))
     }
   }
 
@@ -22,7 +22,7 @@ export default function CampusSearch({ defaultValue = '', onSearch, compact = fa
           type="text"
           value={campus}
           onChange={(e) => setCampus(e.target.value)}
-          placeholder="e.g. UT Austin"
+          placeholder="Search by complex, street, or UT..."
           className="flex-1 rounded-lg border border-stone-300 px-3 py-2 text-sm outline-none focus:border-[#BF5700] focus:ring-1 focus:ring-[#BF5700]"
         />
         <button
@@ -42,7 +42,7 @@ export default function CampusSearch({ defaultValue = '', onSearch, compact = fa
           type="text"
           value={campus}
           onChange={(e) => setCampus(e.target.value)}
-          placeholder="Enter your college or campus name (e.g. UT Austin)"
+          placeholder="Search apartments near UT Austin (e.g. Moontower, 26 West)..."
           className="flex-1 rounded-xl border border-stone-300 px-4 py-3 text-base outline-none focus:border-[#BF5700] focus:ring-2 focus:ring-[#BF5700]/20"
         />
         <button

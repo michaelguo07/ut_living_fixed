@@ -1,5 +1,5 @@
-import { slugify, normalizePropertyName } from './utils'
-import { FLOOR_PLANS, LAST_UPDATED, LAST_UPDATED_ISO } from './floorPlans'
+import { slugify, normalizePropertyName } from './utils.js'
+import { FLOOR_PLANS, LAST_UPDATED, LAST_UPDATED_ISO } from './floorPlans.js'
 
 export { slugify, normalizePropertyName, LAST_UPDATED, LAST_UPDATED_ISO }
 

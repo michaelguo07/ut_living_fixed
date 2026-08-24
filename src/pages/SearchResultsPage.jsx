@@ -32,18 +32,18 @@ export default function SearchResultsPage() {
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
 
-  const campusQuery = 'UT Austin' // Default to UT Austin since we are focused on it
-  
-  // Read active filters from URL
+  // Read active search query and filters from URL
+  const rawQuery = searchParams.get('q') || searchParams.get('campus') || ''
+  const [searchTerm, setSearchTerm] = useState(rawQuery)
+
   const activeBeds = searchParams.get('beds') || 'any'
   const activeBaths = searchParams.get('baths') || 'any'
   const activeMaxPrice = searchParams.get('maxPrice') || 'any'
   const activeMoveIn = searchParams.get('moveIn') || 'any'
   const activeMaxDistance = searchParams.get('maxDistance') || 'any'
 
-  const hasActiveFilters = activeBeds !== 'any' || activeBaths !== 'any' || activeMaxPrice !== 'any' || activeMoveIn !== 'any' || activeMaxDistance !== 'any'
-  const displayApartments = apartments.length === 0 && !loading && !error ? UT_AUSTIN_APARTMENTS : apartments
-  const showFallbackWarning = !loading && !error && apartments.length === 0 && hasActiveFilters
+  const hasActiveFilters = Boolean(rawQuery) || activeBeds !== 'any' || activeBaths !== 'any' || activeMaxPrice !== 'any' || activeMoveIn !== 'any' || activeMaxDistance !== 'any'
+  const displayApartments = apartments
 
   // Local UI states
   const [hoveredAptId, setHoveredAptId] = useState(null)
@@ -59,7 +59,12 @@ export default function SearchResultsPage() {
   const mapInstanceRef = useRef(null)
   const markersRef = useRef({})
 
-  // Trigger search based on query params
+  // Sync searchTerm when URL changes
+  useEffect(() => {
+    setSearchTerm(rawQuery)
+  }, [rawQuery])
+
+  // Trigger search based on query and filter params
   useEffect(() => {
     const filters = {
       beds: activeBeds,
@@ -68,8 +73,8 @@ export default function SearchResultsPage() {
       moveIn: activeMoveIn,
       maxDistance: activeMaxDistance,
     }
-    search(campusQuery, filters)
-  }, [search, activeBeds, activeBaths, activeMaxPrice, activeMoveIn, activeMaxDistance])
+    search(rawQuery, filters)
+  }, [search, rawQuery, activeBeds, activeBaths, activeMaxPrice, activeMoveIn, activeMaxDistance])
 
   // Reset local state if active values change
   useEffect(() => {
@@ -199,6 +204,11 @@ export default function SearchResultsPage() {
     setActiveDropdown(null)
   }
 
+  const handleSearchSubmit = (e) => {
+    if (e) e.preventDefault()
+    updateUrlParam('q', searchTerm.trim())
+  }
+
   const applyRoomsFilter = () => {
     const nextParams = new URLSearchParams(searchParams)
     if (localBeds === 'any') nextParams.delete('beds')
@@ -212,6 +222,7 @@ export default function SearchResultsPage() {
   }
 
   const clearAllFilters = () => {
+    setSearchTerm('')
     navigate('/search')
     setActiveDropdown(null)
   }
@@ -223,7 +234,7 @@ export default function SearchResultsPage() {
       
       {/* 1. Header & Filters row */}
       <div className="bg-white border-b border-stone-200 px-4 py-4 sm:px-6 lg:px-8 relative z-20">
-        <div className="max-w-7xl mx-auto flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+        <div className="max-w-7xl mx-auto flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <div className="flex items-center gap-2 text-xs font-semibold text-stone-500">
               <span className="text-burnt-orange font-bold uppercase tracking-wider">UT Austin off-campus</span>
@@ -234,9 +245,44 @@ export default function SearchResultsPage() {
               Find Apartments
             </h1>
           </div>
+
+          {/* Search Bar Input */}
+          <form onSubmit={handleSearchSubmit} className="w-full sm:max-w-md relative">
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="Search apartments, streets, or layouts (e.g. Moontower, 26 West, Studio)..."
+              className="w-full pl-9 pr-20 py-2.5 text-xs font-medium rounded-full border border-stone-300 bg-stone-50 text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-burnt-orange focus:bg-white transition"
+            />
+            <svg className="absolute left-3 top-3 h-4 w-4 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <div className="absolute right-1.5 top-1.5 flex items-center gap-1">
+              {searchTerm && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSearchTerm('')
+                    updateUrlParam('q', '')
+                  }}
+                  className="text-stone-400 hover:text-stone-600 p-1 text-xs font-bold transition"
+                  title="Clear search text"
+                >
+                  ✕
+                </button>
+              )}
+              <button
+                type="submit"
+                className="rounded-full bg-burnt-orange hover:bg-burnt-orange-hover px-3 py-1 text-2xs font-bold text-white transition"
+              >
+                Search
+              </button>
+            </div>
+          </form>
         </div>
 
-        {/* Horizontal filter pills row (Mimics flight filter bar) */}
+        {/* Horizontal filter pills row */}
         <div className="max-w-7xl mx-auto flex flex-wrap items-center gap-2 mt-4 text-xs font-medium text-stone-700 select-none" ref={dropdownRef}>
           
           {/* Price Pill */}
@@ -260,7 +306,10 @@ export default function SearchResultsPage() {
                   {[
                     { val: 'any', label: 'Any Price' },
                     { val: '1000', label: 'Under $1,000/mo' },
-                    { val: '1500', label: 'Under $1,500/mo' },
+                    { val: '1200', label: 'Under $1,200/mo' },
+                    { val: '1400', label: 'Under $1,400/mo' },
+                    { val: '1600', label: 'Under $1,600/mo' },
+                    { val: '1800', label: 'Under $1,800/mo' },
                     { val: '2000', label: 'Under $2,000/mo' },
                     { val: '2500', label: 'Under $2,500/mo' },
                   ].map((p) => (
@@ -376,9 +425,10 @@ export default function SearchResultsPage() {
                 <div className="flex flex-col gap-1">
                   {[
                     { val: 'any', label: 'Any Distance' },
-                    { val: '0.3', label: 'Within 0.3 miles' },
-                    { val: '0.5', label: 'Within 0.5 miles' },
-                    { val: '0.8', label: 'Within 0.8 miles' },
+                    { val: '0.3', label: 'Within 0.3 miles (~5 min walk)' },
+                    { val: '0.5', label: 'Within 0.5 miles (~10 min walk)' },
+                    { val: '0.8', label: 'Within 0.8 miles (~15 min walk)' },
+                    { val: '1.0', label: 'Within 1.0 miles' },
                   ].map((d) => (
                     <button
                       key={d.val}
@@ -405,18 +455,18 @@ export default function SearchResultsPage() {
                   : 'bg-white border-stone-300 hover:bg-stone-50'
               }`}
             >
-              <span>{activeMoveIn === 'any' ? 'Move-in' : activeMoveIn === 'immediate' ? 'Immediate' : 'Aug 2025'}</span>
+              <span>{activeMoveIn === 'any' ? 'Move-in' : activeMoveIn === 'available' ? 'Available Only' : 'Fall 2026'}</span>
               <svg className="h-3 w-3 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
             {activeDropdown === 'moveIn' && (
-              <div className="absolute left-0 mt-1.5 z-40 w-52 rounded-2xl border border-stone-200 bg-white p-3 shadow-xl">
+              <div className="absolute left-0 mt-1.5 z-40 w-56 rounded-2xl border border-stone-200 bg-white p-3 shadow-xl">
                 <div className="flex flex-col gap-1">
                   {[
                     { val: 'any', label: 'Any Date' },
-                    { val: 'august', label: 'August 2025' },
-                    { val: 'immediate', label: 'Immediate Move-in' },
+                    { val: 'available', label: 'Available Only (exclude waitlist)' },
+                    { val: 'august', label: 'Fall 2026 Term' },
                   ].map((m) => (
                     <button
                       key={m.val}
@@ -466,24 +516,12 @@ export default function SearchResultsPage() {
             </div>
           )}
 
-          {showFallbackWarning && (
-            <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50/70 p-4 text-xs font-semibold text-amber-900 shadow-sm flex items-start gap-2.5 animate-fade-in">
-              <span className="text-sm">⚠️</span>
-              <div>
-                <p className="font-bold">No apartments match your filters</p>
-                <p className="mt-0.5 text-amber-850 font-medium">
-                  We couldn&apos;t find any properties matching your exact criteria. Showing all UT Austin apartments instead. Try loosening your filter choices.
-                </p>
-              </div>
-            </div>
-          )}
-
           {showEmpty && (
             <div className="rounded-3xl border border-dashed border-stone-300 bg-white p-12 text-center max-w-md mx-auto mt-8 shadow-sm">
               <span className="text-4xl">🔍</span>
               <p className="font-extrabold text-stone-850 text-lg mt-4">No apartments match your filters</p>
               <p className="mt-2 text-sm text-stone-550 leading-relaxed font-medium">
-                Try loosening your price ceiling or selecting &quot;Any Bed/Bath&quot; criteria. Note: we only support UT Austin listings at this time.
+                Try loosening your price ceiling or selecting &quot;Any Bed/Bath&quot; criteria.
               </p>
               <button
                 onClick={clearAllFilters}
@@ -498,7 +536,7 @@ export default function SearchResultsPage() {
             <>
               <div className="mb-4 flex items-center justify-between">
                 <p className="text-xs font-bold text-stone-500 uppercase tracking-wider">
-                  {displayApartments.length} result{displayApartments.length !== 1 ? 's' : ''} near {campusQuery}
+                  {displayApartments.length} result{displayApartments.length !== 1 ? 's' : ''} {rawQuery ? `for "${rawQuery}"` : 'near UT Austin'}
                 </p>
                 {LAST_UPDATED && (
                   <span className="text-3xs font-medium text-stone-400">

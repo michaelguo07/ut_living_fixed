@@ -637,7 +637,7 @@ def save_output(all_plans):
 
     # Write Javascript file for React App
     js_path = os.path.join(PROJECT_ROOT, "src", "data", "floorPlans.js")
-    js_content = f"""import {{ normalizePropertyName, slugify }} from './utils';
+    js_content = f"""import {{ normalizePropertyName, slugify }} from './utils.js';
 
 export const LAST_UPDATED = {json.dumps(now_human)};
 export const LAST_UPDATED_ISO = {json.dumps(now_iso)};

@@ -1,4 +1,4 @@
-import { normalizePropertyName, slugify } from './utils';
+import { normalizePropertyName, slugify } from './utils.js';
 
 export const LAST_UPDATED = "August 24, 2026";
 export const LAST_UPDATED_ISO = "2026-08-24T16:29:34.831157";
