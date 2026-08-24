@@ -323,25 +323,47 @@ export const UT_AUSTIN_APARTMENTS = APARTMENT_NAMES.map((name) => {
     return !av.includes('sold out') && !av.includes('waitlist')
   }).length
 
-  // Filter out any invalid rates or fees below $300
-  const validPrices = plans
+  // Differentiate private bedroom floor plans vs shared double-occupancy plans
+  const privatePlans = plans.filter((p) => !(p.plan || '').toLowerCase().includes('shared bedroom'))
+  const sharedPlans = plans.filter((p) => (p.plan || '').toLowerCase().includes('shared bedroom'))
+
+  const validPrivatePrices = privatePlans
     .map((p) => p.minPrice)
     .filter((p) => typeof p === 'number' && Number.isFinite(p) && p >= 300)
 
-  const lowestPrice = validPrices.length > 0 ? Math.min(...validPrices) : null
+  const validAllPrices = plans
+    .map((p) => p.minPrice)
+    .filter((p) => typeof p === 'number' && Number.isFinite(p) && p >= 300)
+
+  const lowestPrivatePrice = validPrivatePrices.length > 0 ? Math.min(...validPrivatePrices) : null
+  const lowestSharedPrice = sharedPlans
+    .map((p) => p.minPrice)
+    .filter((p) => typeof p === 'number' && Number.isFinite(p) && p >= 300)
+    .reduce((min, p) => (min === null || p < min ? p : min), null)
+
+  const lowestPrice = lowestPrivatePrice || (validAllPrices.length > 0 ? Math.min(...validAllPrices) : null)
+
+  let cost = 'N/A'
+  if (lowestPrivatePrice && lowestSharedPrice && lowestSharedPrice < lowestPrivatePrice) {
+    cost = `From $${lowestPrivatePrice.toLocaleString()}/mo ($${lowestSharedPrice.toLocaleString()} shared)`
+  } else if (lowestPrice) {
+    cost = `From $${lowestPrice.toLocaleString()}/mo`
+  }
+
   const defaultUrl = APARTMENT_DEFAULT_URLS[name] || (plans.length > 0 && plans[0].url ? plans[0].url : '')
 
   return {
     id: slugify(name),
     name,
     address: APARTMENT_ADDRESSES[name] || '',
-    cost: formatCost(lowestPrice),
+    cost,
     distanceFromTower: APARTMENT_DISTANCES[name] || '',
     availability: formatAvailability(availablePlans),
     url: defaultUrl,
     totalPlans: totalPlans > 0 ? totalPlans : null,
     availablePlans: totalPlans > 0 ? availablePlans : null,
     lowestPrice,
+    lowestSharedPrice,
     pros: APARTMENT_PROS[name] || [],
     cons: APARTMENT_CONS[name] || [],
     imageUrl: APARTMENT_IMAGES[name] || '',
