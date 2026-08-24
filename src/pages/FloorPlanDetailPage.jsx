@@ -115,7 +115,7 @@ export default function FloorPlanDetailPage() {
                 <dd>
                   {typeof plan.minPrice === 'number' && Number.isFinite(plan.minPrice)
                     ? `$${plan.minPrice.toLocaleString()}/mo`
-                    : '—'}
+                    : 'N/A'}
                 </dd>
               </div>
               <div className="flex justify-between gap-4">
@@ -123,7 +123,7 @@ export default function FloorPlanDetailPage() {
                 <dd>
                   {typeof plan.maxPrice === 'number' && Number.isFinite(plan.maxPrice)
                     ? `$${plan.maxPrice.toLocaleString()}/mo`
-                    : '—'}
+                    : 'N/A'}
                 </dd>
               </div>
               <div className="flex justify-between gap-4">

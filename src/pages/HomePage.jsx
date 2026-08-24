@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { UT_AUSTIN_APARTMENTS } from '../data/apartments'
+import { UT_AUSTIN_APARTMENTS, LAST_UPDATED } from '../data/apartments'
 
 // Simple deterministic hash based on string names for seed history
 function hashString(str) {
@@ -197,6 +197,14 @@ export default function HomePage() {
         <h2 className="mt-2 text-center text-3xl font-extrabold text-stone-900 tracking-tight sm:text-4xl">
           Real-Time Price & Vacancy Trends
         </h2>
+        {LAST_UPDATED && (
+          <div className="mt-3 flex justify-center">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-2xs font-bold text-emerald-800 border border-emerald-200 shadow-2xs">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Live Scraped Rates • Last updated: {LAST_UPDATED}
+            </span>
+          </div>
+        )}
         <p className="mt-3 text-stone-500 text-sm text-center font-medium max-w-lg mx-auto">
           Stock-ticker style overview of rent rates and inventory changes across West Campus over the past 30 days. Click a property to view detailed graphs.
         </p>

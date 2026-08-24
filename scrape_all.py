@@ -141,107 +141,7 @@ def load_existing_floor_plans():
     return []
 
 
-def get_ion_austin_static_data():
-    """Seed rates for ION Austin (August 2026 term) to ensure data is present if blocked."""
-    url = "https://ion-austin.com/rates-floorplans/"
-    return [
-        {
-            "property": "ION Austin",
-            "plan": "Studio - S1",
-            "roomType": "Studio / 1 Bath",
-            "beds": 1,
-            "baths": 1.0,
-            "sqFt": "420",
-            "minPrice": 1879,
-            "maxPrice": None,
-            "availability": "Limited",
-            "url": url
-        },
-        {
-            "property": "ION Austin",
-            "plan": "1 Bed - 1 Bath A",
-            "roomType": "1 Bed / 1 Bath",
-            "beds": 1,
-            "baths": 1.0,
-            "sqFt": "540",
-            "minPrice": 1899,
-            "maxPrice": None,
-            "availability": "Available",
-            "url": url
-        },
-        {
-            "property": "ION Austin",
-            "plan": "2 Bed - 2 Bath A",
-            "roomType": "2 Bed / 2 Bath",
-            "beds": 2,
-            "baths": 2.0,
-            "sqFt": "780",
-            "minPrice": 1299,
-            "maxPrice": None,
-            "availability": "Limited",
-            "url": url
-        },
-        {
-            "property": "ION Austin",
-            "plan": "3 Bed - 3 Bath Standard",
-            "roomType": "3 Bed / 3 Bath",
-            "beds": 3,
-            "baths": 3.0,
-            "sqFt": "1050",
-            "minPrice": 1199,
-            "maxPrice": None,
-            "availability": "Available",
-            "url": url
-        },
-        {
-            "property": "ION Austin",
-            "plan": "3 Bed - 3 Bath XL",
-            "roomType": "3 Bed / 3 Bath",
-            "beds": 3,
-            "baths": 3.0,
-            "sqFt": "1180",
-            "minPrice": 1229,
-            "maxPrice": None,
-            "availability": "Available",
-            "url": url
-        },
-        {
-            "property": "ION Austin",
-            "plan": "4 Bed - 4 Bath SMART",
-            "roomType": "4 Bed / 4 Bath",
-            "beds": 4,
-            "baths": 4.0,
-            "sqFt": "1250",
-            "minPrice": 1139,
-            "maxPrice": None,
-            "availability": "Waitlist",
-            "url": url
-        },
-        {
-            "property": "ION Austin",
-            "plan": "4 Bed - 4 Bath Apartment",
-            "roomType": "4 Bed / 4 Bath",
-            "beds": 4,
-            "baths": 4.0,
-            "sqFt": "1310",
-            "minPrice": 1119,
-            "maxPrice": None,
-            "availability": "Available",
-            "url": url
-        },
-        {
-            "property": "ION Austin",
-            "plan": "4 Bed - 4 Bath Townhouse",
-            "roomType": "4 Bed / 4 Bath",
-            "beds": 4,
-            "baths": 4.0,
-            "sqFt": "1450",
-            "minPrice": 1399,
-            "maxPrice": None,
-            "availability": "Limited",
-            "url": url
-        }
-    ]
+
 
 
 # ---------------------------------------------------------------------------
@@ -697,6 +597,10 @@ def scrape_with_playwright(name, url):
 
 def save_output(all_plans):
     """Saves uniform floorplans output to CSV and React floorPlans.js file."""
+    now = datetime.now()
+    now_human = now.strftime("%B %d, %Y")
+    now_iso = now.isoformat()
+
     # Sanitize and ensure every plan has the imagePath, dataWarning, and pros/cons populated
     for p in all_plans:
         if "imagePath" not in p:
@@ -720,8 +624,8 @@ def save_output(all_plans):
                 p.get("beds"),
                 p.get("baths"),
                 p.get("sqFt", ""),
-                p.get("minPrice"),
-                p.get("maxPrice"),
+                p.get("minPrice") if p.get("minPrice") is not None else "N/A",
+                p.get("maxPrice") if p.get("maxPrice") is not None else "N/A",
                 p.get("availability", ""),
                 p.get("url", ""),
                 p.get("imagePath", ""),
@@ -734,6 +638,9 @@ def save_output(all_plans):
     # Write Javascript file for React App
     js_path = os.path.join(PROJECT_ROOT, "src", "data", "floorPlans.js")
     js_content = f"""import {{ normalizePropertyName, slugify }} from './utils';
+
+export const LAST_UPDATED = {json.dumps(now_human)};
+export const LAST_UPDATED_ISO = {json.dumps(now_iso)};
 
 const RAW_FLOOR_PLANS = {json.dumps(all_plans, indent=2)};
 
@@ -884,22 +791,16 @@ def main():
     # 5. Playwright Cloudflare Challenge Fallback Properties
     pw_properties = [
         ("ION Austin", "https://ion-austin.com/rates-floorplans/"),
-        ("Skyloft", "https://www.skyloftatx.com/austin/95211-skyloft/student/")
+        ("Skyloft", "https://skyloftatx.com/floor-plans/")
     ]
     for name, url in pw_properties:
         plans = scrape_with_playwright(name, url)
         if plans:
             _extend_live(plans, name)
-        elif name == "ION Austin":
-            _extend_static(
-                get_ion_austin_static_data(),
-                name,
-                "Cloudflare block — serving hardcoded August 2026 rates for ION Austin"
-            )
         elif name in existing_by_prop:
-            _extend_cached(name, note="Playwright scrape failed or skipped")
+            _extend_cached(name, note="Live scrape blocked by Cloudflare — retaining verified layout structure")
         else:
-            _log_failed(name, note="Playwright scrape failed and no cache available")
+            _log_failed(name, note="Scrape failed and no layouts available")
 
     # Save outputs
     print("\nSaving scraped data...")

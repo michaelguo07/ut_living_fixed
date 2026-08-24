@@ -1,7 +1,7 @@
 import { slugify, normalizePropertyName } from './utils'
-import { FLOOR_PLANS } from './floorPlans'
+import { FLOOR_PLANS, LAST_UPDATED, LAST_UPDATED_ISO } from './floorPlans'
 
-export { slugify, normalizePropertyName }
+export { slugify, normalizePropertyName, LAST_UPDATED, LAST_UPDATED_ISO }
 
 const APARTMENT_NAMES = [
   'The Nine at West Campus',

@@ -162,7 +162,7 @@ export default function FloorPlanComparePage() {
                     return (
                       <td key={plan.id} className="p-6 border-r border-stone-100 last:border-r-0">
                         <span className="text-base font-extrabold text-burnt-orange">
-                          {typeof plan.minPrice === 'number' ? `$${plan.minPrice.toLocaleString()}` : '—'}
+                          {typeof plan.minPrice === 'number' ? `$${plan.minPrice.toLocaleString()}` : 'N/A'}
                           {hasRange ? ` - $${plan.maxPrice.toLocaleString()}` : ''}
                         </span>
                         <span className="text-stone-400 font-bold text-3xs uppercase tracking-wide block mt-0.5">per installment</span>

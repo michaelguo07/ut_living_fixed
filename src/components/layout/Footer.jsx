@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { LAST_UPDATED } from '../../data/apartments'
 
 export default function Footer() {
   return (
@@ -23,9 +24,14 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <p className="mt-4 text-center text-sm text-stone-500">
-          Helping Longhorns find apartments near UT Austin. Built by students.
-        </p>
+        <div className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-stone-500">
+          <p>Helping Longhorns find apartments near UT Austin. Built by students.</p>
+          {LAST_UPDATED && (
+            <p className="font-medium text-stone-400">
+              Prices & availability last updated: <span className="text-stone-600 font-semibold">{LAST_UPDATED}</span>
+            </p>
+          )}
+        </div>
       </div>
     </footer>
   )

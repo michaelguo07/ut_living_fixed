@@ -4,7 +4,7 @@ import L from 'leaflet'
 import ApartmentList from '../components/apartments/ApartmentList'
 import LoadingPlaceholder from '../components/ui/LoadingPlaceholder'
 import { useAIAgent } from '../hooks/useAIAgent'
-import { UT_AUSTIN_APARTMENTS } from '../data/apartments'
+import { UT_AUSTIN_APARTMENTS, LAST_UPDATED } from '../data/apartments'
 
 // Latitude and Longitude coordinates for Austin/West Campus properties
 const APARTMENT_COORDINATES = {
@@ -496,9 +496,16 @@ export default function SearchResultsPage() {
 
           {!loading && !error && displayApartments.length > 0 && (
             <>
-              <p className="mb-4 text-xs font-bold text-stone-500 uppercase tracking-wider">
-                {displayApartments.length} result{displayApartments.length !== 1 ? 's' : ''} near {campusQuery}
-              </p>
+              <div className="mb-4 flex items-center justify-between">
+                <p className="text-xs font-bold text-stone-500 uppercase tracking-wider">
+                  {displayApartments.length} result{displayApartments.length !== 1 ? 's' : ''} near {campusQuery}
+                </p>
+                {LAST_UPDATED && (
+                  <span className="text-3xs font-medium text-stone-400">
+                    Updated: <span className="font-semibold text-stone-600">{LAST_UPDATED}</span>
+                  </span>
+                )}
+              </div>
               <ApartmentList
                 apartments={displayApartments}
                 hoveredId={hoveredAptId}

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { getApartmentById } from '../data/apartments'
+import { getApartmentById, LAST_UPDATED } from '../data/apartments'
 import { getFloorPlansForProperty } from '../data/floorPlans'
 import { useFavorites } from '../context/FavoritesContext'
 
@@ -83,7 +83,15 @@ export default function ApartmentDetailPage() {
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-sm font-medium text-stone-500">UT Austin • West Campus</p>
+          <div className="flex items-center gap-2 text-sm font-medium text-stone-500">
+            <span>UT Austin • West Campus</span>
+            {LAST_UPDATED && (
+              <>
+                <span>•</span>
+                <span className="text-xs text-stone-400">Updated {LAST_UPDATED}</span>
+              </>
+            )}
+          </div>
           <h1 className="mt-1 text-3xl font-bold text-stone-900">{apartment.name}</h1>
         </div>
         <Link to="/search" className="text-sm font-medium text-[#BF5700] hover:underline">
@@ -241,12 +249,12 @@ export default function ApartmentDetailPage() {
                       <td className="px-4 py-3 text-stone-700">
                         {typeof plan.minPrice === 'number' && Number.isFinite(plan.minPrice)
                           ? `$${plan.minPrice.toLocaleString()}/mo`
-                          : '—'}
+                          : 'N/A'}
                       </td>
                       <td className="px-4 py-3 text-stone-700">
                         {typeof plan.maxPrice === 'number' && Number.isFinite(plan.maxPrice)
                           ? `$${plan.maxPrice.toLocaleString()}/mo`
-                          : '—'}
+                          : 'N/A'}
                       </td>
                       <td className="px-4 py-3 text-stone-700">
                         <span className={`px-2 py-0.5 rounded-full text-2xs font-bold ${
