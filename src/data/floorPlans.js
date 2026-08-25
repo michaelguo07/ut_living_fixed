@@ -1,11 +1,447 @@
 import { normalizePropertyName, slugify } from './utils.js';
 
-export const LAST_UPDATED = "August 24, 2026";
-export const LAST_UPDATED_ISO = "2026-08-24T16:29:34.831157";
+export const LAST_UPDATED = "August 25, 2026";
+export const LAST_UPDATED_ISO = "2026-08-25T13:09:55.668612";
 
 const RAW_FLOOR_PLANS = [
   {
-    "property": "The Block (various locations)",
+    "property": "2400 Nueces Apartments",
+    "plan": "Studio",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "450",
+    "minPrice": 1495,
+    "maxPrice": 1576,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/halls/2400-nueces-apartment-complex",
+    "imagePath": "https://housing.utexas.edu/sites/default/files/2400-studio.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "2400 Nueces Apartments",
+    "plan": "1 Bedroom / 1 Bath",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "580",
+    "minPrice": 1789,
+    "maxPrice": 1789,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/halls/2400-nueces-apartment-complex",
+    "imagePath": "https://housing.utexas.edu/sites/default/files/2400-1b1b.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "2400 Nueces Apartments",
+    "plan": "2 Bedroom / 2 Bath Private",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "820",
+    "minPrice": 1468,
+    "maxPrice": 1548,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/halls/2400-nueces-apartment-complex",
+    "imagePath": "https://housing.utexas.edu/sites/default/files/2400-2b2b.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "2400 Nueces Apartments",
+    "plan": "2 Bed / 2 Bath (Double Occupancy)",
+    "roomType": "2 Bed / 2 Bath (Shared)",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "820",
+    "minPrice": 911,
+    "maxPrice": 991,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/halls/2400-nueces-apartment-complex",
+    "imagePath": "https://housing.utexas.edu/sites/default/files/2400-2b2b-shared.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bedroom (limited privacy)"
+    ]
+  },
+  {
+    "property": "2400 Nueces Apartments",
+    "plan": "3 Bedroom / 3 Bath",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1150",
+    "minPrice": 1291,
+    "maxPrice": 1371,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/halls/2400-nueces-apartment-complex",
+    "imagePath": "https://housing.utexas.edu/sites/default/files/2400-3b3b.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "2400 Nueces Apartments",
+    "plan": "4 Bedroom / 4 Bath",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1380",
+    "minPrice": 1141,
+    "maxPrice": 1221,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/halls/2400-nueces-apartment-complex",
+    "imagePath": "https://housing.utexas.edu/sites/default/files/2400-4b4b.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Brackenridge Apartments (Lake Austin Blvd)",
+    "plan": "1 Bedroom Family Unit",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "540",
+    "minPrice": 1320,
+    "maxPrice": 1320,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Brackenridge Apartments (Lake Austin Blvd)",
+    "plan": "2 Bedroom Family Unit",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "720",
+    "minPrice": 1514,
+    "maxPrice": 1514,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "Brackenridge Apartments (Lake Austin Blvd)",
+    "plan": "3 Bedroom Family Unit",
+    "roomType": "3 Bed / 1.5 Bath",
+    "beds": 3,
+    "baths": 1.5,
+    "sqFt": "950",
+    "minPrice": 1826,
+    "maxPrice": 1826,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 1.5 baths)",
+      "Premium pricing tier"
+    ]
+  },
+  {
+    "property": "Colorado Apartments (Lake Austin Blvd)",
+    "plan": "1 Bedroom Single Unit",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "520",
+    "minPrice": 1200,
+    "maxPrice": 1200,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Colorado Apartments (Lake Austin Blvd)",
+    "plan": "1 Bedroom Unit with Office",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "610",
+    "minPrice": 1338,
+    "maxPrice": 1338,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Colorado Apartments (Lake Austin Blvd)",
+    "plan": "2 Bedroom Unit (Room A - 55%)",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "700",
+    "minPrice": 757,
+    "maxPrice": 757,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "Colorado Apartments (Lake Austin Blvd)",
+    "plan": "2 Bedroom Unit (Room B - 45%)",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "700",
+    "minPrice": 619,
+    "maxPrice": 619,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "East Campus Graduate Apartments",
+    "plan": "Graduate Studio",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "420",
+    "minPrice": 1301,
+    "maxPrice": 1301,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/university-apartments/east-campus-graduate-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "East Campus Graduate Apartments",
+    "plan": "1 Bedroom / 1 Bath Graduate Unit",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "560",
+    "minPrice": 1581,
+    "maxPrice": 1581,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/university-apartments/east-campus-graduate-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "East Campus Graduate Apartments",
+    "plan": "2 Bedroom / 2 Bath Graduate Shared",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "850",
+    "minPrice": 1199,
+    "maxPrice": 1199,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/university-apartments/east-campus-graduate-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bedroom (limited privacy)"
+    ]
+  },
+  {
+    "property": "Gateway Apartments (West 6th St)",
+    "plan": "1 Bedroom Single Unit",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "530",
+    "minPrice": 1200,
+    "maxPrice": 1200,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Gateway Apartments (West 6th St)",
+    "plan": "1 Bedroom with Study",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "625",
+    "minPrice": 1338,
+    "maxPrice": 1338,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Gateway Apartments (West 6th St)",
+    "plan": "2 Bedroom Unit (Room A - 55%)",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "710",
+    "minPrice": 757,
+    "maxPrice": 757,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "Gateway Apartments (West 6th St)",
+    "plan": "2 Bedroom Unit (Room B - 45%)",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "710",
+    "minPrice": 619,
+    "maxPrice": 619,
+    "availability": "Available",
+    "url": "https://housing.utexas.edu/housing/apartments/university-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "University-operated housing & services",
+      "All utilities & high-speed internet included",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: Efficiency SMART",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -19,7 +455,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -27,7 +463,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: Efficiency Premium SMART",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -41,14 +477,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: Efficiency A SMART",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -62,7 +498,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -70,7 +506,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: Efficiency B SMART",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -84,7 +520,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -92,7 +528,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: Efficiency A SMART",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -106,14 +542,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: Efficiency B SMART",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -127,7 +563,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -135,7 +571,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: Efficiency C",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -149,14 +585,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 1 Bed - 1 Bath A SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -170,7 +606,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -178,7 +614,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 1 Bed - 1 Bath B Premium",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -192,14 +628,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 1 Bed - 1 Bath B Premium SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -213,7 +649,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -221,7 +657,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 1 Bed - 1 Bath C Premium",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -235,15 +671,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier",
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 1 Bed - 1 Bath C Premium SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -257,7 +692,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -265,7 +700,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 2 Bed - 1 Bath",
     "roomType": "2 Bed / 1 Bath",
     "beds": 2,
@@ -278,7 +713,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/26fbb246-b96a-4507-8987-b1b60fc91606/671-23rd-2-Bed-1-Bath-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (2 residents sharing 1 baths)",
@@ -286,7 +721,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 2 Bed - 2 Bath A Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -300,14 +735,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 2 Bed - 2 Bath A Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -321,7 +756,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -330,7 +765,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 2 Bed - 2 Bath B Premium",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -344,14 +779,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 2 Bed - 2 Bath C Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -365,13 +800,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 2 Bed - 2 Bath D Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -385,14 +820,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 2 Bed - 2 Bath D Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -406,7 +841,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -415,7 +850,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 2 Bed - 2 Bath E Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -429,14 +864,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 3 Bed - 2 Bath Premium",
     "roomType": "3 Bed / 2 Bath",
     "beds": 3,
@@ -449,7 +884,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/e56106c8-21cc-4400-aff9-8ed1ab283886/671-23rd-3-Bed-2-Bath-Premium-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -458,7 +893,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 3 Bed - 3 Bath A",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -472,14 +907,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 3 Bed - 3 Bath B Premium",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -493,13 +928,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 3 Bed - 3 Bath C Private Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -513,14 +948,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 3 Bed - 3 Bath D",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -534,7 +969,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -542,7 +977,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 4 Bed - 2 Bath Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -555,7 +990,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/0789e671-837f-4edc-be91-83e00f8051d9/671-23rd-4-Bed-2-Bath-Premium-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 2 baths)",
@@ -563,7 +998,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 4 Bed - 4 Bath",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -577,14 +1012,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "23rd: 4 Bed - 4 Bath Premium Private Bedroom",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -598,13 +1033,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 1 Bath A Premium w/Loft",
     "roomType": "2 Bed / 1 Bath",
     "beds": 2,
@@ -617,7 +1052,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/5a7922d1-816b-4ef9-a0bf-770ef0ebce3c/671-25th-East-2-Bed-1-Bath-A-Premium-with-Loft-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (2 residents sharing 1 baths)",
@@ -625,7 +1060,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 1 Bath B Premium w/Loft",
     "roomType": "2 Bed / 1 Bath",
     "beds": 2,
@@ -638,7 +1073,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/a79afbeb-d7d7-4fc0-bea0-624d84299de4/671-25th-East-2-Bed-1-Bath-B-Premium-with-Loft-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -646,7 +1081,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 2 Bath A",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -660,14 +1095,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 2 Bath B Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -681,13 +1116,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 2 Bath C Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -701,14 +1136,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 2 Bath C Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -722,7 +1157,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -731,7 +1166,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 2 Bath D Premium",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -745,13 +1180,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 2 Bath D Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -765,7 +1200,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -774,7 +1209,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 2 Bath E Premium w/Loft Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -788,13 +1223,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 2 Bed - 2 Bath E Premium w/Loft Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -808,7 +1243,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -817,7 +1252,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 3 Bed - 2 Bath Premium w/Loft Shared Bedroom",
     "roomType": "3 Bed / 2 Bath",
     "beds": 3,
@@ -830,7 +1265,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/6ac4ba6f-2f9b-43dd-b821-c500d33099b8/671-25th-East-3-Bed-2-Bath-Premium-with-Loft-Shared-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -840,7 +1275,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 3 Bed - 3 Bath A Premium Private Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -854,14 +1289,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 3 Bed - 3 Bath A Premium Shared Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -875,7 +1310,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -884,7 +1319,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 3 Bed - 3 Bath A Premium w/Loft Private Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -898,14 +1333,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 3 Bed - 3 Bath B Premium Private Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -919,13 +1354,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 4 Bed - 2 Bath A Premium Private Bedroom",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -938,7 +1373,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/0bcea636-9fce-4404-928b-a843e1ef1e8c/671-25th-East-4-Bed-2-Bath-A-Premium-Private-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -947,7 +1382,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 4 Bed - 2 Bath B Premium w/Loft Private Bedroom",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -960,7 +1395,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/b24d63c0-e50d-4fee-add2-8912264b57a2/671-25th-East-4-Bed-2-Bath-B-Premium-with-Loft-Private-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -969,7 +1404,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 4 Bed - 2 Bath C Premium w/Loft Shared Bedroom",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -982,7 +1417,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/0f966e24-eb5f-487e-8f77-a86efda2165b/671-25th-East-4-Bed-2-Bath-C-Premium-with-Loft-Shared-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -992,7 +1427,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 4 Bed - 3 Bath A Premium Private Bedroom",
     "roomType": "4 Bed / 3 Bath",
     "beds": 4,
@@ -1005,7 +1440,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/1f507109-019a-4e13-a8f9-817580639c8a/671-25th-East-4-Bed-3-Bath-A-Premium-Private-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -1014,7 +1449,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 4 Bed - 3 Bath B Premium Private Bedroom",
     "roomType": "4 Bed / 3 Bath",
     "beds": 4,
@@ -1027,7 +1462,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/5330e644-2a6a-4775-961d-9391cb2e26bd/671-25th-East-4-Bed-3-Bath-B-Premium-Private-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -1036,7 +1471,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 4 Bed - 3 Bath C Premium Private Bedroom",
     "roomType": "4 Bed / 3 Bath",
     "beds": 4,
@@ -1049,7 +1484,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/0a803644-4a50-42b2-aad2-6830ad88650f/671-25th-East-4-Bed-3-Bath-C-Premium-Private-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -1057,7 +1492,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 4 Bed - 3 Bath D Premium w/Loft Private Bedroom",
     "roomType": "4 Bed / 3 Bath",
     "beds": 4,
@@ -1070,7 +1505,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/ecf45ea8-71d9-40ea-89df-de37a395a376/671-25th-East-4-Bed-3-Bath-D-Premium-with-Loft-Private-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -1078,7 +1513,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 4 Bed - 3 Bath E Premium",
     "roomType": "4 Bed / 3 Bath",
     "beds": 4,
@@ -1091,7 +1526,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/314fc8e3-cdcd-4e7f-b216-06f128edf33f/671-25th-East-4-Bed-3-Bath-E-Premium-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -1099,7 +1534,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 5 Bed - 3 Bath Premium w/Loft Shared Bedroom",
     "roomType": "5 Bed / 3 Bath",
     "beds": 5,
@@ -1112,7 +1547,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/415826a8-8279-4c63-89e9-8e50b17c7f3b/671-25th-East-5-Bed-3-Bath-Premium-with-Loft-Shared-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -1122,7 +1557,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 5 Bed - 4 Bath Premium Private Bedroom",
     "roomType": "5 Bed / 4 Bath",
     "beds": 5,
@@ -1135,7 +1570,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/d6a581ab-a557-49c1-bcf9-be1821231be7/671-25th-East-5-Bed-4-Bath-Premium-Private-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -1144,7 +1579,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 5 Bed - 4 Bath Premium w/Loft Private Bedroom",
     "roomType": "5 Bed / 4 Bath",
     "beds": 5,
@@ -1157,7 +1592,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/50075e91-5b12-468d-9c4f-177a1b1c4231/671-25th-East-5-Bed-4-Bath-Premium-with-Loft-Private-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (5 residents sharing 4 baths)",
@@ -1165,7 +1600,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th E: 5 Bed - 4 Bath Premium w/Loft Shared Bedroom",
     "roomType": "5 Bed / 4 Bath",
     "beds": 5,
@@ -1178,7 +1613,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/50075e91-5b12-468d-9c4f-177a1b1c4231/671-25th-East-5-Bed-4-Bath-Premium-with-Loft-Private-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -1188,7 +1623,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 1 Bed - 1 Bath A Premium - Furnished",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1202,13 +1637,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 1 Bed - 1 Bath A Premium SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1222,14 +1657,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 1 Bed - 1 Bath B",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1243,14 +1678,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 1 Bed - 1 Bath B Premium Private Bedroom",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1264,14 +1699,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 1 Bed - 1 Bath B Premium SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1285,14 +1720,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 1 Bed - 1 Bath B SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1306,14 +1741,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 1 Bed - 1 Bath C Premium w/Loft",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1327,14 +1762,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 2 Bed - 1 Bath Premium w/Loft",
     "roomType": "2 Bed / 1 Bath",
     "beds": 2,
@@ -1347,16 +1782,15 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/adaa7136-f57b-4231-965f-24f79c911d7e/671-25th-West-2-Bed-1-Bath-Premium-with-Loft-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (2 residents sharing 1 baths)",
-      "Premium pricing tier",
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 2 Bed - 2 Bath A Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1370,14 +1804,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 2 Bed - 2 Bath B",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1391,14 +1825,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 2 Bed - 2 Bath B Premium",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1412,14 +1846,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 2 Bed - 2 Bath C Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1433,14 +1867,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 2 Bed - 2 Bath C Premium w/Loft Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1454,13 +1888,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 2 Bed - 2 Bath D Premium w/Loft Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1474,14 +1908,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 2 Bed - 2 Bath E Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1495,14 +1929,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 2 Bed - 2 Bath E Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1516,7 +1950,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -1525,7 +1959,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 3 Bed - 2 Bath A",
     "roomType": "3 Bed / 2 Bath",
     "beds": 3,
@@ -1538,7 +1972,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/2708dac3-3ea8-4f4a-bf44-c0765ac7ab80/671-25th-West-3-Bed-2-Bath-A-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -1546,7 +1980,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 3 Bed - 2 Bath B Premium",
     "roomType": "3 Bed / 2 Bath",
     "beds": 3,
@@ -1559,7 +1993,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/a53cee34-2ea0-4bc0-b0aa-ceb89e78a38e/671-25th-West-3-Bed-2-Bath-B-Premium-with-Loft-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -1567,7 +2001,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 3 Bed - 3 Bath A Premium Private Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -1581,14 +2015,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 3 Bed - 3 Bath B",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -1602,14 +2036,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 3 Bed - 3 Bath C Premium",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -1623,13 +2057,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 3 Bed - 3 Bath D Premium",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -1643,14 +2077,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 3 Bed - 3 Bath E Premium w/Loft Private Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -1664,13 +2098,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 4 Bed - 2 Bath A Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -1683,7 +2117,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/bedb39bb-5dc6-4cf9-a7ab-42f814db4055/671-25th-West-4-Bed-2-Bath-A-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -1692,7 +2126,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 4 Bed - 2 Bath B Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -1705,7 +2139,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/2f207a2c-5798-43bd-a6f0-0b7a5a0a545d/671-25th-West-4-bed-2-bath-B-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -1713,7 +2147,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 4 Bed - 2 Bath C Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -1726,7 +2160,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/4ccc7cf4-26b2-4ffb-bf43-60b0ef9d9de2/671-25th-West-4-Bed-2-Bath-C-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -1735,7 +2169,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 4 Bed - 4 Bath A",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -1749,13 +2183,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "25th W: 4 Bed - 4 Bath A w/Loft",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -1769,13 +2203,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 1 Bed - 1 Bath A",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1789,14 +2223,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 1 Bed - 1 Bath A Premium",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1810,14 +2244,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 1 Bed - 1 Bath A Premium SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1831,14 +2265,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 1 Bed - 1 Bath B",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1852,14 +2286,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 1 Bed - 1 Bath B SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1873,14 +2307,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 1 Bed - 1 Bath C",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -1894,14 +2328,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 2 Bed - 2 Bath A Premium",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1915,7 +2349,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -1923,7 +2357,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 2 Bed - 2 Bath B Premium  Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1937,14 +2371,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 2 Bed - 2 Bath B Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1958,7 +2392,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -1967,7 +2401,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 2 Bed - 2 Bath B Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -1981,14 +2415,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 2 Bed - 2 Bath B Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2002,7 +2436,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2011,7 +2445,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 2 Bed - 2 Bath C Premium",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2025,14 +2459,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 2 Bed - 2 Bath D Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2046,13 +2480,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 2 Bed - 2 Bath D Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2066,7 +2500,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2075,7 +2509,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 3 Bed - 3 Bath Premium",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -2089,13 +2523,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 4 Bed - 2 Bath Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -2108,7 +2542,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/18cde729-bf7c-4396-8258-b908e2426873/671-28th-4-bed-2-bath-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2117,7 +2551,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "28th: 4 Bed - 4 Bath Premium",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -2131,13 +2565,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 1 Bed - 1 Bath A Premium",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2151,14 +2585,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 1 Bed - 1 Bath A Premium SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2172,7 +2606,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Affordable SMART housing program rate",
       "Direct lease available"
@@ -2180,7 +2614,7 @@ const RAW_FLOOR_PLANS = [
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 1 Bed - 1 Bath B SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2194,7 +2628,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Affordable SMART housing program rate"
     ],
@@ -2203,7 +2637,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 1 Bed - 1 Bath C Premium",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2217,14 +2651,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 1 Bed - 1 Bath C Premium SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2238,7 +2672,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Affordable SMART housing program rate",
       "Direct lease available"
@@ -2246,7 +2680,7 @@ const RAW_FLOOR_PLANS = [
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 1 Bed - 1 Bath D",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2260,14 +2694,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 1 Bed - 1 Bath E Premium w/Loft",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2281,14 +2715,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath A Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2302,7 +2736,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2311,7 +2745,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath A Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2325,7 +2759,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2334,7 +2768,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath B Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2348,7 +2782,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2356,7 +2790,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath C Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2370,7 +2804,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2378,7 +2812,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath C Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2392,7 +2826,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -2401,7 +2835,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath D Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2415,7 +2849,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2423,7 +2857,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath D Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2437,7 +2871,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2446,7 +2880,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath E Premium w/Loft Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2460,7 +2894,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2469,7 +2903,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath F Premium w/Loft Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2483,14 +2917,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath F Premium w/Loft Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2504,7 +2938,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2513,7 +2947,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath G Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2527,14 +2961,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath G Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2548,7 +2982,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -2557,7 +2991,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath H Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2571,7 +3005,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2580,7 +3014,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath I Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2594,7 +3028,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -2603,7 +3037,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath J Premium w/Loft",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2617,14 +3051,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath K Premium w/Loft Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2638,14 +3072,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath L Premium w/Loft Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2659,14 +3093,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath M Premium w/Loft",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2680,14 +3114,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 2 Bed - 2 Bath N Premium",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2701,7 +3135,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2709,7 +3143,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 4 Bed - 2 Bath A Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -2722,7 +3156,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/9aaa858d-db2a-4492-b0c9-837c0e3ab5d5/671-Leon-4-bed-2-bath-A-Premium-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -2731,7 +3165,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 4 Bed - 2 Bath A Premium w/ Loft Private Bedroom",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -2744,7 +3178,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/682abf15-6eee-4668-b31d-c39068e03926/671-leon-4-bed-2-bath-a-premium-w-loft-01_1.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -2752,7 +3186,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 4 Bed - 2 Bath B Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -2765,7 +3199,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/7cde86b7-27b0-40fb-b5bf-14a94f330f1c/671-Leon-4-Bed-2-Bath-B-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -2774,7 +3208,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Leon: 4 Bed - 4 Bath Premium",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -2788,14 +3222,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 1 Bed - 1 Bath A Premium Private Bedroom",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2809,14 +3243,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 1 Bed - 1 Bath A Premium SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2830,7 +3264,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -2838,7 +3272,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 1 Bed - 1 Bath B Premium w/Loft",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -2852,15 +3286,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier",
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 2 Bed - 2 Bath A Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2874,13 +3307,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 2 Bed - 2 Bath B Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2894,7 +3327,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -2903,7 +3336,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 2 Bed - 2 Bath B Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2917,7 +3350,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -2926,7 +3359,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 2 Bed - 2 Bath C Premium w/Loft",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2940,14 +3373,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 2 Bed - 2 Bath D Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2961,14 +3394,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 2 Bed - 2 Bath E Premium w/Loft",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -2982,14 +3415,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 3 Bed - 3 Bath A Premium Private Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -3003,13 +3436,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 3 Bed - 3 Bath B Premium",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -3023,14 +3456,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 4 Bed - 2 Bath Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -3043,7 +3476,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/a7f136ee-f4f7-49cb-b7a4-4a4206f05019/671-Pearl-N-4-bed-2-bath-Premium-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -3051,7 +3484,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl N: 4 Bed - 4 Bath Premium w/Loft",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -3065,14 +3498,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 1 Bed - 1 Bath A",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -3086,14 +3519,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 1 Bed - 1 Bath A Premium Private Bedroom",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -3107,14 +3540,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 1 Bed - 1 Bath A Premium Shared Bedroom",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -3128,7 +3561,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -3137,7 +3570,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 1 Bed - 1 Bath B Premium",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -3151,14 +3584,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 2 Bed - 2 Bath A Premium",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3172,13 +3605,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 2 Bed - 2 Bath B Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3192,14 +3625,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 2 Bed - 2 Bath B Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3213,7 +3646,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -3222,7 +3655,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 2 Bed - 2 Bath B Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3236,7 +3669,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -3245,7 +3678,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 2 Bed - 2 Bath C Premium w/Loft Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3259,7 +3692,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -3268,7 +3701,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 2 Bed - 2 Bath D Premium Private Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3282,13 +3715,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 2 Bed - 2 Bath D Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3302,7 +3735,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -3311,7 +3744,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 2 Bed - 2 Bath E Premium w/Loft",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3325,7 +3758,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -3333,7 +3766,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 3 Bed - 3 Bath A Premium Private Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -3347,13 +3780,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 3 Bed - 3 Bath B Premium",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -3367,13 +3800,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 4 Bed - 2 Bath Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -3386,7 +3819,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/7a0a93ef-4ab9-442d-a35a-644f40b3cd13/671-Pearl-S-4-Bed-2-Bath-Premium-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -3394,7 +3827,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Pearl S: 4 Bed - 4 Bath Premium",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -3408,14 +3841,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 1 Bed - 1 Bath A Premium",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -3429,14 +3862,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 1 Bed - 1 Bath A Premium SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -3450,7 +3883,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Affordable SMART housing program rate",
       "Direct lease available"
@@ -3458,7 +3891,7 @@ const RAW_FLOOR_PLANS = [
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 1 Bed - 1 Bath B",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -3472,14 +3905,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 1 Bed - 1 Bath B SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -3493,14 +3926,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 2 Bed - 2 Bath A Premium",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3514,14 +3947,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 2 Bed - 2 Bath B Premium",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3535,14 +3968,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 2 Bed - 2 Bath B Premium Shared Bedroom",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3556,7 +3989,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -3565,7 +3998,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 2 Bed - 2 Bath Premium w/Study",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -3579,7 +4012,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -3587,7 +4020,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 3 Bed - 2 Bath A Premium",
     "roomType": "3 Bed / 2 Bath",
     "beds": 3,
@@ -3600,7 +4033,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/37c61d50-9ae2-4845-99bf-6c8ba95bd4ab/671-Rio-3-Bed-2-Bath-A-Premium-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -3609,7 +4042,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 3 Bed - 2 Bath B Premium",
     "roomType": "3 Bed / 2 Bath",
     "beds": 3,
@@ -3622,7 +4055,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/6e9af897-0c8b-4dfe-8b31-811d32bc4293/671-Rio-3-Bed-2-Bath-B-Premium-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -3631,7 +4064,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 3 Bed - 3 Bath A Premium",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -3645,13 +4078,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 3 Bed - 3 Bath B Premium Private Bedroom",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -3665,14 +4098,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 4 Bed - 2 Bath Premium",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -3685,7 +4118,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/418e6068-1046-4f03-9786-698aaf5fe3ab/671-Rio-4-Bed-2-Bath-Premium-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -3694,7 +4127,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 4 Bed - 4 Bath Premium",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -3708,14 +4141,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Block (various locations)",
+    "property": "The Block (on 23rd, 25th, etc.)",
     "plan": "Rio: 5 Bed - 3 Bath Premium",
     "roomType": "5 Bed / 3 Bath",
     "beds": 5,
@@ -3728,454 +4161,12 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/5cead19b-2d20-485d-85cf-c31d93021584/671-Rio-5-Bed-3-Bath-Premium-ORIGINAL-01?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": [
       "Shared bathroom (5 residents sharing 3 baths)"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "Deluxe Studio Apartment Alt - SMART",
-    "roomType": "0 Bed / 1 Bath",
-    "beds": 0,
-    "baths": 1.0,
-    "sqFt": "",
-    "minPrice": 1959,
-    "maxPrice": 1959,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/377f17f9-0114-4e9e-805f-dd899443e3dc/Callaway-House-Deluxe-Stuidio-Apartment-SMART-01.png?width=756&height=510&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Affordable SMART housing program rate"
-    ],
-    "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "Deluxe Studio Suite - SMART",
-    "roomType": "0 Bed / 1 Bath",
-    "beds": 0,
-    "baths": 1.0,
-    "sqFt": "",
-    "minPrice": 1879,
-    "maxPrice": 1879,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/a97b503e-66a0-458b-97ef-1b001470f4dd/685_-Deluxe-Studio-Suite-SMART-ORIGINAL-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Affordable SMART housing program rate"
-    ],
-    "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "Deluxe Studio Suite Alt - SMART",
-    "roomType": "0 Bed / 1 Bath",
-    "beds": 0,
-    "baths": 1.0,
-    "sqFt": "",
-    "minPrice": 1879,
-    "maxPrice": 1879,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/10740d99-a9c5-4ab7-8651-bf433b77ae14/Callaway-House-Deluxe-Studio-Suite-SMART-01.png?width=756&height=510&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Affordable SMART housing program rate"
-    ],
-    "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "Standard Studio Apartment - SMART",
-    "roomType": "0 Bed / 1 Bath",
-    "beds": 0,
-    "baths": 1.0,
-    "sqFt": "",
-    "minPrice": 1959,
-    "maxPrice": 1959,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/4bc7d1ed-27b4-47ab-8d21-dcf596ffaf95/685_Standard-Studio-Apartment-SMART-ORIGINAL-01-01.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Affordable SMART housing program rate"
-    ],
-    "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "Standard Studio Suite - SMART",
-    "roomType": "0 Bed / 1 Bath",
-    "beds": 0,
-    "baths": 1.0,
-    "sqFt": "",
-    "minPrice": 1879,
-    "maxPrice": 1879,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/82530a5a-64e1-4cdb-a21d-1be9cc728043/685_Standard-Studio-Suite-SMART-ORIGINAL-01-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Affordable SMART housing program rate",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "2 Bed - 2 Bath Apartment - Corner Unit + Floors 16-17",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": 3624,
-    "maxPrice": 3624,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/238488e0-3d6c-43d7-87e2-a69c5bf4d815/Callaway-Austin-2-bed-2-bath-Corner-Suite-HH1-B.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "2 Bed - 2 Bath Apartment - Floors 16-17",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": 3574,
-    "maxPrice": 3574,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/3d1b2378-a71e-4b29-91f3-4fec599ab6d5/685_2-bed-2-bath-Apartment-ORIGINAL-01-01.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)"
-    ],
-    "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "2 Bed - 2 Bath Apartment Alt - Floors 16-17",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": 3574,
-    "maxPrice": 3574,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/3d1b2378-a71e-4b29-91f3-4fec599ab6d5/685_2-bed-2-bath-Apartment-ORIGINAL-01-01.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "2 Bed - 2 Bath Suite Alt Double",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": 2184,
-    "maxPrice": 2184,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/3cde3e8f-73a7-43f1-b0b7-7099fb20a7a2/685_2-bed-2-bath-Suite-Double-ORIGINAL-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "2 Bed - 2 Bath Suite Double",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": 2184,
-    "maxPrice": 2234,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/3cde3e8f-73a7-43f1-b0b7-7099fb20a7a2/685_2-bed-2-bath-Suite-Double-ORIGINAL-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "2 Bed - 2 Bath Suite Double - Corner Unit",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": 2359,
-    "maxPrice": 2409,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/78503edc-d62b-4805-9f4c-236882ffba31/Callaway-Austin-2-bed-2-bath-Corner-Suite-Double-H1-A.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "3 Bed - 3 Bath Apartment - Corner Unit + Floors 16-17",
-    "roomType": "3 Bed / 3 Bath",
-    "beds": 3,
-    "baths": 3.0,
-    "sqFt": "",
-    "minPrice": 3424,
-    "maxPrice": 3424,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/17c71310-f514-4f92-9ca3-014d0b1e364a/Callaway-Austin-3-bed-3-bath-Apartment-Corner-JJ1.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "3 Bed - 3 Bath Apartment - Floors 16-17",
-    "roomType": "3 Bed / 3 Bath",
-    "beds": 3,
-    "baths": 3.0,
-    "sqFt": "",
-    "minPrice": 3249,
-    "maxPrice": 3249,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/52aaa490-f02a-49a8-8ee5-603aeadd55c9/Callaway-House-3-bed-3-bath-Apartment-01.png?width=756&height=510&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)"
-    ],
-    "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "3 Bed - 3 Bath Apartment Alt - Corner Unit + Floors 16-17",
-    "roomType": "3 Bed / 3 Bath",
-    "beds": 3,
-    "baths": 3.0,
-    "sqFt": "",
-    "minPrice": 3424,
-    "maxPrice": 3424,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/17c71310-f514-4f92-9ca3-014d0b1e364a/Callaway-Austin-3-bed-3-bath-Apartment-Corner-JJ1.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "3 Bed - 3 Bath Apartment Alt - Floors 16-17",
-    "roomType": "3 Bed / 3 Bath",
-    "beds": 3,
-    "baths": 3.0,
-    "sqFt": "",
-    "minPrice": 3249,
-    "maxPrice": 3249,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/8e061d22-8916-4d35-a6dd-1855d91e1953/685_3-bed-3-bath-Apartment-ORIGINAL-01-01.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "3 Bed - 3 Bath Suite Single",
-    "roomType": "3 Bed / 3 Bath",
-    "beds": 3,
-    "baths": 3.0,
-    "sqFt": "",
-    "minPrice": 3199,
-    "maxPrice": 3199,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/e2c3c3e7-1305-4fe6-91d2-7c87025d6225/685_3-bed-3-bath-Single-2023.png?width=2750&height=1855&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "4 Bed - 4 Bath Suite Alt Single - Corner Unit",
-    "roomType": "4 Bed / 4 Bath",
-    "beds": 4,
-    "baths": 4.0,
-    "sqFt": "",
-    "minPrice": 3199,
-    "maxPrice": 3199,
-    "availability": "Available",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/31d272a2-65f1-49bf-833f-3cb82f526771/Callaway-Austin-4-bed-4-bath-Corner-Suite-Single-No1.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "4 Bed - 4 Bath Suite Single",
-    "roomType": "4 Bed / 4 Bath",
-    "beds": 4,
-    "baths": 4.0,
-    "sqFt": "",
-    "minPrice": 3099,
-    "maxPrice": 3149,
-    "availability": "Available",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/13acd36e-c7e5-42fe-b263-6c8f3c6b04f8/685_4-bed-4-bath-Suite-ORIGINAL-01-01.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
-    ]
-  },
-  {
-    "property": "Callaway House",
-    "plan": "4 Bed - 4 Bath Suite Single - Corner Unit",
-    "roomType": "4 Bed / 4 Bath",
-    "beds": 4,
-    "baths": 4.0,
-    "sqFt": "",
-    "minPrice": 3274,
-    "maxPrice": 3324,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/callaway-house-austin/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/31d272a2-65f1-49bf-833f-3cb82f526771/Callaway-Austin-4-bed-4-bath-Corner-Suite-Single-No1.png?width=660&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "All-inclusive meals (meal plan included)",
-      "All utilities included (electricity, water, internet)",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Premium pricing tier"
     ]
   },
   {
@@ -4248,281 +4239,6 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "26 West",
-    "plan": "1 Bed - 1 Bath A",
-    "roomType": "1 Bed / 1 Bath",
-    "beds": 1,
-    "baths": 1.0,
-    "sqFt": "600",
-    "minPrice": 2309,
-    "maxPrice": 2319,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/a8f11e17-29e0-466d-bb2b-cfa629718c09/687_Furnished-1-bed-1-bath-A-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "1 Bed - 1 Bath B",
-    "roomType": "1 Bed / 1 Bath",
-    "beds": 1,
-    "baths": 1.0,
-    "sqFt": "600",
-    "minPrice": 2309,
-    "maxPrice": 2319,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/dc0e83a5-6813-4d59-baab-b6ce3dbbe80c/687_Furnished-1-bed-1-bath-B-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "1 Bed - 1 Bath SMART",
-    "roomType": "1 Bed / 1 Bath",
-    "beds": 1,
-    "baths": 1.0,
-    "sqFt": "490",
-    "minPrice": 1702,
-    "maxPrice": 1702,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/b428ea33-e00e-4729-b4bb-cc9e96767cff/687_-Furnished-1-bed-1-bath-SMART-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "Fully furnished",
-      "Affordable SMART housing program rate"
-    ],
-    "cons": [
-      "Premium pricing tier",
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "2 Bed - 1 Bath A",
-    "roomType": "2 Bed / 1 Bath",
-    "beds": 2,
-    "baths": 1.0,
-    "sqFt": "886",
-    "minPrice": 1484,
-    "maxPrice": 1484,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/b18eec1d-7cc7-45ef-be39-e5928728b4de/687_Furnished-2-bed-1-bath-A-01_1.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Shared bathroom (2 residents sharing 1 baths)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "2 Bed - 1 Bath B",
-    "roomType": "2 Bed / 1 Bath",
-    "beds": 2,
-    "baths": 1.0,
-    "sqFt": "886",
-    "minPrice": 1469,
-    "maxPrice": 1469,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/9a1e5ae5-d6c6-426f-b8a6-f8f83047f123/687_Furnished-2-bed-1-bath-B-01_1.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Shared bathroom (2 residents sharing 1 baths)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "2 Bed - 2 Bath C",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "1037",
-    "minPrice": 1479,
-    "maxPrice": 1479,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/66478bb5-7fb4-4b7c-8c66-918e6189ef45/687_Furnished-2-bed-2-bath-Deluxe-01-(1).png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "2 Bed - 2 Bath Corner A",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "990",
-    "minPrice": 1504,
-    "maxPrice": 1504,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/38e97dd0-30ad-4c78-a1b9-5936818a5260/687_Furnished-2-bed-2-bath-Corner-A-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "2 Bed - 2 Bath Corner B",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "1040",
-    "minPrice": 1599,
-    "maxPrice": 1609,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/748ca0d2-5951-42c3-9896-4024625c9afe/687_Furnished-2-bed-2-bath-Corner-B-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "26 West",
-    "plan": "2 Bed - 2 Bath D",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "1014",
-    "minPrice": 1524,
-    "maxPrice": 1524,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/6d7c207e-daca-4126-9ad7-10c50579d9ae/687_Furnished-2-bed-2-bath-Standard-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "2 Bed - 2 Bath w/Study",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "1016",
-    "minPrice": 1529,
-    "maxPrice": 1529,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/b247e567-2988-4794-a069-ed50d18a2353/687_Furnished-2-bed-2-bath-with-study-01_1.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "4 Bed - 2 Bath",
-    "roomType": "4 Bed / 2 Bath",
-    "beds": 4,
-    "baths": 2.0,
-    "sqFt": "1300",
-    "minPrice": 1324,
-    "maxPrice": 1334,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/18d286a3-64a8-494a-b9ec-86378ace9b0f/687_Furnished-4-bed-2-bath-01_1.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Shared bathroom (4 residents sharing 2 baths)"
-    ]
-  },
-  {
-    "property": "26 West",
-    "plan": "4 Bed - 4 Bath A",
-    "roomType": "4 Bed / 4 Bath",
-    "beds": 4,
-    "baths": 4.0,
-    "sqFt": "1470",
-    "minPrice": 1429,
-    "maxPrice": 1459,
-    "availability": "Limited Availability",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/c2a78e7c-70af-45d1-abdd-96487ff5f7a6/687_Furnished-4-bed-4-bath-A-01.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "26 West",
-    "plan": "4 Bed - 4 Bath B",
-    "roomType": "4 Bed / 4 Bath",
-    "beds": 4,
-    "baths": 4.0,
-    "sqFt": "1470",
-    "minPrice": 1344,
-    "maxPrice": 1384,
-    "availability": "Waitlist",
-    "url": "https://www.americancampus.com/student-apartments/tx/austin/26-west/floor-plans",
-    "imagePath": "https://www.americancampus.com/getmedia/4dc75253-2b5e-4286-b709-5459030ade5e/687_Furnished-4-bed-4-bath-B-HC-01_1.png?width=661&height=446&ext=.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Waitlist status (limited immediate spots)"
-    ]
-  },
-  {
     "property": "Crest at Pearl",
     "plan": "Studio A - SMART",
     "roomType": "0 Bed / 1 Bath",
@@ -4537,7 +4253,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -4559,7 +4275,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -4581,7 +4297,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -4603,7 +4319,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -4625,7 +4341,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -4647,10 +4363,9 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier",
       "Waitlist status (limited immediate spots)"
     ]
   },
@@ -4669,11 +4384,10 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
-      "Premium pricing tier",
       "Waitlist status (limited immediate spots)"
     ]
   },
@@ -4692,7 +4406,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -4714,7 +4428,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -4736,7 +4450,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -4757,7 +4471,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/67cde5d6-6d01-4987-a4b8-faacccec71e3/675_2-Bed-1-Bath-A-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -4778,7 +4492,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/83d64a49-fc33-48de-ba25-3790c574c99d/675_-2-bed-1-bath-B-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -4800,7 +4514,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
@@ -4821,7 +4535,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
@@ -4842,7 +4556,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
@@ -4863,7 +4577,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -4883,7 +4597,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -4903,7 +4617,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -4923,7 +4637,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -4943,7 +4657,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -4963,7 +4677,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -4983,7 +4697,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -5003,7 +4717,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -5023,7 +4737,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -5043,14 +4757,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: Studio SMART",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -5064,14 +4778,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Texan: 1 Bed - 1 Bath SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -5085,16 +4799,15 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
-      "Premium pricing tier",
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Texan: 2 Bed - 1 Bath",
     "roomType": "2 Bed / 1 Bath",
     "beds": 2,
@@ -5107,7 +4820,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/e47cedaf-50ed-4434-814d-f564e5839c51/672_2-Bed-1-Bath-Salado-FURNISHED-copy.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (2 residents sharing 1 baths)",
@@ -5115,7 +4828,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Texan: 2 Bed - 1 Bath w/Loft",
     "roomType": "2 Bed / 1 Bath",
     "beds": 2,
@@ -5128,7 +4841,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/bf63ed5e-84b4-45ff-b4bb-4c8614b84178/672_1-bd-1-bath-W-LOFT-Seton-SMART-FURNISHED-copy.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -5137,7 +4850,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Texan: 2 Bed - 1 Bath w/Loft SMART",
     "roomType": "2 Bed / 1 Bath",
     "beds": 2,
@@ -5150,7 +4863,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/bf63ed5e-84b4-45ff-b4bb-4c8614b84178/672_1-bd-1-bath-W-LOFT-Seton-SMART-FURNISHED-copy.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Affordable SMART housing program rate"
     ],
@@ -5160,7 +4873,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Texan: 3 Bed - 2 Bath A",
     "roomType": "3 Bed / 2 Bath",
     "beds": 3,
@@ -5173,7 +4886,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/64ffa1eb-5b4f-40cc-8d7b-dde0f406b5a6/672_Furnished-3-Bed-2-Bath-Rio-Grande-01-copy.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -5182,7 +4895,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Texan: 3 Bed - 2 Bath B",
     "roomType": "3 Bed / 2 Bath",
     "beds": 3,
@@ -5195,7 +4908,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/2ff8a63f-dbc2-48a5-a5dd-13c518bfb5ec/672_3-Bed-2-Bath-San-Pedro-FURNISHED-copy.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -5204,7 +4917,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Texan: 4 Bed - 2 Bath w/Loft",
     "roomType": "4 Bed / 2 Bath",
     "beds": 4,
@@ -5217,7 +4930,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://www.americancampus.com/getmedia/d738d797-992c-45fd-82b8-43c49616aee9/672-Furnished-3-Bed-2-Bath-Rio-Grande-Furn-Loft-01.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -5226,7 +4939,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Texan: 4 Bed - 4 Bath",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -5240,13 +4953,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Texan: 4 Bed - 4 Bath w/ Loft",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -5260,14 +4973,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 1 Bed - 1 Bath A",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -5281,15 +4994,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
-    "cons": [
-      "Premium pricing tier"
-    ]
+    "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 1 Bed - 1 Bath A SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -5303,16 +5014,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
-    "cons": [
-      "Premium pricing tier"
-    ]
+    "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 1 Bed - 1 Bath B",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -5326,13 +5035,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 1 Bed - 1 Bath C",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -5346,7 +5055,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -5354,7 +5063,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 1 Bed - 1 Bath D",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -5368,15 +5077,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
-    "cons": [
-      "Premium pricing tier"
-    ]
+    "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 1 Bed - 1 Bath E SMART",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -5390,14 +5097,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 2 Bed - 2 Bath A",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -5411,13 +5118,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 2 Bed - 2 Bath B",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -5431,13 +5138,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 2 Bed - 2 Bath C",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -5451,14 +5158,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 4 Bed - 4 Bath A",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -5472,13 +5179,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Texan & Vintage",
+    "property": "Texan & 21st Apartments",
     "plan": "Vintage: 4 Bed - 4 Bath B",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -5492,304 +5199,364 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Nine at West Campus",
-    "plan": "Studio (S1) SMART*",
-    "roomType": "0 Bed / 1 Bath",
-    "beds": 0,
-    "baths": 1.0,
-    "sqFt": "406",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5c95b6fd047.71488695510.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "Fully furnished",
-      "Affordable SMART housing program rate"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "The Nine at West Campus",
-    "plan": "Studio (S2) SMART*",
-    "roomType": "0 Bed / 1 Bath",
-    "beds": 0,
-    "baths": 1.0,
-    "sqFt": "319",
-    "minPrice": 1255,
-    "maxPrice": 1255,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5c868c11413.66216379373.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "Fully furnished",
-      "Affordable SMART housing program rate"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "The Nine at West Campus",
-    "plan": "1/1 A1 SMART",
-    "roomType": "1 Bed / 1 Bath",
-    "beds": 1,
-    "baths": 1.0,
-    "sqFt": "567",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5c9d7b2f0f2.24149230178.png",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "Fully furnished",
-      "Affordable SMART housing program rate"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "The Nine at West Campus",
-    "plan": "2/2 B1",
-    "roomType": "2 Bed / 2 Bath",
+    "property": "GrandMarc Austin",
+    "plan": "2 Bed - 2.5 Bath",
+    "roomType": "2 Bed / 2.5 Bath",
     "beds": 2,
-    "baths": 2.0,
-    "sqFt": "756",
-    "minPrice": 1495,
-    "maxPrice": 1495,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cc58667dc5.82786497369.png",
+    "baths": 2.5,
+    "sqFt": "1398",
+    "minPrice": 1129,
+    "maxPrice": 1129,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/e8db7005-e38c-4da2-9c43-909a5e0ced31/677_Retreat-2-bed-2-5-bath-Birchmore-ORIGINAL.png?width=660&height=445&ext=.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
-    "property": "The Nine at West Campus",
-    "plan": "2/2 B2",
-    "roomType": "2 Bed / 2 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "925",
-    "minPrice": 1365,
-    "maxPrice": 1365,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cc43364f50.11810579610.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "The Nine at West Campus",
-    "plan": "3/3 C1",
+    "property": "GrandMarc Austin",
+    "plan": "3 Bed - 3 Bath A",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
     "baths": 3.0,
-    "sqFt": "1123",
-    "minPrice": 1440,
-    "maxPrice": 1440,
-    "availability": "Available",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cc801b64f1.03966927791.png",
+    "sqFt": "1396",
+    "minPrice": 989,
+    "maxPrice": 989,
+    "availability": "Waitlist",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/a323c927-f4bf-45b0-b201-89454792163e/677_Retreat-3-bed-3-bath-Fairview-ORIGINAL.png?width=661&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
-    "property": "The Nine at West Campus",
-    "plan": "3/3 C2",
+    "property": "GrandMarc Austin",
+    "plan": "3 Bed - 3 Bath B - Buildings 10-12",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
     "baths": 3.0,
-    "sqFt": "1122",
-    "minPrice": 1395,
-    "maxPrice": 1395,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cce87a4976.89245477815.png",
+    "sqFt": "1395",
+    "minPrice": 929,
+    "maxPrice": 929,
+    "availability": "Waitlist",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/2989f27d-d318-4751-af60-f4cc709eb955/677_Retreat-3-bed-3-bath-Milledge-ORIGINAL.png?width=661&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Currently sold out / waitlist only"
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Nine at West Campus",
-    "plan": "4/2 D4",
-    "roomType": "4 Bed / 2 Bath",
-    "beds": 4,
-    "baths": 2.0,
-    "sqFt": "1461",
-    "minPrice": 1215,
-    "maxPrice": 1215,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd1606bfc6.07469590761.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished"
-    ],
-    "cons": [
-      "Shared bathroom (4 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "The Nine at West Campus",
-    "plan": "4/3 D5",
-    "roomType": "4 Bed / 3 Bath",
-    "beds": 4,
-    "baths": 3.0,
-    "sqFt": "1222",
-    "minPrice": 1315,
-    "maxPrice": 1340,
-    "availability": "Available",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd78171f52.47368702558.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Shared bathroom (4 residents sharing 3 baths)"
-    ]
-  },
-  {
-    "property": "The Nine at West Campus",
-    "plan": "4/4 D1",
+    "property": "GrandMarc Austin",
+    "plan": "4 Bed - 4 Bath A - Buildings 10-12",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
     "baths": 4.0,
-    "sqFt": "1327",
-    "minPrice": 1315,
-    "maxPrice": 1315,
-    "availability": "Available",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd4096c509.29171762328.png",
+    "sqFt": "1772",
+    "minPrice": 774,
+    "maxPrice": 774,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/36adc150-e0cb-4bb9-bbc8-acc8e6cbef83/677_Retreat-4-bed-4-bath-Lumpkin-ORIGINAL.png?width=661&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Nine at West Campus",
-    "plan": "4/4 D2",
+    "property": "GrandMarc Austin",
+    "plan": "4 Bed - 4 Bath B",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
     "baths": 4.0,
-    "sqFt": "1382",
-    "minPrice": 1300,
-    "maxPrice": 1300,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd91dd88b1.65034471936.png",
+    "sqFt": "1785",
+    "minPrice": 774,
+    "maxPrice": 774,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/26024ff0-7173-4bb9-8b75-22af9206c3d3/677_Retreat-4-bed-4-bath-Artisan-ORIGINAL.png?width=661&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "The Nine at West Campus",
-    "plan": "4/4 D3",
-    "roomType": "4 Bed / 4 Bath",
-    "beds": 4,
-    "baths": 4.0,
-    "sqFt": "1350",
-    "minPrice": 1340,
-    "maxPrice": 1340,
-    "availability": "Available",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd578bf550.01114641257.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Nine at West Campus",
-    "plan": "5/5 E1",
-    "roomType": "5 Bed / 5 Bath",
-    "beds": 5,
-    "baths": 5.0,
-    "sqFt": "1577",
-    "minPrice": 1275,
-    "maxPrice": 1275,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cdae8abc53.18293786247.png",
+    "property": "GrandMarc Austin",
+    "plan": "4 Bed - 4 Bath C",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1915",
+    "minPrice": 774,
+    "maxPrice": 774,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/3a27172f-ba44-4455-af59-ece5637092f0/677_Retreat-4-bed-4-bath-Courtyard-ORIGINAL.png?width=661&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "4 Bed - 4 Bath D",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "2124",
+    "minPrice": 774,
+    "maxPrice": 784,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/39047d36-8769-46a2-8c0e-814c8befab4a/677_Retreat-4-bed-4-bath-Sycamore-ORIGINAL.png?width=661&height=446&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "4 Bed - 4 Bath E",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "2000",
+    "minPrice": 784,
+    "maxPrice": 784,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/7605a7c0-0ae1-4372-b9c6-cf2b75217d55/677_Retreat-4-bed-4-bath-Bloomfield-ORIGINAL.png?width=660&height=445&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "4 Bed - 4 Bath F",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1845",
+    "minPrice": 804,
+    "maxPrice": 804,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/3377cf81-c021-41c4-827e-f6085845a22c/677_Retreat-4-bed-4-bath-Thornberry-ORIGINAL.png?width=661&height=445&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "4 Bed - 4.5 Bath A",
+    "roomType": "4 Bed / 4.5 Bath",
+    "beds": 4,
+    "baths": 4.5,
+    "sqFt": "1831",
+    "minPrice": 804,
+    "maxPrice": 829,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/74637f2d-2614-40f0-bd78-fcef42db740f/677_Retreat-4-bed-4-5-bath-Brookshire-ORIGINAL-01.png?width=660&height=445&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "4 Bed - 4.5 Bath B",
+    "roomType": "4 Bed / 4.5 Bath",
+    "beds": 4,
+    "baths": 4.5,
+    "sqFt": "2000",
+    "minPrice": 914,
+    "maxPrice": 934,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/551c70f3-4ae2-4544-bf69-2f43b3780a86/677_Retreat-4-bed-4-5-bath-Springmore-ORIGINAL.png?width=661&height=446&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "4 Bed - 4.5 Bath C - Buildings 10-12",
+    "roomType": "4 Bed / 4.5 Bath",
+    "beds": 4,
+    "baths": 4.5,
+    "sqFt": "1395",
+    "minPrice": 839,
+    "maxPrice": 849,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/9c258167-d3c3-4ee2-b9f1-9e431aa6d0a7/677_Retreat-4-bed-4-5-bath-Milledge-ORIGINAL.png?width=661&height=446&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "5 Bed - 5 Bath A",
+    "roomType": "5 Bed / 5 Bath",
+    "beds": 5,
+    "baths": 5.0,
+    "sqFt": "2089",
+    "minPrice": 684,
+    "maxPrice": 684,
+    "availability": "Waitlist",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/1cd8a731-4691-45e5-9a72-035745320334/677_Retreat-5-bed-5-bath-Courtyard-ORIGINAL.png?width=661&height=446&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
-      "Currently sold out / waitlist only"
+      "Waitlist status (limited immediate spots)"
     ]
   },
   {
-    "property": "The Nine at West Campus",
-    "plan": "5/5 E2",
+    "property": "GrandMarc Austin",
+    "plan": "5 Bed - 5 Bath B",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
     "baths": 5.0,
-    "sqFt": "1793",
-    "minPrice": 1285,
-    "maxPrice": 1285,
-    "availability": "Sold Out",
-    "url": "https://theninewestcampus.com/floorplans/",
-    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cdd7439ed6.47192408562.png",
+    "sqFt": "2280",
+    "minPrice": 764,
+    "maxPrice": 764,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/86fe2f7c-f215-41f8-850c-4ae91d5987c3/677_Retreat-5-bed-5-bath-w-study-Hawthorne-ORIGINAL.png?width=661&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "5 Bed - 5 Bath C",
+    "roomType": "5 Bed / 5 Bath",
+    "beds": 5,
+    "baths": 5.0,
+    "sqFt": "2166",
+    "minPrice": 769,
+    "maxPrice": 769,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/8768703c-63db-45a0-8e4d-3dccc311dc23/677_Retreat-5-bed-5-bath-Magnolia-ORIGINAL.png?width=661&height=446&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "5 Bed - 5 Bath D",
+    "roomType": "5 Bed / 5 Bath",
+    "beds": 5,
+    "baths": 5.0,
+    "sqFt": "2059",
+    "minPrice": 689,
+    "maxPrice": 689,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/8f43c354-f924-4210-ac97-9d21abf92fe8/677_Retreat-5-bed-5-bath-Sycamore-ORIGINAL.png?width=661&height=446&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "GrandMarc Austin",
+    "plan": "5 Bed - 5.5 Bath",
+    "roomType": "5 Bed / 5.5 Bath",
+    "beds": 5,
+    "baths": 5.5,
+    "sqFt": "2363",
+    "minPrice": 749,
+    "maxPrice": 759,
+    "availability": "Limited Availability",
+    "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
+    "imagePath": "https://www.americancampus.com/getmedia/0a7c9774-9a17-4df9-b5d6-3bd54a2dd625/677_Retreat-5-bed-5-5-bath-Rutherford-ORIGINAL.png?width=661&height=445&ext=.png",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
   },
   {
     "property": "The Standard at Austin",
@@ -5806,7 +5573,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -5828,7 +5595,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -5850,7 +5617,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -5872,7 +5639,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -5893,7 +5660,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -5915,7 +5682,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -5936,7 +5703,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -5958,7 +5725,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -5978,7 +5745,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6000,7 +5767,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6022,10 +5789,9 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier",
       "Currently sold out / waitlist only"
     ]
   },
@@ -6044,7 +5810,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -6066,12 +5832,10 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
-    "cons": [
-      "Premium pricing tier"
-    ]
+    "cons": []
   },
   {
     "property": "The Standard at Austin",
@@ -6088,10 +5852,9 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier",
       "Currently sold out / waitlist only"
     ]
   },
@@ -6110,7 +5873,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -6130,7 +5893,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6151,7 +5914,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6172,7 +5935,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6193,7 +5956,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -6212,7 +5975,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Forestdale.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (5 residents sharing 3 baths)",
@@ -6233,7 +5996,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Finchley.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6255,7 +6018,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6276,7 +6039,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6297,7 +6060,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6318,7 +6081,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6338,7 +6101,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Gramercy.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6359,7 +6122,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/03/Standard-Austin-Floorplan-Greenwich.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6381,7 +6144,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -6402,7 +6165,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/6_legacy-on-rio-floorplans_B1-Ansi-Type-A.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6423,7 +6186,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/legacy-on-rio-cut-floorplans_B1.1.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (2 residents sharing 1 baths)",
@@ -6445,7 +6208,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6466,7 +6229,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6487,7 +6250,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6507,7 +6270,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/8_legacy-on-rio-floorplans_C1.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6528,7 +6291,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/9_legacy-on-rio-floorplans_C2.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6549,7 +6312,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/10_legacy-on-rio-floorplan-C2.1.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -6571,7 +6334,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/11_legacy-on-rio-floorplan-c2.2.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6592,7 +6355,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/14_legacy-on-rio-floorplans_C5-Ansi-Type-A.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -6614,7 +6377,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6635,7 +6398,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -6655,7 +6418,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6676,7 +6439,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6697,7 +6460,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6718,7 +6481,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6738,7 +6501,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/17_legacy-on-rio-floorplans_D1.1.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
@@ -6760,7 +6523,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/18_legacy-on-rio-floorplans_D3.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -6783,7 +6546,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6804,7 +6567,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -6824,7 +6587,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6845,7 +6608,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -6865,7 +6628,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6886,7 +6649,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -6906,7 +6669,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -6926,7 +6689,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -6946,7 +6709,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/33_legacy-on-rio-floorplans_E1.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -6968,7 +6731,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/34_legacy-on-rio-floorplan-E2.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Budget-friendly rent (under $1,000/mo)"
     ],
     "cons": [
@@ -6990,7 +6753,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/38_legacy-on-rio-floorplans_E6.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (5 residents sharing 4 baths)",
@@ -7012,7 +6775,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -7033,7 +6796,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -7054,14 +6817,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "C5 Alt - 3x3",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -7075,7 +6838,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7083,7 +6846,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "S1 - Studio",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -7097,7 +6860,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7105,7 +6868,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "A0 - 1x1",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -7119,7 +6882,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7127,7 +6890,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "A1 - 1x1",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -7141,14 +6904,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "A2 - 1x1",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -7162,7 +6925,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7170,7 +6933,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "A3 - 1x1",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -7184,7 +6947,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7192,7 +6955,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "A4 - 1x1",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -7206,7 +6969,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7214,7 +6977,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "B1 - 2x2",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -7228,7 +6991,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7236,7 +6999,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "B2 - 2x2",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -7250,7 +7013,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -7258,7 +7021,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "B2S - 2x2",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -7272,14 +7035,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "B3 VIP - 2x2",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -7293,7 +7056,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -7301,7 +7064,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "B4 Premium - 2x2",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -7315,7 +7078,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -7323,7 +7086,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "B5 - 2x2",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -7337,13 +7100,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "C1 - 3x3",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -7357,13 +7120,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "C2 - 3x3",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -7377,7 +7140,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -7385,7 +7148,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "C3 - 3x3",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -7399,14 +7162,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "C3S - 3x3",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -7420,14 +7183,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "C4 Premium - 3x3",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -7441,14 +7204,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "C5 - 3x3",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -7462,7 +7225,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -7470,7 +7233,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "D1 - 4x4",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -7484,13 +7247,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "D2 - 4x4",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -7504,13 +7267,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "D3 - 4x4",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -7524,13 +7287,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "D4 - 4x4",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -7544,13 +7307,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "D4S - 4x4",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -7564,14 +7327,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "D5 VIP - 4x4",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -7585,7 +7348,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7593,7 +7356,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "D6 Premium - 4x4",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -7607,14 +7370,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "E1 - 5x5",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
@@ -7628,14 +7391,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "E2 - 5x5",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
@@ -7649,13 +7412,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "E3 Premium - 5x5",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
@@ -7669,13 +7432,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "E4 - 5x5",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
@@ -7689,13 +7452,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "E5 - 5x5",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
@@ -7709,14 +7472,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "E6 - 5x5",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
@@ -7730,14 +7493,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "E6A - 5x5",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
@@ -7751,14 +7514,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "E7 Premium - 5x5",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
@@ -7772,15 +7535,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier",
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "F1 Premium - 6x6",
     "roomType": "6 Bed / 6 Bath",
     "beds": 6,
@@ -7794,13 +7556,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "The Mark Austin",
+    "property": "Mark Uptown",
     "plan": "F2S - 6x6",
     "roomType": "6 Bed / 6 Bath",
     "beds": 6,
@@ -7814,13 +7576,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "A1 - Sx1 The McConaughey",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -7834,7 +7596,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -7842,7 +7604,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "A2 - Sx1 The Bullock",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -7856,7 +7618,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7864,7 +7626,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "A3 - Sx1 The Vaughan",
     "roomType": "0 Bed / 1 Bath",
     "beds": 0,
@@ -7878,7 +7640,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -7886,7 +7648,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "B1 - 2x2 The Kendra",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -7900,15 +7662,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier",
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "B2 - 2x2 The Brees",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -7922,7 +7683,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -7930,7 +7691,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "B4 - 2x2 The Nelson",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -7944,15 +7705,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier",
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "C1 - 3x3 The Van Zandt",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -7966,14 +7726,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "C2 - 3x3 The Armstrong",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -7987,13 +7747,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "C3 - 3x3 The Wilson",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -8007,14 +7767,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "C4 - 3x3 The Joplin",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -8028,14 +7788,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "D5 - 4x3 The Durant",
     "roomType": "4 Bed / 3 Bath",
     "beds": 4,
@@ -8048,7 +7808,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa426cfcea8f3.35847124953.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -8056,7 +7816,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "D1 - 4x4 The Ehlinger",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -8070,13 +7830,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "D2 - 4x4 The Mack",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -8090,14 +7850,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "D3 - 4x4 The Johnson",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -8111,14 +7871,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "D4 - 4x4 The Travis",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -8132,13 +7892,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "D6 - 4x4 The Aldridge",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -8152,14 +7912,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Moontower",
+    "property": "Moontower Just off Campus",
     "plan": "E1 - 5x5 The Anderson",
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
@@ -8173,13 +7933,307 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Nine Just off Campus",
+    "plan": "Studio (S1) SMART*",
+    "roomType": "0 Bed / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "406",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5c95b6fd047.71488695510.png",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Affordable SMART housing program rate"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "Studio (S2) SMART*",
+    "roomType": "0 Bed / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "319",
+    "minPrice": 1255,
+    "maxPrice": 1255,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5c868c11413.66216379373.png",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Affordable SMART housing program rate"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "1/1 A1 SMART",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "567",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5c9d7b2f0f2.24149230178.png",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Affordable SMART housing program rate"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "2/2 B1",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "756",
+    "minPrice": 1495,
+    "maxPrice": 1495,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cc58667dc5.82786497369.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "2/2 B2",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "925",
+    "minPrice": 1365,
+    "maxPrice": 1365,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cc43364f50.11810579610.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "3/3 C1",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1123",
+    "minPrice": 1440,
+    "maxPrice": 1440,
+    "availability": "Available",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cc801b64f1.03966927791.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "3/3 C2",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1122",
+    "minPrice": 1395,
+    "maxPrice": 1395,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cce87a4976.89245477815.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "4/2 D4",
+    "roomType": "4 Bed / 2 Bath",
+    "beds": 4,
+    "baths": 2.0,
+    "sqFt": "1461",
+    "minPrice": 1215,
+    "maxPrice": 1215,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd1606bfc6.07469590761.png",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (4 residents sharing 2 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "4/3 D5",
+    "roomType": "4 Bed / 3 Bath",
+    "beds": 4,
+    "baths": 3.0,
+    "sqFt": "1222",
+    "minPrice": 1315,
+    "maxPrice": 1340,
+    "availability": "Available",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd78171f52.47368702558.png",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (4 residents sharing 3 baths)"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "4/4 D1",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1327",
+    "minPrice": 1315,
+    "maxPrice": 1315,
+    "availability": "Available",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd4096c509.29171762328.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "4/4 D2",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1382",
+    "minPrice": 1300,
+    "maxPrice": 1300,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd91dd88b1.65034471936.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "4/4 D3",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1350",
+    "minPrice": 1340,
+    "maxPrice": 1340,
+    "availability": "Available",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd578bf550.01114641257.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "5/5 E1",
+    "roomType": "5 Bed / 5 Bath",
+    "beds": 5,
+    "baths": 5.0,
+    "sqFt": "1577",
+    "minPrice": 1275,
+    "maxPrice": 1275,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cdae8abc53.18293786247.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Nine Just off Campus",
+    "plan": "5/5 E2",
+    "roomType": "5 Bed / 5 Bath",
+    "beds": 5,
+    "baths": 5.0,
+    "sqFt": "1793",
+    "minPrice": 1285,
+    "maxPrice": 1285,
+    "availability": "Sold Out",
+    "url": "https://theninewestcampus.com/floorplans/",
+    "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cdd7439ed6.47192408562.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Waterloo Austin",
     "plan": "4 Bed, 4 Bath Classic",
     "roomType": "4 Bed / 4.0 Bath",
     "beds": 4,
@@ -8193,13 +8247,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "4 Bed, 4 Bath Deluxe",
     "roomType": "4 Bed / 4.0 Bath",
     "beds": 4,
@@ -8213,13 +8267,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "4 Bed, 4 Bath Plus",
     "roomType": "4 Bed / 4.0 Bath",
     "beds": 4,
@@ -8233,13 +8287,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "4 Bed, 4 Bath Premier",
     "roomType": "4 Bed / 4.0 Bath",
     "beds": 4,
@@ -8253,13 +8307,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "6 Bed, 6 Bath Classic",
     "roomType": "6 Bed / 6.0 Bath",
     "beds": 6,
@@ -8273,13 +8327,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "6 Bed, 6 Bath Plus",
     "roomType": "6 Bed / 6.0 Bath",
     "beds": 6,
@@ -8293,13 +8347,13 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "2 Bed, 2 Bath Classic",
     "roomType": "2 Bed / 2.0 Bath",
     "beds": 2,
@@ -8313,14 +8367,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "3 Bed, 3 Bath",
     "roomType": "3 Bed / 3.0 Bath",
     "beds": 3,
@@ -8334,14 +8388,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "5 Bed, 5 Bath Penthouse",
     "roomType": "5 Bed / 5.0 Bath",
     "beds": 5,
@@ -8355,14 +8409,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "Studio Classic",
     "roomType": "",
     "beds": null,
@@ -8375,14 +8429,14 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://yugo.com/resource/blob/644858/61a5f2b53e8ce8b47d866d4e95c99aea/yugo-austinwaterloo-2206dsc-8141-edit-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Waterloo",
+    "property": "Waterloo Austin",
     "plan": "Studio Plus",
     "roomType": "",
     "beds": null,
@@ -8395,76 +8449,78 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://yugo.com/resource/blob/644634/d1e530a3406394574713fab111c7851f/ivyjpg-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": "4 Bed, 4 Bath Plus",
-    "roomType": "4 Bed / 4.0 Bath",
+    "property": "Yugo Austin Corner",
+    "plan": "3 Bed, 2 Bath Deluxe",
+    "roomType": "3 Bed / 2.0 Bath",
+    "beds": 3,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": 1069,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-2-bath-deluxe-642700",
+    "imagePath": "https://yugo.com/resource/blob/642394/8e4c6e697f748eb0b60b23c1c4911e5a/yugo-austincorner-605-11-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 2 baths)"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "4 Bed, 3 Bath Plus",
+    "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
+    "baths": 3.0,
+    "sqFt": "",
+    "minPrice": 1039,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/4-bed-3-bath-plus-642712",
+    "imagePath": "https://yugo.com/resource/blob/642710/59726029d7d52299abb42b50ece4e4c9/corner-4x3-plus-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (4 residents sharing 3 baths)"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "5 Bed, 4 Bath",
+    "roomType": "5 Bed / 4.0 Bath",
+    "beds": 5,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1379,
+    "minPrice": 1255,
     "maxPrice": null,
     "availability": "Available",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-plus-644172",
-    "imagePath": "https://yugo.com/resource/blob/643756/7a679b7267574912f9d96fc44f45a062/yugo-austinrio-404dsc-7643-edit-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/5-bed-4-bath-642718",
+    "imagePath": "https://yugo.com/resource/blob/642716/37f0699f29844a60d236f8d79ee013c1/corner-5x4-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "Yugo Austin Rio",
-    "plan": "5 Bed, 5 Bath Plus",
-    "roomType": "5 Bed / 5.0 Bath",
-    "beds": 5,
-    "baths": 5.0,
-    "sqFt": "",
-    "minPrice": 1329,
-    "maxPrice": null,
-    "availability": "Available",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-5-bath-plus-644190",
-    "imagePath": "https://yugo.com/resource/blob/643784/0d5969e80a405d9b6df3991bb8c995f4/yugo-austinrio-610dsc-7931-edit-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished",
-      "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "Yugo Austin Rio",
-    "plan": " 1 Bed, 1 Bath",
-    "roomType": "1 Bed / 1.0 Bath",
-    "beds": 1,
-    "baths": 1.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/-1-bed-1-bath-644156",
-    "imagePath": "https://yugo.com/resource/blob/643742/72fe93f38ee98348b453826dffdab90b/yugo-austinrio-403dsc-7676-edit-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Maximum privacy (no roommates)",
-      "Fully furnished"
     ],
     "cons": [
-      "Currently sold out / waitlist only"
+      "Shared bathroom (5 residents sharing 4 baths)"
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": " 2 Bed, 1 Bath Loft",
+    "property": "Yugo Austin Corner",
+    "plan": " 2 Bed, 1 Bath Classic",
     "roomType": "2 Bed / 1.0 Bath",
     "beds": 2,
     "baths": 1.0,
@@ -8472,11 +8528,11 @@ const RAW_FLOOR_PLANS = [
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/-2-bed-1-bath-loft-644158",
-    "imagePath": "https://yugo.com/resource/blob/643812/b0694846c33229ae69ff2e1d492f32f6/yugo-austinrio-702dsc-7819-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-classic-642684",
+    "imagePath": "https://yugo.com/resource/blob/642682/06a8809735afa2ddca981dbbfd88fdc7/corner2x1-classic-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (2 residents sharing 1 baths)",
@@ -8484,29 +8540,196 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": " 4 Bed, 2 Bath Loft",
-    "roomType": "4 Bed / 2.0 Bath",
+    "property": "Yugo Austin Corner",
+    "plan": " 4 Bed, 4 Bath",
+    "roomType": "4 Bed / 4.0 Bath",
     "beds": 4,
+    "baths": 4.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/4-bed-4-bath-642680",
+    "imagePath": "https://yugo.com/resource/blob/642470/d7bff86d85929bb2e6845fe8cc65a3d0/yugo-austincorner-207-15-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "2 Bed, 1 Bath Deluxe",
+    "roomType": "2 Bed / 1.0 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-deluxe-642688",
+    "imagePath": "https://yugo.com/resource/blob/642686/654da7c92da01842acbdfb89257ab988/corner-2x1-deluxe-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "2 Bed, 1 Bath Plus",
+    "roomType": "2 Bed / 1.0 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-plus-642690",
+    "imagePath": "https://yugo.com/resource/blob/642362/12483154fb9764e1dcbdc75066cfbcd1/yugo-austincorner-502-3-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "2 Bed, 1.5 Bath Loft",
+    "roomType": "2 Bed / 5.0 Bath",
+    "beds": 2,
+    "baths": 5.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-5-bath-loft-642692",
+    "imagePath": "https://yugo.com/resource/blob/642360/6d871285bc6806efc64cce28c2650582/yugo-austincorner-702-9-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "2 Bed, 2 Bath",
+    "roomType": "2 Bed / 2.0 Bath",
+    "beds": 2,
     "baths": 2.0,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/-4-bed-2-bath-loft-644160",
-    "imagePath": "https://yugo.com/resource/blob/643932/44b5e015cde7e3b1972deb8454c60aaf/4x4-kitchen-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-2-bath-642694",
+    "imagePath": "https://yugo.com/resource/blob/642600/9602f01b68740f4321ef95682a12b57d/yugo-austin-corner-room-type-3-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Private bathroom for every resident",
+      "Fully furnished options available"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 2 baths)",
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": "4 Bed, 3 Bath Loft",
+    "property": "Yugo Austin Corner",
+    "plan": "3 Bed, 2 Bath Classic",
+    "roomType": "3 Bed / 2.0 Bath",
+    "beds": 3,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-2-bath-classic-642698",
+    "imagePath": "https://yugo.com/resource/blob/642452/b67306dafca0fe5891b4a916a92cc286/yugo-austincorner-701-701-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 2 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "3 Bed, 2 Bath Plus",
+    "roomType": "3 Bed / 2.0 Bath",
+    "beds": 3,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-2-bath-plus-642702",
+    "imagePath": "https://yugo.com/resource/blob/642408/61b3a3ecd544bc6acc1b152d8eaaa56e/yugo-austincorner-705-10-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 2 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "3 Bed, 3 Bath Classic",
+    "roomType": "3 Bed / 3.0 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-3-bath-classic-642704",
+    "imagePath": "https://yugo.com/resource/blob/642598/62dbdac85273d59da7a942dd84eac42a/yugo-austin-corner-room-type-1-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "3 Bed, 3 Bath Loft",
+    "roomType": "3 Bed / 3.0 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-3-bath-loft-642678",
+    "imagePath": "https://yugo.com/resource/blob/642438/360cb7c59c6acdc12a56543eb7c4e7cf/yugo-austincorner-704-20-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "4 Bed, 3 Bath Classic",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
     "baths": 3.0,
@@ -8514,11 +8737,11 @@ const RAW_FLOOR_PLANS = [
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-3-bath-loft-644162",
-    "imagePath": "https://yugo.com/resource/blob/643858/ea958e84332aed5232f3284528a1608f/yugo-austinrio-708dsc-7342-edit-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/4-bed-3-bath-classic-642708",
+    "imagePath": "https://yugo.com/resource/blob/642466/b659f6c3226ced47ee392a52c653d409/yugo-austincorner-501-8-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -8526,154 +8749,280 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": "4 Bed, 4 Bath Classic",
-    "roomType": "4 Bed / 4.0 Bath",
+    "property": "Yugo Austin Space",
+    "plan": "2 Bed, 1 Bath Loft",
+    "roomType": "2 Bed / 1.0 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/2-bed-1-bath-loft-643540",
+    "imagePath": "https://yugo.com/resource/blob/643278/d7216d6ff5e5213db7e612b4084c4cf5/3056-1169248-59e68f66e10c59802-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Space",
+    "plan": "2 Bed, 1 Bath Plus",
+    "roomType": "2 Bed / 1.0 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/2-bed-1-bath-plus-643542",
+    "imagePath": "https://yugo.com/resource/blob/643278/d7216d6ff5e5213db7e612b4084c4cf5/3056-1169248-59e68f66e10c59802-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Space",
+    "plan": "3 Bed, 1 Bath Loft",
+    "roomType": "3 Bed / 1.0 Bath",
+    "beds": 3,
+    "baths": 1.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/3-bed-1-bath-loft-643544",
+    "imagePath": "https://yugo.com/resource/blob/643264/e448744aafb77eb0321bd5c13dece443/3047-1169248-59e68f28d5f373192-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 1 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Space",
+    "plan": "3 Bed, 2 Bath Loft",
+    "roomType": "3 Bed / 2.0 Bath",
+    "beds": 3,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/3-bed-2-bath-loft-643548",
+    "imagePath": "https://yugo.com/resource/blob/643546/86881011906032f7f06dcf2bffeaf050/nueces-3x2-loft-data.png",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 2 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Space",
+    "plan": "4 Bed, 2 Bath Classic",
+    "roomType": "4 Bed / 2.0 Bath",
     "beds": 4,
-    "baths": 4.0,
+    "baths": 2.0,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-classic-644164",
-    "imagePath": "https://yugo.com/resource/blob/644040/7a11dc999891c411309d0d816ab4fe4c/5549-1169249-5d80ff17edeea6-892765059652-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-classic-643552",
+    "imagePath": "https://yugo.com/resource/blob/643550/85ac3d732dfa3002e5b79753d38e777e/4x2-classic-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
+      "Shared bathroom (4 residents sharing 2 baths)",
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": "4 Bed, 4 Bath Deluxe",
-    "roomType": "4 Bed / 4.0 Bath",
+    "property": "Yugo Austin Space",
+    "plan": "4 Bed, 2 Bath Deluxe",
+    "roomType": "4 Bed / 2.0 Bath",
     "beds": 4,
-    "baths": 4.0,
+    "baths": 2.0,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/4-bed-4-bath-deluxe-644166",
-    "imagePath": "https://yugo.com/resource/blob/643690/2555c51a60d78cfe4b0f1bfe40486418/4x4-hall-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-deluxe-643554",
+    "imagePath": "https://yugo.com/resource/blob/643260/9be89b946f6f50e75dcb46b7d4f6fa52/3045-1169248-59e68f28986598852-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
+      "Shared bathroom (4 residents sharing 2 baths)",
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": "5 Bed, 4 Bath Classic Loft",
-    "roomType": "5 Bed / 4.0 Bath",
+    "property": "Yugo Austin Space",
+    "plan": "4 Bed, 2 Bath Loft",
+    "roomType": "4 Bed / 2.0 Bath",
+    "beds": 4,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-loft-643556",
+    "imagePath": "https://yugo.com/resource/blob/643276/65042ae1226de65685e47ae9da3faf59/3055-1169248-59e68f66c66a51252-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (4 residents sharing 2 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Space",
+    "plan": "4 Bed, 2 Bath Plus",
+    "roomType": "4 Bed / 2.0 Bath",
+    "beds": 4,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-plus-643558",
+    "imagePath": "https://yugo.com/resource/blob/643276/65042ae1226de65685e47ae9da3faf59/3055-1169248-59e68f66c66a51252-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (4 residents sharing 2 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Space",
+    "plan": "4 Bed, 3 Bath Classic",
+    "roomType": "4 Bed / 3.0 Bath",
+    "beds": 4,
+    "baths": 3.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-3-bath-classic-643560",
+    "imagePath": "https://yugo.com/resource/blob/643254/d24c43070577afdb1ccf69a21879b969/3042-1169248-59e68f0b134562892-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (4 residents sharing 3 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Space",
+    "plan": "4 Bed, 3 Bath Plus",
+    "roomType": "4 Bed / 3.0 Bath",
+    "beds": 4,
+    "baths": 3.0,
+    "sqFt": "",
+    "minPrice": null,
+    "maxPrice": null,
+    "availability": "Sold Out",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-3-bath-plus-643564",
+    "imagePath": "https://yugo.com/resource/blob/643562/c0cc34974b77d628fb07d1ee0b6a300c/nueces-4x3-plus-data.png",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available"
+    ],
+    "cons": [
+      "Shared bathroom (4 residents sharing 3 baths)",
+      "Currently sold out / waitlist only"
+    ]
+  },
+  {
+    "property": "Yugo Austin Space",
+    "plan": "5 Bed, 2 Bath Loft",
+    "roomType": "5 Bed / 2.0 Bath",
     "beds": 5,
-    "baths": 4.0,
+    "baths": 2.0,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-4-bath-classic-loft-644182",
-    "imagePath": "https://yugo.com/resource/blob/643814/6f6ff7c724be70d5da6555b47957dbee/yugo-austinrio-703dsc-7393-edit-2-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/5-bed-2-bath-loft-643568",
+    "imagePath": "https://yugo.com/resource/blob/643566/45e128c71e30a06270af54ec8dbbf756/nueces-5x2-loft-data.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Shared bathroom (5 residents sharing 4 baths)",
+      "Shared bathroom (5 residents sharing 2 baths)",
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": "5 Bed, 4 Bath Plus Loft",
-    "roomType": "5 Bed / 4.0 Bath",
+    "property": "Yugo Austin Space",
+    "plan": "5 Bed, 3 Bath Loft",
+    "roomType": "5 Bed / 3.0 Bath",
     "beds": 5,
-    "baths": 4.0,
+    "baths": 3.0,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-4-bath-plus-loft-644184",
-    "imagePath": "https://yugo.com/resource/blob/643804/bc829de9865f57463284c61e42185d22/yugo-austinrio-701dsc-7784-edit-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/5-bed-3-bath-loft-643572",
+    "imagePath": "https://yugo.com/resource/blob/643570/bc30fb703b586c212442ca89bfa4e6c3/nueces-5x3-loft-data.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Shared bathroom (5 residents sharing 4 baths)",
+      "Shared bathroom (5 residents sharing 3 baths)",
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": "5 Bed, 5 Bath Classic",
-    "roomType": "5 Bed / 5.0 Bath",
+    "property": "Yugo Austin Space",
+    "plan": "5 Bed, 3 Bath Plus",
+    "roomType": "5 Bed / 3.0 Bath",
     "beds": 5,
-    "baths": 5.0,
+    "baths": 3.0,
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-5-bath-classic-644186",
-    "imagePath": "https://yugo.com/resource/blob/643934/9bab4d925c38bcd33d43dbfb2441ac03/5521-1169249-5d80fcd8dc0432-04501086468-jpgw450h450-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/5-bed-3-bath-plus-643576",
+    "imagePath": "https://yugo.com/resource/blob/643574/cb3c06ab1d5b73156c56072838bfeb0c/nueces-5x3-plus-data.png",
     "dataWarning": null,
     "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
+      "Shared bathroom (5 residents sharing 3 baths)",
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": "5 Bed, 5 Bath Deluxe",
-    "roomType": "5 Bed / 5.0 Bath",
-    "beds": 5,
-    "baths": 5.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/5-bed-5-bath-deluxe-644188",
-    "imagePath": "https://yugo.com/resource/blob/643694/0ec834274630d198629c04fee41263d8/5x5-deluxe-kitchen-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Rio",
-    "plan": "6 Bed, 4 Bath Loft",
-    "roomType": "6 Bed / 4.0 Bath",
-    "beds": 6,
-    "baths": 4.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/6-bed-4-bath-loft-644198",
-    "imagePath": "https://yugo.com/resource/blob/643850/78d38e628b81a8ee2c053f6e5429fdfa/yugo-austinrio-707dsc-7539-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished"
-    ],
-    "cons": [
-      "Shared bathroom (6 residents sharing 4 baths)",
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Rio",
+    "property": "Yugo Austin Space",
     "plan": "Studio Classic",
     "roomType": "",
     "beds": null,
@@ -8682,38 +9031,18 @@ const RAW_FLOOR_PLANS = [
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-classic-644202",
-    "imagePath": "https://yugo.com/resource/blob/643714/7a192ab9f7a59c60ad1de70e3ba8e2c3/yugo-austinrio-103dsc-7135-edit-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/studio-classic-643578",
+    "imagePath": "https://yugo.com/resource/blob/643258/e78271ec97a3249bb956f586f9912e03/3044-1169248-59e68f28801c59292-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Yugo Austin Rio",
-    "plan": "Studio Deluxe",
-    "roomType": "",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-deluxe-644204",
-    "imagePath": "https://yugo.com/resource/blob/643932/44b5e015cde7e3b1972deb8454c60aaf/4x4-kitchen-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Rio",
+    "property": "Yugo Austin Space",
     "plan": "Studio Plus",
     "roomType": "",
     "beds": null,
@@ -8722,31 +9051,11 @@ const RAW_FLOOR_PLANS = [
     "minPrice": null,
     "maxPrice": null,
     "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-plus-644206",
-    "imagePath": "https://yugo.com/resource/blob/643706/8c7e4e40b969ca78268f6dea79fd5097/austinrio-studioplus1-data.jpg",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/studio-plus-643580",
+    "imagePath": "https://yugo.com/resource/blob/643276/65042ae1226de65685e47ae9da3faf59/3055-1169248-59e68f66c66a51252-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Rio",
-    "plan": "Studio Premier",
-    "roomType": "",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-rio/studio-premier-644208",
-    "imagePath": "https://yugo.com/resource/blob/643726/794ec787579d6589977cb7a2ae748d24/yugo-austinrio-201dsc-6736-edit-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -8766,7 +9075,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/074230/66a8edc5e1ab92.50391872865.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -8785,7 +9094,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/074507/66a8ee63ae0225.84930273797.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -8806,7 +9115,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/075103/66a8efc718a691.34861874550.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -8827,7 +9136,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081220/66a8f4c46b4217.15041962254.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -8846,7 +9155,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/080049/66a8f211dbd195.07464493752.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -8867,7 +9176,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081417/66a8f5391759c7.26358638119.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -8886,7 +9195,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081714/66a8f5e9f3af27.75111402120.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -8905,7 +9214,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081901/66a8f655a6a746.91993431818.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -8926,7 +9235,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/082027/66a8f6aadfb1a1.06243773303.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -8945,7 +9254,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083227/66a8f97bcc20e6.53471616903.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -8966,7 +9275,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083352/66a8f9d09f8a69.38713837294.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -8985,7 +9294,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083913/66a8fb11572cd7.03817832163.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -9004,7 +9313,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/093814/66a908e5f1c505.83648925912.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -9025,7 +9334,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/104237/66a917fd624200.20996211501.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -9046,7 +9355,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/105122/66a91a0a939034.25287345968.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -9067,7 +9376,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/105341/66a91a9596cac8.93442523464.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -9086,7 +9395,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/110356/66a91cfc4eeee0.34665177884.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
@@ -9105,7 +9414,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/110718/66a91dc5de6fb2.63267255476.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -9126,7 +9435,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/111315/66a91f2b244ea5.56945494937.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -9147,7 +9456,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/111613/66a91fdd02d443.80324064376.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9165,9 +9474,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022252/69d6b91c0e9018.70895052503.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -9186,9 +9495,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022335/69d6b946cf1752.36874217347.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -9207,9 +9516,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022422/69d6b976d725c3.56313573264.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9227,9 +9536,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022517/69d6b9ad818837.33533161601.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9247,9 +9556,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/022924/6a1754244ec8b2.66176557707.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9267,9 +9576,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030344/6a4c18303eef97.83740551809.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9287,9 +9596,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/023225/6a1754d9d063d2.73811136737.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9307,9 +9616,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030949/6a4c199cddce51.90785753971.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9327,9 +9636,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031031/6a4c19c76f1413.20804420401.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9347,9 +9656,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031108/6a4c19ebeacb38.58535135456.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9367,9 +9676,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040817/69b48ad1d0ec33.27866602719.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9387,9 +9696,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040855/69b48af7733545.62508409154.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9407,9 +9716,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022708/69d6ba1c0e5258.76370505925.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9427,9 +9736,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021336/69b86470bd29b9.40869472826.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9447,9 +9756,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021419/69b8649b494ea4.18095443375.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9467,9 +9776,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021509/69b864cdb3ee29.06749675869.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9487,9 +9796,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021609/69b86508f37523.56797283303.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9507,9 +9816,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021648/69b86530af66f4.32232108186.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9527,9 +9836,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021728/69b86558925cd8.82615991966.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9547,9 +9856,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021809/69b8658117d974.61266279584.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9567,9 +9876,9 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/30/123448/6a6b9948cff9e6.29722422389.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
@@ -9587,16 +9896,16 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/30/123533/6a6b99757de674.05874549522.png",
-    "dataWarning": null,
+    "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "ION Austin",
+    "property": "Evo Austin (formerly Ion Austin)",
     "plan": "Studio - S1",
     "roomType": "Studio / 1 Bath",
     "beds": 1,
@@ -9610,7 +9919,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "",
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -9618,7 +9927,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "ION Austin",
+    "property": "Evo Austin (formerly Ion Austin)",
     "plan": "1 Bed - 1 Bath A",
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
@@ -9632,7 +9941,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "",
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": [
@@ -9640,7 +9949,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "ION Austin",
+    "property": "Evo Austin (formerly Ion Austin)",
     "plan": "2 Bed - 2 Bath A",
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
@@ -9654,13 +9963,13 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "ION Austin",
+    "property": "Evo Austin (formerly Ion Austin)",
     "plan": "3 Bed - 3 Bath Standard",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -9674,13 +9983,13 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "ION Austin",
+    "property": "Evo Austin (formerly Ion Austin)",
     "plan": "3 Bed - 3 Bath XL",
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
@@ -9694,13 +10003,13 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "ION Austin",
+    "property": "Evo Austin (formerly Ion Austin)",
     "plan": "4 Bed - 4 Bath SMART",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -9714,7 +10023,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Affordable SMART housing program rate"
     ],
     "cons": [
@@ -9722,7 +10031,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "ION Austin",
+    "property": "Evo Austin (formerly Ion Austin)",
     "plan": "4 Bed - 4 Bath Apartment",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -9736,13 +10045,13 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "ION Austin",
+    "property": "Evo Austin (formerly Ion Austin)",
     "plan": "4 Bed - 4 Bath Townhouse",
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
@@ -9756,13 +10065,13 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished",
+      "Fully furnished options available",
       "Direct lease available"
     ],
     "cons": []
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "ACL A",
     "roomType": "",
     "beds": null,
@@ -9775,7 +10084,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/021933/699e15e5a20657.42652043764.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -9783,7 +10092,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "ACL B",
     "roomType": "",
     "beds": null,
@@ -9796,7 +10105,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110058/68f90dca840768.45403480273.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -9804,7 +10113,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Antone's A",
     "roomType": "1 Bed / 1.0 Bath",
     "beds": 1,
@@ -9818,7 +10127,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -9826,7 +10135,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Antone's B",
     "roomType": "1 Bed / 1.0 Bath",
     "beds": 1,
@@ -9840,7 +10149,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -9848,7 +10157,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Antone's C",
     "roomType": "1 Bed / 1.0 Bath",
     "beds": 1,
@@ -9862,7 +10171,7 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Premium pricing tier",
@@ -9870,7 +10179,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Cedar Street",
     "roomType": "2 Bed / 1.0 Bath",
     "beds": 2,
@@ -9883,7 +10192,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022207/699e167fb79e50.43332203490.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (2 residents sharing 1 baths)",
@@ -9891,7 +10200,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Emo's B",
     "roomType": "2 Bed / 2.0 Bath",
     "beds": 2,
@@ -9905,14 +10214,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Emo's C",
     "roomType": "2 Bed / 2.0 Bath",
     "beds": 2,
@@ -9926,14 +10235,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Emo's D",
     "roomType": "2 Bed / 2.0 Bath",
     "beds": 2,
@@ -9947,14 +10256,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Nutty Brown A",
     "roomType": "3 Bed / 2.0 Bath",
     "beds": 3,
@@ -9967,7 +10276,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022333/699e16d55dcd83.05728699163.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (3 residents sharing 2 baths)",
@@ -9975,7 +10284,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Nutty Brown B",
     "roomType": "3 Bed / 2.0 Bath",
     "beds": 3,
@@ -9988,7 +10297,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022407/699e16f7570916.13423350752.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (3 residents sharing 2 baths)",
@@ -9996,7 +10305,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Nutty Brown C",
     "roomType": "3 Bed / 2.0 Bath",
     "beds": 3,
@@ -10009,7 +10318,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022551/699e175f3d0293.17272641357.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (3 residents sharing 2 baths)",
@@ -10017,7 +10326,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Nutty Brown D",
     "roomType": "3 Bed / 2.0 Bath",
     "beds": 3,
@@ -10030,7 +10339,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110138/68f90df239e543.46740171544.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (3 residents sharing 2 baths)",
@@ -10038,7 +10347,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Nutty Brown E",
     "roomType": "3 Bed / 2.0 Bath",
     "beds": 3,
@@ -10051,7 +10360,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/03/16/011433/69b856993ce1f6.55438196852.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (3 residents sharing 2 baths)",
@@ -10059,7 +10368,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Speakeasy A",
     "roomType": "3 Bed / 3.0 Bath",
     "beds": 3,
@@ -10073,14 +10382,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Speakeasy B",
     "roomType": "3 Bed / 3.0 Bath",
     "beds": 3,
@@ -10094,14 +10403,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Speakeasy C",
     "roomType": "3 Bed / 3.0 Bath",
     "beds": 3,
@@ -10115,14 +10424,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Speakeasy D",
     "roomType": "3 Bed / 3.0 Bath",
     "beds": 3,
@@ -10136,14 +10445,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Speakeasy E",
     "roomType": "3 Bed / 3.0 Bath",
     "beds": 3,
@@ -10157,14 +10466,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Speakeasy F",
     "roomType": "3 Bed / 3.0 Bath",
     "beds": 3,
@@ -10178,14 +10487,14 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": "cached",
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Currently sold out / waitlist only"
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Stubb's A",
     "roomType": "4 Bed / 2.0 Bath",
     "beds": 4,
@@ -10198,7 +10507,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022629/699e1785460a39.38541329993.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 2 baths)",
@@ -10206,7 +10515,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Stubb's B",
     "roomType": "4 Bed / 2.0 Bath",
     "beds": 4,
@@ -10219,7 +10528,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022656/699e17a032bfa6.79594014204.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 2 baths)",
@@ -10227,7 +10536,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Stubb's C",
     "roomType": "4 Bed / 2.0 Bath",
     "beds": 4,
@@ -10240,7 +10549,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022733/699e17c549f2c4.32275832883.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 2 baths)",
@@ -10248,7 +10557,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Stubb's D",
     "roomType": "4 Bed / 2.0 Bath",
     "beds": 4,
@@ -10261,7 +10570,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/03/16/011248/69b85630ab2957.23638686630.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 2 baths)",
@@ -10269,7 +10578,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Stubb's E",
     "roomType": "4 Bed / 2.0 Bath",
     "beds": 4,
@@ -10282,7 +10591,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110237/68f90e2d979ab3.57066325767.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 2 baths)",
@@ -10290,7 +10599,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "Stubb's F",
     "roomType": "4 Bed / 2.0 Bath",
     "beds": 4,
@@ -10303,7 +10612,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093440/68f262109c05d1.76660653288.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 2 baths)",
@@ -10311,7 +10620,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Broken Spoke A",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
@@ -10324,7 +10633,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/02/24/022808/699e17e873c5f3.71896701286.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -10332,7 +10641,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Broken Spoke B",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
@@ -10345,7 +10654,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110305/68f90e49cdc154.66917735407.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -10353,7 +10662,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Broken Spoke C",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
@@ -10366,7 +10675,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/22/110825/68f90f89c64036.53996417419.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -10374,7 +10683,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Broken Spoke D",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
@@ -10387,7 +10696,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093515/68f262335ccc72.81174545582.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -10395,7 +10704,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Broken Spoke E",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
@@ -10408,7 +10717,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093551/68f26257753e84.27997906780.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -10416,7 +10725,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Broken Spoke F",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
@@ -10429,7 +10738,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2026/03/16/011338/69b856623878e3.79087317447.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -10437,7 +10746,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Broken Spoke G",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
@@ -10450,7 +10759,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093622/68f2627632f558.95284779967.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -10458,7 +10767,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Broken Spoke H",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
@@ -10471,7 +10780,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/093652/68f262944cdac7.53633194794.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -10479,7 +10788,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Broken Spoke I",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
@@ -10492,7 +10801,7 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/094357/68f2643d06fbf4.73887916918.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (4 residents sharing 3 baths)",
@@ -10500,7 +10809,7 @@ const RAW_FLOOR_PLANS = [
     ]
   },
   {
-    "property": "Skyloft",
+    "property": "Skyloft Austin",
     "plan": "The Continental Club",
     "roomType": "5 Bed / 3.0 Bath",
     "beds": 5,
@@ -10513,12 +10822,1515 @@ const RAW_FLOOR_PLANS = [
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/640x480/12394/MLv3/4/22/2025/10/17/094437/68f264659ef325.94842669414.jpg",
     "dataWarning": "cached",
     "pros": [
-      "Fully furnished"
+      "Fully furnished options available"
     ],
     "cons": [
       "Shared bathroom (5 residents sharing 3 baths)",
       "Currently sold out / waitlist only"
     ]
+  },
+  {
+    "property": "21 Rio Apartments",
+    "plan": "The Brazos (1x1)",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "620",
+    "minPrice": 1850,
+    "maxPrice": 1950,
+    "availability": "Available",
+    "url": "https://21rio.com/floorplans/",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Premium pricing tier"
+    ]
+  },
+  {
+    "property": "21 Rio Apartments",
+    "plan": "The Colorado (2x2)",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "940",
+    "minPrice": 1350,
+    "maxPrice": 1450,
+    "availability": "Available",
+    "url": "https://21rio.com/floorplans/",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "21 Rio Apartments",
+    "plan": "The Guadalupe (3x3)",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1280",
+    "minPrice": 1250,
+    "maxPrice": 1350,
+    "availability": "Available",
+    "url": "https://21rio.com/floorplans/",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Axis West Campus",
+    "plan": "Independent SMART Studio",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "467",
+    "minPrice": 1628,
+    "maxPrice": 1628,
+    "availability": "Available",
+    "url": "https://www.axiswestcampus.com/floorplans",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Affordable SMART housing program rate",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Axis West Campus",
+    "plan": "Sophisticate SMART 1x1",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "494",
+    "minPrice": 1658,
+    "maxPrice": 1658,
+    "availability": "Available",
+    "url": "https://www.axiswestcampus.com/floorplans",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Affordable SMART housing program rate",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Axis West Campus",
+    "plan": "Pure 2x2",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "780",
+    "minPrice": 1290,
+    "maxPrice": 1350,
+    "availability": "Available",
+    "url": "https://www.axiswestcampus.com/floorplans",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Axis West Campus",
+    "plan": "Pure 4x4",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1250",
+    "minPrice": 850,
+    "maxPrice": 1085,
+    "availability": "Available",
+    "url": "https://www.axiswestcampus.com/floorplans",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Envoy Austin",
+    "plan": "1 Bed / 1 Bath Standard",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "500",
+    "minPrice": 1150,
+    "maxPrice": 1200,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/envoy-apartments",
+    "imagePath": "https://www.westsidegroup.com/wp-content/uploads/envoy-college-apartments-austin-kitchen-dining.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Envoy Austin",
+    "plan": "1 Bed / 1 Bath Renovated",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "520",
+    "minPrice": 1225,
+    "maxPrice": 1275,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/envoy-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Quarters on Campus (The Quarters)",
+    "plan": "Cameron House 1x1",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "560",
+    "minPrice": 1550,
+    "maxPrice": 1625,
+    "availability": "Available",
+    "url": "https://quartersoncampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Quarters on Campus (The Quarters)",
+    "plan": "Nueces House 2x2",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "850",
+    "minPrice": 1195,
+    "maxPrice": 1275,
+    "availability": "Available",
+    "url": "https://quartersoncampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Quarters on Campus (The Quarters)",
+    "plan": "Sterling House 3x3",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1120",
+    "minPrice": 1095,
+    "maxPrice": 1150,
+    "availability": "Available",
+    "url": "https://quartersoncampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Quarters on Campus (The Quarters)",
+    "plan": "Grayson House 4x4",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1350",
+    "minPrice": 995,
+    "maxPrice": 1050,
+    "availability": "Available",
+    "url": "https://quartersoncampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Rise on 23rd",
+    "plan": "Studio S1",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "425",
+    "minPrice": 1650,
+    "maxPrice": 1725,
+    "availability": "Available",
+    "url": "https://riseatwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Rise on 23rd",
+    "plan": "2x2 Layout A",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "795",
+    "minPrice": 1454,
+    "maxPrice": 1520,
+    "availability": "Available",
+    "url": "https://riseatwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Rise on 23rd",
+    "plan": "4x4 Layout A",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1280",
+    "minPrice": 1294,
+    "maxPrice": 1340,
+    "availability": "Available",
+    "url": "https://riseatwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Rise on 23rd",
+    "plan": "4x4 Penthouse Level",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1310",
+    "minPrice": 1324,
+    "maxPrice": 1380,
+    "availability": "Available",
+    "url": "https://riseatwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Rise on 23rd",
+    "plan": "5x5 Layout",
+    "roomType": "5 Bed / 5 Bath",
+    "beds": 5,
+    "baths": 5.0,
+    "sqFt": "1540",
+    "minPrice": 1220,
+    "maxPrice": 1270,
+    "availability": "Available",
+    "url": "https://riseatwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The G on West Campus",
+    "plan": "Studio Efficiency",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "400",
+    "minPrice": 1150,
+    "maxPrice": 1200,
+    "availability": "Available",
+    "url": "https://thegatx.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The G on West Campus",
+    "plan": "2 Bed / 1 Bath",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "720",
+    "minPrice": 950,
+    "maxPrice": 1000,
+    "availability": "Available",
+    "url": "https://thegatx.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "The G on West Campus",
+    "plan": "3 Bed / 2 Bath",
+    "roomType": "3 Bed / 2 Bath",
+    "beds": 3,
+    "baths": 2.0,
+    "sqFt": "1050",
+    "minPrice": 850,
+    "maxPrice": 925,
+    "availability": "Available",
+    "url": "https://thegatx.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 2 baths)"
+    ]
+  },
+  {
+    "property": "The Harrison",
+    "plan": "1 Bed / 1 Bath Suite",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "550",
+    "minPrice": 1425,
+    "maxPrice": 1495,
+    "availability": "Available",
+    "url": "https://theharrisonaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Harrison",
+    "plan": "2 Bed / 2 Bath Classic",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "880",
+    "minPrice": 1150,
+    "maxPrice": 1220,
+    "availability": "Available",
+    "url": "https://theharrisonaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Harrison",
+    "plan": "4 Bed / 4 Bath Penthouse",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1350",
+    "minPrice": 995,
+    "maxPrice": 1050,
+    "availability": "Available",
+    "url": "https://theharrisonaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Hub Austin West Campus",
+    "plan": "Studio Urban",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "440",
+    "minPrice": 1595,
+    "maxPrice": 1650,
+    "availability": "Available",
+    "url": "https://hubwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Hub Austin West Campus",
+    "plan": "2 Bed / 2 Bath VIP",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "860",
+    "minPrice": 1395,
+    "maxPrice": 1450,
+    "availability": "Available",
+    "url": "https://hubwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Hub Austin West Campus",
+    "plan": "4 Bed / 4 Bath Sky",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1320",
+    "minPrice": 1195,
+    "maxPrice": 1250,
+    "availability": "Available",
+    "url": "https://hubwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Ruckus",
+    "plan": "Studio Loft (Nueces)",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "450",
+    "minPrice": 1450,
+    "maxPrice": 1525,
+    "availability": "Available",
+    "url": "https://ruckusatx.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Ruckus",
+    "plan": "2 Bed / 2 Bath (Rio)",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "810",
+    "minPrice": 1329,
+    "maxPrice": 1395,
+    "availability": "Available",
+    "url": "https://ruckusatx.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Ruckus",
+    "plan": "4 Bed / 4 Bath Sky Suite",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1300",
+    "minPrice": 1150,
+    "maxPrice": 1225,
+    "availability": "Available",
+    "url": "https://ruckusatx.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Unleashed West Campus",
+    "plan": "1 Bed / 1 Bath Studio",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "420",
+    "minPrice": 1195,
+    "maxPrice": 1250,
+    "availability": "Available",
+    "url": "https://unleashedwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Unleashed West Campus",
+    "plan": "2 Bed / 2 Bath Shared",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "780",
+    "minPrice": 995,
+    "maxPrice": 1050,
+    "availability": "Available",
+    "url": "https://unleashedwestcampus.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bedroom (limited privacy)"
+    ]
+  },
+  {
+    "property": "West Campus Flats",
+    "plan": "Studio Flat A",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "380",
+    "minPrice": 950,
+    "maxPrice": 995,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/west-campus-flats",
+    "imagePath": "https://www.westsidegroup.com/wp-content/uploads/elementor/thumbs/living-room-area-facing-door-1-qlhwyansgrkzd760d7f86a5hij0fand0r2zx153jow.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "West Campus Flats",
+    "plan": "Studio Flat Deluxe",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "410",
+    "minPrice": 1025,
+    "maxPrice": 1075,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/west-campus-flats",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "44th Street Apartments",
+    "plan": "1 Bed / 1 Bath North Campus",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "520",
+    "minPrice": 1095,
+    "maxPrice": 1150,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/44th-street-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "44th Street Apartments",
+    "plan": "2 Bed / 1 Bath Classic",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "750",
+    "minPrice": 850,
+    "maxPrice": 895,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/44th-street-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "45th Street Apartments",
+    "plan": "1 Bed / 1 Bath Flat",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "510",
+    "minPrice": 1075,
+    "maxPrice": 1125,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/45th-street-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "45th Street Apartments",
+    "plan": "2 Bed / 1 Bath Courtyard",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "740",
+    "minPrice": 840,
+    "maxPrice": 880,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/45th-street-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "Hyde Park Court",
+    "plan": "1 Bed / 1 Bath Garden",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "530",
+    "minPrice": 1125,
+    "maxPrice": 1175,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/hyde-park-court",
+    "imagePath": "https://www.westsidegroup.com/wp-content/uploads/hyde-park-apartment-building-1-jpg.webp",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Hyde Park Court",
+    "plan": "2 Bed / 1 Bath Garden",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "760",
+    "minPrice": 875,
+    "maxPrice": 925,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/hyde-park-court",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "Hyde Park Square",
+    "plan": "Studio Speedway",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "420",
+    "minPrice": 995,
+    "maxPrice": 1050,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/hyde-park-square",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Hyde Park Square",
+    "plan": "1 Bed / 1 Bath Speedway",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "540",
+    "minPrice": 1150,
+    "maxPrice": 1195,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/hyde-park-square",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Lofts at the Triangle",
+    "plan": "1 Bed / 1 Bath Loft A",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "680",
+    "minPrice": 1725,
+    "maxPrice": 1850,
+    "availability": "Available",
+    "url": "https://thetriangleaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Lofts at the Triangle",
+    "plan": "2 Bed / 2 Bath Loft B",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "1040",
+    "minPrice": 1395,
+    "maxPrice": 1475,
+    "availability": "Available",
+    "url": "https://thetriangleaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Melroy Apartments",
+    "plan": "1 Bed / 1 Bath Speedway Unit",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "515",
+    "minPrice": 1095,
+    "maxPrice": 1145,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/melroy-apartments",
+    "imagePath": "https://www.westsidegroup.com/wp-content/uploads/upgraded-one-bedroom-unit-scaled.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "River Oaks Apartments",
+    "plan": "1 Bed / 1 Bath Classic",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "525",
+    "minPrice": 1120,
+    "maxPrice": 1160,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/river-oaks-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "River Oaks Apartments",
+    "plan": "2 Bed / 1 Bath Double",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "760",
+    "minPrice": 860,
+    "maxPrice": 895,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/river-oaks-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "Red River Apartments",
+    "plan": "1 Bed / 1 Bath Red River",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "500",
+    "minPrice": 1080,
+    "maxPrice": 1130,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/red-river-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Red River Apartments",
+    "plan": "2 Bed / 1 Bath Red River",
+    "roomType": "2 Bed / 1 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "730",
+    "minPrice": 830,
+    "maxPrice": 875,
+    "availability": "Available",
+    "url": "https://www.westsidegroup.com/red-river-apartments",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "The Triangle Apartments",
+    "plan": "Studio Residence",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "550",
+    "minPrice": 1550,
+    "maxPrice": 1625,
+    "availability": "Available",
+    "url": "https://thetriangleaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Triangle Apartments",
+    "plan": "1 Bed / 1 Bath Urban",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "710",
+    "minPrice": 1695,
+    "maxPrice": 1795,
+    "availability": "Available",
+    "url": "https://thetriangleaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Triangle Apartments",
+    "plan": "2 Bed / 2 Bath Urban",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "1100",
+    "minPrice": 1350,
+    "maxPrice": 1425,
+    "availability": "Available",
+    "url": "https://thetriangleaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "The Triangle Apartments",
+    "plan": "3 Bed / 2.5 Bath Townhome",
+    "roomType": "3 Bed / 2.5 Bath",
+    "beds": 3,
+    "baths": 2.5,
+    "sqFt": "1450",
+    "minPrice": 1250,
+    "maxPrice": 1325,
+    "availability": "Available",
+    "url": "https://thetriangleaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 2.5 baths)"
+    ]
+  },
+  {
+    "property": "Ballpark North",
+    "plan": "4 Bed / 4 Bath Student Suite",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1350",
+    "minPrice": 625,
+    "maxPrice": 675,
+    "availability": "Available",
+    "url": "https://theballparkaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Ballpark North",
+    "plan": "3 Bed / 3 Bath Suite",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1150",
+    "minPrice": 695,
+    "maxPrice": 745,
+    "availability": "Available",
+    "url": "https://theballparkaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Ballpark North",
+    "plan": "2 Bed / 2 Bath Suite",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "890",
+    "minPrice": 795,
+    "maxPrice": 850,
+    "availability": "Available",
+    "url": "https://theballparkaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Ballpark North",
+    "plan": "1 Bed / 1 Bath Apartment",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "580",
+    "minPrice": 1050,
+    "maxPrice": 1120,
+    "availability": "Available",
+    "url": "https://theballparkaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Estate on Campus (Riverside)",
+    "plan": "4 Bed / 4 Bath Townhome",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1420",
+    "minPrice": 650,
+    "maxPrice": 699,
+    "availability": "Available",
+    "url": "https://estatesateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Estate on Campus (Riverside)",
+    "plan": "3 Bed / 3 Bath Flat",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1210",
+    "minPrice": 725,
+    "maxPrice": 775,
+    "availability": "Available",
+    "url": "https://estatesateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Estate on Campus (Riverside)",
+    "plan": "2 Bed / 2 Bath Flat",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "910",
+    "minPrice": 820,
+    "maxPrice": 875,
+    "availability": "Available",
+    "url": "https://estatesateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Estate on Campus (Riverside)",
+    "plan": "1 Bed / 1 Bath Flat",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "610",
+    "minPrice": 1095,
+    "maxPrice": 1150,
+    "availability": "Available",
+    "url": "https://estatesateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Mesh Apartments",
+    "plan": "Studio Modern",
+    "roomType": "Studio / 1 Bath",
+    "beds": 0,
+    "baths": 1.0,
+    "sqFt": "475",
+    "minPrice": 1125,
+    "maxPrice": 1175,
+    "availability": "Available",
+    "url": "https://meshapartments.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Mesh Apartments",
+    "plan": "1 Bed / 1 Bath Modern",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "620",
+    "minPrice": 1250,
+    "maxPrice": 1320,
+    "availability": "Available",
+    "url": "https://meshapartments.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Mesh Apartments",
+    "plan": "2 Bed / 2 Bath Modern",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "920",
+    "minPrice": 925,
+    "maxPrice": 975,
+    "availability": "Available",
+    "url": "https://meshapartments.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Town Lake Student Apartments",
+    "plan": "1 Bed / 1 Bath Waterfront",
+    "roomType": "1 Bed / 1 Bath",
+    "beds": 1,
+    "baths": 1.0,
+    "sqFt": "650",
+    "minPrice": 1395,
+    "maxPrice": 1475,
+    "availability": "Available",
+    "url": "https://townlakeaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Maximum privacy (no roommates)",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Town Lake Student Apartments",
+    "plan": "2 Bed / 2 Bath Waterfront",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "980",
+    "minPrice": 995,
+    "maxPrice": 1050,
+    "availability": "Available",
+    "url": "https://townlakeaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Town Lake Student Apartments",
+    "plan": "3 Bed / 2 Bath Waterfront",
+    "roomType": "3 Bed / 2 Bath",
+    "beds": 3,
+    "baths": 2.0,
+    "sqFt": "1250",
+    "minPrice": 850,
+    "maxPrice": 895,
+    "availability": "Available",
+    "url": "https://townlakeaustin.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 2 baths)"
+    ]
+  },
+  {
+    "property": "University Estates at Austin",
+    "plan": "4 Bed / 4 Bath Crossing Pl",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1400",
+    "minPrice": 640,
+    "maxPrice": 690,
+    "availability": "Available",
+    "url": "https://estatesateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "University Estates at Austin",
+    "plan": "3 Bed / 3 Bath Crossing Pl",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1190",
+    "minPrice": 715,
+    "maxPrice": 765,
+    "availability": "Available",
+    "url": "https://estatesateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "University Estates at Austin",
+    "plan": "2 Bed / 2 Bath Crossing Pl",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "900",
+    "minPrice": 810,
+    "maxPrice": 860,
+    "availability": "Available",
+    "url": "https://estatesateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "University Village Austin",
+    "plan": "4 Bed / 4 Bath Village Suite",
+    "roomType": "4 Bed / 4 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "1380",
+    "minPrice": 635,
+    "maxPrice": 685,
+    "availability": "Available",
+    "url": "https://villageateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "University Village Austin",
+    "plan": "3 Bed / 3 Bath Village Suite",
+    "roomType": "3 Bed / 3 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "1180",
+    "minPrice": 710,
+    "maxPrice": 760,
+    "availability": "Available",
+    "url": "https://villageateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "University Village Austin",
+    "plan": "2 Bed / 2 Bath Village Suite",
+    "roomType": "2 Bed / 2 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "890",
+    "minPrice": 799,
+    "maxPrice": 849,
+    "availability": "Available",
+    "url": "https://villageateastriverside.com",
+    "imagePath": "",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": []
   }
 ];
 

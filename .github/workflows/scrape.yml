@@ -37,9 +37,9 @@ jobs:
           restore-keys: |
             playwright-chromium-${{ runner.os }}-
 
-      - name: Install Playwright browsers
+      - name: Install Playwright browsers and system dependencies
         if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: playwright install chromium
+        run: playwright install --with-deps chromium
 
       - name: Run scraper
         run: python -u scrape_all.py

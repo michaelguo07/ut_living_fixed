@@ -7,6 +7,7 @@ import { getFloorPlansForProperty } from '../data/floorPlans.js'
  * @typedef {Object} Apartment
  * @property {string} id
  * @property {string} name
+ * @property {string} neighborhood
  * @property {string} address
  * @property {string} cost - e.g. "$1,200/mo"
  * @property {string} distanceFromTower - e.g. "0.5 miles (10 min walk)"
@@ -29,16 +30,22 @@ import { getFloorPlansForProperty } from '../data/floorPlans.js'
  */
 export async function fetchApartmentsFromAgent({ campusName = '', filters = {} }) {
   // Simulate minimal UI delay
-  await new Promise((r) => setTimeout(r, 120))
+  await new Promise((r) => setTimeout(r, 60))
 
   let results = [...UT_AUSTIN_APARTMENTS]
   const rawQuery = (campusName || '').trim().toLowerCase()
 
-  // 1. Text Search Query Filter (Matches apartment name, address, pros, cons, and plan titles)
+  // 1. Neighborhood Filter
+  if (filters.neighborhood && filters.neighborhood !== 'any' && filters.neighborhood !== 'All Neighborhoods') {
+    results = results.filter((apt) => (apt.neighborhood || '').toLowerCase() === filters.neighborhood.toLowerCase())
+  }
+
+  // 2. Text Search Query Filter (Matches apartment name, address, neighborhood, pros, cons, and plan titles)
   if (rawQuery && !['ut', 'ut austin', 'austin', 'texas', 'campus', 'all'].includes(rawQuery)) {
     results = results.filter((apt) => {
       const matchName = apt.name.toLowerCase().includes(rawQuery)
       const matchAddress = apt.address.toLowerCase().includes(rawQuery)
+      const matchNeighborhood = (apt.neighborhood || '').toLowerCase().includes(rawQuery)
       const matchPros = (apt.pros || []).some((p) => p.toLowerCase().includes(rawQuery))
       const matchCons = (apt.cons || []).some((c) => c.toLowerCase().includes(rawQuery))
       
@@ -48,11 +55,11 @@ export async function fetchApartmentsFromAgent({ campusName = '', filters = {} }
         (p.roomType || '').toLowerCase().includes(rawQuery)
       )
 
-      return matchName || matchAddress || matchPros || matchCons || matchPlan
+      return matchName || matchAddress || matchNeighborhood || matchPros || matchCons || matchPlan
     })
   }
 
-  // 2. Max Distance Filter (property level)
+  // 3. Max Distance Filter (property level)
   if (filters.maxDistance && filters.maxDistance !== 'any') {
     const maxDist = parseFloat(filters.maxDistance)
     if (!isNaN(maxDist)) {
@@ -68,7 +75,7 @@ export async function fetchApartmentsFromAgent({ campusName = '', filters = {} }
     }
   }
 
-  // 3. Unit-Level Joint Filtering (Beds, Baths, MaxPrice, MoveIn)
+  // 4. Unit-Level Joint Filtering (Beds, Baths, MaxPrice, MoveIn)
   const isPriceActive = filters.maxPrice && filters.maxPrice !== 'any' && !isNaN(parseFloat(filters.maxPrice))
   const isBedsActive = filters.beds && filters.beds !== 'any' && (Array.isArray(filters.beds) ? filters.beds.length > 0 : true)
   const isBathsActive = filters.baths && filters.baths !== 'any' && !isNaN(parseFloat(filters.baths))
@@ -78,7 +85,6 @@ export async function fetchApartmentsFromAgent({ campusName = '', filters = {} }
     const maxPriceVal = isPriceActive ? parseFloat(filters.maxPrice) : null
     const minBathsVal = isBathsActive ? parseFloat(filters.baths) : null
     
-    // Normalize bed filter into array of string tokens
     let bedFilters = null
     if (isBedsActive) {
       const rawBeds = Array.isArray(filters.beds) ? filters.beds : [filters.beds]
@@ -135,7 +141,7 @@ export async function fetchApartmentsFromAgent({ campusName = '', filters = {} }
 }
 
 /**
- * Hook to run the AI agent search and hold loading/error state.
+ * Hook to run the search and hold loading/error state.
  */
 export function useAIAgent() {
   const [apartments, setApartments] = useState([])

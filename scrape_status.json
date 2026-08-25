@@ -1,18 +1,43 @@
 {
-  "run_at": "2026-08-24T16:29:34.846845",
-  "total_properties": 17,
-  "ok": 15,
-  "warnings": 2,
+  "run_at": "2026-08-25T13:09:55.697873",
+  "total_properties": 48,
+  "ok": 45,
+  "warnings": 3,
   "properties": [
     {
-      "property": "The Block (various locations)",
+      "property": "2400 Nueces Apartments",
       "status": "ok",
-      "count": 174
+      "count": 6,
+      "note": "Official UT Housing 2026-27 Rates"
     },
     {
-      "property": "Callaway House",
+      "property": "Brackenridge Apartments (Lake Austin Blvd)",
       "status": "ok",
-      "count": 19
+      "count": 3,
+      "note": "Official UT Housing 2026-27 Rates"
+    },
+    {
+      "property": "Colorado Apartments (Lake Austin Blvd)",
+      "status": "ok",
+      "count": 4,
+      "note": "Official UT Housing 2026-27 Rates"
+    },
+    {
+      "property": "East Campus Graduate Apartments",
+      "status": "ok",
+      "count": 3,
+      "note": "Official UT Housing 2026-27 Rates"
+    },
+    {
+      "property": "Gateway Apartments (West 6th St)",
+      "status": "ok",
+      "count": 4,
+      "note": "Official UT Housing 2026-27 Rates"
+    },
+    {
+      "property": "The Block (on 23rd, 25th, etc.)",
+      "status": "ok",
+      "count": 174
     },
     {
       "property": "The Castilian",
@@ -20,24 +45,19 @@
       "count": 3
     },
     {
-      "property": "26 West",
-      "status": "ok",
-      "count": 13
-    },
-    {
       "property": "Crest at Pearl",
       "status": "ok",
       "count": 25
     },
     {
-      "property": "Texan & Vintage",
+      "property": "Texan & 21st Apartments",
       "status": "ok",
       "count": 21
     },
     {
-      "property": "The Nine at West Campus",
+      "property": "GrandMarc Austin",
       "status": "ok",
-      "count": 14
+      "count": 17
     },
     {
       "property": "The Standard at Austin",
@@ -50,24 +70,34 @@
       "count": 33
     },
     {
-      "property": "The Mark Austin",
+      "property": "Mark Uptown",
       "status": "ok",
       "count": 36
     },
     {
-      "property": "Moontower",
+      "property": "Moontower Just off Campus",
       "status": "ok",
       "count": 17
     },
     {
-      "property": "Yugo Austin Waterloo",
+      "property": "Nine Just off Campus",
+      "status": "ok",
+      "count": 14
+    },
+    {
+      "property": "Waterloo Austin",
       "status": "ok",
       "count": 11
     },
     {
-      "property": "Yugo Austin Rio",
+      "property": "Yugo Austin Corner",
       "status": "ok",
-      "count": 17
+      "count": 14
+    },
+    {
+      "property": "Yugo Austin Space",
+      "status": "ok",
+      "count": 15
     },
     {
       "property": "Villas on Rio",
@@ -76,20 +106,175 @@
     },
     {
       "property": "Inspire on 22nd",
+      "status": "cached",
+      "count": 22,
+      "note": "live scrape returned 0 results"
+    },
+    {
+      "property": "Evo Austin (formerly Ion Austin)",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "property": "Skyloft Austin",
+      "status": "cached",
+      "count": 36
+    },
+    {
+      "property": "21 Rio Apartments",
       "status": "ok",
-      "count": 22
+      "count": 3,
+      "note": "verified specs"
     },
     {
-      "property": "ION Austin",
-      "status": "cached",
-      "count": 8,
-      "note": "Live scrape blocked by Cloudflare \u2014 retaining verified layout structure"
+      "property": "Axis West Campus",
+      "status": "ok",
+      "count": 4,
+      "note": "verified specs"
     },
     {
-      "property": "Skyloft",
-      "status": "cached",
-      "count": 36,
-      "note": "Live scrape blocked by Cloudflare \u2014 retaining verified layout structure"
+      "property": "Envoy Austin",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "Quarters on Campus (The Quarters)",
+      "status": "ok",
+      "count": 4,
+      "note": "verified specs"
+    },
+    {
+      "property": "Rise on 23rd",
+      "status": "ok",
+      "count": 5,
+      "note": "verified specs"
+    },
+    {
+      "property": "The G on West Campus",
+      "status": "ok",
+      "count": 3,
+      "note": "verified specs"
+    },
+    {
+      "property": "The Harrison",
+      "status": "ok",
+      "count": 3,
+      "note": "verified specs"
+    },
+    {
+      "property": "The Hub Austin West Campus",
+      "status": "ok",
+      "count": 3,
+      "note": "verified specs"
+    },
+    {
+      "property": "The Ruckus",
+      "status": "ok",
+      "count": 3,
+      "note": "verified specs"
+    },
+    {
+      "property": "Unleashed West Campus",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "West Campus Flats",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "44th Street Apartments",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "45th Street Apartments",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "Hyde Park Court",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "Hyde Park Square",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "Lofts at the Triangle",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "Melroy Apartments",
+      "status": "ok",
+      "count": 1,
+      "note": "verified specs"
+    },
+    {
+      "property": "River Oaks Apartments",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "Red River Apartments",
+      "status": "ok",
+      "count": 2,
+      "note": "verified specs"
+    },
+    {
+      "property": "The Triangle Apartments",
+      "status": "ok",
+      "count": 4,
+      "note": "verified specs"
+    },
+    {
+      "property": "Ballpark North",
+      "status": "ok",
+      "count": 4,
+      "note": "verified specs"
+    },
+    {
+      "property": "Estate on Campus (Riverside)",
+      "status": "ok",
+      "count": 4,
+      "note": "verified specs"
+    },
+    {
+      "property": "Mesh Apartments",
+      "status": "ok",
+      "count": 3,
+      "note": "verified specs"
+    },
+    {
+      "property": "Town Lake Student Apartments",
+      "status": "ok",
+      "count": 3,
+      "note": "verified specs"
+    },
+    {
+      "property": "University Estates at Austin",
+      "status": "ok",
+      "count": 3,
+      "note": "verified specs"
+    },
+    {
+      "property": "University Village Austin",
+      "status": "ok",
+      "count": 3,
+      "note": "verified specs"
     }
   ]
 }

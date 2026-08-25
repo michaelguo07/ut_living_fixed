@@ -109,7 +109,12 @@ export default function ApartmentCard({ apartment, onHover, highlighted = false 
       {/* 2. Middle Content Section (Details & Pros/Cons) */}
       <div className="flex-1 flex flex-col justify-between min-w-0">
         <div>
-          <h3 className="text-lg font-bold text-stone-900 truncate">
+          <div className="flex items-center gap-2">
+            <span className="text-3xs font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">
+              {apartment.neighborhood || 'Austin'}
+            </span>
+          </div>
+          <h3 className="text-lg font-bold text-stone-900 truncate mt-0.5">
             <Link
               to={`/apartments/${encodeURIComponent(id)}`}
               className="hover:text-burnt-orange transition-colors"

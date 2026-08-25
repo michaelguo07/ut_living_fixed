@@ -84,7 +84,7 @@ export default function ApartmentDetailPage() {
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <div className="flex items-center gap-2 text-sm font-medium text-stone-500">
-            <span>UT Austin • West Campus</span>
+            <span>UT Austin • {apartment.neighborhood || 'Housing'}</span>
             {LAST_UPDATED && (
               <>
                 <span>•</span>

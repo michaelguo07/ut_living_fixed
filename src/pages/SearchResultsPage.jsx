@@ -4,27 +4,65 @@ import L from 'leaflet'
 import ApartmentList from '../components/apartments/ApartmentList'
 import LoadingPlaceholder from '../components/ui/LoadingPlaceholder'
 import { useAIAgent } from '../hooks/useAIAgent'
-import { UT_AUSTIN_APARTMENTS, LAST_UPDATED } from '../data/apartments'
+import { LAST_UPDATED, NEIGHBORHOODS } from '../data/apartments'
 
-// Latitude and Longitude coordinates for Austin/West Campus properties
+// Latitude and Longitude coordinates for Austin student housing properties
 const APARTMENT_COORDINATES = {
-  'the-nine-at-west-campus': { lat: 30.2905, lng: -97.7475 },
-  'the-standard-at-austin': { lat: 30.2870, lng: -97.7445 },
-  'legacy-on-rio': { lat: 30.2915, lng: -97.7450 },
-  'the-mark-austin': { lat: 30.2872, lng: -97.7456 },
-  'the-block-various-locations': { lat: 30.2930, lng: -97.7450 },
-  'callaway-house': { lat: 30.2862, lng: -97.7430 },
-  'the-castilian': { lat: 30.2875, lng: -97.7432 },
-  '26-west': { lat: 30.2882, lng: -97.7448 },
+  // ON CAMPUS
+  '2400-nueces-apartments': { lat: 30.2882, lng: -97.7448 },
+  'brackenridge-apartments-lake-austin-blvd': { lat: 30.2835, lng: -97.7780 },
+  'colorado-apartments-lake-austin-blvd': { lat: 30.2825, lng: -97.7725 },
+  'east-campus-graduate-apartments': { lat: 30.2830, lng: -97.7265 },
+  'gateway-apartments-west-6th-st': { lat: 30.2745, lng: -97.7690 },
+
+  // WEST CAMPUS
+  '21-rio-apartments': { lat: 30.2845, lng: -97.7445 },
+  'axis-west-campus': { lat: 30.2905, lng: -97.7490 },
   'crest-at-pearl': { lat: 30.2952, lng: -97.7440 },
-  'texan-and-vintage': { lat: 30.2965, lng: -97.7420 },
-  'villas-on-rio': { lat: 30.2900, lng: -97.7450 },
-  'ion-austin': { lat: 30.2955, lng: -97.7420 },
-  'skyloft': { lat: 30.2875, lng: -97.7442 },
-  'moontower': { lat: 30.2858, lng: -97.7432 },
-  'yugo-austin-waterloo': { lat: 30.2885, lng: -97.7425 },
-  'yugo-austin-rio': { lat: 30.2915, lng: -97.7450 },
+  'envoy-austin': { lat: 30.2852, lng: -97.7483 },
+  'evo-austin-formerly-ion-austin': { lat: 30.2955, lng: -97.7420 },
+  'grandmarc-austin': { lat: 30.2905, lng: -97.7428 },
   'inspire-on-22nd': { lat: 30.2858, lng: -97.7432 },
+  'legacy-on-rio': { lat: 30.2915, lng: -97.7450 },
+  'mark-uptown': { lat: 30.2872, lng: -97.7456 },
+  'moontower-just-off-campus': { lat: 30.2858, lng: -97.7432 },
+  'nine-just-off-campus': { lat: 30.2905, lng: -97.7475 },
+  'quarters-on-campus-the-quarters': { lat: 30.2870, lng: -97.7445 },
+  'rise-on-23rd': { lat: 30.2865, lng: -97.7440 },
+  'skyloft-austin': { lat: 30.2875, lng: -97.7442 },
+  'texan-and-21st-apartments': { lat: 30.2965, lng: -97.7420 },
+  'the-block-on-23rd-25th-etc': { lat: 30.2930, lng: -97.7450 },
+  'the-castilian': { lat: 30.2875, lng: -97.7432 },
+  'the-g-on-west-campus': { lat: 30.2798, lng: -97.7425 },
+  'the-harrison': { lat: 30.2845, lng: -97.7445 },
+  'the-hub-austin-west-campus': { lat: 30.2912, lng: -97.7450 },
+  'the-ruckus': { lat: 30.2885, lng: -97.7445 },
+  'the-standard-at-austin': { lat: 30.2870, lng: -97.7445 },
+  'unleashed-west-campus': { lat: 30.2890, lng: -97.7465 },
+  'villas-on-rio': { lat: 30.2900, lng: -97.7450 },
+  'waterloo-austin': { lat: 30.2885, lng: -97.7425 },
+  'west-campus-flats': { lat: 30.2850, lng: -97.7485 },
+  'yugo-austin-corner': { lat: 30.2905, lng: -97.7485 },
+  'yugo-austin-space': { lat: 30.2900, lng: -97.7445 },
+
+  // NORTH CAMPUS / HYDE PARK
+  '44th-street-apartments': { lat: 30.3060, lng: -97.7335 },
+  '45th-street-apartments': { lat: 30.3075, lng: -97.7335 },
+  'hyde-park-court': { lat: 30.3015, lng: -97.7345 },
+  'hyde-park-square': { lat: 30.3030, lng: -97.7300 },
+  'lofts-at-the-triangle': { lat: 30.3145, lng: -97.7330 },
+  'melroy-apartments': { lat: 30.2975, lng: -97.7305 },
+  'river-oaks-apartments': { lat: 30.2950, lng: -97.7310 },
+  'red-river-apartments': { lat: 30.2965, lng: -97.7255 },
+  'the-triangle-apartments': { lat: 30.3140, lng: -97.7335 },
+
+  // RIVERSIDE / OFF CAMPUS
+  'ballpark-north': { lat: 30.2355, lng: -97.7215 },
+  'estate-on-campus-riverside': { lat: 30.2320, lng: -97.7180 },
+  'mesh-apartments': { lat: 30.2380, lng: -97.7240 },
+  'town-lake-student-apartments': { lat: 30.2455, lng: -97.7285 },
+  'university-estates-at-austin': { lat: 30.2320, lng: -97.7180 },
+  'university-village-austin': { lat: 30.2315, lng: -97.7185 },
 }
 
 export default function SearchResultsPage() {
@@ -36,19 +74,20 @@ export default function SearchResultsPage() {
   const rawQuery = searchParams.get('q') || searchParams.get('campus') || ''
   const [searchTerm, setSearchTerm] = useState(rawQuery)
 
+  const activeNeighborhood = searchParams.get('neighborhood') || 'All Neighborhoods'
   const activeBeds = searchParams.get('beds') || 'any'
   const activeBaths = searchParams.get('baths') || 'any'
   const activeMaxPrice = searchParams.get('maxPrice') || 'any'
   const activeMoveIn = searchParams.get('moveIn') || 'any'
   const activeMaxDistance = searchParams.get('maxDistance') || 'any'
 
-  const hasActiveFilters = Boolean(rawQuery) || activeBeds !== 'any' || activeBaths !== 'any' || activeMaxPrice !== 'any' || activeMoveIn !== 'any' || activeMaxDistance !== 'any'
+  const hasActiveFilters = Boolean(rawQuery) || activeNeighborhood !== 'All Neighborhoods' || activeBeds !== 'any' || activeBaths !== 'any' || activeMaxPrice !== 'any' || activeMoveIn !== 'any' || activeMaxDistance !== 'any'
   const displayApartments = apartments
 
   // Local UI states
   const [hoveredAptId, setHoveredAptId] = useState(null)
   const [selectedPin, setSelectedPin] = useState(null)
-  const [activeDropdown, setActiveDropdown] = useState(null) // 'price' | 'rooms' | 'distance' | 'moveIn'
+  const [activeDropdown, setActiveDropdown] = useState(null) // 'neighborhood' | 'price' | 'rooms' | 'distance' | 'moveIn'
   const [showMobileMap, setShowMobileMap] = useState(false)
 
   // Local filter states for beds/baths popover
@@ -67,6 +106,7 @@ export default function SearchResultsPage() {
   // Trigger search based on query and filter params
   useEffect(() => {
     const filters = {
+      neighborhood: activeNeighborhood,
       beds: activeBeds,
       baths: activeBaths,
       maxPrice: activeMaxPrice,
@@ -74,7 +114,7 @@ export default function SearchResultsPage() {
       maxDistance: activeMaxDistance,
     }
     search(rawQuery, filters)
-  }, [search, rawQuery, activeBeds, activeBaths, activeMaxPrice, activeMoveIn, activeMaxDistance])
+  }, [search, rawQuery, activeNeighborhood, activeBeds, activeBaths, activeMaxPrice, activeMoveIn, activeMaxDistance])
 
   // Reset local state if active values change
   useEffect(() => {
@@ -96,9 +136,9 @@ export default function SearchResultsPage() {
   // Initialize Map
   useEffect(() => {
     if (!mapInstanceRef.current && document.getElementById('map')) {
-      const initialLat = 30.290
-      const initialLng = -97.744
-      const initialZoom = 15
+      const initialLat = 30.288
+      const initialLng = -97.742
+      const initialZoom = 14
 
       const map = L.map('map', {
         center: [initialLat, initialLng],
@@ -195,7 +235,7 @@ export default function SearchResultsPage() {
 
   const updateUrlParam = (key, value) => {
     const nextParams = new URLSearchParams(searchParams)
-    if (value === 'any' || !value) {
+    if (value === 'any' || value === 'All Neighborhoods' || !value) {
       nextParams.delete(key)
     } else {
       nextParams.set(key, value)
@@ -237,7 +277,7 @@ export default function SearchResultsPage() {
         <div className="max-w-7xl mx-auto flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <div className="flex items-center gap-2 text-xs font-semibold text-stone-500">
-              <span className="text-burnt-orange font-bold uppercase tracking-wider">UT Austin off-campus</span>
+              <span className="text-burnt-orange font-bold uppercase tracking-wider">UT Austin Housing Portal</span>
               <span>•</span>
               <span>Austin, TX</span>
             </div>
@@ -252,7 +292,7 @@ export default function SearchResultsPage() {
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Search apartments, streets, or layouts (e.g. Moontower, 26 West, Studio)..."
+              placeholder="Search apartments, neighborhoods, or layouts (e.g. 2400 Nueces, Hyde Park, Studio)..."
               className="w-full pl-9 pr-20 py-2.5 text-xs font-medium rounded-full border border-stone-300 bg-stone-50 text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-burnt-orange focus:bg-white transition"
             />
             <svg className="absolute left-3 top-3 h-4 w-4 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -285,6 +325,40 @@ export default function SearchResultsPage() {
         {/* Horizontal filter pills row */}
         <div className="max-w-7xl mx-auto flex flex-wrap items-center gap-2 mt-4 text-xs font-medium text-stone-700 select-none" ref={dropdownRef}>
           
+          {/* Neighborhood Pill */}
+          <div className="relative">
+            <button
+              onClick={() => setActiveDropdown(activeDropdown === 'neighborhood' ? null : 'neighborhood')}
+              className={`flex items-center gap-1 px-3 py-1.5 rounded-full border transition font-semibold ${
+                activeNeighborhood !== 'All Neighborhoods'
+                  ? 'bg-burnt-orange-light border-burnt-orange text-burnt-orange'
+                  : 'bg-white border-stone-300 hover:bg-stone-50'
+              }`}
+            >
+              <span>{activeNeighborhood === 'All Neighborhoods' ? 'Neighborhood' : activeNeighborhood}</span>
+              <svg className="h-3 w-3 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {activeDropdown === 'neighborhood' && (
+              <div className="absolute left-0 mt-1.5 z-40 w-60 rounded-2xl border border-stone-200 bg-white p-3 shadow-xl">
+                <div className="flex flex-col gap-1">
+                  {NEIGHBORHOODS.map((n) => (
+                    <button
+                      key={n}
+                      onClick={() => updateUrlParam('neighborhood', n)}
+                      className={`w-full text-left rounded-lg px-2.5 py-1.5 text-xs font-bold transition ${
+                        activeNeighborhood === n ? 'bg-burnt-orange-light text-burnt-orange' : 'hover:bg-stone-50 text-stone-700'
+                      }`}
+                    >
+                      {n}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
           {/* Price Pill */}
           <div className="relative">
             <button
@@ -305,13 +379,13 @@ export default function SearchResultsPage() {
                 <div className="flex flex-col gap-1">
                   {[
                     { val: 'any', label: 'Any Price' },
+                    { val: '800', label: 'Under $800/mo' },
                     { val: '1000', label: 'Under $1,000/mo' },
                     { val: '1200', label: 'Under $1,200/mo' },
                     { val: '1400', label: 'Under $1,400/mo' },
                     { val: '1600', label: 'Under $1,600/mo' },
                     { val: '1800', label: 'Under $1,800/mo' },
                     { val: '2000', label: 'Under $2,000/mo' },
-                    { val: '2500', label: 'Under $2,500/mo' },
                   ].map((p) => (
                     <button
                       key={p.val}
@@ -425,10 +499,10 @@ export default function SearchResultsPage() {
                 <div className="flex flex-col gap-1">
                   {[
                     { val: 'any', label: 'Any Distance' },
-                    { val: '0.3', label: 'Within 0.3 miles (~5 min walk)' },
                     { val: '0.5', label: 'Within 0.5 miles (~10 min walk)' },
-                    { val: '0.8', label: 'Within 0.8 miles (~15 min walk)' },
                     { val: '1.0', label: 'Within 1.0 miles' },
+                    { val: '2.0', label: 'Within 2.0 miles' },
+                    { val: '5.0', label: 'Within 5.0 miles (includes Riverside)' },
                   ].map((d) => (
                     <button
                       key={d.val}
@@ -521,7 +595,7 @@ export default function SearchResultsPage() {
               <span className="text-4xl">🔍</span>
               <p className="font-extrabold text-stone-850 text-lg mt-4">No apartments match your filters</p>
               <p className="mt-2 text-sm text-stone-550 leading-relaxed font-medium">
-                Try loosening your price ceiling or selecting &quot;Any Bed/Bath&quot; criteria.
+                Try loosening your price ceiling or selecting &quot;All Neighborhoods&quot;.
               </p>
               <button
                 onClick={clearAllFilters}
@@ -536,7 +610,7 @@ export default function SearchResultsPage() {
             <>
               <div className="mb-4 flex items-center justify-between">
                 <p className="text-xs font-bold text-stone-500 uppercase tracking-wider">
-                  {displayApartments.length} result{displayApartments.length !== 1 ? 's' : ''} {rawQuery ? `for "${rawQuery}"` : 'near UT Austin'}
+                  {displayApartments.length} result{displayApartments.length !== 1 ? 's' : ''} {activeNeighborhood !== 'All Neighborhoods' ? `in ${activeNeighborhood}` : rawQuery ? `for "${rawQuery}"` : 'near UT Austin'}
                 </p>
                 {LAST_UPDATED && (
                   <span className="text-3xs font-medium text-stone-400">
@@ -567,9 +641,12 @@ export default function SearchResultsPage() {
               className="absolute bottom-6 left-6 right-6 lg:left-6 lg:right-auto lg:w-64 z-[1000] rounded-2xl border border-stone-200 bg-white p-3 shadow-xl flex flex-col gap-2 pointer-events-auto"
             >
               <div className="flex justify-between items-start">
-                <h4 className="font-bold text-stone-900 text-xs truncate max-w-[80%]">
-                  {selectedPin.name}
-                </h4>
+                <div>
+                  <span className="text-3xs font-bold text-stone-400 uppercase tracking-wider block">{selectedPin.neighborhood}</span>
+                  <h4 className="font-bold text-stone-900 text-xs truncate max-w-[180px]">
+                    {selectedPin.name}
+                  </h4>
+                </div>
                 <button
                   onClick={() => setSelectedPin(null)}
                   className="text-stone-400 hover:text-stone-700 font-bold text-sm leading-none cursor-pointer"
@@ -643,4 +720,3 @@ export default function SearchResultsPage() {
     </div>
   )
 }
-

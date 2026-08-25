@@ -192,7 +192,7 @@ export default function HomePage() {
       {/* Real-time Market Trends Dashboard Section */}
       <section className="mt-24">
         <h3 className="text-center text-xs font-bold uppercase tracking-wider text-stone-500">
-          West Campus Housing Index
+          UT Austin Housing Index
         </h3>
         <h2 className="mt-2 text-center text-3xl font-extrabold text-stone-900 tracking-tight sm:text-4xl">
           Real-Time Price & Vacancy Trends
@@ -206,7 +206,7 @@ export default function HomePage() {
           </div>
         )}
         <p className="mt-3 text-stone-500 text-sm text-center font-medium max-w-lg mx-auto">
-          Stock-ticker style overview of rent rates and inventory changes across West Campus over the past 30 days. Click a property to view detailed graphs.
+          Stock-ticker style overview of rent rates and inventory changes across all 48 UT Austin student communities over the past 30 days. Click a property to view detailed graphs.
         </p>
 
         {/* Market Overview Stats row */}
@@ -295,7 +295,12 @@ export default function HomePage() {
                     >
                       {/* Name & Address */}
                       <td className="px-6 py-4">
-                        <div className="text-sm font-bold text-stone-900">{prop.name}</div>
+                        <div className="flex items-center gap-2">
+                          <span className="text-3xs font-extrabold uppercase tracking-wider px-1.5 py-0.5 rounded bg-stone-100 text-stone-500">
+                            {prop.neighborhood}
+                          </span>
+                        </div>
+                        <div className="text-sm font-bold text-stone-900 mt-0.5">{prop.name}</div>
                         <div className="text-3xs text-stone-400 font-medium mt-0.5 uppercase tracking-wider">{prop.address.split(',')[0]}</div>
                       </td>
 
