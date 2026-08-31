@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-25T13:09:55.697873",
+  "run_at": "2026-08-31T12:18:34.750098",
   "total_properties": 48,
   "ok": 45,
   "warnings": 3,
@@ -102,7 +102,7 @@
     {
       "property": "Villas on Rio",
       "status": "ok",
-      "count": 20
+      "count": 11
     },
     {
       "property": "Inspire on 22nd",
@@ -113,12 +113,14 @@
     {
       "property": "Evo Austin (formerly Ion Austin)",
       "status": "cached",
-      "count": 8
+      "count": 8,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "Skyloft Austin",
       "status": "cached",
-      "count": 36
+      "count": 36,
+      "note": "live scrape returned 0 results"
     },
     {
       "property": "21 Rio Apartments",

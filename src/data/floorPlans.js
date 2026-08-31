@@ -1,7 +1,7 @@
 import { normalizePropertyName, slugify } from './utils.js';
 
-export const LAST_UPDATED = "August 25, 2026";
-export const LAST_UPDATED_ISO = "2026-08-25T13:09:55.668612";
+export const LAST_UPDATED = "August 31, 2026";
+export const LAST_UPDATED_ISO = "2026-08-31T12:18:34.736377";
 
 const RAW_FLOOR_PLANS = [
   {
@@ -7114,16 +7114,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "945",
     "minPrice": 1630,
     "maxPrice": 1655,
-    "availability": "Available",
+    "availability": "Sold Out",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_C1_945.jpg",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
-    "cons": []
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
   },
   {
     "property": "Mark Uptown",
@@ -8199,17 +8200,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1577",
     "minPrice": 1275,
     "maxPrice": 1275,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cdae8abc53.18293786247.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Nine Just off Campus",
@@ -8234,12 +8234,52 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "Waterloo Austin",
+    "plan": "2 Bed, 2 Bath Classic",
+    "roomType": "2 Bed / 2.0 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": 1749,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-waldorf-2-bedroom--644886",
+    "imagePath": "https://yugo.com/resource/blob/644646/8f64573fe986f0ffd3ab5b8514a65cb0/waldorfjpg-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Waterloo Austin",
+    "plan": "3 Bed, 3 Bath",
+    "roomType": "3 Bed / 3.0 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "",
+    "minPrice": 1599,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-ramble-3-bedroom-644882",
+    "imagePath": "https://yugo.com/resource/blob/644644/701817dd04c673a14e373714899749c3/ramblejpg-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Waterloo Austin",
     "plan": "4 Bed, 4 Bath Classic",
     "roomType": "4 Bed / 4.0 Bath",
     "beds": 4,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1209,
+    "minPrice": 1229,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-henry-4-bedroom-644826",
@@ -8259,7 +8299,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1279,
+    "minPrice": 1329,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-proper-4-bedroom-644880",
@@ -8279,7 +8319,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1229,
+    "minPrice": 1279,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-crawford-4-bedroom-644816",
@@ -8299,7 +8339,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1429,
+    "minPrice": 1439,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-joule-4-bedroom-644856",
@@ -8314,12 +8354,34 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "Waterloo Austin",
+    "plan": "5 Bed, 5 Bath Penthouse",
+    "roomType": "5 Bed / 5.0 Bath",
+    "beds": 5,
+    "baths": 5.0,
+    "sqFt": "",
+    "minPrice": 1869,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/penthouse-on-30-5-bed-5-bath-644812",
+    "imagePath": "https://yugo.com/resource/blob/678704/622893bc48a30c7982ce0d48204faf7e/yugo-website-photo-edits-1--data.png",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Premium pricing tier"
+    ]
+  },
+  {
+    "property": "Waterloo Austin",
     "plan": "6 Bed, 6 Bath Classic",
     "roomType": "6 Bed / 6.0 Bath",
     "beds": 6,
     "baths": 6.0,
     "sqFt": "",
-    "minPrice": 1199,
+    "minPrice": 1249,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-hoxton-6-bed-6-bath-644844",
@@ -8339,7 +8401,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 6,
     "baths": 6.0,
     "sqFt": "",
-    "minPrice": 1249,
+    "minPrice": 1299,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-zaza-6-bed-6-bath-644892",
@@ -8354,86 +8416,23 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "Waterloo Austin",
-    "plan": "2 Bed, 2 Bath Classic",
-    "roomType": "2 Bed / 2.0 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-waldorf-2-bedroom--644886",
-    "imagePath": "https://yugo.com/resource/blob/644646/8f64573fe986f0ffd3ab5b8514a65cb0/waldorfjpg-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Waterloo Austin",
-    "plan": "3 Bed, 3 Bath",
-    "roomType": "3 Bed / 3.0 Bath",
-    "beds": 3,
-    "baths": 3.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-ramble-3-bedroom-644882",
-    "imagePath": "https://yugo.com/resource/blob/644644/701817dd04c673a14e373714899749c3/ramblejpg-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Waterloo Austin",
-    "plan": "5 Bed, 5 Bath Penthouse",
-    "roomType": "5 Bed / 5.0 Bath",
-    "beds": 5,
-    "baths": 5.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/penthouse-on-30-5-bed-5-bath-644812",
-    "imagePath": "https://yugo.com/resource/blob/678704/622893bc48a30c7982ce0d48204faf7e/yugo-website-photo-edits-1--data.png",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Waterloo Austin",
     "plan": "Studio Classic",
     "roomType": "",
     "beds": null,
     "baths": null,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 941,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-moxy-studio-644866",
     "imagePath": "https://yugo.com/resource/blob/644858/61a5f2b53e8ce8b47d866d4e95c99aea/yugo-austinwaterloo-2206dsc-8141-edit-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Waterloo Austin",
@@ -8442,17 +8441,160 @@ const RAW_FLOOR_PLANS = [
     "beds": null,
     "baths": null,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1260,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-ivy-studio-644846",
     "imagePath": "https://yugo.com/resource/blob/644634/d1e530a3406394574713fab111c7851f/ivyjpg-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": " 2 Bed, 1 Bath Classic",
+    "roomType": "2 Bed / 1.0 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "",
+    "minPrice": 1259,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-classic-642684",
+    "imagePath": "https://yugo.com/resource/blob/642682/06a8809735afa2ddca981dbbfd88fdc7/corner2x1-classic-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Currently sold out / waitlist only"
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": " 4 Bed, 4 Bath",
+    "roomType": "4 Bed / 4.0 Bath",
+    "beds": 4,
+    "baths": 4.0,
+    "sqFt": "",
+    "minPrice": 1219,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/4-bed-4-bath-642680",
+    "imagePath": "https://yugo.com/resource/blob/642470/d7bff86d85929bb2e6845fe8cc65a3d0/yugo-austincorner-207-15-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "2 Bed, 1 Bath Deluxe",
+    "roomType": "2 Bed / 1.0 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "",
+    "minPrice": 1219,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-deluxe-642688",
+    "imagePath": "https://yugo.com/resource/blob/642686/654da7c92da01842acbdfb89257ab988/corner-2x1-deluxe-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "2 Bed, 1 Bath Plus",
+    "roomType": "2 Bed / 1.0 Bath",
+    "beds": 2,
+    "baths": 1.0,
+    "sqFt": "",
+    "minPrice": 1209,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-plus-642690",
+    "imagePath": "https://yugo.com/resource/blob/642362/12483154fb9764e1dcbdc75066cfbcd1/yugo-austincorner-502-3-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (2 residents sharing 1 baths)"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "2 Bed, 1.5 Bath Loft",
+    "roomType": "2 Bed / 5.0 Bath",
+    "beds": 2,
+    "baths": 5.0,
+    "sqFt": "",
+    "minPrice": 1459,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-5-bath-loft-642692",
+    "imagePath": "https://yugo.com/resource/blob/642360/6d871285bc6806efc64cce28c2650582/yugo-austincorner-702-9-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "2 Bed, 2 Bath",
+    "roomType": "2 Bed / 2.0 Bath",
+    "beds": 2,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": 1309,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-2-bath-642694",
+    "imagePath": "https://yugo.com/resource/blob/642600/9602f01b68740f4321ef95682a12b57d/yugo-austin-corner-room-type-3-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "3 Bed, 2 Bath Classic",
+    "roomType": "3 Bed / 2.0 Bath",
+    "beds": 3,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": 941,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-2-bath-classic-642698",
+    "imagePath": "https://yugo.com/resource/blob/642452/b67306dafca0fe5891b4a916a92cc286/yugo-austincorner-701-701-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 2 baths)"
     ]
   },
   {
@@ -8462,7 +8604,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": 1069,
+    "minPrice": 1169,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-2-bath-deluxe-642700",
@@ -8478,12 +8620,95 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "Yugo Austin Corner",
+    "plan": "3 Bed, 2 Bath Plus",
+    "roomType": "3 Bed / 2.0 Bath",
+    "beds": 3,
+    "baths": 2.0,
+    "sqFt": "",
+    "minPrice": 941,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-2-bath-plus-642702",
+    "imagePath": "https://yugo.com/resource/blob/642408/61b3a3ecd544bc6acc1b152d8eaaa56e/yugo-austincorner-705-10-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (3 residents sharing 2 baths)"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "3 Bed, 3 Bath Classic",
+    "roomType": "3 Bed / 3.0 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "",
+    "minPrice": 1260,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-3-bath-classic-642704",
+    "imagePath": "https://yugo.com/resource/blob/642598/62dbdac85273d59da7a942dd84eac42a/yugo-austin-corner-room-type-1-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "3 Bed, 3 Bath Loft",
+    "roomType": "3 Bed / 3.0 Bath",
+    "beds": 3,
+    "baths": 3.0,
+    "sqFt": "",
+    "minPrice": 1249,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-3-bath-loft-642678",
+    "imagePath": "https://yugo.com/resource/blob/642438/360cb7c59c6acdc12a56543eb7c4e7cf/yugo-austincorner-704-20-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Private bathroom for every resident",
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": []
+  },
+  {
+    "property": "Yugo Austin Corner",
+    "plan": "4 Bed, 3 Bath Classic",
+    "roomType": "4 Bed / 3.0 Bath",
+    "beds": 4,
+    "baths": 3.0,
+    "sqFt": "",
+    "minPrice": 1189,
+    "maxPrice": null,
+    "availability": "Available",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/4-bed-3-bath-classic-642708",
+    "imagePath": "https://yugo.com/resource/blob/642466/b659f6c3226ced47ee392a52c653d409/yugo-austincorner-501-8-data.jpg",
+    "dataWarning": null,
+    "pros": [
+      "Fully furnished options available",
+      "Direct lease available"
+    ],
+    "cons": [
+      "Shared bathroom (4 residents sharing 3 baths)"
+    ]
+  },
+  {
+    "property": "Yugo Austin Corner",
     "plan": "4 Bed, 3 Bath Plus",
     "roomType": "4 Bed / 3.0 Bath",
     "beds": 4,
     "baths": 3.0,
     "sqFt": "",
-    "minPrice": 1039,
+    "minPrice": 1139,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/4-bed-3-bath-plus-642712",
@@ -8504,7 +8729,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 5,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1255,
+    "minPrice": 999,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/5-bed-4-bath-642718",
@@ -8512,240 +8737,11 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Fully furnished options available",
+      "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": [
       "Shared bathroom (5 residents sharing 4 baths)"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": " 2 Bed, 1 Bath Classic",
-    "roomType": "2 Bed / 1.0 Bath",
-    "beds": 2,
-    "baths": 1.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-classic-642684",
-    "imagePath": "https://yugo.com/resource/blob/642682/06a8809735afa2ddca981dbbfd88fdc7/corner2x1-classic-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Shared bathroom (2 residents sharing 1 baths)",
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": " 4 Bed, 4 Bath",
-    "roomType": "4 Bed / 4.0 Bath",
-    "beds": 4,
-    "baths": 4.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/4-bed-4-bath-642680",
-    "imagePath": "https://yugo.com/resource/blob/642470/d7bff86d85929bb2e6845fe8cc65a3d0/yugo-austincorner-207-15-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": "2 Bed, 1 Bath Deluxe",
-    "roomType": "2 Bed / 1.0 Bath",
-    "beds": 2,
-    "baths": 1.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-deluxe-642688",
-    "imagePath": "https://yugo.com/resource/blob/642686/654da7c92da01842acbdfb89257ab988/corner-2x1-deluxe-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Shared bathroom (2 residents sharing 1 baths)",
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": "2 Bed, 1 Bath Plus",
-    "roomType": "2 Bed / 1.0 Bath",
-    "beds": 2,
-    "baths": 1.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-plus-642690",
-    "imagePath": "https://yugo.com/resource/blob/642362/12483154fb9764e1dcbdc75066cfbcd1/yugo-austincorner-502-3-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Shared bathroom (2 residents sharing 1 baths)",
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": "2 Bed, 1.5 Bath Loft",
-    "roomType": "2 Bed / 5.0 Bath",
-    "beds": 2,
-    "baths": 5.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-5-bath-loft-642692",
-    "imagePath": "https://yugo.com/resource/blob/642360/6d871285bc6806efc64cce28c2650582/yugo-austincorner-702-9-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": "2 Bed, 2 Bath",
-    "roomType": "2 Bed / 2.0 Bath",
-    "beds": 2,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-2-bath-642694",
-    "imagePath": "https://yugo.com/resource/blob/642600/9602f01b68740f4321ef95682a12b57d/yugo-austin-corner-room-type-3-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": "3 Bed, 2 Bath Classic",
-    "roomType": "3 Bed / 2.0 Bath",
-    "beds": 3,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-2-bath-classic-642698",
-    "imagePath": "https://yugo.com/resource/blob/642452/b67306dafca0fe5891b4a916a92cc286/yugo-austincorner-701-701-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Shared bathroom (3 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": "3 Bed, 2 Bath Plus",
-    "roomType": "3 Bed / 2.0 Bath",
-    "beds": 3,
-    "baths": 2.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-2-bath-plus-642702",
-    "imagePath": "https://yugo.com/resource/blob/642408/61b3a3ecd544bc6acc1b152d8eaaa56e/yugo-austincorner-705-10-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Shared bathroom (3 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": "3 Bed, 3 Bath Classic",
-    "roomType": "3 Bed / 3.0 Bath",
-    "beds": 3,
-    "baths": 3.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-3-bath-classic-642704",
-    "imagePath": "https://yugo.com/resource/blob/642598/62dbdac85273d59da7a942dd84eac42a/yugo-austin-corner-room-type-1-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": "3 Bed, 3 Bath Loft",
-    "roomType": "3 Bed / 3.0 Bath",
-    "beds": 3,
-    "baths": 3.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/3-bed-3-bath-loft-642678",
-    "imagePath": "https://yugo.com/resource/blob/642438/360cb7c59c6acdc12a56543eb7c4e7cf/yugo-austincorner-704-20-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Private bathroom for every resident",
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Yugo Austin Corner",
-    "plan": "4 Bed, 3 Bath Classic",
-    "roomType": "4 Bed / 3.0 Bath",
-    "beds": 4,
-    "baths": 3.0,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/4-bed-3-bath-classic-642708",
-    "imagePath": "https://yugo.com/resource/blob/642466/b659f6c3226ced47ee392a52c653d409/yugo-austincorner-501-8-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Shared bathroom (4 residents sharing 3 baths)",
-      "Currently sold out / waitlist only"
     ]
   },
   {
@@ -8755,18 +8751,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 2,
     "baths": 1.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1524,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/2-bed-1-bath-loft-643540",
     "imagePath": "https://yugo.com/resource/blob/643278/d7216d6ff5e5213db7e612b4084c4cf5/3056-1169248-59e68f66e10c59802-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (2 residents sharing 1 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (2 residents sharing 1 baths)"
     ]
   },
   {
@@ -8776,18 +8772,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 2,
     "baths": 1.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1504,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/2-bed-1-bath-plus-643542",
     "imagePath": "https://yugo.com/resource/blob/643278/d7216d6ff5e5213db7e612b4084c4cf5/3056-1169248-59e68f66e10c59802-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (2 residents sharing 1 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (2 residents sharing 1 baths)"
     ]
   },
   {
@@ -8797,18 +8793,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 1.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1424,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/3-bed-1-bath-loft-643544",
     "imagePath": "https://yugo.com/resource/blob/643264/e448744aafb77eb0321bd5c13dece443/3047-1169248-59e68f28d5f373192-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (3 residents sharing 1 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (3 residents sharing 1 baths)"
     ]
   },
   {
@@ -8818,18 +8814,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1464,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/3-bed-2-bath-loft-643548",
     "imagePath": "https://yugo.com/resource/blob/643546/86881011906032f7f06dcf2bffeaf050/nueces-3x2-loft-data.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (3 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (3 residents sharing 2 baths)"
     ]
   },
   {
@@ -8839,18 +8835,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1254,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-classic-643552",
     "imagePath": "https://yugo.com/resource/blob/643550/85ac3d732dfa3002e5b79753d38e777e/4x2-classic-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (4 residents sharing 2 baths)"
     ]
   },
   {
@@ -8860,18 +8856,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1284,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-deluxe-643554",
     "imagePath": "https://yugo.com/resource/blob/643260/9be89b946f6f50e75dcb46b7d4f6fa52/3045-1169248-59e68f28986598852-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (4 residents sharing 2 baths)"
     ]
   },
   {
@@ -8881,18 +8877,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1294,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-loft-643556",
     "imagePath": "https://yugo.com/resource/blob/643276/65042ae1226de65685e47ae9da3faf59/3055-1169248-59e68f66c66a51252-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (4 residents sharing 2 baths)"
     ]
   },
   {
@@ -8902,18 +8898,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1274,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-plus-643558",
     "imagePath": "https://yugo.com/resource/blob/643276/65042ae1226de65685e47ae9da3faf59/3055-1169248-59e68f66c66a51252-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (4 residents sharing 2 baths)"
     ]
   },
   {
@@ -8923,18 +8919,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 3.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1329,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-3-bath-classic-643560",
     "imagePath": "https://yugo.com/resource/blob/643254/d24c43070577afdb1ccf69a21879b969/3042-1169248-59e68f0b134562892-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 3 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (4 residents sharing 3 baths)"
     ]
   },
   {
@@ -8944,18 +8940,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 3.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1364,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-3-bath-plus-643564",
     "imagePath": "https://yugo.com/resource/blob/643562/c0cc34974b77d628fb07d1ee0b6a300c/nueces-4x3-plus-data.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 3 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (4 residents sharing 3 baths)"
     ]
   },
   {
@@ -8965,18 +8961,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 5,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1199,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/5-bed-2-bath-loft-643568",
     "imagePath": "https://yugo.com/resource/blob/643566/45e128c71e30a06270af54ec8dbbf756/nueces-5x2-loft-data.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (5 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (5 residents sharing 2 baths)"
     ]
   },
   {
@@ -8986,18 +8982,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 5,
     "baths": 3.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1224,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/5-bed-3-bath-loft-643572",
     "imagePath": "https://yugo.com/resource/blob/643570/bc30fb703b586c212442ca89bfa4e6c3/nueces-5x3-loft-data.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (5 residents sharing 3 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (5 residents sharing 3 baths)"
     ]
   },
   {
@@ -9007,18 +9003,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 5,
     "baths": 3.0,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1254,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/5-bed-3-bath-plus-643576",
     "imagePath": "https://yugo.com/resource/blob/643574/cb3c06ab1d5b73156c56072838bfeb0c/nueces-5x3-plus-data.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (5 residents sharing 3 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (5 residents sharing 3 baths)"
     ]
   },
   {
@@ -9028,18 +9024,17 @@ const RAW_FLOOR_PLANS = [
     "beds": null,
     "baths": null,
     "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1260,
     "maxPrice": null,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/studio-classic-643578",
     "imagePath": "https://yugo.com/resource/blob/643258/e78271ec97a3249bb956f586f9912e03/3044-1169248-59e68f28801c59292-data.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Yugo Austin Space",
@@ -9048,31 +9043,11 @@ const RAW_FLOOR_PLANS = [
     "beds": null,
     "baths": null,
     "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Sold Out",
-    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/studio-plus-643580",
-    "imagePath": "https://yugo.com/resource/blob/643276/65042ae1226de65685e47ae9da3faf59/3055-1169248-59e68f66c66a51252-data.jpg",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available"
-    ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
-  },
-  {
-    "property": "Villas on Rio",
-    "plan": "B1",
-    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
+    "minPrice": 1734,
     "maxPrice": null,
     "availability": "Available",
-    "url": "https://villasonrio.com/floor-plans/",
-    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/074230/66a8edc5e1ab92.50391872865.png",
+    "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/studio-plus-643580",
+    "imagePath": "https://yugo.com/resource/blob/643276/65042ae1226de65685e47ae9da3faf59/3055-1169248-59e68f66c66a51252-data.jpg",
     "dataWarning": null,
     "pros": [
       "Fully furnished options available",
@@ -9164,44 +9139,6 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "Villas on Rio",
-    "plan": "B3",
-    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Available",
-    "url": "https://villasonrio.com/floor-plans/",
-    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081417/66a8f5391759c7.26358638119.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "Villas on Rio",
-    "plan": "B4",
-    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Available",
-    "url": "https://villasonrio.com/floor-plans/",
-    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/081714/66a8f5e9f3af27.75111402120.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "Villas on Rio",
     "plan": "B4-SHARED",
     "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
     "beds": null,
@@ -9223,46 +9160,6 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "Villas on Rio",
-    "plan": "B5",
-    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Available",
-    "url": "https://villasonrio.com/floor-plans/",
-    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/082027/66a8f6aadfb1a1.06243773303.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "Villas on Rio",
-    "plan": "B5-SHARED",
-    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 2 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  2",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Available",
-    "url": "https://villasonrio.com/floor-plans/",
-    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083227/66a8f97bcc20e6.53471616903.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Shared bedroom (limited privacy)"
-    ]
-  },
-  {
-    "property": "Villas on Rio",
     "plan": "C1",
     "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 3 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  3",
     "beds": null,
@@ -9273,25 +9170,6 @@ const RAW_FLOOR_PLANS = [
     "availability": "Available",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083352/66a8f9d09f8a69.38713837294.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "Villas on Rio",
-    "plan": "C2",
-    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 3 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  3",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Available",
-    "url": "https://villasonrio.com/floor-plans/",
-    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/083913/66a8fb11572cd7.03817832163.png",
     "dataWarning": null,
     "pros": [
       "Fully furnished options available",
@@ -9383,46 +9261,6 @@ const RAW_FLOOR_PLANS = [
   },
   {
     "property": "Villas on Rio",
-    "plan": "D5",
-    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 4 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  4",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Available",
-    "url": "https://villasonrio.com/floor-plans/",
-    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/110356/66a91cfc4eeee0.34665177884.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
-    ],
-    "cons": []
-  },
-  {
-    "property": "Villas on Rio",
-    "plan": "D5TH-SHARED",
-    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 4 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  4",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "Available",
-    "url": "https://villasonrio.com/floor-plans/",
-    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/110718/66a91dc5de6fb2.63267255476.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Shared bedroom (limited privacy)"
-    ]
-  },
-  {
-    "property": "Villas on Rio",
     "plan": "D5-SHARED",
     "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 4 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  4",
     "beds": null,
@@ -9430,36 +9268,15 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
-    "availability": "Available",
+    "availability": "<span>1 FEMALE PRIVATE ROOM LEFT </span>",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/111315/66a91f2b244ea5.56945494937.png",
-    "dataWarning": null,
-    "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
-    ],
-    "cons": [
-      "Shared bedroom (limited privacy)"
-    ]
-  },
-  {
-    "property": "Villas on Rio",
-    "plan": "5x5",
-    "roomType": "<img decoding=\"async\" class=\"bedimg\" src=\"/wp-content/uploads/2023/02/bed.png\" alt=\"bed\"> 5 <span class=\"unit-sep\">|</span> <img decoding=\"async\"  class=\"bathimg\"  src=\"/wp-content/uploads/2023/02/bath.png\" alt=\"bath\">  5",
-    "beds": null,
-    "baths": null,
-    "sqFt": "",
-    "minPrice": null,
-    "maxPrice": null,
-    "availability": "<span>Sold Out </span>",
-    "url": "https://villasonrio.com/floor-plans/",
-    "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/111613/66a91fdd02d443.80324064376.png",
     "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
     "cons": [
-      "Currently sold out / waitlist only"
+      "Shared bedroom (limited privacy)"
     ]
   },
   {
