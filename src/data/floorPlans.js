@@ -1,7 +1,7 @@
 import { normalizePropertyName, slugify } from './utils.js';
 
-export const LAST_UPDATED = "August 31, 2026";
-export const LAST_UPDATED_ISO = "2026-08-31T12:18:34.736377";
+export const LAST_UPDATED = "September 07, 2026";
+export const LAST_UPDATED_ISO = "2026-09-07T11:11:53.326590";
 
 const RAW_FLOOR_PLANS = [
   {
@@ -5526,17 +5526,18 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "2059",
     "minPrice": 689,
     "maxPrice": 689,
-    "availability": "Limited Availability",
+    "availability": "Waitlist",
     "url": "https://www.americancampus.com/student-apartments/tx/austin/grandmarc-austin/floor-plans",
     "imagePath": "https://www.americancampus.com/getmedia/8f43c354-f924-4210-ac97-9d21abf92fe8/677_Retreat-5-bed-5-bath-Sycamore-ORIGINAL.png?width=661&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
       "Fully furnished options available",
-      "Budget-friendly rent (under $1,000/mo)",
-      "Direct lease available"
+      "Budget-friendly rent (under $1,000/mo)"
     ],
-    "cons": []
+    "cons": [
+      "Waitlist status (limited immediate spots)"
+    ]
   },
   {
     "property": "GrandMarc Austin",
@@ -8299,7 +8300,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1329,
+    "minPrice": 1339,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-proper-4-bedroom-644880",
@@ -8319,7 +8320,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1279,
+    "minPrice": 1369,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-crawford-4-bedroom-644816",
@@ -8381,7 +8382,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 6,
     "baths": 6.0,
     "sqFt": "",
-    "minPrice": 1249,
+    "minPrice": 1299,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-hoxton-6-bed-6-bath-644844",
@@ -8401,7 +8402,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 6,
     "baths": 6.0,
     "sqFt": "",
-    "minPrice": 1299,
+    "minPrice": 1399,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-waterloo/the-zaza-6-bed-6-bath-644892",
