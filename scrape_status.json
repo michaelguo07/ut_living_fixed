@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-09-14T11:22:26.403253",
+  "run_at": "2026-09-21T11:36:54.988621",
   "total_properties": 48,
   "ok": 45,
   "warnings": 3,
@@ -47,7 +47,7 @@
     {
       "property": "Crest at Pearl",
       "status": "ok",
-      "count": 25
+      "count": 26
     },
     {
       "property": "Texan & 21st Apartments",
@@ -102,7 +102,7 @@
     {
       "property": "Villas on Rio",
       "status": "ok",
-      "count": 11
+      "count": 39
     },
     {
       "property": "Inspire on 22nd",
