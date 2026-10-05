@@ -1,7 +1,7 @@
 import { normalizePropertyName, slugify } from './utils.js';
 
-export const LAST_UPDATED = "September 28, 2026";
-export const LAST_UPDATED_ISO = "2026-09-28T12:31:09.300883";
+export const LAST_UPDATED = "October 05, 2026";
+export const LAST_UPDATED_ISO = "2026-10-05T13:11:39.485937";
 
 const RAW_FLOOR_PLANS = [
   {
@@ -1127,7 +1127,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 0.0,
     "sqFt": "",
-    "minPrice": 1594,
+    "minPrice": 1634,
     "maxPrice": 1684,
     "availability": "Limited Availability",
     "url": "https://www.americancampus.com/student-apartments/tx/austin/the-block/floor-plans",
@@ -1943,7 +1943,7 @@ const RAW_FLOOR_PLANS = [
     "maxPrice": 1459,
     "availability": "Limited Availability",
     "url": "https://www.americancampus.com/student-apartments/tx/austin/the-block/floor-plans",
-    "imagePath": "",
+    "imagePath": "https://www.americancampus.com/getmedia/33e527a0-4245-4451-822e-1b8ce3f5332f/671-25th-East-2-Bed-2-Bath-C-Premium-Private-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Fully furnished options available",
@@ -2952,7 +2952,7 @@ const RAW_FLOOR_PLANS = [
     "maxPrice": 1429,
     "availability": "Limited Availability",
     "url": "https://www.americancampus.com/student-apartments/tx/austin/the-block/floor-plans",
-    "imagePath": "",
+    "imagePath": "https://www.americancampus.com/getmedia/4e52af47-9777-4910-848e-ca5da7ba4d60/671-28th-3-bed-3-bath-Premium-ORIGINAL-01.png?width=660&height=446&ext=.png",
     "dataWarning": null,
     "pros": [
       "Fully furnished options available",
@@ -5697,17 +5697,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "",
     "minPrice": 2500,
     "maxPrice": 2560,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83745_100181119_11849_1320498_5ebd9b7d0e0157.16301208471-1.jpg",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Premium pricing tier",
-      "Currently sold out / waitlist only"
+      "Premium pricing tier"
     ]
   },
   {
@@ -5761,7 +5761,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 2.0,
     "sqFt": "",
     "minPrice": 1035,
-    "maxPrice": 1660,
+    "maxPrice": 1645,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83749_100181119_11853_1320498_5ebd9de644d903.18796945741-1.jpg",
@@ -5824,8 +5824,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 2,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": 1675,
-    "maxPrice": 1675,
+    "minPrice": 1700,
+    "maxPrice": 1700,
     "availability": "Sold Out",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83752_100181119_11856_1320498_5ebd9fb2a7ca71.44127500460-1.jpg",
@@ -5989,8 +5989,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1450,
-    "maxPrice": 1520,
+    "minPrice": 1350,
+    "maxPrice": 1420,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83759_100181119_11864_1320498_5ebeb33ba57283.78655032778-1.jpg",
@@ -6011,17 +6011,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "",
     "minPrice": 1520,
     "maxPrice": 1520,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83761_100181119_11866_1320498_5ebeb364889bc6.85946634117-1.jpg",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "The Standard at Austin",
@@ -6114,8 +6113,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 5,
     "baths": 5.0,
     "sqFt": "",
-    "minPrice": 1300,
-    "maxPrice": 1395,
+    "minPrice": 1420,
+    "maxPrice": 1515,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83765_100181119_11870_1320498_5ebeb4500d87e0.29525895307-1.jpg",
@@ -6155,8 +6154,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 6,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 1195,
-    "maxPrice": 1270,
+    "minPrice": 1215,
+    "maxPrice": 1290,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83767_100181119_11872_1320498_5ebeb48b2e1f51.04488113226-1.jpg",
@@ -6241,7 +6240,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 2.0,
     "sqFt": "728",
     "minPrice": 1315,
-    "maxPrice": 1365,
+    "maxPrice": 1315,
     "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/25_legacy-on-rio-floorplan_b1.2.jpg",
@@ -6451,8 +6450,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 3.0,
     "sqFt": "1001",
-    "minPrice": 1110,
-    "maxPrice": 1380,
+    "minPrice": 1135,
+    "maxPrice": 1405,
     "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/15_legacy-on-rio-floorplans_C6.jpg",
@@ -6559,16 +6558,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1020",
     "minPrice": 1000,
     "maxPrice": 1130,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/18_legacy-on-rio-floorplans_D3.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (4 residents sharing 2 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (4 residents sharing 2 baths)"
     ]
   },
   {
@@ -6578,7 +6577,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "1298",
-    "minPrice": 1120,
+    "minPrice": 1175,
     "maxPrice": 1300,
     "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
@@ -6601,17 +6600,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1301",
     "minPrice": 1069,
     "maxPrice": 1320,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/22_legacy-on-rio-floorplans_D12_.jpg",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Legacy on Rio",
@@ -6703,7 +6701,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 4.0,
     "sqFt": "1257",
     "minPrice": 1209,
-    "maxPrice": 1240,
+    "maxPrice": 1265,
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/21_legacy-on-rio-floorplans_D8.jpg",
@@ -6743,18 +6741,18 @@ const RAW_FLOOR_PLANS = [
     "baths": 4.0,
     "sqFt": "1388",
     "minPrice": 965,
-    "maxPrice": 1014,
-    "availability": "Sold Out",
+    "maxPrice": 1030,
+    "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/33_legacy-on-rio-floorplans_E1.jpg",
     "dataWarning": null,
     "pros": [
       "Fully furnished options available",
-      "Budget-friendly rent (under $1,000/mo)"
+      "Budget-friendly rent (under $1,000/mo)",
+      "Direct lease available"
     ],
     "cons": [
-      "Shared bathroom (5 residents sharing 4 baths)",
-      "Currently sold out / waitlist only"
+      "Shared bathroom (5 residents sharing 4 baths)"
     ]
   },
   {
@@ -6957,8 +6955,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 1,
     "baths": 1.0,
     "sqFt": "553",
-    "minPrice": 2525,
-    "maxPrice": 2525,
+    "minPrice": 2575,
+    "maxPrice": 2575,
     "availability": "Sold Out",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_A2_553.jpg",
@@ -7131,7 +7129,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 2.0,
     "sqFt": "726",
     "minPrice": 1445,
-    "maxPrice": 1675,
+    "maxPrice": 1645,
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_B5_726.jpg",
@@ -7275,8 +7273,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "1295",
-    "minPrice": 1435,
-    "maxPrice": 1500,
+    "minPrice": 1460,
+    "maxPrice": 1515,
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_D1_1338.jpg",
@@ -7335,8 +7333,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 4.0,
     "sqFt": "1345",
-    "minPrice": 1485,
-    "maxPrice": 1500,
+    "minPrice": 1500,
+    "maxPrice": 1515,
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_D4_1538.jpg",
@@ -7418,8 +7416,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 5,
     "baths": 5.0,
     "sqFt": "1562",
-    "minPrice": 1390,
-    "maxPrice": 1400,
+    "minPrice": 1310,
+    "maxPrice": 1320,
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E1_1609.jpg",
@@ -7438,8 +7436,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 5,
     "baths": 5.0,
     "sqFt": "1519",
-    "minPrice": 1425,
-    "maxPrice": 1490,
+    "minPrice": 1450,
+    "maxPrice": 1500,
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E2_1562.jpg",
@@ -7580,7 +7578,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 6.0,
     "sqFt": "2026",
     "minPrice": 1349,
-    "maxPrice": 1540,
+    "maxPrice": 1470,
     "availability": "Available",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_F1_2026.jpg",
@@ -7665,17 +7663,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "511",
     "minPrice": 2125,
     "maxPrice": 2125,
-    "availability": "Available",
+    "availability": "Sold Out",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa423b4997665.23333497709.jpg",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier"
+      "Premium pricing tier",
+      "Currently sold out / waitlist only"
     ]
   },
   {
@@ -7751,16 +7749,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1173",
     "minPrice": 1495,
     "maxPrice": 1600,
-    "availability": "Available",
+    "availability": "Sold Out",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa42549231b03.67635048337.jpg",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
-    "cons": []
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
   },
   {
     "property": "Moontower Just off Campus",
@@ -7893,7 +7892,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 4.0,
     "sqFt": "1490",
     "minPrice": 1510,
-    "maxPrice": 1710,
+    "maxPrice": 1635,
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa4269ab60dc5.83922540320.jpg",
@@ -8187,17 +8186,16 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1382",
     "minPrice": 1034,
     "maxPrice": 1034,
-    "availability": "Sold Out",
+    "availability": "Available",
     "url": "https://theninewestcampus.com/floorplans/",
     "imagePath": "https://theninewestcampus.com/wp-content/uploads/2026/03/5da5cd91dd88b1.65034471936.png",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available"
+      "Fully furnished options available",
+      "Direct lease available"
     ],
-    "cons": [
-      "Currently sold out / waitlist only"
-    ]
+    "cons": []
   },
   {
     "property": "Nine Just off Campus",
@@ -8530,7 +8528,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 2,
     "baths": 1.0,
     "sqFt": "",
-    "minPrice": 1219,
+    "minPrice": 1229,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/2-bed-1-bath-deluxe-642688",
@@ -8824,7 +8822,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": 1254,
+    "minPrice": 1224,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-classic-643552",
@@ -8845,7 +8843,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": 1284,
+    "minPrice": 1344,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-deluxe-643554",
@@ -8866,7 +8864,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 2.0,
     "sqFt": "",
-    "minPrice": 1274,
+    "minPrice": 1304,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-2-bath-plus-643558",
@@ -8908,7 +8906,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 3.0,
     "sqFt": "",
-    "minPrice": 1364,
+    "minPrice": 1314,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-3-bath-plus-643564",
@@ -9845,13 +9843,12 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "",
     "minPrice": null,
     "maxPrice": null,
-    "availability": "<span>AVAILABLE </span>",
+    "availability": "<span>ASK ABOUT IMMEDIATE MOVE INS </span>",
     "url": "https://villasonrio.com/floor-plans/",
     "imagePath": "https://medialibrarycf.entrata.com/15647/MLv3/4/23/2024/07/30/111741/66a92035ab5ec4.73675039497.png",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
     "cons": []
   },
@@ -9867,7 +9864,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022252/69d6b91c0e9018.70895052503.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -9888,7 +9885,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022335/69d6b946cf1752.36874217347.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -9909,7 +9906,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022422/69d6b976d725c3.56313573264.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -9929,7 +9926,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022517/69d6b9ad818837.33533161601.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -9949,7 +9946,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/022924/6a1754244ec8b2.66176557707.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -9969,7 +9966,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030344/6a4c18303eef97.83740551809.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -9989,7 +9986,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/05/27/023225/6a1754d9d063d2.73811136737.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10009,7 +10006,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/030949/6a4c199cddce51.90785753971.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10029,7 +10026,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031031/6a4c19c76f1413.20804420401.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10049,7 +10046,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/06/031108/6a4c19ebeacb38.58535135456.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10069,7 +10066,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040817/69b48ad1d0ec33.27866602719.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10089,7 +10086,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/13/040855/69b48af7733545.62508409154.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10109,7 +10106,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/04/08/022708/69d6ba1c0e5258.76370505925.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10129,7 +10126,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021336/69b86470bd29b9.40869472826.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10149,7 +10146,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021419/69b8649b494ea4.18095443375.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10169,7 +10166,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021509/69b864cdb3ee29.06749675869.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10189,7 +10186,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021609/69b86508f37523.56797283303.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10209,7 +10206,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021648/69b86530af66f4.32232108186.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10229,7 +10226,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021728/69b86558925cd8.82615991966.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10249,7 +10246,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/03/16/021809/69b8658117d974.61266279584.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10269,7 +10266,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/30/123448/6a6b9948cff9e6.29722422389.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
@@ -10289,7 +10286,7 @@ const RAW_FLOOR_PLANS = [
     "availability": "Sold Out",
     "url": "https://www.inspire22nd.com/austin/inspire-on-22nd/student/",
     "imagePath": "https://medialibrarycfo.entrata.com/fit-in/300x300/10073/MLv3/4/22/2026/07/30/123533/6a6b99757de674.05874549522.png",
-    "dataWarning": "cached",
+    "dataWarning": null,
     "pros": [
       "Fully furnished options available"
     ],
