@@ -1,7 +1,7 @@
 import { normalizePropertyName, slugify } from './utils.js';
 
-export const LAST_UPDATED = "October 19, 2026";
-export const LAST_UPDATED_ISO = "2026-10-19T11:43:06.075799";
+export const LAST_UPDATED = "October 26, 2026";
+export const LAST_UPDATED_ISO = "2026-10-26T12:02:00.638821";
 
 const RAW_FLOOR_PLANS = [
   {
@@ -5637,7 +5637,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
     "baths": 1.0,
-    "sqFt": "",
+    "sqFt": "523",
     "minPrice": 2475,
     "maxPrice": 2510,
     "availability": "Sold Out",
@@ -5659,7 +5659,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
     "baths": 1.0,
-    "sqFt": "",
+    "sqFt": "615",
     "minPrice": 2500,
     "maxPrice": 2500,
     "availability": "Sold Out",
@@ -5681,9 +5681,9 @@ const RAW_FLOOR_PLANS = [
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
     "baths": 1.0,
-    "sqFt": "",
-    "minPrice": 1210,
-    "maxPrice": 1245,
+    "sqFt": "637-643",
+    "minPrice": 1220,
+    "maxPrice": 1255,
     "availability": "Sold Out",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83743_100181119_11846_1320498_5ebd9a9a65aa63.09354490266-1.jpg",
@@ -5702,7 +5702,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
     "baths": 1.0,
-    "sqFt": "",
+    "sqFt": "565",
     "minPrice": 2500,
     "maxPrice": 2560,
     "availability": "Available",
@@ -5724,7 +5724,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
     "baths": 1.0,
-    "sqFt": "",
+    "sqFt": "680",
     "minPrice": 1080,
     "maxPrice": 1080,
     "availability": "Sold Out",
@@ -5745,7 +5745,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "1 Bed / 1 Bath",
     "beds": 1,
     "baths": 1.0,
-    "sqFt": "",
+    "sqFt": "530",
     "minPrice": 2020,
     "maxPrice": 2055,
     "availability": "Sold Out",
@@ -5767,7 +5767,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
     "baths": 2.0,
-    "sqFt": "",
+    "sqFt": "966",
     "minPrice": 1035,
     "maxPrice": 1645,
     "availability": "Available",
@@ -5787,7 +5787,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
     "baths": 2.0,
-    "sqFt": "",
+    "sqFt": "766",
     "minPrice": 2490,
     "maxPrice": 2490,
     "availability": "Available",
@@ -5809,7 +5809,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
     "baths": 2.0,
-    "sqFt": "",
+    "sqFt": "1062",
     "minPrice": 1920,
     "maxPrice": 1920,
     "availability": "Available",
@@ -5831,7 +5831,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
     "baths": 2.0,
-    "sqFt": "",
+    "sqFt": "986",
     "minPrice": 1700,
     "maxPrice": 1700,
     "availability": "Sold Out",
@@ -5852,7 +5852,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
     "baths": 2.0,
-    "sqFt": "",
+    "sqFt": "1012",
     "minPrice": 1900,
     "maxPrice": 1900,
     "availability": "Sold Out",
@@ -5874,7 +5874,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "2 Bed / 2 Bath",
     "beds": 2,
     "baths": 2.0,
-    "sqFt": "",
+    "sqFt": "893",
     "minPrice": 1775,
     "maxPrice": 1775,
     "availability": "Available",
@@ -5894,7 +5894,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
     "baths": 3.0,
-    "sqFt": "",
+    "sqFt": "1249-1254",
     "minPrice": 1775,
     "maxPrice": 1775,
     "availability": "Available",
@@ -5914,9 +5914,9 @@ const RAW_FLOOR_PLANS = [
     "roomType": "3 Bed / 3 Bath",
     "beds": 3,
     "baths": 3.0,
-    "sqFt": "",
+    "sqFt": "932-934",
     "minPrice": 1340,
-    "maxPrice": 1440,
+    "maxPrice": 1450,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83755_100181119_11859_1320498_5ebeb262e30207.42585944291-1.jpg",
@@ -5934,7 +5934,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
     "baths": 4.0,
-    "sqFt": "",
+    "sqFt": "1518-1524",
     "minPrice": 1620,
     "maxPrice": 1635,
     "availability": "Sold Out",
@@ -5955,7 +5955,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
     "baths": 4.0,
-    "sqFt": "",
+    "sqFt": "1276",
     "minPrice": 1490,
     "maxPrice": 1550,
     "availability": "Available",
@@ -5975,7 +5975,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
     "baths": 4.0,
-    "sqFt": "",
+    "sqFt": "1399-1400",
     "minPrice": 1575,
     "maxPrice": 1575,
     "availability": "Sold Out",
@@ -5996,9 +5996,9 @@ const RAW_FLOOR_PLANS = [
     "roomType": "4 Bed / 4 Bath",
     "beds": 4,
     "baths": 4.0,
-    "sqFt": "",
-    "minPrice": 1475,
-    "maxPrice": 1565,
+    "sqFt": "1481-1546",
+    "minPrice": 1350,
+    "maxPrice": 1420,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83759_100181119_11864_1320498_5ebeb33ba57283.78655032778-1.jpg",
@@ -6016,7 +6016,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
     "baths": 5.0,
-    "sqFt": "",
+    "sqFt": "1841",
     "minPrice": 1520,
     "maxPrice": 1520,
     "availability": "Available",
@@ -6036,7 +6036,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "5 Bed / 4 Bath",
     "beds": 5,
     "baths": 4.0,
-    "sqFt": "",
+    "sqFt": "1405",
     "minPrice": 1285,
     "maxPrice": 1310,
     "availability": "Available",
@@ -6057,7 +6057,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "5 Bed / 3 Bath",
     "beds": 5,
     "baths": 3.0,
-    "sqFt": "",
+    "sqFt": "1600-1604",
     "minPrice": 1400,
     "maxPrice": 1420,
     "availability": "Sold Out",
@@ -6078,7 +6078,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
     "baths": 5.0,
-    "sqFt": "",
+    "sqFt": "1538",
     "minPrice": 1475,
     "maxPrice": 1475,
     "availability": "Sold Out",
@@ -6099,7 +6099,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
     "baths": 5.0,
-    "sqFt": "",
+    "sqFt": "1643",
     "minPrice": 1524,
     "maxPrice": 1524,
     "availability": "Sold Out",
@@ -6120,9 +6120,9 @@ const RAW_FLOOR_PLANS = [
     "roomType": "5 Bed / 5 Bath",
     "beds": 5,
     "baths": 5.0,
-    "sqFt": "",
-    "minPrice": 1420,
-    "maxPrice": 1515,
+    "sqFt": "1575-1671",
+    "minPrice": 1510,
+    "maxPrice": 1605,
     "availability": "Available",
     "url": "https://thestandardaustin.landmark-properties.com/floorplans/",
     "imagePath": "https://thestandardaustin.landmark-properties.com/wp-content/uploads/2026/09/83765_100181119_11870_1320498_5ebeb4500d87e0.29525895307-1.jpg",
@@ -6140,7 +6140,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "6 Bed / 4 Bath",
     "beds": 6,
     "baths": 4.0,
-    "sqFt": "",
+    "sqFt": "1899",
     "minPrice": 1285,
     "maxPrice": 1285,
     "availability": "Available",
@@ -6161,7 +6161,7 @@ const RAW_FLOOR_PLANS = [
     "roomType": "6 Bed / 4 Bath",
     "beds": 6,
     "baths": 4.0,
-    "sqFt": "",
+    "sqFt": "1645",
     "minPrice": 1215,
     "maxPrice": 1250,
     "availability": "Available",
@@ -6396,18 +6396,18 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 2.0,
     "sqFt": "973",
-    "minPrice": 1075,
-    "maxPrice": 1290,
-    "availability": "Available",
+    "minPrice": 1260,
+    "maxPrice": 1260,
+    "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/14_legacy-on-rio-floorplans_C5-Ansi-Type-A.jpg",
     "dataWarning": null,
     "pros": [
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Shared bathroom (3 residents sharing 2 baths)"
+      "Shared bathroom (3 residents sharing 2 baths)",
+      "Currently sold out / waitlist only"
     ]
   },
   {
@@ -6521,7 +6521,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 3.0,
     "sqFt": "1045",
-    "minPrice": 1110,
+    "minPrice": 1520,
     "maxPrice": 1520,
     "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
@@ -6564,7 +6564,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 2.0,
     "sqFt": "1020",
-    "minPrice": 1044,
+    "minPrice": 1069,
     "maxPrice": 1170,
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
@@ -6586,7 +6586,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 4.0,
     "sqFt": "1298",
     "minPrice": 1175,
-    "maxPrice": 1300,
+    "maxPrice": 1325,
     "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/31_legacy-on-rio-floorplans_D11.jpg",
@@ -6608,16 +6608,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1301",
     "minPrice": 1069,
     "maxPrice": 1320,
-    "availability": "Available",
+    "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/22_legacy-on-rio-floorplans_D12_.jpg",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
-    "cons": []
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
   },
   {
     "property": "Legacy on Rio",
@@ -6749,7 +6750,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 4.0,
     "sqFt": "1388",
     "minPrice": 965,
-    "maxPrice": 1030,
+    "maxPrice": 990,
     "availability": "Available",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/33_legacy-on-rio-floorplans_E1.jpg",
@@ -6771,7 +6772,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 4.0,
     "sqFt": "1417",
     "minPrice": 990,
-    "maxPrice": 1014,
+    "maxPrice": 990,
     "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/34_legacy-on-rio-floorplan-E2.jpg",
@@ -6814,7 +6815,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 5.0,
     "sqFt": "1413",
     "minPrice": 1030,
-    "maxPrice": 1205,
+    "maxPrice": 1030,
     "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/35_legacy-on-rio-floorplan-e3.jpg",
@@ -6834,8 +6835,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 5,
     "baths": 5.0,
     "sqFt": "1433",
-    "minPrice": 1110,
-    "maxPrice": 1290,
+    "minPrice": 1130,
+    "maxPrice": 1310,
     "availability": "Sold Out",
     "url": "https://legacyonrio.com/floorplans/",
     "imagePath": "https://legacyonrio.com/wp-content/uploads/2026/03/36_legacy-on-rio-floorplan-E4.jpg",
@@ -6987,17 +6988,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "591",
     "minPrice": 2725,
     "maxPrice": 2725,
-    "availability": "Available",
+    "availability": "Sold Out",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_A3_591.jpg",
     "dataWarning": null,
     "pros": [
       "Maximum privacy (no roommates)",
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
     "cons": [
-      "Premium pricing tier"
+      "Premium pricing tier",
+      "Currently sold out / waitlist only"
     ]
   },
   {
@@ -7429,16 +7430,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "1562",
     "minPrice": 1310,
     "maxPrice": 1320,
-    "availability": "Available",
+    "availability": "Sold Out",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E1_1609.jpg",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
-    "cons": []
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
   },
   {
     "property": "Mark Uptown",
@@ -7508,17 +7510,18 @@ const RAW_FLOOR_PLANS = [
     "baths": 5.0,
     "sqFt": "1493",
     "minPrice": 1365,
-    "maxPrice": 1450,
-    "availability": "Available",
+    "maxPrice": 1490,
+    "availability": "Sold Out",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_E5_ALT_1487.jpg",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
-    "cons": []
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
   },
   {
     "property": "Mark Uptown",
@@ -7590,16 +7593,17 @@ const RAW_FLOOR_PLANS = [
     "sqFt": "2026",
     "minPrice": 1349,
     "maxPrice": 1540,
-    "availability": "Available",
+    "availability": "Sold Out",
     "url": "https://themarkatx.com/floorplans/",
     "imagePath": "https://www.themarkatx.com/wp-content/uploads/2026/03/The-Mark-Austin-floorplan_F1_2026.jpg",
     "dataWarning": null,
     "pros": [
       "Private bathroom for every resident",
-      "Fully furnished options available",
-      "Direct lease available"
+      "Fully furnished options available"
     ],
-    "cons": []
+    "cons": [
+      "Currently sold out / waitlist only"
+    ]
   },
   {
     "property": "Mark Uptown",
@@ -7759,7 +7763,7 @@ const RAW_FLOOR_PLANS = [
     "baths": 3.0,
     "sqFt": "1173",
     "minPrice": 1335,
-    "maxPrice": 1450,
+    "maxPrice": 1475,
     "availability": "Available",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa42549231b03.67635048337.jpg",
@@ -7798,8 +7802,8 @@ const RAW_FLOOR_PLANS = [
     "beds": 3,
     "baths": 3.0,
     "sqFt": "1228",
-    "minPrice": 1535,
-    "maxPrice": 1535,
+    "minPrice": 1635,
+    "maxPrice": 1635,
     "availability": "Sold Out",
     "url": "https://moontoweratx.com/floorplans/",
     "imagePath": "https://moontoweratx.com/wp-content/uploads/2026/03/5fa4258f7c0cf4.42480250916.jpg",
@@ -8727,7 +8731,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 5,
     "baths": 4.0,
     "sqFt": "",
-    "minPrice": 999,
+    "minPrice": 1019,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-corner/5-bed-4-bath-642718",
@@ -8735,7 +8739,6 @@ const RAW_FLOOR_PLANS = [
     "dataWarning": null,
     "pros": [
       "Fully furnished options available",
-      "Budget-friendly rent (under $1,000/mo)",
       "Direct lease available"
     ],
     "cons": [
@@ -8895,7 +8898,7 @@ const RAW_FLOOR_PLANS = [
     "beds": 4,
     "baths": 3.0,
     "sqFt": "",
-    "minPrice": 1344,
+    "minPrice": 1394,
     "maxPrice": null,
     "availability": "Available",
     "url": "https://yugo.com/en-us/global/united-states-of-america/austin-tx/yugo-austin-nueces/4-bed-3-bath-plus-643564",
